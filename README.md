@@ -14,7 +14,7 @@ El grafo de base es [OptimusKG](https://arxiv.org/abs/2604.27269).
 
 ## Como reproducirlo
 
-Hace falta Python 3.12 o superior, que es lo que exige el paquete de OptimusKG, y Docker.
+Hace falta Python 3.12 o superior (lo que exige el paquete de OptimusKG) y Docker.
 
 **1. Levantar Neo4j.** la versión Community alcanza:
 
@@ -38,7 +38,7 @@ El `.env` no se versiona: cada quien usa el suyo. `loader/config.py` lo lee al i
 python loader/load_neo4j.py
 ```
 
-Descarga los parquet de OptimusKG desde Dataverse (unos 325 MB) y los inserta. Son 190.531 nodos y unos 21,8 millones de relaciones, así que la carga tarda y conviene dejarla corriendo. Es idempotente: usa `MERGE` e itera en lotes de 5.000 filas, de modo que si se corta se puede volver a lanzar sin duplicar nada.
+Descarga los parquet de OptimusKG desde Dataverse (unos 325 MB) y los inserta. La carga tarda y conviene dejarla corriendo. Es idempotente: usa `MERGE` e itera en lotes de 5.000 filas, de modo que si se corta se puede volver a lanzar sin duplicar nada.
 
 **4. Marcar las enfermedades reales:**
 
