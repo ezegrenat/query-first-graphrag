@@ -8,7 +8,7 @@ El grafo de base es [OptimusKG](https://arxiv.org/abs/2604.27269).
 
 ## Contenido
 
-- [`bitacora.md`](bitacora.md) — la idea general del trabajo, el algoritmo propuesto, las decisiones tomadas sobre los datos y el estado de la experimentación. Se actualiza a medida que el trabajo avanza.
+- [`bitacora.md`](bitacora.md) :  la idea general del trabajo, el algoritmo propuesto, las decisiones tomadas sobre los datos y el estado de la experimentación. Se actualiza a medida que el trabajo avanza.
 
 ## Estado
 
