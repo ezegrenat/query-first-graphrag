@@ -1,0 +1,11 @@
+#OptimusKG exige Python >= 3.12
+optimuskg
+neo4j
+pyarrow
+pandas
+matplotlib
+networkx
+
+#para correr el notebook de exploracion
+notebook
+nbclient

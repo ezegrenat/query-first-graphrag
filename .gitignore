@@ -1,0 +1,9 @@
+#credenciales locales: cada quien usa las suyas, nunca se versionan
+.env
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+#datos crudos de OptimusKG: los descarga el propio loader desde Dataverse
+*.parquet

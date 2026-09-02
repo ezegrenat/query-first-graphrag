@@ -9,6 +9,47 @@ El grafo de base es [OptimusKG](https://arxiv.org/abs/2604.27269).
 ## Contenido
 
 - [`bitacora.md`](bitacora.md) :  la idea general del trabajo, el algoritmo propuesto, las decisiones tomadas sobre los datos y el estado de la experimentación. Se actualiza a medida que el trabajo avanza.
+- `loader/` :  la carga de OptimusKG a Neo4j. Descarga los parquet publicados en Dataverse y los inserta por lotes.
+- `preparacion_grafo/` :  separación de las enfermedades reales del resto de la capa `Disease`, que mezcla enfermedades con rasgos y mediciones de estudios de asociación genómica.
+
+## Como reproducirlo
+
+Hace falta Python 3.12 o superior, que es lo que exige el paquete de OptimusKG, y Docker.
+
+**1. Levantar Neo4j.** la versión Community alcanza:
+
+```bash
+docker run -d --name neo4j -p 7474:7474 -p 7687:7687 \
+  -e NEO4J_AUTH=neo4j/una_password neo4j:5-community
+```
+
+**2. Instalar las dependencias y configurar las credenciales:**
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env      # y editarlo con la password del paso anterior
+```
+
+El `.env` no se versiona: cada quien usa el suyo. `loader/config.py` lo lee al importarse, así que no hay que exportar nada a mano.
+
+**3. Carga del grafo:**
+
+```bash
+python loader/load_neo4j.py
+```
+
+Descarga los parquet de OptimusKG desde Dataverse (unos 325 MB) y los inserta. Son 190.531 nodos y unos 21,8 millones de relaciones, así que la carga tarda y conviene dejarla corriendo. Es idempotente: usa `MERGE` e itera en lotes de 5.000 filas, de modo que si se corta se puede volver a lanzar sin duplicar nada.
+
+**4. Marcar las enfermedades reales:**
+
+```bash
+python preparacion_grafo/marcar_enfermedades_reales.py
+```
+
+Escribe la propiedad `is_truly_disease` en los nodos de la capa `Disease` y crea su indice. Acepta `--revertir` para deshacerlo.
+
+El criterio y las mediciones que lo justifican están en `preparacion_grafo/limpieza_capa_disease.ipynb`, que se puede leer sin ejecutar porque conserva las salidas.
+
 
 ## Estado
 
