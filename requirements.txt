@@ -6,6 +6,10 @@ pandas
 matplotlib
 networkx
 
-#para correr el notebook de exploracion
-notebook
-nbclient
+#para expansion/: la red compacta usa matrices dispersas, y construir_red recibe
+#un cliente de graphdatascience (el loader, en cambio, usa el driver neo4j pelado)
+scipy
+numpy
+graphdatascience
+
+
