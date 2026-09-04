@@ -57,6 +57,24 @@ Cada paso necesita saber cuántas iteraciones correr antes de frenar (es un par�
 
 - **La capa de enfermedades está filtrada.** De los más de 36 mil nodos etiquetados como enfermedad en OptimusKG, poco más de 17 mil lo son: el resto son rasgos y mediciones cuantitativas provenientes de estudios de asociación genómica, más algunos fenotipos y procedimientos. La separación usa la jerarquía de la ontología y está documentada en `preparacion_grafo/`.
 
+## Bajo qué criterio se filtra el evidence score
+En el paper de OptimusKG se puede leer que el `EVIDENCE_SCORE` está tomado de OpenTargets, y yendo a https://platform-docs.opentargets.org/associations se ve lo siguiente: 
+
+"For all cases, the Platform defines a data source association score by 
+calculating a harmonic sum using the full vector of evidence scores adefined for each data source using the following the next steps: The pieces of evidence are sorted in descending order and assigned an incremental value that indicates their position in the sorted list (the top-scoring item has a positional id of 1, the second has a positional id of 2, and so on). The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (positional id^2). To ensure the result  is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones."
+
+Más adelante: 
+
+"The overall association score aims to summarise all the aggregated evidence for a given target-disease association. The score is derived by calculating the harmonic sum of the association score by data source weighted by the data source weights, regardless of their data type categorisation. The algorithm to compute the scores is the same as the association by data source, resulting in a score between 0 and 1.". Más abajo, se detallan los siguientes weight factors para distintas fuentes de datos: Europe PMC 0,2; Expression Atlas 0,2; IMPC 0,2; OTAR projects 0,5; Cancer Biomarkers 0,5; "others" 1,0. 
+
+Y luego: 
+
+"There are a few important considerations regarding association scores. As described above, association scores are a heuristic based on the availability of data. While scores are useful to rank lists of targets or diseases, they should not be interpreted as a confidence score for the target-disease association. 
+
+For example, **under-studied diseases are unlikely to produce high-scoring targets due to the lack of available evidence. In such diseases, a relatively low-scoring target might still be the top-ranked target and potentially a very interesting lead from a therapeutic standpoint**."
+
+En resumen: se puede afirmar que filtrar un evidence score >= 0.5 esperando que eso sea "hay mas evidencia a favor que en contra" 
+sería un error... el evidnece score es una heurística de disponibilidad de datos y no una confianza en la asociación.
 
 
 ## Estado
