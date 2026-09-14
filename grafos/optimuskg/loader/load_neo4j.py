@@ -1,14 +1,9 @@
 """Carga el grafo OptimusKG (parquet local) a Neo4j.
 
-Uso:
-    python loader/load_neo4j.py
-
 Requiere un Neo4j corriendo y accesible con las credenciales del .env, y las dependencias de
 requirements.txt instaladas.
 
-Es idempotente: usa MERGE tanto para nodos como para relaciones, así que si se corta a mitad de
-camino se puede volver a correr sin duplicar datos (vuelve a pasar por los tipos ya cargados, pero
-no crea nada de nuevo para lo que ya estaba).
+Es idempotente: usa MERGE tanto para nodos como para relaciones, así que si se corta a mitad de camino se puede volver a correr sin duplicar datos (vuelve a pasar por los tipos ya cargados, pero no crea nada de nuevo para lo que ya estaba).
 """
 
 import json
@@ -40,9 +35,7 @@ _inicio_pipeline = time.perf_counter()
 
 
 def log(mensaje):
-    """Imprime con hora y tiempo transcurrido desde que arrancó la carga, más útil que un print
-    suelto para seguir una carga larga (potencialmente horas) y ver en qué paso se frenó si algo
-    se cuelga."""
+    """Imprime con hora y tiempo transcurrido desde que arrancó la carga."""
     transcurrido = time.perf_counter() - _inicio_pipeline
     hora = datetime.now().strftime("%H:%M:%S")
     print(f"[{hora} | +{transcurrido:8.1f}s] {mensaje}")
@@ -64,12 +57,7 @@ def connect():
 
 
 def crear_restricciones(driver):
-    """Crea una restricción de unicidad sobre `id` por cada tipo de nodo (necesario para que
-    MERGE sea rápido con millones de filas; sin índice, cada MERGE escanea toda la etiqueta).
 
-    Le ponemos nombre explícito a cada restricción (en vez de dejar que Neo4j autogenere uno) para
-    poder identificarlas fácil después en `SHOW CONSTRAINTS` o si hay que borrarlas.
-    """
     with driver.session() as session:
         for tipo in NODE_TYPES:
             label = label_de(tipo)
@@ -91,12 +79,8 @@ def crear_restricciones(driver):
 
 
 def flatten_properties(props):
-    """Convierte el dict de `properties` (puede tener sub-dicts/listas de dicts anidadas) a algo
+    """Convierte el dict de properties a algo
     que Neo4j acepta como propiedades: solo primitivos o listas homogéneas de primitivos.
-
-    Los campos simples se dejan tal cual. Los campos anidados (dict, lista de dicts, etc.) se
-    serializan a JSON en un campo "<clave>_json" en vez de perderse. Los campos en CAMPOS_EXCLUIR
-    (blobs pesados como los de moléculas en base64) se descartan directamente.
     """
     resultado = {}
     for clave, valor in props.items():
@@ -112,10 +96,7 @@ def flatten_properties(props):
 
 
 def _con_reintentos(session, query, rows, max_reintentos=MAX_REINTENTOS):
-    """Corre una consulta reintentando ante TransientError (interbloqueos/conflictos de lock),
-    con espera exponencial entre intentos. Con un solo proceso escribiendo (sin concurrencia)
-    esto debería disparar poco, pero Neo4j puede generar TransientError igual por su propio
-    housekeeping interno (checkpoints, etc.) durante una carga larga.
+    """Corre una consulta reintentando ante TransientError con espera exponencial entre intentos.
     """
     for intento in range(max_reintentos):
         try:
@@ -130,7 +111,7 @@ def _con_reintentos(session, query, rows, max_reintentos=MAX_REINTENTOS):
 
 
 def _lotes(path, batch_size):
-    """Itera un parquet en lotes (pyarrow RecordBatch) sin cargarlo entero a memoria."""
+    """Itera un parquet en lotes"""
     pf = pq.ParquetFile(path)
     for batch in pf.iter_batches(batch_size=batch_size):
         yield pa.Table.from_batches([batch]).to_pylist()
@@ -165,10 +146,7 @@ def cargar_relaciones(driver, tipo_relacion):
     cargados = 0
     with driver.session() as session:
         for filas_crudas in _lotes(path, BATCH_SIZE):
-            #el tipo de relacion de Neo4j no se puede parametrizar en Cypher, asi que agrupamos
-            #cada lote por el valor real de `relation` (puede haber mas de uno por archivo, ej.
-            #drug_disease tiene INDICATION / CONTRAINDICATION / OFF_LABEL_USE) y armamos una
-            #consulta por grupo.
+
             por_relacion = {}
             for f in filas_crudas:
                 tipo_rel = f["relation"].upper().replace(" ", "_").replace("-", "_")
@@ -178,17 +156,14 @@ def cargar_relaciones(driver, tipo_relacion):
                     {"from": f["from"], "to": f["to"], "props": props}
                 )
             for tipo_rel, filas in por_relacion.items():
-                #las dos etiquetas (label_origen/label_destino) son las que hacen que este MATCH
-                #use el indice de la restriccion de unicidad en vez de recorrer todos los nodos
-                #del grafo buscando el `id`: sin etiqueta, la restriccion (que es por etiqueta)
-                #no se puede aprovechar.
+
                 _con_reintentos(
                     session,
                     f"UNWIND $rows AS row "
                     f"MATCH (a:{label_origen} {{id: row.from}}) MATCH (b:{label_destino} {{id: row.to}}) "
                     #las backticks alrededor del tipo de relacion son defensa extra: ya lo
                     #sanitizamos arriba (mayusculas, sin espacios/guiones), pero asi el Cypher
-                    #queda valido igual si en algun momento aparece un caracter que no previmos.
+                    #queda valido igual si en algun momento aparece un caracter que no se prevee
                     f"MERGE (a)-[r:`{tipo_rel}`]->(b) SET r += row.props",
                     filas,
                 )

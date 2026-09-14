@@ -12,13 +12,6 @@ import os
 
 
 def _cargar_env():
-    """Vuelca el .env de la raiz del repositorio en os.environ, si existe.
-
-    Se hace a mano en vez de con python-dotenv para no sumar una dependencia por diez lineas. Lo
-    que ya este definido en el entorno gana sobre el archivo, que es el orden habitual: permite
-    pisar un valor puntual sin editar el .env.
-    """
-    #tres niveles arriba: loader/ -> optimuskg/ -> grafos/ -> raiz del repositorio
     ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", ".env")
     if not os.path.exists(ruta):
         return
@@ -96,20 +89,10 @@ EDGE_TYPE_NODE_TYPES = {
     "phenotype_phenotype": ("phenotype", "phenotype"),
 }
 
-#campos de `properties` que se descartan por completo al cargar a Neo4j (no aportan para
-#busqueda/navegacion y son pesados: por ejemplo los blobs de moleculas en base64 de `drug`).
-#`homologues` (genes homologos en otras especies) llega a pesar >350KB por fila en ~25000/61306
-#genes (>1GB en total en gene.parquet): al concentrarse varias filas grandes en el mismo batch de
-#escritura, el mensaje Bolt se vuelve tan pesado que Neo4j corta la conexion (BrokenPipeError) a
-#mitad de carga, sin loggear ningun error de memoria ni de Cypher. confirmado inspeccionando
-#gene.parquet directamente: sin este campo, el resto de las propiedades de gene pesan poco.
+
 CAMPOS_EXCLUIR = {"mol_file_base64", "mol_image_base64", "homologues"}
 
-#reintentos ante TransientError (interbloqueos/conflictos de lock en Neo4j), con backoff
-#exponencial (2 ** intento segundos entre reintentos).
+
 MAX_REINTENTOS = 10
-
-
-def label_de(tipo_nodo):
-    """Convierte "biological_process" -> "BiologicalProcess" (convención PascalCase de Neo4j)."""
+ "BiologicalProcess" (convención PascalCase de Neo4j)."""
     return "".join(parte.capitalize() for parte in tipo_nodo.split("_"))
