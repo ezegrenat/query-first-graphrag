@@ -1,6 +1,6 @@
 # PrimeKG integrado
 
-El grafo sobre el que sigue el trabajo desde el 2026-09-08. No es PrimeKG nativo: es un grafo armado en el laboratorio de Ariel Chernomoretz que toma de PrimeKG la capa de enfermedades y la completa con fuentes curadas para lo demás. Cada capa viene de una fuente distinta:
+El grafo sobre el que sigue el trabajo desde el 2026-09-08. Lo armó el laboratorio de Ariel Chernomoretz sobre PrimeKG: toma de ahí la capa de enfermedades y completa el resto con fuentes curadas. Cada capa viene de una fuente distinta:
 
 | capa | fuente | quién la armó |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Calibración: cómo crece el módulo de DIAMOnD en cada plano homogéneo
 
-El experimento que calibra el algoritmo: para cada celda (tipo de la entidad de la consulta, tipo del plano donde se expande) mide cómo crece el módulo de DIAMOnD iteración a iteración, contra dos nulos (semillas al azar uniformes y apareadas por grado) y con recall sobre semillas escondidas. Corre sobre PrimeKG integrado cargado en `neo4j-thesis` (ver `../grafos/primekg_integrado/`); la red compacta y el port de DIAMOnD se importan de `../expansion/`.
+Para cada celda (tipo de la entidad de la consulta, tipo del plano donde se expande), este experimento mide cómo crece el módulo de DIAMOnD iteración a iteración, contra dos nulos (semillas al azar uniformes y apareadas por grado) y con recall sobre semillas escondidas. De ahí sale el corte de iteraciones de cada celda. Corre sobre PrimeKG integrado cargado en `neo4j-thesis` (ver `../grafos/primekg_integrado/`); la red compacta y el port de DIAMOnD se importan de `../expansion/`.
 
 La descripción completa del protocolo (vocabulario, los nueve pasos, las métricas y los controles) está pendiente de pasar a este repositorio; por ahora la bitácora resume qué se mide.
 

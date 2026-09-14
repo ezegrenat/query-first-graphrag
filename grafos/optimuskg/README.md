@@ -1,6 +1,6 @@
 # OptimusKG
 
-El grafo con el que arrancó el trabajo, evaluado y dejado el 2026-09-08. La razón, en una línea: el plano homogéneo de drogas no tiene con qué trabajar (`PARENT` es taxonomía, no interacción, y `SYNERGISTIC_INTERACTION` no mostró señal), y la capa de enfermedades necesitaba dos limpiezas previas (separar enfermedades de rasgos, deduplicar identidades) que en el grafo que lo reemplaza ya vienen resueltas. El detalle está en la bitácora.
+El grafo con el que arrancó el trabajo, evaluado y dejado el 2026-09-08. Se dejó porque el plano homogéneo de drogas no tiene con qué trabajar (`PARENT` es taxonomía, no interacción, y `SYNERGISTIC_INTERACTION` no mostró señal), y porque la capa de enfermedades necesitaba dos limpiezas previas (separar enfermedades de rasgos, deduplicar identidades) que en el grafo que lo reemplaza ya vienen resueltas. El detalle está en la bitácora.
 
 Queda acá como registro de lo que se hizo sobre él:
 
