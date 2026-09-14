@@ -23,6 +23,8 @@ Hay tres clases de archivo, y el nombre dice cuál es cada uno.
 | `recall.py` | los folds que esconden una fracción de las semillas y miden cuántas recupera el módulo |
 | `graficos.py` | las figuras por plano y las funciones que leen trazas y recalls, usadas por los pasos 4 a 7 |
 
+También hay un notebook de exploración sobre si incluir los nodos BERT (son artificiales y presentes en la capa de enfermedades) da mejores resultados que no incluirlos en la expansión. 
+
 **Los pasos, en el orden en que se corren.** El prefijo `paso_necimo` es ese orden.
 
 | paso | archivo | qué hace | qué deja en `resultados/` |
@@ -36,19 +38,5 @@ Hay tres clases de archivo, y el nombre dice cuál es cada uno.
 | 6 | `paso6_informe.py` | portada más todos los PDF anteriores en uno solo | `informe_completo.pdf` |
 | 7 | `paso7_verificar.py` | asserts sobre parquet, tablas y PDF de la corrida | `verificacion.log` |
 
-## Cómo se corre
-
-Con `neo4j-thesis` levantado y desde esta carpeta:
-
-```bash
-CRECIMIENTO_N_POR_BIN=50 python paso0_sorteo.py
-python paso1_smoke.py
-./correr_batch.sh
-./cerrar_corrida.sh          # cuando no queden runners; corre los pasos 3 a 7
-```
-
-Cada paso se puede volver a correr suelto, por ejemplo `python paso4_resumen.py`, sobre una carpeta de resultados ya hecha. La carpeta se elige con `CRECIMIENTO_RESULTADOS` (por defecto `resultados`).
-
-De cada corrida se versionan los resúmenes (casos.csv, las tablas CSV, `informe_completo.pdf` y `RESUMEN_corrida.txt`) y no las trazas por caso, los PDF intermedios que el informe ya contiene ni los logs.
 
 
