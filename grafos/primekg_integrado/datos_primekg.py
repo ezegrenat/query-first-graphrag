@@ -1,20 +1,5 @@
-"""Lectura de PrimeKG nativo desde los CSV originales, en datos/external/.
+"""Lectura de PrimeKG nativo desde los CSV originales, en datos/external/. Luego todo lo que se mide sobre PrimeKG pasa por aca, para que si cambia la version del grafo o su formato el cambio sea en un solo lugar.
 
-Este es el unico modulo de la carpeta que lee los archivos. Todo lo que se mide sobre PrimeKG
-pasa por aca, para que si cambia la version del grafo o su formato el cambio sea en un solo lugar.
-
-Los archivos son los originales de PrimeKG (Chandak, Huang y Zitnik 2023), sin ninguna limpieza:
-    external/primekg_nodes.csv   una fila por nodo: node_index, node_id, node_type, node_name, node_source
-    external/primekg_edges.csv   una fila por arista Y POR SENTIDO: relation, display_relation, x_index, y_index
-
-Ese "y por sentido" importa: PrimeKG guarda cada arista dos veces, (x, y) y (y, x). Para contar
-aristas de verdad hay que quedarse con una sola de las dos filas, y eso lo hacen las funciones de
-abajo, que ademas verifican que la mitad descartada sea exactamente la mitad.
-
-Las capas y planos del experimento usan solo tres tipos de nodo: genes, enfermedades y fenotipos.
-Las drogas entran en un unico lugar, pares_indicacion(), que lista las drogas que PrimeKG une
-directo a una enfermedad por "indication". Ese listado es el insumo para comparar la capa de drogas
-de PrimeKG con la del grafo de Gonzalo (reunion del 2026-09-11); no es una capa del experimento.
 """
 import os
 
@@ -139,8 +124,6 @@ def pares_indicacion():
     tipo_x = indicaciones.x_index.map(nodos.node_type)
     tipo_y = indicaciones.y_index.map(nodos.node_type)
 
-    #la relacion es bipartita (droga, enfermedad), asi que quedarse con las filas que van de la
-    #droga a la enfermedad deja una fila por par; se verifica que el sentido inverso exista igual
     de_droga = indicaciones[(tipo_x == "drug") & (tipo_y == "disease")]
     de_enfermedad = indicaciones[(tipo_x == "disease") & (tipo_y == "drug")]
     if len(de_droga) + len(de_enfermedad) != len(indicaciones):
