@@ -53,15 +53,12 @@ Cada paso necesita saber cuántas iteraciones correr antes de frenar (es un par�
     - **Disease**: `PARENT` y **Phenotype**: `PARENT`. En los dos casos es la única relación intracapa disponible.
     - **Drug**: `PARENT`. Es la única capa que ofrecía dos opciones: la alternativa era `SYNERGISTIC_INTERACTION`.
 
-- **Solo se usan las asociaciones de mayor evidencia.** Las aristas `ASSOCIATED_WITH`, que conecta al par `Gene` y `Disease` y al par `Gene` y `Phenotype` son mayoritariamente asociaciones con bajísimo nivel de evidencia. Se establecerá un filtro sobre estas para que el grafo de conocimiento represente relaciones más confiables.
-
 - **La capa de enfermedades está filtrada.** De los más de 36 mil nodos etiquetados como enfermedad en OptimusKG, poco más de 17 mil lo son: el resto son rasgos y mediciones cuantitativas provenientes de estudios de asociación genómica, más algunos fenotipos y procedimientos. La separación usa la jerarquía de la ontología y está documentada en `preparacion_grafo/`.
 
-## Bajo qué criterio se filtra el evidence score
+## ¿Tiene sentido filtrar via EVIDENCE_SCORE?
 En el paper de OptimusKG se puede leer que el `EVIDENCE_SCORE` está tomado de OpenTargets, y yendo a https://platform-docs.opentargets.org/associations se ve lo siguiente: 
 
-"For all cases, the Platform defines a data source association score by 
-calculating a harmonic sum using the full vector of evidence scores adefined for each data source using the following the next steps: The pieces of evidence are sorted in descending order and assigned an incremental value that indicates their position in the sorted list (the top-scoring item has a positional id of 1, the second has a positional id of 2, and so on). The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (positional id^2). To ensure the result  is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones."
+"For all cases, the Platform defines a data source association score by calculating a harmonic sum using the full vector of evidence scores adefined for each data source using the following the next steps: The pieces of evidence are sorted in descending order and assigned an incremental value that indicates their position in the sorted list (the top-scoring item has a positional id of 1, the second has a positional id of 2, and so on). The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (positional id^2). To ensure the result is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones."
 
 Más adelante: 
 
@@ -73,8 +70,24 @@ Y luego:
 
 For example, **under-studied diseases are unlikely to produce high-scoring targets due to the lack of available evidence. In such diseases, a relatively low-scoring target might still be the top-ranked target and potentially a very interesting lead from a therapeutic standpoint**."
 
-En resumen: se puede afirmar que filtrar un evidence score >= 0.5 esperando que eso sea "hay mas evidencia a favor que en contra" 
-sería un error... el evidnece score es una heurística de disponibilidad de datos y no una confianza en la asociación.
+En resumen: afirmar que filtrar un evidence score >= 0.5 esperando que eso sea "hay mas evidencia a favor que en contra" 
+sería un error... el evidence score es una heurística de disponibilidad de datos y no una confianza en la asociación.
+
+## Nodos repetidos en la capa Disease 
+
+Se puede encontrar que hay varios nodos que refieren a la misma enfermedad. Una explicación dada el 17 de julio de esto puede encontrarse de parte de los autores del paper en el [issue #204](https://github.com/mims-harvard/OptimusKG/issues/204): 
+
+"This is not a bug in how we build the graph and it comes from the OpenTargets version we're pinned to. We currently pin OT 25.06, and in that release EFO_0000274 is still the canonical id for atopic eczema. Meanwhile our MONDO snapshot is newer and already knows MONDO_0004980, so the two ids never meet and both end up as nodes."
+
+Sabiendo esto, se establece un criterio para elegir con qué nodos quedarse: 
+
+- mirar xref. Cada nodo MONDO trae en xrefs la lista de identificadores equivalentes en otros vocabularios. Cuando uno de esos existe como nodo de la capa, el nodo está diciendo que el otro es él mismo. 
+
+- mirar SSSOM, quees Simple Standard for Sharing Ontological Mappings, un estándar del OBO Foundry para publicar las equivalencias entre ontologías. El problema que resuelve es buscar correspondencia entre códigos pertenecientes a distintas ontologías.  
+
+Para cada nodo (que sea enfermedad real) se juntan los identificadores que xrefs y el archivo SSSOM declaran equivalentes a él, y con eso se arma un grupo que incluye al nodo mismo. Si dos grupos comparten un nodo, son el mismo grupo. De cada grupo se elige un representante: el nodo con más aristas, y si empatan el que tenga más aristas de jerarquía PARENT, y si vuelven a empatar el de MONDO, y por último el identificador menor.
+
+
 
 
 ## Estado

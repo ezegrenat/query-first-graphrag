@@ -1,0 +1,189 @@
+FUENTES DE redundancia_entre_nodos.ipynb
+=========================================
+
+Todo lo de acá se consultó el 2026-09-05. El archivo registra de dónde sale cada afirmación del
+notebook y hasta dónde se leyó cada fuente, para poder volver a ellas o discutirlas. El notebook
+está en esta misma carpeta con sus salidas guardadas, así que se lee sin ejecutarlo. Para volver a
+correrlo hace falta Neo4j con OptimusKG cargado e is_truly_disease aplicado.
+
+
+1. El issue que reconoce el problema
+------------------------------------
+
+mims-harvard/optimuskg, issue #204, "deplicates with deprecated id", cerrado el 2026-07-20.
+https://github.com/mims-harvard/optimuskg/issues/204
+
+Respuesta de lvvittor, primer autor del paper, textual:
+
+  "This is not a bug in how we build the graph and it comes from the OpenTargets version we're
+  pinned to. We currently pin OT 25.06, and in that release EFO_0000274 is still the canonical
+  id for atopic eczema. Meanwhile our MONDO snapshot is newer and already knows MONDO_0004980,
+  so the two ids never meet and both end up as nodes.
+
+  The current OT release (26.06) already fixes this upstream: EFO_0000274 is gone from the
+  disease index and the associations, and MONDO_0004980 is present with obsoleteTerms:
+  ['EFO_0000274']. So bumping the pinned version resolves it.
+
+  We're holding off on the version bump until the paper finishes its review process, since it
+  changes node and edge counts across the graph. We'll update right after."
+
+Qué se saca de ahí, y cómo se contrastó con la base cargada (release 2.0 de OptimusKG):
+
+  - La causa es un desfasaje de versiones. El índice de enfermedades viene de Open Targets 25.06,
+    donde el id canónico todavía es el de EFO, y la ontología MONDO viene de un snapshot posterior
+    que ya migró al id MONDO. Las dos fuentes entran al grafo por caminos distintos y nunca se
+    cruzan.
+  - El ejemplo del issue está en la base: EFO_0000274 tiene 3.215 aristas y MONDO_0004980 tiene
+    12. Es uno de los pares que el notebook detecta.
+  - El arreglo de aguas arriba todavía no llegó a estos datos. La propiedad obsolete_terms existe
+    en 17.086 nodos Disease y en ninguno apunta a otro nodo de la capa (0 pares). El notebook lo
+    verifica en la sección "Esto ya está reportado".
+  - El issue habla solo del caso EFO contra MONDO. La familia que domina en el notebook, MONDO
+    contra Orphanet con 1.152 pares declarados, no está cubierta por el issue.
+
+Hay otro issue relacionado que quedó listado pero no leído: #214, abierto el 2026-08-07, "142
+edges labeled DIS-DIS connect Phenotype (HPO) nodes to Disease (EFO) nodes (release 2.0)". Son las
+142 relaciones PARENT que ya estaban documentadas en el proyecto.
+
+
+2. Cómo se construye OptimusKG
+------------------------------
+
+2.1 El paper. Vittor, Noori, Arango, Polonuer, Rodriques, White, Clifton y Zitnik (2026),
+    "OptimusKG: Unifying biomedical knowledge in a modern multimodal graph", arXiv:2604.27269.
+    https://arxiv.org/abs/2604.27269
+    PDF local: ~/tesis/lectura de papers/2604.27269v1.pdf
+
+    No se leyó entero. Se extrajo el texto y se buscaron estas partes:
+      - "Ontology harmonization": el grafo agrupa fuentes por prefijo CURIE validado contra
+        Biolink, y la cobertura ontológica es la unión de los árboles de las fuentes.
+      - "Primary data resources", párrafo de Open Targets: "We deduplicate records that have the
+        same name but different ontology identifiers." Esa es la deduplicación que sí hace, y es
+        dentro de Open Targets, no entre fuentes.
+      - Tabla 1, fuentes primarias y ontologías por tipo de nodo. Disease sale de DrugCentral,
+        Mondo y Open Targets con once ontologías (DOID, EFO, MONDO, MP, NCIT, OBA, OBI, OGMS, OTAR,
+        Orphanet, PATO). Phenotype sale de HPO, MedDRA y Open Targets. Drug sale de DrugBank,
+        DrugCentral, OnSIDES y Open Targets con CHEMBL, DRUGBANK y RXNORM.
+      - El esquema de propiedades de Disease, Phenotype y Drug en "Node types". De ahí vienen los
+        nombres exact_synonyms, xrefs, obsolete_xrefs, obsolete_terms, umls_cui, inchi_key,
+        synonyms, trade_names y source_ids que usa el notebook.
+      - La nota sobre el campo id: "Namespace prefixes ... may share node types (e.g., EFO and
+        MONDO map to DIS)".
+
+2.2 El repositorio. https://github.com/mims-harvard/optimuskg
+    Se leyeron las primeras 70 líneas de dos archivos y los resultados de buscar "duplicate" y
+    "xref" en el código:
+      - optimuskg/pipelines/silver/nodes/nodes/disease.py. Los nodos Disease se arman como la
+        unión de los ids que aparecen en las aristas (disease_disease, disease_phenotype,
+        disease_gene, drug_disease, exposure_disease), y después se les pegan las propiedades de
+        Open Targets, de MONDO y de DrugCentral con joins por id. No hay ningún paso que cruce ids
+        entre fuentes. Es la confirmación en código del mecanismo que describe el issue.
+      - optimuskg/pipelines/bronze/nodes/ontology/mondo.py. De la ontología MONDO se extraen
+        términos, relaciones y xrefs (mondo_xrefs).
+      - conf/base/catalog/bronze/ontology/mondo_xrefs.yml y
+        optimuskg/pipelines/silver/nodes/edges/exposure_disease.py. Los xrefs de MONDO se usan
+        para mapear las aristas de CTD (exposure_disease) a ids MONDO. De ahí salen los gemelos
+        MONDO cuya única relación es LINKED_TO hacia Exposure.
+      - conf/base/biocypher/biocypher_config.yaml: skip_duplicate_nodes: false.
+
+2.3 Página del laboratorio y documentación.
+    https://zitniklab.hms.harvard.edu/2026/04/25/OptimusKG/
+    https://optimuskg.ai/docs
+    Solo la introducción de cada una. Ninguna dice nada sobre deduplicación entre fuentes.
+
+
+3. El mismo problema aguas arriba
+---------------------------------
+
+3.1 opentargets/issues, issue #4446, "Same disease duplicated as separate Disease (MONDO) and
+    Phenotype (HP) terms with non-overlapping drug/clinical data".
+    https://github.com/opentargets/issues/issues/4446
+    Leído a través de un resumen automático, no del hilo completo. La misma enfermedad aparece
+    como término MONDO y como término HP con evidencia que no se solapa, y Open Targets explica
+    que los términos HP se importan sin curar, así que la fusión no puede hacerse a nivel de
+    ontología.
+
+3.2 EBISPOT/efo, issue #461, "Consider merging metabolic disease nodes: EFO_0000589 and
+    MONDO:0024297".
+    https://github.com/EBISPOT/efo/issues/461
+    También leído por resumen automático. EFO_0000589 (metabolic disease) y MONDO:0024297
+    (nutritional or metabolic disease) tienen el mismo padre y casi los mismos hijos. Es el par
+    OTAR_0000020 / EFO_0000589 con idéntico conjunto de genes que aparece en
+    procedencia_evidence_score.ipynb, y que el notebook clasifica como redundancia de jerarquía
+    y no de identidad: un padre con un solo hijo, con las asociaciones propagadas por Open
+    Targets.
+
+
+4. Las equivalencias declaradas, que son la fuente del criterio final
+---------------------------------------------------------------------
+
+4.1 El archivo de mapeos de MONDO en formato SSSOM.
+    Dirección canónica: http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv
+    Esa dirección redirige a la rama master del repositorio, verificado con una petición HEAD:
+    https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo.sssom.tsv
+    Por eso el notebook baja la versión fijada al release v2026-09-01, el último al 2026-09-05
+    según la lista de releases del repositorio:
+    https://raw.githubusercontent.com/monarch-initiative/mondo/v2026-09-01/src/ontology/mappings/mondo.sssom.tsv
+    sha256: 317ac4bf93be1deff4406b4d7d18bb730ead3c4f5c7c814f75d24be7f6ef302f
+    El 2026-09-05 el archivo de master y el del tag eran idénticos byte a byte.
+
+    Lo que se midió sobre el archivo: 109.715 mapeos, 109.626 skos:exactMatch y 89
+    skos:broadMatch (casi todos hacia ICD10CM), todos con mapping_justification
+    semapv:UnspecifiedMatching, sin versión en el encabezado (solo curie_map, license y
+    mapping_set_id), y cero filas con MONDO en los dos lados.
+
+    El directorio de mapeos, con los archivos parciales por vocabulario:
+    https://github.com/monarch-initiative/mondo/tree/master/src/ontology/mappings
+
+4.2 El estándar SSSOM. Matentzoglu et al. (2022), "A Simple Standard for Sharing Ontological
+    Mappings (SSSOM)", Database, baac035.
+    https://academic.oup.com/database/article/doi/10.1093/database/baac035/6591806
+    https://github.com/mapping-commons/sssom/
+    El paper no se leyó. Del resumen de búsqueda y de la especificación se tomó lo justo para
+    interpretar las columnas (subject_id, predicate_id, object_id, mapping_justification) y los
+    predicados skos:exactMatch y skos:broadMatch.
+
+4.3 MONDO como ontología. http://obofoundry.org/ontology/mondo.html
+    MONDO existe para armonizar OMIM, Orphanet, MeSH, NCIt y otras, y garantiza que ningún
+    término externo mapea a más de un término MONDO. Por eso el desempate del representante pone
+    a MONDO primero.
+
+4.4 OnToma. https://github.com/opentargets/OnToma
+    Solo el resumen de búsqueda. Es la herramienta de Open Targets para mapear términos a EFO vía
+    OxO y ZOOMA. Queda como referencia, no se usa.
+
+
+5. Fuentes internas del proyecto
+--------------------------------
+
+  - limpieza_capa_disease.ipynb y marcar_enfermedades_reales.py, en esta carpeta. De ahí salen
+    el patrón de notebook que justifica y script que aplica, la paleta y el helper consultar(),
+    el criterio is_truly_disease que define las 17.308 enfermedades reales, y la medición de que
+    quedarse solo con MONDO dejaría 11.724 nodos.
+  - procedencia_evidence_score.ipynb, en esta carpeta. La tabla de los diez nodos con más genes,
+    donde aparecen los pares OTAR / EFO con conteos idénticos que motivaron la primera sospecha.
+  - ~/tesis/optimuskg/proyeccion_diamond/celdas.py y resultados/casos.csv. Las consultas de
+    cosecha y las anclas sorteadas, para medir cuántas anclas del experimento son nodos
+    redundantes (99 de 354 en Disease).
+  - ~/tesis/optimuskg/proyeccion_diamond/resultados/umbrales_evidencia.json. El umbral de
+    evidencia vigente, percentil 99 por capa.
+  - El vault de notas, Wiki/Entidades/OptimusKG.md y Wiki/Conceptos/Limpieza de la capa
+    Disease.md. El estado documentado de la capa y la decisión de no filtrar por prefijo de id.
+  - Neo4j, contenedor neo4j-tesis con OptimusKG 2.0 cargado completo. Todas las mediciones del
+    notebook salen de consultas de lectura contra esa base. Ninguna celda escribe.
+
+
+6. Lo que no se consultó
+------------------------
+
+  - El paper de OptimusKG, más allá de las secciones listadas en 2.1.
+  - El pipeline entero del repositorio de OptimusKG y su catálogo de datos completo. Se leyeron
+    dos archivos parciales y búsquedas de código.
+  - Los hilos completos de los issues de Open Targets y de EFO. Se leyeron resúmenes.
+  - El paper de SSSOM.
+  - A los autores de OptimusKG. No se abrió ningún issue nuevo.
+
+Una salvedad sobre los números. La precisión de las señales heurísticas se midió contra el
+InChIKey en Drug, con 218, 431 y 1.492 pares verificables. En Disease se midió contra el UMLS CUI,
+pero con 5, 27 y 13 pares verificables, que es demasiado poco para sostener un número. El notebook
+reporta los valores de Disease con esa salvedad.

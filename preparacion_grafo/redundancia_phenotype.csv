@@ -1,0 +1,259 @@
+id_a,id_b,nombre_a,nombre_b,grado_a,grado_b,n_senales,nombre,sinonimo,referencia,externo,vecindario,jaccard,detalle_nombre,detalle_sinonimo,detalle_referencia,detalle_externo,detalle_vecindario,detalle_jaccard,alguno_es_cascara,de_identidad
+HP_0000737,meddra:10022998,Irritability,Irritability,261,1,2,True,True,False,False,False,False,irritability,Irritability,,,,,True,True
+HP_0000739,meddra:10002855,Anxiety,Anxiety,208,7,2,True,True,False,False,False,False,anxiety,Anxiety,,,,,True,True
+HP_0000952,meddra:10023126,Jaundice,Jaundice,624,3,2,True,True,False,False,False,False,jaundice,Jaundice,,,,,True,True
+HP_0000958,meddra:10013786,Dry skin,Dry skin,253,2,2,True,True,False,False,False,False,dry skin,Dry skin,,,,,True,True
+HP_0001289,meddra:10010300,Confusion,Confusion,619,5,2,True,True,False,False,False,False,confusion,Confusion,,,,,True,True
+HP_0001337,meddra:10044565,Tremor,Tremor,934,6,2,True,True,False,False,False,False,tremor,Tremor,,,,,True,True
+HP_0001369,meddra:10003246,Arthritis,Arthritis,5773,1,2,True,True,False,False,False,False,arthritis,Arthritis,,,,,True,True
+HP_0001962,meddra:10033557,Palpitations,Palpitations,58,4,2,True,True,False,False,False,False,palpitations,Palpitations,,,,,True,True
+HP_0002013,meddra:10047700,Vomiting,Vomiting,287,16,2,True,True,False,False,False,False,vomiting,Vomiting,,,,,True,True
+HP_0002018,meddra:10028813,Nausea,Nausea,201,25,2,True,True,False,False,False,False,nausea,Nausea,,,,,True,True
+HP_0002019,meddra:10010774,Constipation,Constipation,795,10,2,True,True,False,False,False,False,constipation,Constipation,,,,,True,True
+HP_0002027,meddra:10000081,Abdominal pain,Abdominal pain,310,10,2,True,True,False,False,False,False,abdominal pain,Abdominal pain,,,,,True,True
+HP_0002090,meddra:10035664,Pneumonia,Pneumonia,2617,2,2,True,True,False,False,False,False,pneumonia,Pneumonia,,,,,True,True
+HP_0002315,meddra:10019211,Headache,Headache,1163,29,2,True,True,False,False,False,False,headache,Headache,,,,,True,True
+HP_0002653,meddra:10006002,Bone pain,Bone pain,44,1,2,True,True,False,False,False,False,bone pain,Bone pain,,,,,True,True
+HP_0003418,meddra:10003988,Back pain,Back pain,850,6,2,True,True,False,False,False,False,back pain,Back pain,,,,,True,True
+HP_0012234,meddra:10001507,Agranulocytosis,Agranulocytosis,178,2,2,True,True,False,False,False,False,agranulocytosis,Agranulocytosis,,,,,True,True
+HP_0012378,meddra:10016256,Fatigue,Fatigue,139,11,2,True,True,False,False,False,False,fatigue,Fatigue,,,,,True,True
+HP_0012531,meddra:10033371,Pain,Pain,1852,6,2,True,True,False,False,False,False,pain,Pain,,,,,True,True
+HP_0012735,meddra:10011224,Cough,Cough,395,7,2,True,True,False,False,False,False,cough,Cough,,,,,True,True
+HP_0030833,meddra:10028836,Neck pain,Neck pain,70,2,2,True,True,False,False,False,False,neck pain,Neck pain,,,,,True,True
+HP_0100749,meddra:10008479,Chest pain,Chest pain,73,2,2,True,True,False,False,False,False,chest pain,Chest pain,,,,,True,True
+HP_0000077,HP_0000112,Abnormality of the kidney,Nephropathy,5356,3013,1,False,False,False,True,False,False,,,,C0022658,,,False,True
+HP_0000083,meddra:10038435,Renal insufficiency,Renal failure,3027,1,1,False,True,False,False,False,False,,Renal failure,,,,,True,True
+HP_0000093,meddra:10037032,Proteinuria,Proteinuria,529,1,1,True,False,False,False,False,False,proteinuria,,,,,,True,True
+HP_0000230,meddra:10018292,Gingivitis,Gingivitis,342,1,1,True,False,False,False,False,False,gingivitis,,,,,,True,True
+HP_0000360,meddra:10043882,Tinnitus,Tinnitus,602,4,1,True,False,False,False,False,False,tinnitus,,,,,,True,True
+HP_0000421,meddra:10015090,Epistaxis,Epistaxis,72,3,1,True,False,False,False,False,False,epistaxis,,,,,,True,True
+HP_0000498,meddra:10005148,Blepharitis,Blepharitis,20,1,1,True,False,False,False,False,False,blepharitis,,,,,,True,True
+HP_0000501,meddra:10018304,Glaucoma,Glaucoma,141,1,1,True,False,False,False,False,False,glaucoma,,,,,,True,True
+HP_0000509,meddra:10010741,Conjunctivitis,Conjunctivitis,470,2,1,True,False,False,False,False,False,conjunctivitis,,,,,,True,True
+HP_0000518,meddra:10007739,Cataract,Cataract,2041,2,1,True,False,False,False,False,False,cataract,,,,,,True,True
+HP_0000639,meddra:10029864,Nystagmus,Nystagmus,1117,2,1,True,False,False,False,False,False,nystagmus,,,,,,True,True
+HP_0000651,meddra:10013036,Diplopia,Diplopia,104,3,1,True,False,False,False,False,False,diplopia,,,,,,True,True
+HP_0000713,meddra:10001497,Agitation,Agitation,139,4,1,True,False,False,False,False,False,agitation,,,,,,True,True
+HP_0000716,meddra:10012378,Depression,Depression,131,8,1,True,False,False,False,False,False,depression,,,,,,True,True
+HP_0000718,meddra:10001488,Aggressive behavior,Aggression,418,1,1,False,True,False,False,False,False,,Aggression,,,,,True,True
+HP_0000738,meddra:10019063,Hallucinations,Hallucination,148,3,1,False,True,False,False,False,False,,Hallucination,,,,,True,True
+HP_0000802,meddra:10021550,Impotence,Impotence,134,1,1,True,False,False,False,False,False,impotence,,,,,,True,True
+HP_0000819,meddra:10012601,Diabetes mellitus,Diabetes mellitus,3264,1,1,True,False,False,False,False,False,diabetes mellitus,,,,,,True,True
+HP_0000821,meddra:10021114,Hypothyroidism,Hypothyroidism,119,1,1,True,False,False,False,False,False,hypothyroidism,,,,,,True,True
+HP_0000822,meddra:10020772,Hypertension,Hypertension,1887,10,1,True,False,False,False,False,False,hypertension,,,,,,True,True
+HP_0000979,meddra:10037549,Purpura,Purpura,255,1,1,True,False,False,False,False,False,purpura,,,,,,True,True
+HP_0000988,meddra:10037844,Skin rash,Rash,384,30,1,False,True,False,False,False,False,,Rash,,,,,True,True
+HP_0000989,meddra:10037087,Pruritus,Pruritus,917,8,1,True,False,False,False,False,False,pruritus,,,,,,True,True
+HP_0000992,meddra:10034966,Cutaneous photosensitivity,Photosensitivity,96,2,1,False,True,False,False,False,False,,Photosensitivity,,,,,True,True
+HP_0001025,meddra:10046735,Urticaria,Urticaria,30,2,1,True,False,False,False,False,False,urticaria,,,,,,True,True
+HP_0001061,meddra:10000496,Acne,Acne,18,1,1,True,False,False,False,False,False,acne,,,,,,True,True
+HP_0001062,HP_0001074,Atypical nevus,Atypical nevi in non-sun exposed areas,5,5,1,False,False,False,False,True,False,,,,,514079417b31448a1594b77de3493461dbe2ca5d,,False,False
+HP_0001251,meddra:10003591,Ataxia,Ataxia,2498,2,1,True,False,False,False,False,False,ataxia,,,,,,True,True
+HP_0001278,meddra:10031127,Orthostatic hypotension,Orthostatic hypotension,25,3,1,True,False,False,False,False,False,orthostatic hypotension,,,,,,True,True
+HP_0001279,meddra:10042772,Syncope,Syncope,204,6,1,True,False,False,False,False,False,syncope,,,,,,True,True
+HP_0001298,meddra:10014625,Encephalopathy,Encephalopathy,1717,1,1,True,False,False,False,False,False,encephalopathy,,,,,,True,True
+HP_0001300,meddra:10034010,Parkinsonism,Parkinsonism,2015,1,1,True,False,False,False,False,False,parkinsonism,,,,,,True,True
+HP_0001324,meddra:10028372,Muscle weakness,Muscular weakness,617,1,1,False,True,False,False,False,False,,Muscular weakness,,,,,True,True
+HP_0001332,meddra:10013983,Dystonia,Dystonia,1303,2,1,True,False,False,False,False,False,dystonia,,,,,,True,True
+HP_0001399,meddra:10019663,Hepatic failure,Hepatic failure,1119,1,1,True,False,False,False,False,False,hepatic failure,,,,,,True,True
+HP_0001596,meddra:10001760,Alopecia,Alopecia,1145,4,1,True,False,False,False,False,False,alopecia,,,,,,True,True
+HP_0001596,HP_0002293,Alopecia,Alopecia of scalp,1145,45,1,False,False,False,True,False,False,,,,C0002170,,,False,True
+HP_0001635,meddra:10007554,Congestive heart failure,Cardiac failure,1346,2,1,False,True,False,False,False,False,,Cardiac failure,,,,,True,True
+HP_0001649,meddra:10043071,Tachycardia,Tachycardia,320,5,1,True,False,False,False,False,False,tachycardia,,,,,,True,True
+HP_0001658,meddra:10028596,Myocardial infarction,Myocardial infarction,24,2,1,True,False,False,False,False,False,myocardial infarction,,,,,,True,True
+HP_0001662,meddra:10006093,Bradycardia,Bradycardia,540,2,1,True,False,False,False,False,False,bradycardia,,,,,,True,True
+HP_0001733,meddra:10033645,Pancreatitis,Pancreatitis,229,4,1,True,False,False,False,False,False,pancreatitis,,,,,,True,True
+HP_0001873,meddra:10043554,Thrombocytopenia,Thrombocytopenia,2414,3,1,True,False,False,False,False,False,thrombocytopenia,,,,,,True,True
+HP_0001876,meddra:10033661,Pancytopenia,Pancytopenia,748,1,1,True,False,False,False,False,False,pancytopenia,,,,,,True,True
+HP_0001944,meddra:10012174,Dehydration,Dehydration,53,3,1,True,False,False,False,False,False,dehydration,,,,,,True,True
+HP_0001945,meddra:10037660,Fever,Pyrexia,1091,7,1,False,True,False,False,False,False,,Pyrexia,,,,,True,True
+HP_0001997,meddra:10018627,Gout,Gout,1416,1,1,True,False,False,False,False,False,gout,,,,,,True,True
+HP_0002015,meddra:10013950,Dysphagia,Dysphagia,464,1,1,True,False,False,False,False,False,dysphagia,,,,,,True,True
+HP_0002043,HP_0010450,Esophageal stricture,Esophageal stenosis,79,83,1,False,False,False,True,False,False,,,,C0014866,,,False,True
+HP_0002050,HP_0008640,"Macroorchidism, postpubertal",Congenital macroorchidism,2,2,1,False,False,False,False,True,False,,,,,9ac7a75d069a9607eea917b98c3537855c33cf2b,,False,False
+HP_0002094,meddra:10013968,Dyspnea,Dyspnoea,334,1,1,False,True,False,False,False,False,,Dyspnoea,,,,,True,True
+HP_0002094,HP_0002098,Dyspnea,Respiratory distress,334,300,1,False,False,False,True,False,False,,,,C0013404,,,False,True
+HP_0002121,HP_0011147,Generalized non-motor (absence) seizure,Typical absence seizure,273,25,1,False,False,False,True,False,False,,,,C0014553,,,False,True
+HP_0002204,meddra:10037377,Pulmonary embolism,Pulmonary embolism,566,1,1,True,False,False,False,False,False,pulmonary embolism,,,,,,True,True
+HP_0002206,meddra:10037383,Pulmonary fibrosis,Pulmonary fibrosis,37,1,1,True,False,False,False,False,False,pulmonary fibrosis,,,,,,True,True
+HP_0002321,meddra:10047340,Vertigo,Vertigo,505,2,1,True,False,False,False,False,False,vertigo,,,,,,True,True
+HP_0002321,meddra:10013573,Vertigo,Dizziness,505,9,1,False,True,False,False,False,False,,Dizziness,,,,,True,True
+HP_0002329,meddra:10041349,Drowsiness,Somnolence,482,5,1,False,True,False,False,False,False,,Somnolence,,,,,True,True
+HP_0002352,meddra:10024382,Leukoencephalopathy,Leukoencephalopathy,475,1,1,True,False,False,False,False,False,leukoencephalopathy,,,,,,True,True
+HP_0002583,meddra:10009887,Colitis,Colitis,31,3,1,True,False,False,False,False,False,colitis,,,,,,True,True
+HP_0002615,meddra:10021097,Hypotension,Hypotension,30,9,1,True,False,False,False,False,False,hypotension,,,,,,True,True
+HP_0002633,meddra:10047115,Vasculitis,Vasculitis,136,2,1,True,False,False,False,False,False,vasculitis,,,,,,True,True
+HP_0002665,meddra:10025310,Lymphoma,Lymphoma,30,2,1,True,False,False,False,False,False,lymphoma,,,,,,True,True
+HP_0002810,HP_0003562,Dumbbell-shaped metaphyses,Abnormal metaphyseal vascular invasion,2,2,1,False,False,False,False,True,False,,,,,a81f1d350c2b75f5412389761860a3450efd1d6f,,False,False
+HP_0002829,meddra:10003239,Arthralgia,Arthralgia,331,10,1,True,False,False,False,False,False,arthralgia,,,,,,True,True
+HP_0002886,HP_0006715,Vagal paraganglioma,Glomus tympanicum paraganglioma,3,3,1,False,False,False,False,True,False,,,,,4d41ce2093d87f380d310eeb2efa95c00bb01dc0,,False,False
+HP_0002901,meddra:10020947,Hypocalcemia,Hypocalcaemia,749,1,1,False,True,False,False,False,False,,Hypocalcaemia,,,,,True,True
+HP_0003076,meddra:10018473,Glycosuria,Glycosuria,144,1,1,True,False,False,False,False,False,glycosuria,,,,,,True,True
+HP_0003128,meddra:10023676,Lactic acidosis,Lactic acidosis,277,4,1,True,False,False,False,False,False,lactic acidosis,,,,,,True,True
+HP_0003201,meddra:10039020,Rhabdomyolysis,Rhabdomyolysis,34,1,1,True,False,False,False,False,False,rhabdomyolysis,,,,,,True,True
+HP_0003270,meddra:10000060,Abdominal distention,Abdominal distension,58,1,1,False,True,False,False,False,False,,Abdominal distension,,,,,True,True
+HP_0003326,meddra:10028411,Myalgia,Myalgia,539,8,1,True,False,False,False,False,False,myalgia,,,,,,True,True
+HP_0003339,HP_0004826,Pyrimidine-responsive megaloblastic anemia,Folate-unresponsive megaloblastic anemia,3,3,1,False,False,False,False,True,False,,,,,b080fb5631c9988de0ad9d8b2872f3a3595baa5d,,False,False
+HP_0003394,meddra:10028334,Muscle spasm,Muscle spasms,138,2,1,False,True,False,False,False,False,,Muscle spasms,,,,,True,True
+HP_0003462,HP_0003465,Elevated 8-dehydrocholesterol,Elevated 8(9)-cholestenol,4,4,1,False,False,False,False,True,False,,,,,c13d633af2e3ed092e0eff07df2c4f4118c3c2b6,,False,False
+HP_0003606,HP_0011943,Absent urinary urothione,Increased urinary thiosulfate,2,2,1,False,False,False,False,True,False,,,,,fdb533d18e7faa01b3b83f5317c983e5dc3a08a3,,False,False
+HP_0003809,HP_0025128,Reduced intrathoracic adipose tissue,Reduced intraabdominal adipose tissue,3,3,1,False,False,False,False,True,False,,,,,3d2a59098214104cb10e08040a1e21bc080ea178,,False,False
+HP_0003892,HP_0003893,Absent humeral epiphyseal ossification,Advanced ossification of the humeral epiphysis,3,3,1,False,False,False,False,True,False,,,,,814d24ef73385412851e800093092fda10bfa074,,False,False
+HP_0004448,HP_0006554,Fulminant hepatic failure,Acute hepatic failure,503,1579,1,False,False,False,True,False,False,,,,C0162557,,,False,True
+HP_0004601,HP_0004614,Spina bifida occulta at L5,Spina bifida occulta at S1,2,2,1,False,False,False,False,True,False,,,,,1b3a1b30b57772c62d58f5637dc210b9d42373c7,,False,False
+HP_0004936,meddra:10047249,Venous thrombosis,Venous thrombosis,1726,1,1,True,False,False,False,False,False,venous thrombosis,,,,,,True,True
+HP_0004966,HP_0012457,Medial calcification of large arteries,Medial calcification of medium-sized arteries,2,2,1,False,False,False,False,True,False,,,,,0ec733c5117ea9263ab7a1872c0e933949068778,,False,False
+HP_0005110,meddra:10003658,Atrial fibrillation,Atrial fibrillation,57,2,1,True,False,False,False,False,False,atrial fibrillation,,,,,,True,True
+HP_0005442,HP_0005476,Widely patent coronal suture,Widely patent sagittal suture,4,4,1,False,False,False,False,True,False,,,,,d1baf8a76d19cb2d911e2a5e7674eb5fb8a00d30,,False,False
+HP_0005535,HP_0008269,Exercise-induced hemolysis,Increased red cell hemolysis by shear stress,2,2,1,False,False,False,False,True,False,,,,,ce2745b166d16864b84c6703e7c46833a94cbb6d,,False,False
+HP_0005671,HP_0034293,Bilateral intracerebral calcifications,Temporal lobe calcification,2,2,1,False,False,False,False,True,False,,,,,25ee8146b2992d2eb20be4345ec70e080e5d4da0,,False,False
+HP_0006012,HP_0006086,Widened metacarpal shaft,Thin metacarpal cortices,3,3,1,False,False,False,False,True,False,,,,,66fda5e924cba310d00e5f07e6ad4a83725249de,,False,False
+HP_0006226,HP_0006233,Osteoarthritis of the first carpometacarpal joint,Osteoarthritis of the distal interphalangeal joint,2,2,1,False,False,False,False,True,False,,,,,ef4a3035c6e5bc8245235d4db8621625ad62e256,,False,False
+HP_0006530,meddra:10022611,Abnormal pulmonary interstitial morphology,Interstitial lung disease,219,1,1,False,True,False,False,False,False,,Interstitial lung disease,,,,,True,True
+HP_0006702,HP_0030882,Coronary artery dissection,Coronary artery aneurysm,2,2,1,False,False,False,False,True,False,,,,,07de20fb4e8af4a5ca949f825e4e82e6f9f1ee19,,False,False
+HP_0006758,HP_0006778,Malignant genitourinary tract tumor,Benign genitourinary tract neoplasm,2,2,1,False,False,False,False,True,False,,,,,2452eb29646842bdf60871ed494aa2a5fd4fd213,,False,False
+HP_0006899,HP_0031913,Fusion of the cerebellar hemispheres,Rhombencephalosynapsis,3,3,1,False,False,False,False,True,False,,,,,33a7fde120419d595b3154d2efcf8143f4a5023f,,False,False
+HP_0007066,HP_0007156,Proximal limb muscle stiffness,Asymmetric limb muscle stiffness,3,3,1,False,False,False,False,True,False,,,,,85b80c71734980b61647cc22ba7575e2f156e586,,False,False
+HP_0007989,HP_0011532,Intraretinal exudate,Subretinal exudate,3,3,1,False,False,False,False,True,False,,,,,740ea8727b7fe6322c0b6885c8030494cf75d235,,False,False
+HP_0008078,HP_0008133,Thin metatarsal cortices,Distal tapering of metatarsals,3,3,1,False,False,False,False,True,False,,,,,8b71504070a637129a99fb76e39e71dcf264eabb,,False,False
+HP_0008432,HP_0011941,Anterior wedging of L1,Anterior wedging of L2,2,2,1,False,False,False,False,True,False,,,,,6fba523c400d4767443d5778135208790ef39a11,,False,False
+HP_0008752,HP_3000038,Laryngeal cartilage malformation,Abnormal cricoid cartilage morphology,2,2,1,False,False,False,False,True,False,,,,,0d66b1641d8408d6d47688bc14e9d2c61102c5de,,False,False
+HP_0009011,HP_0009026,Hypoplasia of serratus anterior muscle,Hypoplasia of latissimus dorsi muscle,3,3,1,False,False,False,False,True,False,,,,,4104149d83a083771af16c8c13bb8cb082cf4bfa,,False,False
+HP_0009031,HP_0011916,Amyotrophy of ankle musculature,Toe extensor amyotrophy,3,3,1,False,False,False,False,True,False,,,,,0ea51b317b2a6f69eafebbfd0198875845fd0b1e,,False,False
+HP_0009830,meddra:10029328,Peripheral neuropathy,Neuropathy,795,2,1,False,True,False,False,False,False,,Neuropathy,,,,,True,True
+HP_0010280,meddra:10042128,Stomatitis,Stomatitis,16,3,1,True,False,False,False,False,False,stomatitis,,,,,,True,True
+HP_0010783,meddra:10015150,Erythema,Erythema,832,7,1,True,False,False,False,False,False,erythema,,,,,,True,True
+HP_0010838,HP_0032254,High nonceruloplasmin-bound serum copper,Increased circulating copper concentration,2,2,1,False,False,False,False,True,False,,,,,7174b94762ee339be496858f04d29c5cc1272ed1,,False,False
+HP_0011024,meddra:10017944,Abnormality of the gastrointestinal tract,Gastrointestinal disorder,2882,10,1,False,True,False,False,False,False,,Gastrointestinal disease,,,,,True,True
+HP_0011428,HP_0011429,Short fetal femur length,Short fetal humerus length,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011428,HP_0011430,Short fetal femur length,Hypoplasia of fetal nasal bone,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011428,HP_0011431,Short fetal femur length,Fetal fifth finger clinodactyly,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011429,HP_0011430,Short fetal humerus length,Hypoplasia of fetal nasal bone,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011429,HP_0011431,Short fetal humerus length,Fetal fifth finger clinodactyly,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011430,HP_0011431,Hypoplasia of fetal nasal bone,Fetal fifth finger clinodactyly,2,2,1,False,False,False,False,True,False,,,,,a49c37f796b922e5163f0e2493eeb369380d42eb,,False,False
+HP_0011489,HP_0011491,Abnormal migration of corneal endothelium,Reduced number of corneal endothelial cells,2,2,1,False,False,False,False,True,False,,,,,7d7b81b13ed62fd3482d2272b8a0a58bdff8a362,,False,False
+HP_0011675,meddra:10003119,Arrhythmia,Arrhythmia,2186,1,1,True,False,False,False,False,False,arrhythmia,,,,,,True,True
+HP_0011988,HP_0011989,Ectopic ossification in tendon tissue,Ectopic ossification in ligament tissue,2,2,1,False,False,False,False,True,False,,,,,d5ed0acf508743089bfe4578489631deeedc284e,,False,False
+HP_0012069,HP_0012070,Keratan sulfate excretion in urine,Chondroitin sulfate excretion in urine,5,5,1,False,False,False,False,True,False,,,,,e92c0c19dcd31efb03924041e2f0465329626d95,,False,False
+HP_0012115,meddra:10019717,Hepatitis,Hepatitis,2851,7,1,True,False,False,False,False,False,hepatitis,,,,,,True,True
+HP_0012127,HP_6000119,Uraciluria,Elevated urinary dihydrothymine level,3,3,1,False,False,False,False,True,False,,,,,4b7bc7801cc5db67ea19da2e0bddd3cccc2e5a14,,False,False
+HP_0012308,HP_0033058,Decreased circulating complement C9 concentration,Decreased circulating complement C7 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0012308,HP_0033059,Decreased circulating complement C9 concentration,Decreased circulating complement C6 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0012308,HP_0033060,Decreased circulating complement C9 concentration,Decreased circulating complement C5 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0012384,meddra:10039083,Rhinitis,Rhinitis,6,1,1,True,False,False,False,False,False,rhinitis,,,,,,True,True
+HP_0012493,HP_0012494,Middle cerebral artery stenosis,Anterior cerebral artery stenosis,3,3,1,False,False,False,False,True,False,,,,,92949b66036ac3508caddb9ae067b10b565e80f3,,False,False
+HP_0012493,HP_0012495,Middle cerebral artery stenosis,Posterior cerebral artery stenosis,3,3,1,False,False,False,False,True,False,,,,,92949b66036ac3508caddb9ae067b10b565e80f3,,False,False
+HP_0012494,HP_0012495,Anterior cerebral artery stenosis,Posterior cerebral artery stenosis,3,3,1,False,False,False,False,True,False,,,,,92949b66036ac3508caddb9ae067b10b565e80f3,,False,False
+HP_0012556,HP_0033301,Hyperbeta-alaninemia,Elevated circulating 1-methylhistidine concentration,2,2,1,False,False,False,False,True,False,,,,,91efe3434dfe8b57740606c233a95af014c40967,,False,False
+HP_0012556,HP_0034741,Hyperbeta-alaninemia,Elevated circulating homoarginine concentration,2,2,1,False,False,False,False,True,False,,,,,91efe3434dfe8b57740606c233a95af014c40967,,False,False
+HP_0020079,HP_0045034,Beta-alaninuria,Elevated urinary 3-aminoisobutyric acid,3,3,1,False,False,False,False,True,False,,,,,7fa7545680849846f40bf7ac24a9a9ec33782f9c,,False,False
+HP_0025143,meddra:10008531,Chills,Chills,6,3,1,True,False,False,False,False,False,chills,,,,,,True,True
+HP_0025339,HP_0025340,Superficial episcleral hyperemia,Deep episcleral hyperemia,2,2,1,False,False,False,False,True,False,,,,,683910082d0a7b11d29cf809de364c236e96577b,,False,False
+HP_0025406,meddra:10003549,Asthenia,Asthenia,8,9,1,True,False,False,False,False,False,asthenia,,,,,,True,True
+HP_0025550,HP_0410057,Elevated circulating ribitol concentration,Increased level of D-threitol in plasma,2,2,1,False,False,False,False,True,False,,,,,3d5ea5570e8eb9241ebbea23fea890fe0de45ee6,,False,False
+HP_0030295,HP_0030298,Metaphyseal chondromatosis of femur,Metaphyseal chondromatosis of humerus,2,2,1,False,False,False,False,True,False,,,,,13ebbf5312a4aa6b11c71e2b9bbd13f0d7510d24,,False,False
+HP_0031258,meddra:10012218,Delirium,Delirium,586,1,1,True,False,False,False,False,False,delirium,,,,,,True,True
+HP_0031284,meddra:10016825,Flushing,Flushing,33,4,1,True,False,False,False,False,False,flushing,,,,,,True,True
+HP_0031364,meddra:10014080,Ecchymosis,Ecchymosis,66,1,1,True,False,False,False,False,False,ecchymosis,,,,,,True,True
+HP_0031405,HP_0031454,Poroma,Apocrine hidrocystoma,3,3,1,False,False,False,False,True,False,,,,,070259732e1a1ae25348f5c91f581e7ec8931346,,False,False
+HP_0031858,HP_0031984,Esophageal furrows,Esophageal food impaction,3,3,1,False,False,False,False,True,False,,,,,5c3409dd89b6574839a372864ed7bade4ce48c15,,False,False
+HP_0031858,HP_0100628,Esophageal furrows,Esophageal diverticulum,3,3,1,False,False,False,False,True,False,,,,,5c3409dd89b6574839a372864ed7bade4ce48c15,,False,False
+HP_0031943,meddra:10001540,Akathisia,Akathisia,4,1,1,True,False,False,False,False,False,akathisia,,,,,,True,True
+HP_0031984,HP_0100628,Esophageal food impaction,Esophageal diverticulum,3,3,1,False,False,False,False,True,False,,,,,5c3409dd89b6574839a372864ed7bade4ce48c15,,False,False
+HP_0032071,meddra:10014962,Eosinophilic pneumonia,Eosinophilic pneumonia,1,1,1,True,False,False,False,False,False,eosinophilic pneumonia,,,,,,True,True
+HP_0032147,HP_0040264,Erythromelalgia,Jaw pain,2,2,1,False,False,False,False,True,False,,,,,761f703526cd8b40c4f1fe378d2bafd4e3546439,,False,False
+HP_0032301,HP_0550004,Genital warts,Verruca plana,2,2,1,False,False,False,False,True,False,,,,,bbf0be6b8b5bf547f4b4ceddf70b0eee5c431740,,False,False
+HP_0032397,HP_6000283,Citrullinuria,Elevated urinary saccharopine level,2,2,1,False,False,False,False,True,False,,,,,1c67385600e53a867d631f0e210acf0bb69d76c7,,False,False
+HP_0032531,HP_0032532,Elevated CSF gamma-aminobutyric acid concentration,Elevated CSF 4-hydroxybutyric acid concentration,2,2,1,False,False,False,False,True,False,,,,,dfda37e69e948f8b43282d9de0c209a97ae28392,,False,False
+HP_0032573,HP_0032574,Elevated urinary cytidine,Elevated urinary uridine level,2,2,1,False,False,False,False,True,False,,,,,e7350c58f45fa559bcebf67ad32d1cbacdbe3d39,,False,False
+HP_0033058,HP_0033059,Decreased circulating complement C7 concentration,Decreased circulating complement C6 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0033058,HP_0033060,Decreased circulating complement C7 concentration,Decreased circulating complement C5 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0033059,HP_0033060,Decreased circulating complement C6 concentration,Decreased circulating complement C5 concentration,2,2,1,False,False,False,False,True,False,,,,,4f33c92c12ba7312ba5b6b3e8b70ffabeba43a77,,False,False
+HP_0033157,HP_0034456,Elevated circulating 3-methylhistidine concentration,Elevated circulating glutathione concentration,3,3,1,False,False,False,False,True,False,,,,,3c97b1212641b99910fdd025c19b0657e0f3661a,,False,False
+HP_0033177,HP_0033325,Elevated circulating suberic acid concentration,Elevated circulating sebacic acid concentration,3,3,1,False,False,False,False,True,False,,,,,702baadb64f62b7c2bd2af3ba98d2b5deef815ef,,False,False
+HP_0033301,HP_0034741,Elevated circulating 1-methylhistidine concentration,Elevated circulating homoarginine concentration,2,2,1,False,False,False,False,True,False,,,,,91efe3434dfe8b57740606c233a95af014c40967,,False,False
+HP_0033339,HP_0033340,Increased circulating inosine concentration,Increased circulating guanosine concentration,2,2,1,False,False,False,False,True,False,,,,,6976b49c49081387bd11de21d577fead7d8ea67d,,False,False
+HP_0033345,meddra:10029223,Neuralgia,Neuralgia,3,1,1,True,False,False,False,False,False,neuralgia,,,,,,True,True
+HP_0033361,meddra:10028780,Nasal ulcer,Nasal ulcer,1,1,1,True,False,False,False,False,False,nasal ulcer,,,,,,True,True
+HP_0033652,HP_0033653,Broncholith,Bronchocele,2,2,1,False,False,False,False,True,False,,,,,22fa4d47064f01ab049912c4f0ef3bed8c36140b,,False,False
+HP_0033677,meddra:10001052,Acute respiratory distress syndrome,Acute respiratory distress syndrome,3,1,1,True,False,False,False,False,False,acute respiratory distress,,,,,,True,True
+HP_0033712,HP_4000008,Repeated implantation failure,Formation of multiple pronuclei during fertilization,2,2,1,False,False,False,False,True,False,,,,,54bbcf8d6d1fe54ee2e62fb8828e82e840dc5b2b,,False,False
+HP_0033834,meddra:10025482,Malaise,Malaise,4,4,1,True,False,False,False,False,False,malaise,,,,,,True,True
+HP_0034055,HP_0034071,Anti-side-chain cleavage enzyme antibody positivity,Anti-21-hydroxylase antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034055,HP_4000030,Anti-side-chain cleavage enzyme antibody positivity,Anti-reticulin antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034055,HP_5000011,Anti-side-chain cleavage enzyme antibody positivity,Anti-GAD65 antibody,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034055,HP_6000343,Anti-side-chain cleavage enzyme antibody positivity,Antiparietal cell antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034071,HP_4000030,Anti-21-hydroxylase antibody positivity,Anti-reticulin antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034071,HP_5000011,Anti-21-hydroxylase antibody positivity,Anti-GAD65 antibody,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034071,HP_6000343,Anti-21-hydroxylase antibody positivity,Antiparietal cell antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_0034593,HP_4000095,Elevated circulating dihydrouracil concentration,Elevated circulating thymine concentration,3,3,1,False,False,False,False,True,False,,,,,b422c8b4f5dd1d7c92c796124c78d83adef233a9,,False,False
+HP_0034976,HP_0034978,Absent pituitary stalk,Interrupted pituitary stalk,2,2,1,False,False,False,False,True,False,,,,,a127ba69e20cd9217640f616d975839da0734660,,False,False
+HP_0040010,HP_0040011,Small posterior fossa,Flat posterior fossa,2,2,1,False,False,False,False,True,False,,,,,996123749b66671777d72548e22bcfbab7610d52,,False,False
+HP_0040099,HP_0040100,Abnormality of the round window,Abnormality of the vestibular window,2,2,1,False,False,False,False,True,False,,,,,ec5256bafe1f633eaf0051f892c57ea4ea89a16a,,False,False
+HP_0040206,HP_0040210,Abnormal circulating neopterin concentration,Abnormal circulating biopterin concentration,2,2,1,False,False,False,False,True,False,,,,,2fdb7d888761ee1a11e4b39f4fdd2b3fc3b12f5b,,False,False
+HP_0040417,HP_0040420,Decreased urinary biopterin level,Decreased urinary neopterin level,4,4,1,False,False,False,False,True,False,,,,,2345d56cbf30c86f9b9e2e1b148f8020f94877c4,,False,False
+HP_0041045,HP_0041046,Increased neutrophil mitochondria,Increased neutrophil ribosomes,2,2,1,False,False,False,False,True,False,,,,,d36d32a7c0b48ed6eab94a0da4f190cb9be2f021,,False,False
+HP_0100350,HP_0100354,Contracture of the proximal interphalangeal joint of the 4th toe,Contracture of the distal interphalangeal joint of the 4th toe,2,2,1,False,False,False,False,True,False,,,,,a9f686deed5355dc7ec82502164edaf98b4b3b04,,False,False
+HP_0100351,HP_0100355,Contractures of the proximal interphalangeal joint of the 5th toe,Contractures of the distal interphalangeal joint of the 5th toe,2,2,1,False,False,False,False,True,False,,,,,7c770408d3037ffd714a87f7d3bfe1efa8b36e51,,False,False
+HP_0100608,meddra:10027514,Metrorrhagia,Metrorrhagia,63,1,1,True,False,False,False,False,False,metrorrhagia,,,,,,True,True
+HP_0100639,meddra:10061461,Erectile dysfunction,Erectile dysfunction,4,1,1,True,False,False,False,False,False,erectile dysfunction,,,,,,True,True
+HP_0100660,meddra:10013916,Dyskinesia,Dyskinesia,64,2,1,True,False,False,False,False,False,dyskinesia,,,,,,True,True
+HP_0100665,meddra:10002424,Angioedema,Angioedema,8,7,1,True,False,False,False,False,False,angioedema,,,,,,True,True
+HP_0100754,meddra:10026749,Mania,Mania,3,1,1,True,False,False,False,False,False,mania,,,,,,True,True
+HP_0100785,meddra:10022437,Insomnia,Insomnia,16,4,1,True,False,False,False,False,False,insomnia,,,,,,True,True
+HP_0100806,meddra:10040047,Sepsis,Sepsis,6925,2,1,True,False,False,False,False,False,sepsis,,,,,,True,True
+HP_0200026,meddra:10015958,Ocular pain,Eye pain,21,1,1,False,True,False,False,False,False,,Eye pain,,,,,True,True
+HP_0410055,HP_0410059,Decreased level of erythritol in urine,Increased level of D-threitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410055,HP_0410070,Decreased level of erythritol in urine,Increased level of ribitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410055,HP_0410072,Decreased level of erythritol in urine,Increased level of ribose in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410055,HP_0410074,Decreased level of erythritol in urine,Increased level of xylitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410056,HP_0410058,Decreased CSF erythritol concentration,Increased CSF D-threitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410056,HP_0410071,Decreased CSF erythritol concentration,Increased CSF ribitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410056,HP_0410073,Decreased CSF erythritol concentration,Increased CSF ribose concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410056,HP_0410075,Decreased CSF erythritol concentration,Increased CSF xylitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410058,HP_0410071,Increased CSF D-threitol concentration,Increased CSF ribitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410058,HP_0410073,Increased CSF D-threitol concentration,Increased CSF ribose concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410058,HP_0410075,Increased CSF D-threitol concentration,Increased CSF xylitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410059,HP_0410070,Increased level of D-threitol in urine,Increased level of ribitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410059,HP_0410072,Increased level of D-threitol in urine,Increased level of ribose in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410059,HP_0410074,Increased level of D-threitol in urine,Increased level of xylitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410065,HP_6000267,Increased level of hippuric acid in blood,Elevated circulating methionine sulfoxide concentration,2,2,1,False,False,False,False,True,False,,,,,676284123456fb76a4960a27e73957151c87c7da,,False,False
+HP_0410070,HP_0410072,Increased level of ribitol in urine,Increased level of ribose in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410070,HP_0410074,Increased level of ribitol in urine,Increased level of xylitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410071,HP_0410073,Increased CSF ribitol concentration,Increased CSF ribose concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410071,HP_0410075,Increased CSF ribitol concentration,Increased CSF xylitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410072,HP_0410074,Increased level of ribose in urine,Increased level of xylitol in urine,2,2,1,False,False,False,False,True,False,,,,,a9f17dabf897696412b134ada4331362e807df76,,False,False
+HP_0410073,HP_0410075,Increased CSF ribose concentration,Increased CSF xylitol concentration,2,2,1,False,False,False,False,True,False,,,,,dc14381ea6c28e6cd0ef2223168688055e6cf45b,,False,False
+HP_0410281,meddra:10013946,Dyspepsia,Dyspepsia,1,10,1,True,False,False,False,False,False,dyspepsia,,,,,,True,True
+HP_3000007,HP_3000029,Abnormality of mentalis muscle,Abnormality of depressor labii inferioris,2,2,1,False,False,False,False,True,False,,,,,40cf30d468e944485893d7e9f7a946e715e21d8c,,False,False
+HP_3000015,HP_3000018,Abnormality of risorius muscle,Abnormality of zygomaticus major muscle,2,2,1,False,False,False,False,True,False,,,,,c9b7e70caf1bc74773ec6a2bcab931207a7dc02d,,False,False
+HP_3000015,HP_3000020,Abnormality of risorius muscle,Abnormality of zygomaticus minor muscle,2,2,1,False,False,False,False,True,False,,,,,c9b7e70caf1bc74773ec6a2bcab931207a7dc02d,,False,False
+HP_3000018,HP_3000020,Abnormality of zygomaticus major muscle,Abnormality of zygomaticus minor muscle,2,2,1,False,False,False,False,True,False,,,,,c9b7e70caf1bc74773ec6a2bcab931207a7dc02d,,False,False
+HP_4000025,HP_4000031,Anti-integrin antibody positivity,Anti-type VII collagen antibody,2,2,1,False,False,False,False,True,False,,,,,f8759dfaec4324762de7fb1e096cdac81a8c6ea5,,False,False
+HP_4000030,HP_5000011,Anti-reticulin antibody positivity,Anti-GAD65 antibody,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_4000030,HP_6000343,Anti-reticulin antibody positivity,Antiparietal cell antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_5000011,HP_6000343,Anti-GAD65 antibody,Antiparietal cell antibody positivity,3,3,1,False,False,False,False,True,False,,,,,52f789806912711c3f77b5a152525c76fe4c0eb2,,False,False
+HP_5200069,HP_5200134,Spinning,Jumping,2,2,1,False,False,False,False,True,False,,,,,83b81cce5581a9adc71eaeb4f6376508ca5a3c52,,False,False
+HP_5200360,HP_5200361,Short REM sleep,Prolonged REM sleep,2,2,1,False,False,False,False,True,False,,,,,cc43b7bdcb0e0c2cedc2592a30b9536f060ec7bc,,False,False
+HP_6000118,HP_6000331,Elevated urinary dihydrouracil level,Elevated urinary thymine level,2,2,1,False,False,False,False,True,False,,,,,6c2a71352c811a8d45e384ef40e5c19c840ed752,,False,False
+HP_6000209,HP_6000210,Elevated CSF N-carbamyl-beta-aminoisobutyric acid concentration,Elevated CSF N-carbamyl-beta-alanine concentration,2,2,1,False,False,False,False,True,False,,,,,80f6ef56fc7c97afb4e669465f94b0dbffcf76f2,,False,False
+HP_6000431,HP_6000702,Elevated urinary glycolic acid level,Elevated urinary glyoxylic acid level,2,2,1,False,False,False,False,True,False,,,,,5331aea8e986deb37807dad5fe7619b7d5887768,,False,False
+HP_6000465,HP_6000466,Elevated urine mesaconic acid level,Elevated urine 3-methyladipic acid level,2,2,1,False,False,False,False,True,False,,,,,2af5163bb058c121af85f534ae1f51eec5d538d9,,False,False
+HP_6000534,HP_6000622,Elevated urinary ureidopropionic acid level,Elevated urinary ureidoisobutyric acid level,2,2,1,False,False,False,False,True,False,,,,,d363489750b2f3ff77c6a4acece15cf4abfeb085,,False,False
+HP_6000534,HP_6000623,Elevated urinary ureidopropionic acid level,Elevated urinary N-carbamyl-beta-aminoisobutyric acid level,2,2,1,False,False,False,False,True,False,,,,,d363489750b2f3ff77c6a4acece15cf4abfeb085,,False,False
+HP_6000622,HP_6000623,Elevated urinary ureidoisobutyric acid level,Elevated urinary N-carbamyl-beta-aminoisobutyric acid level,2,2,1,False,False,False,False,True,False,,,,,d363489750b2f3ff77c6a4acece15cf4abfeb085,,False,False
+HP_6000753,HP_6000754,Elevated circulating monomethyl sterol concentration,Elevated circulating dimethyl sterol concentration,2,2,1,False,False,False,False,True,False,,,,,f0c6886e9c03938cfb5ed4c6a81aa42f6cc784e4,,False,False
+HP_6000753,HP_6001113,Elevated circulating monomethyl sterol concentration,Elevated circulating methysterol concentration,2,2,1,False,False,False,False,True,False,,,,,f0c6886e9c03938cfb5ed4c6a81aa42f6cc784e4,,False,False
+HP_6000754,HP_6001113,Elevated circulating dimethyl sterol concentration,Elevated circulating methysterol concentration,2,2,1,False,False,False,False,True,False,,,,,f0c6886e9c03938cfb5ed4c6a81aa42f6cc784e4,,False,False
+HP_6000864,HP_6001010,Transverse smile,Inability to protrude lips,2,2,1,False,False,False,False,True,False,,,,,6b52cd791a0b80b99018fbd8c63472d0659b2c72,,False,False
+HP_6000864,HP_6001102,Transverse smile,Inability to puff cheeks,2,2,1,False,False,False,False,True,False,,,,,6b52cd791a0b80b99018fbd8c63472d0659b2c72,,False,False
+HP_6001010,HP_6001102,Inability to protrude lips,Inability to puff cheeks,2,2,1,False,False,False,False,True,False,,,,,6b52cd791a0b80b99018fbd8c63472d0659b2c72,,False,False
+HP_6001023,HP_6001024,Diminished long-chain-enoyl-CoA hydratase activity in cultured fibroblasts,Diminished acetyl-CoA C-acyltransferase activity in cultured fibroblasts,2,2,1,False,False,False,False,True,False,,,,,9c3f57d8bdf9bfc127a71aa6d7c38543cf54e9dc,,False,False
+meddra:10001507,meddra:10034966,Agranulocytosis,Photosensitivity,2,2,1,False,False,False,False,True,False,,,,,b102743ff7afe33a373cb67c5f91a5c328379927,,True,False
+meddra:10003591,meddra:10029864,Ataxia,Nystagmus,2,2,1,False,False,False,False,True,False,,,,,f061e256a50cc557178feec2c7ea8adcfcad147c,,True,False
+meddra:10003658,meddra:10050584,Atrial fibrillation,Contusion,2,2,1,False,False,False,False,True,False,,,,,8703b724cb7b9930e6dabddca7901a6a48f784e0,,True,False
+meddra:10012174,meddra:10029354,Dehydration,Neutropenia,3,3,1,False,False,False,False,True,False,,,,,b06aa1ce31cda923f0e87fea0a0dd35fe093d34c,,True,False
+meddra:10013916,meddra:10013983,Dyskinesia,Dystonia,2,2,1,False,False,False,False,True,False,,,,,91f64b1e40b86ad1c9df916c5b91e65edded486f,,True,False
+meddra:10016288,meddra:10029328,Febrile neutropenia,Neuropathy,2,2,1,False,False,False,False,True,False,,,,,b73354e658877f722343f7888f0ccea907e71724,,True,False
+meddra:10016288,meddra:10035664,Febrile neutropenia,Pneumonia,2,2,1,False,False,False,False,True,False,,,,,b73354e658877f722343f7888f0ccea907e71724,,True,False
+meddra:10029328,meddra:10035664,Neuropathy,Pneumonia,2,2,1,False,False,False,False,True,False,,,,,b73354e658877f722343f7888f0ccea907e71724,,True,False

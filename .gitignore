@@ -7,3 +7,7 @@ __pycache__/
 
 #datos crudos de OptimusKG: los descarga el propio loader desde Dataverse
 *.parquet
+
+#mapeos de MONDO en formato SSSOM (13 MB): los baja redundancia_entre_nodos.ipynb fijado a un
+#release, y el sha256 queda registrado en equivalencias_disease.json
+preparacion_grafo/datos/

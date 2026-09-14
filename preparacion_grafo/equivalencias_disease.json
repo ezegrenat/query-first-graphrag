@@ -1,0 +1,20 @@
+{
+  "mondo_release": "v2026-09-01",
+  "mondo_sssom_url": "https://raw.githubusercontent.com/monarch-initiative/mondo/v2026-09-01/src/ontology/mappings/mondo.sssom.tsv",
+  "mondo_sssom_sha256": "317ac4bf93be1deff4406b4d7d18bb730ead3c4f5c7c814f75d24be7f6ef302f",
+  "fecha": "2026-09-05",
+  "pares_xrefs": 1062,
+  "pares_sssom": 1342,
+  "pares_por_fuente": {
+    "ambas": 1015,
+    "sssom": 327,
+    "xrefs": 47
+  },
+  "solo_sssom_sin_heuristica": 48,
+  "broadmatch_excluidos": 89,
+  "mondo_a_mondo_no_declarables": 481,
+  "grupos": 1380,
+  "nodos": 2769,
+  "representantes": 1380,
+  "absorbidos": 1389
+}

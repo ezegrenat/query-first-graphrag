@@ -1,0 +1,1390 @@
+id_a,id_b,fuente,nombre_a,nombre_b,grado_a,grado_b
+EFO_0000182,MONDO_0007256,sssom,hepatocellular carcinoma,hepatocellular carcinoma,13889,2
+EFO_0000183,MONDO_0004952,sssom,Hodgkins lymphoma,Hodgkins lymphoma,2867,4
+EFO_0000222,MONDO_0018874,sssom,acute myeloid leukemia,acute myeloid leukemia,10652,3
+EFO_0000228,MONDO_0004970,sssom,adenocarcinoma,adenocarcinoma,17361,3
+EFO_0000272,MONDO_0019781,sssom,astrocytoma,astrocytoma (excluding glioblastoma),10701,4
+EFO_0000274,MONDO_0004980,sssom,atopic eczema,atopic eczema,3215,12
+EFO_0000275,MONDO_0004981,sssom,atrial fibrillation,atrial fibrillation,5774,3
+EFO_0000284,MONDO_0010811,sssom,benign prostatic hyperplasia,benign prostatic hyperplasia,3359,1
+EFO_0000309,MONDO_0007243,sssom,Burkitts lymphoma,Burkitt lymphoma,2252,1
+EFO_0000319,MONDO_0004995,sssom,cardiovascular disease,cardiovascular disorder,16880,42
+EFO_0000326,MONDO_0002714,sssom,central nervous system cancer,central nervous system cancer,11741,1
+EFO_0000341,MONDO_0005002,sssom,chronic obstructive pulmonary disease,chronic obstructive pulmonary disease,7485,19
+EFO_0000400,MONDO_0005015,sssom,diabetes mellitus,diabetes mellitus,13218,76
+EFO_0000403,MONDO_0018905,sssom,diffuse large B-cell lymphoma,diffuse large B-cell lymphoma,4927,2
+EFO_0000407,MONDO_0005021,sssom,dilated cardiomyopathy,dilated cardiomyopathy,2207,1
+EFO_0000464,MONDO_0004849,sssom,emphysema,pulmonary emphysema,1876,3
+EFO_0000474,MONDO_0005027,sssom,epilepsy,epilepsy,7564,1
+EFO_0000495,MONDO_0005030,sssom,fetal growth restriction,fetal growth restriction,2597,33
+EFO_0000519,MONDO_0018177,sssom,glioblastoma multiforme,glioblastoma,10676,7004
+EFO_0000536,MONDO_0005043,sssom,hyperplasia,hyperplasia,4432,1
+EFO_0000537,MONDO_0005044,sssom,hypertension,hypertensive disorder,8482,1621
+EFO_0000545,MONDO_0005047,sssom,infertility,infertility disorder,5543,4
+EFO_0000565,MONDO_0005059,sssom,leukemia,leukemia,12474,28
+EFO_0000574,MONDO_0005062,sssom,lymphoma,lymphoma,11373,6
+EFO_0000588,MONDO_0005065,sssom,mesothelioma,mesothelioma,3357,1
+EFO_0000612,MONDO_0005068,sssom,myocardial infarction,myocardial infarction,6070,20
+EFO_0000616,MONDO_0005070,sssom,neoplasm,neoplasm,24477,63
+EFO_0000618,MONDO_0005071,sssom,nervous system disease,nervous system disorder,20468,3
+EFO_0000660,MONDO_0008487,sssom,polycystic ovary syndrome,polycystic ovary syndrome,3768,5
+EFO_0000668,MONDO_0005081,sssom,preeclampsia,preeclampsia,4094,17
+EFO_0000677,MONDO_0005084,sssom,mental or behavioural disorder,mental disorder,16649,7
+EFO_0000681,MONDO_0005086,sssom,renal cell carcinoma,renal cell carcinoma,9285,3
+EFO_0000684,MONDO_0005087,sssom,respiratory system disease,respiratory system disorder,17372,36
+EFO_0000685,MONDO_0008383,sssom,rheumatoid arthritis,rheumatoid arthritis,4215,19
+EFO_0000691,MONDO_0005089,sssom,sarcoma,sarcoma,10651,3
+EFO_0000701,MONDO_0005093,sssom,skin disease,skin disorder,14133,8
+EFO_0000702,MONDO_0008433,sssom,small cell lung carcinoma,small cell lung carcinoma,5387,4
+EFO_0000707,MONDO_0005096,sssom,squamous cell carcinoma,squamous cell carcinoma,12850,6
+EFO_0000712,MONDO_0005098,sssom,stroke,stroke disorder,2380,26
+EFO_0000717,MONDO_0005100,sssom,systemic scleroderma,systemic sclerosis,3110,1
+EFO_0000729,MONDO_0005101,sssom,ulcerative colitis,ulcerative colitis,9358,1
+EFO_0000756,MONDO_0005105,sssom,melanoma,melanoma,10264,13
+EFO_0001060,MONDO_0005130,sssom,celiac disease,celiac disease,1511,1
+EFO_0001065,MONDO_0005133,sssom,endometriosis,endometriosis,3678,8
+EFO_0001358,MONDO_0005146,sssom,post-traumatic stress disorder,post-traumatic stress disorder,1887,1
+EFO_0001378,MONDO_0009693,sssom,multiple myeloma,plasma cell myeloma,5972,5
+EFO_0001379,MONDO_0005151,sssom,endocrine system disease,endocrine system disorder,19524,1
+EFO_0001421,MONDO_0005154,sssom,liver disease,liver disorder,15426,7
+EFO_0001645,MONDO_0005010,sssom,coronary artery disease,coronary artery disorder,6288,29
+EFO_0002939,MONDO_0007959,sssom,medulloblastoma,medulloblastoma,3645,1
+EFO_0003035,MONDO_0005230,sssom,cellulitis,cellulitis,371,1
+EFO_0003086,MONDO_0005240,sssom,kidney disease,kidney disorder,14638,8
+EFO_0003095,MONDO_0013209,sssom,non-alcoholic fatty liver disease,metabolic dysfunction-associated steatotic liver disease,5667,4
+EFO_0003105,MONDO_0008449,sssom,spina bifida,spina bifida,1372,10
+EFO_0003106,MONDO_0005249,sssom,pneumonia,pneumonia,2590,14
+EFO_0003144,MONDO_0005252,sssom,heart failure,heart failure,5171,8
+EFO_0003758,MONDO_0005260,sssom,autism,autism,1926,13
+EFO_0003763,MONDO_0011057,sssom,cerebrovascular disorder,cerebrovascular disorder,5451,6
+EFO_0003764,MONDO_0005264,sssom,transient ischemic attack,transient ischemic attack,953,1
+EFO_0003767,MONDO_0005265,sssom,inflammatory bowel disease,inflammatory bowel disease,8669,1
+EFO_0003768,MONDO_0008575,sssom,nicotine dependence,nicotine dependence,877,1
+EFO_0003777,MONDO_0005267,sssom,heart disease,heart disorder,13369,10
+EFO_0003781,MONDO_0005269,sssom,carotid artery disease,carotid artery disorder,929,2
+EFO_0003782,MONDO_0020128,sssom,motor neuron disease,motor neuron disorder,2525,1
+EFO_0003817,MONDO_0021071,sssom,laryngeal neoplasm,laryngeal neoplasm,2963,1
+EFO_0003818,MONDO_0005275,sssom,lung disease,lung disorder,15618,8
+EFO_0003819,MONDO_0005276,sssom,dental caries,dental caries,1093,4
+EFO_0003827,MONDO_0005279,sssom,pulmonary embolism,pulmonary embolism,361,1
+EFO_0003839,MONDO_0005283,sssom,retinopathy,retinal disorder,8156,1
+EFO_0003852,MONDO_0005287,sssom,developmental disability,developmental disability,287,6
+EFO_0003853,MONDO_0020641,sssom,respiratory system neoplasm,respiratory tract neoplasm,14603,1
+EFO_0003860,MONDO_0021040,sssom,pancreatic neoplasm,pancreatic neoplasm,8037,12
+EFO_0003869,MONDO_0021100,sssom,breast neoplasm,breast neoplasm,15893,79
+EFO_0003882,MONDO_0005298,sssom,osteoporosis,osteoporosis,1369,9
+EFO_0003884,MONDO_0005300,sssom,chronic kidney disease,chronic kidney disease,7229,18
+EFO_0003897,MONDO_0021085,sssom,stomach neoplasm,gastric neoplasm,10631,4
+EFO_0003914,MONDO_0005311,sssom,atherosclerosis,atherosclerosis,6212,14
+EFO_0003928,MONDO_0005313,sssom,necrotizing enterocolitis,necrotizing enterocolitis,756,1
+EFO_0003931,MONDO_0005315,sssom,bone fracture,bone fracture,1261,1
+EFO_0003956,MONDO_0005324,sssom,seasonal allergic rhinitis,seasonal allergic rhinitis,427,4
+EFO_0003966,MONDO_0005328,sssom,eye disease,eye disorder,13489,13
+EFO_0004142,MONDO_0005335,sssom,colorectal neoplasm,colorectal neoplasm,13376,20
+EFO_0004193,MONDO_0020804,sssom,basal cell carcinoma,basal cell carcinoma,3073,1
+EFO_0004198,MONDO_0002531,sssom,skin neoplasm,skin neoplasm,7852,1
+EFO_0004209,MONDO_0005345,sssom,hypospadias,hypospadias,532,4
+EFO_0004210,MONDO_0005346,sssom,gallstones,gallstones,792,1
+EFO_0004211,MONDO_0005347,sssom,Hypertriglyceridemia,hypertriglyceridemia,1563,5
+EFO_0004216,MONDO_0005352,sssom,conduct disorder,conduct disorder,190,6
+EFO_0004228,MONDO_0005359,sssom,drug-induced liver injury,drug-induced liver injury,107,17
+EFO_0004234,MONDO_0005362,sssom,erectile dysfunction,erectile dysfunction,567,3
+EFO_0004238,MONDO_0005365,sssom,hearing loss,hearing loss disorder,3266,1
+EFO_0004242,MONDO_0008114,sssom,obsessive-compulsive disorder,obsessive-compulsive disorder,855,3
+EFO_0004244,MONDO_0015925,sssom,interstitial lung disease,interstitial lung disease,5580,4
+EFO_0004246,MONDO_0012727,sssom,mucocutaneous lymph node syndrome,mucocutaneous lymph node syndrome,1644,1
+EFO_0004248,MONDO_0005372,sssom,male infertility,male infertility,4456,20
+EFO_0004255,MONDO_0005377,sssom,nephrotic syndrome,nephrotic syndrome,1998,1
+EFO_0004257,MONDO_0005379,sssom,neurotic disorder,neurotic disorder,2151,32
+EFO_0004260,MONDO_0005381,sssom,bone disease,bone disorder,15853,1
+EFO_0004262,MONDO_0005383,sssom,panic disorder,panic disorder,445,2
+EFO_0004264,MONDO_0005385,sssom,vascular disease,vascular disorder,14282,3
+EFO_0004265,MONDO_0005386,sssom,peripheral arterial disease,peripheral arterial disease,1610,5
+EFO_0004288,MONDO_0005401,sssom,colonic neoplasm,colonic neoplasm,6742,24
+EFO_0004562,MONDO_0009047,sssom,cryptorchidism,cryptorchidism,753,11
+EFO_0004593,MONDO_0005406,sssom,gestational diabetes,gestational diabetes,2763,36
+EFO_0004610,MONDO_0015796,sssom,acute lung injury,acute lung injury,2629,1
+EFO_0004705,MONDO_0005420,sssom,hypothyroidism,hypothyroidism,2652,46
+EFO_0004711,MONDO_0005424,sssom,elephantiasis,elephantiasis,110,3
+EFO_0004718,MONDO_0004648,sssom,vascular dementia,vascular dementia,814,3
+EFO_0004992,MONDO_0005441,sssom,Otitis media,otitis media,842,3
+EFO_0005088,MONDO_0005447,sssom,testicular carcinoma,testicular cancer,880,5
+EFO_0005207,MONDO_0005453,sssom,congenital heart disease,congenital heart disease,4887,1
+EFO_0005221,MONDO_0019087,sssom,cholangiocarcinoma,cholangiocarcinoma,4931,2
+EFO_0005287,MONDO_0009975,sssom,reticulum cell sarcoma,reticulum cell sarcoma,524,32
+EFO_0005297,MONDO_0012105,sssom,Granulomatosis with Polyangiitis,granulomatosis with polyangiitis,743,3
+EFO_0005424,MONDO_0005489,sssom,dyslexia,dyslexia,315,1
+EFO_0005543,MONDO_0021042,sssom,glioma,glioma,12666,24
+EFO_0005556,MONDO_0007745,sssom,Gilbert syndrome,Gilbert syndrome,198,10
+EFO_0005595,MONDO_0005527,sssom,toxic encephalopathy,toxic encephalopathy,81,5
+EFO_0005669,MONDO_0013792,sssom,intracerebral hemorrhage,intracerebral hemorrhage,1193,1
+EFO_0005771,MONDO_0005558,sssom,ovarian disease,ovarian disorder,12424,1
+EFO_0005774,MONDO_0005560,sssom,brain disease,brain disorder,17947,1
+EFO_0005784,MONDO_0005564,sssom,embryonal neoplasm,embryonal neoplasm,8325,3
+EFO_0005803,MONDO_0005570,sssom,hematologic disease,hematologic disorder,16387,1
+EFO_0005809,MONDO_0007179,sssom,type II hypersensitivity reaction disease,autoimmune disease,11165,3
+EFO_0005922,MONDO_0005580,sssom,esophageal squamous cell carcinoma,esophageal squamous cell carcinoma,6573,1
+EFO_0005952,MONDO_0018908,sssom,non-Hodgkins lymphoma,non-Hodgkin lymphoma,9733,32
+EFO_0006505,MONDO_0005607,sssom,chronic bronchitis,chronic bronchitis,542,23
+EFO_0006788,MONDO_0005618,sssom,anxiety disorder,anxiety disorder,3274,8
+EFO_0007153,MONDO_0016466,sssom,asbestosis,asbestosis,243,2
+EFO_0007164,MONDO_0007416,sssom,Balkan nephropathy,Balkan nephropathy,391,4
+EFO_0007168,MONDO_0015274,sssom,berylliosis,chronic beryllium disease,123,1
+EFO_0007211,MONDO_0005706,sssom,coccidioidomycosis,coccidioidomycosis,174,1
+EFO_0007214,MONDO_0005709,sssom,common cold,common cold,271,1
+EFO_0007227,MONDO_0005722,sssom,croup,croup,27,1
+EFO_0007328,MONDO_0005812,sssom,influenza,influenza,3448,2
+EFO_0007345,MONDO_0005826,sssom,lipid pneumonia,lipid pneumonia,5,1
+EFO_0007401,MONDO_0005881,sssom,oligohydramnios,oligohydramnios,113,1
+EFO_0007441,MONDO_0005917,sssom,placenta disease,placenta disorder,6628,2
+EFO_0007485,MONDO_0005960,sssom,silicosis,silicosis,768,2
+EFO_0008521,MONDO_0003014,sssom,rhinitis,rhinitis,3628,19
+EFO_0008524,MONDO_0000402,sssom,small cell carcinoma,small cell carcinoma,4767,1
+EFO_0008546,MONDO_0029000,sssom,poisoning,poisoning,844,5
+EFO_0008560,MONDO_0021124,sssom,female infertility,female infertility,2289,13
+EFO_0009189,MONDO_0004425,sssom,hyperthyroidism,hyperthyroidism,2329,34
+EFO_0009387,MONDO_0003620,sssom,peripheral nervous system disease,peripheral nervous system disorder,9103,1
+EFO_0009406,MONDO_0002908,sssom,glucose metabolism disease,glucose metabolism disease,12885,4
+EFO_0009448,MONDO_0002771,sssom,pulmonary fibrosis,pulmonary fibrosis,4201,2
+EFO_0009450,MONDO_0003799,sssom,conjunctivitis,conjunctivitis,2663,6
+EFO_0009483,MONDO_0002657,sssom,breast disease,breast disorder,15780,1
+EFO_0009551,MONDO_0002869,sssom,heart valve disease,heart valve disorder,2072,1
+EFO_0009562,MONDO_0001824,sssom,polyneuropathy,polyneuropathy,823,8
+EFO_0009606,MONDO_0003004,sssom,macular degeneration,macular degeneration,3850,2
+EFO_0009608,MONDO_0004298,sssom,stomach disease,stomach disorder,11040,1
+EFO_0009626,MONDO_0001561,sssom,pyloric stenosis,pyloric stenosis,218,1
+EFO_0009661,MONDO_0003781,sssom,bronchitis,bronchitis,743,8
+EFO_0009662,MONDO_0001209,sssom,common wart,common wart,299,1
+EFO_0009682,MONDO_0024575,sssom,pregnancy disorder,pregnancy disorder,9032,14
+EFO_0009686,MONDO_0021113,sssom,respiratory failure,respiratory failure,3560,3
+EFO_0009687,MONDO_0003117,sssom,somatoform disorder,somatoform disorder,43,1
+EFO_0009690,MONDO_0002118,sssom,urinary system disease,urinary system disorder,15392,2
+EFO_0010642,MONDO_0700092,sssom,Neurodevelopmental disorder,neurodevelopmental disorder,7033,7
+EFO_1000018,MONDO_0006026,sssom,bladder disease,urinary bladder disorder,8392,1
+EFO_1000049,MONDO_0006052,sssom,pulmonary tuberculosis,pulmonary tuberculosis,2002,4
+EFO_1000350,MONDO_0002129,sssom,Malignant Bone Neoplasm,bone cancer,12049,2
+EFO_1000566,MONDO_0010108,sssom,Testicular Germ Cell Tumor,testicular germ cell tumor,1971,1
+EFO_1000601,MONDO_0006474,sssom,Transitional Cell Carcinoma,transitional cell carcinoma,4892,1
+EFO_1000627,MONDO_0003240,sssom,thyroid disease,thyroid gland disorder,9106,4
+EFO_1000632,MONDO_0006497,sssom,cerebral palsy,cerebral palsy,580,3
+EFO_1000668,MONDO_0006525,sssom,allergic contact dermatitis,allergic contact dermatitis,430,4
+EFO_1000697,MONDO_0006547,sssom,exanthem,exanthem,548,5
+EFO_1000718,MONDO_0006564,sssom,irritant dermatitis,irritant dermatitis,132,3
+EFO_1000720,MONDO_0006566,sssom,keratosis,keratosis,5719,1
+EFO_1000744,MONDO_0006589,sssom,occupational dermatitis,occupational dermatitis,7,1
+EFO_1000825,MONDO_0006664,sssom,atrial heart septal defect,atrial septal defect,889,9
+EFO_1000851,MONDO_0006688,sssom,byssinosis,byssinosis,14,2
+EFO_1000892,MONDO_0006722,sssom,dental fluorosis,dental fluorosis,298,3
+EFO_1000906,MONDO_0006733,sssom,dry eye syndrome,dry eye syndrome,2584,3
+EFO_1000910,MONDO_0006736,sssom,dysplasia of cervix,dysplasia of cervix,2374,3
+EFO_1000956,MONDO_0018935,sssom,hairy cell leukemia,hairy cell leukemia,698,2
+EFO_1001121,MONDO_0006920,sssom,prediabetes syndrome,prediabetes syndrome,976,4
+EFO_1001138,MONDO_0006936,sssom,pulmonary valve stenosis,pulmonary valve stenosis,61,4
+EFO_1001158,MONDO_0006952,sssom,retinopathy of prematurity,retinopathy of prematurity,874,1
+EFO_1001175,MONDO_0006966,sssom,secondary Parkinson disease,secondary Parkinson disease,39,1
+EFO_1001210,MONDO_0006995,sssom,tethered spinal cord syndrome,tethered spinal cord syndrome,41,10
+EFO_1001291,MONDO_0043230,sssom,ciguatera poisoning,ciguatera fish poisoning,13,1
+EFO_1001375,MONDO_0024644,sssom,Myocardial Ischemia,myocardial ischemia,3405,24
+EFO_1001413,MONDO_0001577,sssom,Respiratory Syncytial Virus Infection,respiratory syncytial virus infectious disease,1507,1
+EFO_1001810,MONDO_0018020,sssom,mercury poisoning,mercury poisoning,34,1
+EFO_1001908,MONDO_0003699,sssom,phobic disorder,phobic disorder,356,1
+EFO_1002050,MONDO_0001166,sssom,nephritis,nephritis,4329,1
+MONDO_0000050,Orphanet_631,sssom,isolated congenital growth hormone deficiency,Non-acquired isolated growth hormone deficiency,513,444
+MONDO_0000133,Orphanet_2268,ambas,immunodeficiency-centromeric instability-facial anomalies syndrome,ICF syndrome,64,574
+MONDO_0000193,Orphanet_168588,ambas,cortisone reductase deficiency,Hyperandrogenism due to cortisone reductase deficiency,6,239
+MONDO_0000211,Orphanet_228169,ambas,"striatal degeneration, autosomal dominant",Autosomal dominant striatal neurodegeneration,163,137
+MONDO_0000212,Orphanet_300547,ambas,"hypercalcemia, infantile",Autosomal recessive infantile hypercalcemia,121,80
+MONDO_0000355,Orphanet_75840,ambas,Ullrich congenital muscular dystrophy,"Congenital muscular dystrophy, Ullrich type",145,57
+MONDO_0000447,Orphanet_2924,ambas,autosomal dominant polycystic liver disease,Isolated polycystic liver disease,191,69
+MONDO_0000453,Orphanet_51083,ambas,short QT syndrome,Familial short QT syndrome,57,460
+MONDO_0000455,Orphanet_1871,ambas,cone dystrophy,Progressive cone dystrophy,188,210
+MONDO_0000688,Orphanet_289899,ambas,inborn organic aciduria,Organic aciduria,1122,93
+MONDO_0000698,Orphanet_79175,ambas,gamma-amino butyric acid metabolism disorder,Disorder of gamma-aminobutyric acid metabolism,269,10
+MONDO_0000736,Orphanet_241,ambas,dyschromatosis universalis hereditaria,Dyschromatosis universalis,75,47
+MONDO_0000863,Orphanet_2598,ambas,"myopathy, lactic acidosis, and sideroblastic anemia",Mitochondrial myopathy and sideroblastic anemia,7,80
+MONDO_0000902,Orphanet_1496,ambas,agenesis of the corpus callosum with peripheral neuropathy,Corpus callosum agenesis - neuronopathy,82,67
+MONDO_0000914,Orphanet_136,ambas,"cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1",CADASIL,48,162
+MONDO_0000995,Orphanet_371433,ambas,familial periodic paralysis,Genetic periodic paralysis,1302,68
+MONDO_0001309,Orphanet_98685,ambas,oculomotor nerve paralysis,Oculomotor palsy,4691,168
+MONDO_0001347,Orphanet_269,ambas,facioscapulohumeral muscular dystrophy,Facioscapulohumeral dystrophy,452,264
+MONDO_0001703,Orphanet_98658,ambas,color vision disorder,Color-vision disease,1024,621
+MONDO_0001713,Orphanet_68383,ambas,inherited aplastic anemia,Rare constitutional medullar aplasia,1849,1511
+MONDO_0002413,Orphanet_364,ambas,glycogen storage disease I,Glycogen storage disease due to glucose-6-phosphatase deficiency,162,274
+MONDO_0002525,Orphanet_309005,ambas,inherited lipid metabolism disorder,Disorder of lipid metabolism,6598,2427
+MONDO_0002561,Orphanet_68366,ambas,lysosomal storage disease,Lysosomal disease,4979,1512
+MONDO_0003582,Orphanet_145,ambas,hereditary breast ovarian cancer syndrome,Hereditary breast and ovarian cancer syndrome,190,338
+MONDO_0004739,Orphanet_79167,ambas,urea cycle disorder,Disorder of urea cycle metabolism and ammonia detoxification,1099,166
+MONDO_0005321,Orphanet_98974,ambas,Fuchs' endothelial dystrophy,Fuchs endothelial corneal dystrophy,236,424
+MONDO_0005508,Orphanet_321,ambas,hereditary multiple osteochondromas,Multiple osteochondromas,60,121
+MONDO_0006037,Orphanet_2189,ambas,hydrolethalus syndrome,Hydrolethalus,69,157
+MONDO_0007029,Orphanet_107,ambas,branchio-oto-renal syndrome,BOR syndrome,30,125
+MONDO_0007064,Orphanet_277,ambas,"severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency",Severe combined immunodeficiency due to adenosine deaminase deficiency,378,622
+MONDO_0007073,Orphanet_989,ambas,Hypoglossia-hypodactyly syndrome,Hypoglossia - hypodactyly,70,23
+MONDO_0007095,Orphanet_1028,sssom,ameloonychohypohidrotic syndrome,Amelo-onycho-hypohidrotic syndrome,1,89
+MONDO_0007097,Orphanet_85448,sssom,Finnish type amyloidosis,"Familial amyloidosis, Finnish type",27,37
+MONDO_0007098,Orphanet_100008,ambas,ACys amyloidosis,"Hereditary cerebral hemorrhage with amyloidosis, Icelandic type",29,23
+MONDO_0007099,Orphanet_85450,sssom,familial visceral amyloidosis,Familial renal amyloidosis,100,155
+MONDO_0007109,Orphanet_98870,ambas,congenital dyserythropoietic anemia type 3,Congenital dyserythropoietic anemia type III,108,186
+MONDO_0007120,Orphanet_1069,ambas,aniridia-absent patella syndrome,Aniridia - absent patella,149,140
+MONDO_0007123,Orphanet_1072,sssom,ankyloblepharon filiforme adnatum-cleft palate syndrome,Ankyloblepharon filiforme adnatum - cleft palate,125,71
+MONDO_0007124,Orphanet_1071,ambas,ankyloblepharon-ectodermal defects-cleft lip/palate syndrome,Ankyloblepharon - ectodermal defects - cleft lip/palate,81,117
+MONDO_0007143,Orphanet_1110,ambas,aortic arch anomaly-facial dysmorphism-intellectual disability syndrome,Aortic arch anomaly - peculiar facies - intellectual disability,51,32
+MONDO_0007154,Orphanet_46724,ambas,arteriovenous malformations of the brain,Cerebral arteriovenous malformation,180,83
+MONDO_0007158,Orphanet_1154,ambas,arthrogryposis- oculomotor limitation-electroretinal anomalies syndrome,Arthrogryposis with oculomotor limitation and electroretinal anomalies,46,44
+MONDO_0007159,Orphanet_1144,ambas,arthrogryposis-like hand anomaly-sensorineural deafness syndrome,Arthrogryposis-like hand anomaly - sensorineural deafness,25,22
+MONDO_0007163,Orphanet_97,ambas,episodic ataxia type 2,Familial paroxysmal ataxia,140,85
+MONDO_0007165,Orphanet_1182,ambas,spastic ataxia 7,Spastic ataxia with congenital miosis,18,47
+MONDO_0007173,Orphanet_1479,ambas,atrial septal defect 7,Atrial septal defect - atrioventricular conduction defects,268,10
+MONDO_0007174,Orphanet_844,xrefs,Lown-Ganong-Levine syndrome,Atrial tachyarrhythmia with short PR interval,12,254
+MONDO_0007182,Orphanet_98757,ambas,Machado-Joseph disease,Spinocerebellar ataxia type 3,331,317
+MONDO_0007188,Orphanet_2285,ambas,primary basilar invagination,Primary basilar impression,79,15
+MONDO_0007202,Orphanet_1259,ambas,blepharoptosis-myopia-ectopia lentis syndrome,Blepharoptosis - myopia - ectopia lentis,112,69
+MONDO_0007205,Orphanet_85182,ambas,diaphyseal medullary stenosis-bone malignancy syndrome,Diaphyseal medullary stenosis - bone malignancy,29,45
+MONDO_0007211,Orphanet_1276,ambas,brachydactyly-arterial hypertension syndrome,Brachydactyly - arterial hypertension,45,45
+MONDO_0007214,Orphanet_1278,ambas,brachydactyly-preaxial hallux varus syndrome,Brachydactyly - preaxial hallux varus,100,73
+MONDO_0007219,Orphanet_93382,ambas,Osebold-Remondini syndrome,Brachydactyly type A6,311,20
+MONDO_0007225,Orphanet_1118,ambas,fibular aplasia-ectrodactyly syndrome,Fibular aplasia - ectrodactyly,174,158
+MONDO_0007226,Orphanet_1246,ambas,brachydactyly-nystagmus-cerebellar ataxia syndrome,Brachydactyly - nystagmus - cerebellar ataxia,26,25
+MONDO_0007230,Orphanet_1292,ambas,Brachymorphism-onychodysplasia-dysphalangism syndrome,Brachymorphism - onychodysplasia - dysphalangism,17,12
+MONDO_0007235,Orphanet_1297,ambas,branchiooculofacial syndrome,Branchio-oculo-facial syndrome,108,91
+MONDO_0007245,Orphanet_2678,ambas,"cafe au lait spots, multiple",Neurofibromatosis type 6,3,74
+MONDO_0007269,Orphanet_300751,ambas,dilated cardiomyopathy 1A,Familial dilated cardiomyopathy with conduction defect due to LMNA mutation,48,395
+MONDO_0007293,Orphanet_99842,ambas,leukocyte adhesion deficiency 1,Leukocyte adhesion deficiency type I,87,82
+MONDO_0007295,Orphanet_1945,ambas,childhood epilepsy with centrotemporal spikes,Rolandic epilepsy,94,111
+MONDO_0007301,Orphanet_1393,ambas,cerebrocostomandibular syndrome,Cerebro-costo-mandibular syndrome,126,60
+MONDO_0007308,Orphanet_99946,ambas,Charcot-Marie-Tooth disease type 2A1,Autosomal dominant Charcot-Marie-Tooth disease type 2A1,96,79
+MONDO_0007316,Orphanet_268882,ambas,Chiari malformation type I,Arnold-Chiari malformation type I,60,37
+MONDO_0007339,Orphanet_1997,ambas,blepharocheilodontic syndrome,Blepharo-cheilo-odontic syndrome,16,68
+MONDO_0007346,Orphanet_3233,ambas,cochleosaccular degeneration-cataract syndrome,Cochleosaccular degeneration - cataract,342,219
+MONDO_0007353,Orphanet_1471,ambas,coloboma of macula-brachydactyly type B syndrome,Coloboma of macula - brachydactyly type B,32,29
+MONDO_0007354,Orphanet_98947,sssom,coloboma of optic nerve,Coloboma of optic papilla,507,4
+MONDO_0007355,Orphanet_1473,ambas,uveal coloboma-cleft lip and palate-intellectual disability,Uveal coloboma - cleft lip and palate - intellectual disability,157,103
+MONDO_0007375,Orphanet_98956,sssom,epithelial basement membrane dystrophy,Microcystic corneal dystrophy,142,130
+MONDO_0007401,Orphanet_1538,ambas,craniosynostosis-Dandy-Walker malformation-hydrocephalus syndrome,Craniosynostosis - Dandy-Walker malformation - hydrocephalus,53,47
+MONDO_0007404,Orphanet_281,ambas,Cri-du-chat syndrome,Monosomy 5p,109,100
+MONDO_0007405,Orphanet_207,ambas,Crouzon syndrome,Crouzon disease,104,32
+MONDO_0007412,Orphanet_1555,ambas,Beare-Stevenson cutis gyrata syndrome,Cutis gyrata - acanthosis nigricans - craniosynostosis,62,60
+MONDO_0007420,Orphanet_79499,ambas,autosomal dominant deafness - onychodystrophy syndrome,Autosomal dominant deafness-onychodystrophy syndrome,23,79
+MONDO_0007435,Orphanet_101,ambas,dentatorubral-pallidoluysian atrophy,Dentatorubral pallidoluysian atrophy,229,282
+MONDO_0007438,Orphanet_99792,ambas,dentin dysplasia-sclerotic bones syndrome,Dentin dysplasia - sclerotic bones,193,192
+MONDO_0007450,Orphanet_30925,ambas,neurohypophyseal diabetes insipidus,Hereditary central diabetes insipidus,100,52
+MONDO_0007470,Orphanet_85192,ambas,calvarial doughnut lesions-bone fragility syndrome,Calvarial doughnut lesions - bone fragility,109,108
+MONDO_0007471,Orphanet_75376,ambas,Doyne honeycomb retinal dystrophy,Familial drusen,127,528
+MONDO_0007477,Orphanet_2616,ambas,3-M syndrome,3M syndrome,5,198
+MONDO_0007481,Orphanet_240,ambas,Leri-Weill dyschondrosteosis,Léri-Weill dyschondrosteosis,326,319
+MONDO_0007493,Orphanet_98805,ambas,torsion dystonia 4,"Primary dystonia, DYT4 type",17,215
+MONDO_0007496,Orphanet_71517,ambas,dystonia 12,Rapid-onset dystonia-parkinsonism,167,169
+MONDO_0007504,Orphanet_2405,ambas,thickened earlobes-conductive deafness syndrome,Thickened earlobes - conductive deafness,50,49
+MONDO_0007507,Orphanet_1658,ambas,absence of fingerprints-congenital milia syndrome,Absence of fingerprints - congenital milia,24,25
+MONDO_0007525,Orphanet_1899,ambas,"Ehlers-Danlos syndrome, arthrochalasia type","Ehlers-Danlos syndrome, arthrochalasic type",36,83
+MONDO_0007526,Orphanet_75496,ambas,"Ehlers-Danlos syndrome, spondylodysplastic type","Ehlers-Danlos syndrome, progeroid type",142,133
+MONDO_0007550,Orphanet_79396,ambas,"epidermolysis bullosa simplex 1A, generalized severe","Epidermolysis bullosa simplex, Dowling-Meara type",20,22
+MONDO_0007551,Orphanet_79400,ambas,"epidermolysis bullosa simplex 1C, localized",Localized epidermolysis bullosa simplex,50,13
+MONDO_0007554,Orphanet_79399,ambas,"epidermolysis bullosa simplex 1B, generalized intermediate","Generalized epidermolysis bullosa simplex, non-Dowling-Meara type",12,69
+MONDO_0007555,Orphanet_79401,ambas,"pidermolysis bullosa simplex 5A, Ogna type","Epidermolysis bullosa simplex, Ogna type",23,22
+MONDO_0007556,Orphanet_79397,ambas,"epidermolysis bullosa simplex 2F, with mottled pigmentation",Epidermolysis bullosa simplex with mottled pigmentation,49,88
+MONDO_0007570,Orphanet_231031,ambas,erythema palmare hereditarium,Erythema palmaris hereditarium,4,2
+MONDO_0007584,Orphanet_1962,ambas,exostoses-anetodermia-brachydactyly type E syndrome,Exostoses - anetodermia - brachydactyly type E,19,17
+MONDO_0007612,Orphanet_2027,ambas,gingival fibromatosis-progressive deafness syndrome,Gingival fibromatosis - progressive deafness,103,13
+MONDO_0007619,Orphanet_289465,ambas,isolated congenital adermatoglyphia,Isolated adermatoglyphia,90,4
+MONDO_0007620,Orphanet_79292,ambas,fish eye disease,Fish-eye disease,71,353
+MONDO_0007640,Orphanet_59181,ambas,Sorsby fundus dystrophy,Sorsby's fundus dystrophy,60,332
+MONDO_0007646,Orphanet_324442,ambas,Gamstorp-Wohlfart syndrome,Autosomal recessive axonal neuropathy with neuromyotonia,24,104
+MONDO_0007648,Orphanet_26106,ambas,hereditary diffuse gastric adenocarcinoma,Familial gastric cancer,306,159
+MONDO_0007666,Orphanet_2085,ambas,glaucoma-sleep apnea syndrome,Glaucoma - sleep apnea,2,1
+MONDO_0007670,Orphanet_69735,sssom,hypotrichosis-lymphedema-telangiectasia syndrome (grouping),Hypotrichosis - lymphedema - telangiectasia,1,39
+MONDO_0007681,Orphanet_276399,ambas,"goiter, multinodular 1, with or without Sertoli-Leydig cell tumors",Familial multinodular goiter,33,98
+MONDO_0007693,Orphanet_2220,ambas,hypertrichosis cubiti-short stature syndrome,Hypertrichosis cubiti - short stature,11,10
+MONDO_0007716,Orphanet_98791,ambas,alpha thalassemia-intellectual disability syndrome type 1,Alpha-thalassemia - intellectual disability syndrome linked to chromosome 16,428,418
+MONDO_0007727,Orphanet_32960,ambas,autosomal dominant familial periodic fever,Tumor necrosis factor receptor 1 associated periodic syndrome,381,60
+MONDO_0007737,Orphanet_3265,ambas,humeroradial synostosis,Humero-radial synostosis,18,38
+MONDO_0007738,Orphanet_263463,ambas,spondyloepiphyseal dysplasia with congenital joint dislocations,CHST3-related skeletal dysplasia,175,185
+MONDO_0007762,Orphanet_70470,xrefs,hyperlipoproteinemia type V,Hyperlipoproteinemia type 5,103,91
+MONDO_0007768,Orphanet_99880,ambas,hyperparathyroidism 2 with jaw tumors,Hyperparathyroidism-jaw tumor syndrome,74,38
+MONDO_0007787,Orphanet_1023,ambas,Ambras type hypertrichosis universalis congenita,"Congenital generalized hypertrichosis, Ambras type",60,58
+MONDO_0007790,Orphanet_64748,sssom,Charcot-Marie-Tooth disease type 3,Dejerine-Sottas syndrome,168,66
+MONDO_0007791,Orphanet_93372,ambas,familial hypocalciuric hypercalcemia 1,Familial hypocalciuric hypercalcemia type 1,73,72
+MONDO_0007792,Orphanet_101049,ambas,familial hypocalciuric hypercalcemia 2,Familial hypocalciuric hypercalcemia type 2,46,44
+MONDO_0007795,Orphanet_2491,ambas,mullerian duct anomalies-limb anomalies syndrome,Müllerian duct anomalies - limb anomalies,52,79
+MONDO_0007797,Orphanet_2237,ambas,hypoparathyroidism-deafness-renal disease syndrome,Hypoparathyroidism - deafness - renal disease,90,108
+MONDO_0007800,Orphanet_1598,ambas,chromosome 18p deletion syndrome,Monosomy 18p,41,48
+MONDO_0007800,Orphanet_261974,ambas,chromosome 18p deletion syndrome,Partial deletion of the short arm of chromosome 18,41,14
+MONDO_0007818,Orphanet_2314,ambas,"hyper-IgE recurrent infection syndrome 1, autosomal dominant",Autosomal dominant hyper-IgE syndrome,58,129
+MONDO_0007857,Orphanet_86919,ambas,keratosis palmaris et plantaris-clinodactyly syndrome,Keratosis palmaris et plantaris - clinodactyly,7,5
+MONDO_0007864,Orphanet_90308,ambas,angioosteohypertrophic syndrome,Klippel-Trénaunay syndrome,233,46
+MONDO_0007866,Orphanet_2698,sssom,Bart-Pumphrey syndrome,Knuckle pads-leukonychia-sensorineural deafness-palmoplantar hyperkeratosis syndrome,11,35
+MONDO_0007872,Orphanet_2363,ambas,LADD syndrome,Lacrimoauriculodentodigital syndrome,59,62
+MONDO_0007874,Orphanet_502,ambas,trichorhinophalangeal syndrome type II,Langer-Giedion syndrome,124,140
+MONDO_0007875,Orphanet_503,ambas,Larsen syndrome,Autosomal dominant Larsen syndrome,160,56
+MONDO_0007885,Orphanet_2380,ambas,Legg-Calve-Perthes disease,Legg-Calvé-Perthes disease,104,91
+MONDO_0007917,Orphanet_86914,ambas,lymphedema-cerebral arteriovenous anomaly syndrome,Lymphedema - cerebral arteriovenous anomaly,28,27
+MONDO_0007919,Orphanet_79452,ambas,lymphatic malformation 1,Milroy disease,19,130
+MONDO_0007920,Orphanet_90186,ambas,lymphatic malformation 5,Meige disease,21,39
+MONDO_0007922,Orphanet_33001,ambas,lymphedema-distichiasis syndrome,Lymphedema - distichiasis,48,30
+MONDO_0007931,Orphanet_1243,ambas,vitelliform macular dystrophy 2,Best vitelliform macular dystrophy,78,94
+MONDO_0007935,Orphanet_75381,ambas,cystoid macular edema,Cystoid macular dystrophy,119,33
+MONDO_0007937,Orphanet_34528,ambas,renal hypomagnesemia 2,Autosomal dominant primary hypomagnesemia with hypocalciuria,64,143
+MONDO_0007943,Orphanet_245,ambas,Nager acrofacial dysostosis,Nager syndrome,321,125
+MONDO_0007946,Orphanet_91412,ambas,jaw-winking syndrome,Marcus-Gunn syndrome,22,3
+MONDO_0007953,Orphanet_1248,ambas,Binder syndrome,Maxillonasal dysplasia,74,106
+MONDO_0007983,Orphanet_174,ambas,Schmid metaphyseal chondrodysplasia,"Metaphyseal chondrodysplasia, Schmid type",35,459
+MONDO_0007984,Orphanet_2504,ambas,metaphyseal dysplasia-maxillary hypoplasia-brachydacty syndrome,Metaphyseal dysplasia - maxillary hypoplasia - brachydacty,98,97
+MONDO_0007988,Orphanet_2514,ambas,autosomal dominant primary microcephaly,Autosomal dominant microcephaly,21,51
+MONDO_0007992,Orphanet_2536,ambas,microcornea-glaucoma-absent frontal sinuses syndrome,Microcornea - glaucoma - absent frontal sinuses,22,21
+MONDO_0008006,Orphanet_570,ambas,Mobius syndrome,Moebius syndrome,2968,114
+MONDO_0008007,Orphanet_1077,ambas,tooth ankylosis,Dental ankylosis,11,79
+MONDO_0008013,Orphanet_261112,ambas,chromosome 9p deletion syndrome,Monosomy 9p,86,60
+MONDO_0008016,Orphanet_3377,sssom,trismus-pseudocamptodactyly syndrome,Trismus - pseudocamptodactyly,33,30
+MONDO_0008023,Orphanet_2579,ambas,muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome,Muscular atrophy - ataxia - retinitis pigmentosa - diabetes mellitus,109,21
+MONDO_0008038,Orphanet_2585,ambas,ataxia-pancytopenia syndrome,Ataxia - pancytopenia,460,27
+MONDO_0008043,Orphanet_2589,ambas,myoclonus-cerebellar ataxia-deafness syndrome,Myoclonus - cerebellar ataxia - deafness,122,75
+MONDO_0008045,Orphanet_2590,ambas,spinal muscular atrophy-progressive myoclonic epilepsy syndrome,Hereditary myoclonus - progressive distal muscular atrophy,109,57
+MONDO_0008050,Orphanet_59135,ambas,MYH7-related skeletal myopathy,Laing early-onset distal myopathy,140,30
+MONDO_0008056,Orphanet_273,ambas,myotonic dystrophy type 1,Steinert myotonic dystrophy,700,48
+MONDO_0008060,Orphanet_79153,ambas,nonsyndromic congenital nail disorder 1,Autosomal dominant nail dysplasia,15,81
+MONDO_0008073,Orphanet_88950,ambas,familial juvenile hyperuricemic nephropathy type 1,Autosomal dominant medullary cystic kidney disease with hyperuricemia,482,1
+MONDO_0008083,Orphanet_228343,ambas,"ceroid lipofuscinosis, neuronal, 4 (Kufs type)",CLN4B disease,105,21
+MONDO_0008090,Orphanet_2686,ambas,cyclic hematopoiesis,Cyclic neutropenia,774,257
+MONDO_0008097,Orphanet_2612,ambas,linear nevus sebaceous syndrome,Linear nevus sebaceus syndrome,53,55
+MONDO_0008130,Orphanet_2743,sssom,ophthalmoplegia-intellectual disability-lingua scrotalis syndrome,Ophthalmoplegia - intellectual disability - lingua scrotalis,30,17
+MONDO_0008133,Orphanet_67036,sssom,optic atrophy 3,Autosomal dominant optic atrophy and cataract,111,114
+MONDO_0008134,Orphanet_98673,ambas,"autosomal dominant optic atrophy, classic form","Autosomal dominant optic atrophy, classic type",39,87
+MONDO_0008137,Orphanet_2756,xrefs,orofaciodigital syndrome X,Orofaciodigital syndrome type 10,54,9
+MONDO_0008145,Orphanet_296,ambas,Ollier disease,Enchondromatosis,150,99
+MONDO_0008156,Orphanet_53,ambas,autosomal dominant osteopetrosis 2,Albers-Schönberg osteopetrosis,24,144
+MONDO_0008158,Orphanet_1562,xrefs,dacryocystitis-osteopoikilosis syndrome,Dacryocystitis - osteopoikilosis,141,140
+MONDO_0008199,Orphanet_411602,ambas,late-onset Parkinson disease,Hereditary late-onset Parkinson disease,98,281
+MONDO_0008207,Orphanet_1428,xrefs,chondromalacia patellae,Familial chondromalacia patellae,8,2
+MONDO_0008215,Orphanet_99027,ambas,adult-onset autosomal dominant demyelinating leukodystrophy,Adult-onset autosomal dominant leukodystrophy,141,77
+MONDO_0008218,Orphanet_2841,ambas,Hailey-Hailey disease,Familial benign chronic pemphigus,104,3
+MONDO_0008222,Orphanet_37553,ambas,Andersen-Tawil syndrome,Cardiodysrhythmic potassium-sensitive periodic paralysis,1247,127
+MONDO_0008245,Orphanet_2885,ambas,piebald trait-neurologic defects syndrome,Piebald trait - neurologic defects,178,167
+MONDO_0008247,Orphanet_3104,ambas,Robin sequence-oligodactyly syndrome,Robin sequence - oligodactyly,156,92
+MONDO_0008265,Orphanet_2924,xrefs,polycystic liver disease 1,Isolated polycystic liver disease,33,69
+MONDO_0008267,Orphanet_2919,ambas,orofaciodigital syndrome V,Orofaciodigital syndrome type 5,79,144
+MONDO_0008272,Orphanet_93338,ambas,polysyndactyly 4,Polysyndactyly,112,120
+MONDO_0008297,Orphanet_79473,ambas,variegate porphyria,Porphyria variegata,92,18
+MONDO_0008311,Orphanet_2959,ambas,progeria-short stature-pigmented nevi syndrome,Progéria - short stature - pigmented nevi,44,32
+MONDO_0008329,Orphanet_171871,ambas,autosomal dominant pseudohypoaldosteronism type 1,Renal pseudohypoaldosteronism type 1,41,35
+MONDO_0008335,Orphanet_2994,ambas,short stature-craniofacial anomalies-genital hypoplasia syndrome,Short stature - craniofacial anomalies - genital hypoplasia,31,23
+MONDO_0008337,Orphanet_2989,ambas,familial pterygium of the conjunctiva,"Pterygium of the conjunctiva, familial form",66,3
+MONDO_0008338,Orphanet_65743,sssom,"contractures, pterygia, and spondylocarpotarsal fusion syndrome 1A",Autosomal dominant multiple pterygium syndrome,87,36
+MONDO_0008340,Orphanet_91411,ambas,"ptosis, hereditary congenital, 1",Congenital ptosis,16,28
+MONDO_0008341,Orphanet_2999,ambas,ptosis-strabismus-ectopic pupils syndrome,Ptosis - strabismus - ectopic pupils,7,6
+MONDO_0008357,Orphanet_2252,ambas,radial hypoplasia-triphalangeal thumbs-hypospadias-maxillary diastema syndrome,Radial hypoplasia - triphalangeal thumbs - hypospadias - maxillary diastema,37,5
+MONDO_0008392,Orphanet_3115,sssom,Roussy-Levy syndrome,Roussy-Lévy syndrome,93,121
+MONDO_0008402,Orphanet_2013,ambas,cleft palate-large ears-small head syndrome,Cleft palate - large ears - small head,41,38
+MONDO_0008403,Orphanet_1003,ambas,scalp defects-postaxial polydactyly syndrome,Scalp defects - postaxial polydactyly,26,17
+MONDO_0008407,Orphanet_85146,sssom,"neurogenic scapuloperoneal syndrome, Kaeser type",Scapuloperoneal amyotrophy,16,162
+MONDO_0008410,Orphanet_3135,xrefs,Scheuermann disease,Familial Scheuermann disease,73,5
+MONDO_0008428,Orphanet_3157,ambas,septooptic dysplasia,Septo-optic dysplasia,43,80
+MONDO_0008437,Orphanet_100984,ambas,hereditary spastic paraplegia 3A,Autosomal dominant spastic paraplegia type 3,41,64
+MONDO_0008438,Orphanet_100985,ambas,hereditary spastic paraplegia 4,Autosomal dominant spastic paraplegia type 4,50,56
+MONDO_0008440,Orphanet_2820,ambas,spastic paraplegia-nephritis-deafness syndrome,Spastic paraplegia - nephritis - deafness,91,71
+MONDO_0008442,Orphanet_2821,ambas,spastic paraplegia-neuropathy-poikiloderma syndrome,Spastic paraplegia - neuropathy - poikiloderma,34,27
+MONDO_0008445,Orphanet_3038,ambas,delayed speech-facial asymmetry-strabismus-ear lobe creases syndrome,Delayed speech - facial asymmetry - strabismus - ear lobe creases,11,10
+MONDO_0008451,Orphanet_139518,ambas,"neuronopathy, distal hereditary motor, autosomal dominant 1",Distal hereditary motor neuropathy type 1,23,14
+MONDO_0008460,Orphanet_2063,ambas,splenogonadal fusion-limb defects-micrognathia syndrome,Splenogonadal fusion - limb defects - micrognathia,115,101
+MONDO_0008473,Orphanet_263482,ambas,"spondyloepimetaphyseal dysplasia, Maroteaux type","Spondyloepiphyseal dysplasia, Maroteaux type",21,99
+MONDO_0008476,Orphanet_93346,ambas,"spondyloepimetaphyseal dysplasia, Strudwick type","Spondyloepimetaphyseal dysplasia congenita, Strudwick type",225,114
+MONDO_0008486,Orphanet_3184,ambas,steatocystoma multiplex-natal teeth syndrome,Steatocystoma multiplex - natal teeth,59,58
+MONDO_0008488,Orphanet_3186,ambas,holoprosencephaly-radial heart renal anomalies syndrome,Holoprosencephaly - radial heart renal anomalies,61,55
+MONDO_0008490,Orphanet_166100,ambas,"otospondylomegaepiphyseal dysplasia, autosomal dominant",Stickler syndrome type 3,49,48
+MONDO_0008494,Orphanet_398088,ambas,cryohydrocytosis,Hereditary cryohydrocytosis with normal stomatin,1407,7
+MONDO_0008497,Orphanet_3204,ambas,Stormorken syndrome,Stormorken-Sjaastad-Langslet syndrome,58,96
+MONDO_0008520,Orphanet_1275,ambas,brachydactyly-elbow wrist dysplasia syndrome,Brachydactyly - elbow wrist dysplasia,124,79
+MONDO_0008562,Orphanet_2251,ambas,thumb deformity-alopecia-pigmentation anomaly syndrome,Thumb deformity - alopecia - pigmentation anomaly,58,7
+MONDO_0008563,Orphanet_1078,ambas,thumb stiffness-brachydactyly-intellectual disability syndrome,Thumb stiffness - brachydactyly - intellectual disability,26,17
+MONDO_0008572,Orphanet_3332,xrefs,"tibia, hypoplasia or aplasia of, with polydactyly",Hypoplastic tibiae - postaxial polydactyly,224,9
+MONDO_0008572,Orphanet_988,ambas,"tibia, hypoplasia or aplasia of, with polydactyly",Absent tibia - polydactyly,224,129
+MONDO_0008582,Orphanet_2228,ambas,tooth and nail syndrome,Hypodontia - dysplasia of nails,275,131
+MONDO_0008607,Orphanet_2947,ambas,triphalangeal thumbs-brachyectrodactyly syndrome,Triphalangeal thumbs - brachyectrodactyly,41,40
+MONDO_0008610,Orphanet_88629,ambas,blue color blindness,Tritanopia,8,22
+MONDO_0008636,Orphanet_3411,ambas,double uterus-hemivagina-renal agenesis syndrome,Double uterus - hemivagina - renal agenesis,99,2
+MONDO_0008641,Orphanet_247691,ambas,retinal vasculopathy with cerebral leukoencephalopathy and systemic manifestations,Retinal vasculopathy and cerebral leukodystrophy,46,55
+MONDO_0008645,Orphanet_3201,ambas,ventricular extrasystoles with syncopal episodes-perodactyly-robin sequence syndrome,Ventricular extrasystoles with syncopal episodes - perodactyly - Robin sequence,124,94
+MONDO_0008650,Orphanet_2064,ambas,posterior fusion of lumbosacral vertebrae-blepharoptosis syndrome,Posterior fusion of lumbosacral vertebrae - blepharoptosis,113,44
+MONDO_0008665,Orphanet_2997,ambas,ptosis-vocal cord paralysis syndrome,Ptosis - vocal cord paralysis,12,11
+MONDO_0008668,Orphanet_166078,ambas,von Willebrand disease 1,Von Willebrand disease type 1,108,73
+MONDO_0008695,Orphanet_2388,ambas,chorea-acanthocytosis,Choreoacanthocytosis,101,112
+MONDO_0008696,Orphanet_90301,ambas,acanthosis nigricans-insulin resistance-muscle cramps-acral enlargement syndrome,Acanthosis nigricans - Insulin resistance - muscle cramps - acral enlargement,143,70
+MONDO_0008699,Orphanet_929,ambas,achalasia microcephaly syndrome,Achalasia - microcephaly,11,6
+MONDO_0008700,Orphanet_931,ambas,acheiropody,Acheiropodia,271,216
+MONDO_0008701,Orphanet_93299,ambas,achondrogenesis type IA,Achondrogenesis type 1A,51,145
+MONDO_0008702,Orphanet_93296,ambas,achondrogenesis type II,Achondrogenesis type 2,129,157
+MONDO_0008703,Orphanet_2098,ambas,acromesomelic dysplasia 2A,"Acromesomelic dysplasia, Grebe type",404,251
+MONDO_0008714,Orphanet_1788,ambas,acrofacial dysostosis Rodriguez type,"Acrofacial dysostosis, Rodríguez type",73,118
+MONDO_0008715,Orphanet_1784,ambas,acrofrontofacionasal dysostosis,Acro-fronto-facio-nasal dysostosis,22,46
+MONDO_0008717,Orphanet_968,ambas,"acromesomelic dysplasia 2C, Hunter-Thompson type","Acromesomelic dysplasia, Hunter-Thomson type",345,325
+MONDO_0008724,Orphanet_2952,ambas,"adducted thumbs-arthrogryposis syndrome, Christian type","Adducted thumbs - arthrogryposis, Christian type",27,25
+MONDO_0008737,Orphanet_98880,ambas,congenital afibrinogenemia,Familial afibrinogenemia,114,85
+MONDO_0008740,Orphanet_990,ambas,agnathia-otocephaly complex,Agnathia - holoprosencephaly - situs inversus,49,27
+MONDO_0008744,Orphanet_2007,ambas,alar cartilages hypoplasia-coloboma-telecanthus syndrome,Alar cartilages hypoplasia - coloboma - telecanthus,14,4
+MONDO_0008750,Orphanet_2513,ambas,microcephaly-albinism-digital anomalies syndrome,Microcephaly - albinism - digital anomalies,164,145
+MONDO_0008754,Orphanet_1005,ambas,alopecia - contractures - dwarfism - intellectual disability syndrome,Alopecia-contractures-dwarfism-intellectual disability syndrome,75,83
+MONDO_0008756,Orphanet_2850,ambas,alopecia - intellectual disability syndrome,Alopecia-intellectual disability syndrome,2,165
+MONDO_0008757,Orphanet_701,ambas,alopecia universalis congenita,Alopecia universalis,240,166
+MONDO_0008758,Orphanet_726,ambas,mitochondrial DNA depletion syndrome 4a,Alpers syndrome,1554,145
+MONDO_0008767,Orphanet_228346,ambas,neuronal ceroid lipofuscinosis 3,CLN3 disease,60,58
+MONDO_0008768,Orphanet_228340,xrefs,"ceroid lipofuscinosis, neuronal, 6B (Kufs type)",CLN4A disease,159,24
+MONDO_0008769,Orphanet_228349,ambas,neuronal ceroid lipofuscinosis 2,CLN2 disease,26,76
+MONDO_0008791,Orphanet_1048,ambas,anencephaly 1,Isolated anencephaly/exencephaly,202,67
+MONDO_0008795,Orphanet_1065,ambas,aniridia-cerebellar ataxia-intellectual disability syndrome,Aniridia - cerebellar ataxia - intellectual disability,74,96
+MONDO_0008796,Orphanet_1064,ambas,aniridia-renal agenesis-psychomotor retardation syndrome,Aniridia - renal agenesis - psychomotor retardation,46,43
+MONDO_0008798,Orphanet_94150,ambas,nonsyndromic congenital nail disorder 4,Anonychia congenita totalis,7,4
+MONDO_0008799,Orphanet_77298,ambas,anophthalmia/microphthalmia-esophageal atresia syndrome,Anophthalmia/microphthalmia - esophageal atresia,54,51
+MONDO_0008808,Orphanet_1116,ambas,aplasia cutis congenita-intestinal lymphangiectasia syndrome,Aplasia cutis congenita - intestinal lymphangiectasia,220,109
+MONDO_0008809,Orphanet_2926,ambas,polyneuropathy-hand defect syndrome,Polyneuropathy - hand defect,7,13
+MONDO_0008814,Orphanet_90,ambas,hyperargininemia,Argininemia,54,98
+MONDO_0008816,Orphanet_1136,xrefs,Chiari malformation type II,Arnold-Chiari malformation type II,52,22
+MONDO_0008823,Orphanet_1143,ambas,"arthrogryposis multiplex congenita 2, neurogenic type",Neurogenic arthrogryposis multiplex congenita,67,61
+MONDO_0008825,Orphanet_1150,ambas,arthrogryposis multiplex congenita-whistling face syndrome,Arthrogryposis multiplex congenita - whistling face,33,28
+MONDO_0008826,Orphanet_1485,ambas,"arthrogryposis-hyperkeratosis syndrome, lethal form","Arthrogryposis - hyperkeratosis, lethal form",5,4
+MONDO_0008832,Orphanet_97548,ambas,right atrial isomerism,Ivemark syndrome,218,29
+MONDO_0008838,Orphanet_1188,ambas,ataxia - deafness - intellectual disability syndrome,Ataxia-deafness-intellectual disability syndrome,52,56
+MONDO_0008840,Orphanet_100,ambas,ataxia telangiectasia,Ataxia-telangiectasia,95,2715
+MONDO_0008842,Orphanet_1168,ambas,"ataxia, early-onset, with oculomotor apraxia and hypoalbuminemia",Ataxia - oculomotor apraxia type 1,135,128
+MONDO_0008843,Orphanet_1192,ambas,atherosclerosis-deafness-diabetes-epilepsy-nephropathy syndrome,Atherosclerosis - deafness - diabetes - epilepsy - nephropathy,34,30
+MONDO_0008846,Orphanet_1195,ambas,atransferrinemia,Congenital atransferrinemia,112,101
+MONDO_0008855,Orphanet_572,ambas,MHC class II deficiency,Immunodeficiency by defective expression of HLA class 2,435,538
+MONDO_0008865,Orphanet_41751,ambas,Bietti crystalline corneoretinal dystrophy,Bietti crystalline dystrophy,65,142
+MONDO_0008875,Orphanet_2057,ambas,blepharophimosis-ptosis-esotropia-syndactyly-short stature syndrome,Blepharophimosis - ptosis - esotropia - syndactyly - short stature,28,19
+MONDO_0008885,Orphanet_1299,ambas,Elsahy-Waters syndrome,Branchio-skeleto-genital syndrome,90,87
+MONDO_0008894,Orphanet_1375,ambas,cataract-hypertrichosis-intellectual disability syndrome,Cataract - hypertrichosis - intellectual disability,139,137
+MONDO_0008915,Orphanet_2229,ambas,dilated cardiomyopathy-hypergonadotropic hypogonadism syndrome,Dilated cardiomyopathy - hypergonadotropic hypogonadism,183,35
+MONDO_0008919,Orphanet_158,ambas,systemic primary carnitine deficiency disease,Systemic primary carnitine deficiency,192,62
+MONDO_0008922,Orphanet_1369,ambas,Sengers syndrome,Congenital cataract - hypertrophic cardiomyopathy - mitochondrial myopathy,73,78
+MONDO_0008924,Orphanet_1376,xrefs,congenital cataract-ichthyosis syndrome,Congenital cataract - ichthyosis,221,220
+MONDO_0008928,Orphanet_1368,ambas,cataract-ataxia-deafness syndrome,Cataract - ataxia - deafness,72,38
+MONDO_0008931,Orphanet_3258,ambas,Cenani-Lenz syndactyly syndrome,Cenani-Lenz syndrome,77,66
+MONDO_0008935,Orphanet_1173,ambas,cerebellar ataxia-hypogonadism syndrome,Cerebellar ataxia - hypogonadism,55,107
+MONDO_0008941,Orphanet_2031,ambas,hepatic fibrosis-renal cysts-intellectual disability syndrome,Hepatic fibrosis - renal cysts - intellectual disability,32,31
+MONDO_0008943,Orphanet_1170,ambas,autosomal recessive spinocerebellar ataxia 2,Autosomal recessive cerebelloparenchymal disorder type 3,147,150
+MONDO_0008960,Orphanet_90103,ambas,Charcot-Marie-Tooth disease-hearing loss-intellectual disability syndrome,Charcot-Marie-Tooth disease - deafness - intellectual disability,54,94
+MONDO_0008962,Orphanet_79476,ambas,Griscelli syndrome type 1,Griscelli disease type 1,60,392
+MONDO_0008963,Orphanet_167,ambas,Chediak-Higashi syndrome,Chédiak-Higashi syndrome,229,2022
+MONDO_0008964,Orphanet_53689,ambas,congenital secretory chloride diarrhea 1,Congenital chloride diarrhea,1016,39
+MONDO_0008966,Orphanet_1414,ambas,Aagenaes syndrome,Cholestasis-lymphedema syndrome,23,178
+MONDO_0008967,Orphanet_79095,ambas,congenital bile acid synthesis defect 4,Congenital bile acid synthesis defect type 4,21,94
+MONDO_0008970,Orphanet_50945,ambas,chondrodysplasia Blomstrand type,Blomstrand lethal chondrodysplasia,96,280
+MONDO_0008980,Orphanet_1180,ambas,ataxia-hypogonadism-choroidal dystrophy syndrome,Ataxia - hypogonadism - choroidal dystrophy,120,37
+MONDO_0008993,Orphanet_2010,ambas,cleft palate-stapes fixation-oligodontia syndrome,Cleft palate - stapes fixation - oligodontia,64,46
+MONDO_0009001,Orphanet_91494,ambas,macular coloboma-cleft palate-hallux valgus syndrome,Macular coloboma - cleft palate - hallux valgus,28,27
+MONDO_0009008,Orphanet_1338,sssom,heart defect - tongue hamartoma - polysyndactyly syndrome,Heart defect-tongue hamartoma-polysyndactyly syndrome,18,76
+MONDO_0009015,Orphanet_1490,ambas,corneal dystrophy-perceptive deafness syndrome,Corneal dystrophy - perceptive deafness,102,86
+MONDO_0009018,Orphanet_98972,ambas,central cloudy dystrophy of François,Central cloudy dystrophy of Francois,5,187
+MONDO_0009038,Orphanet_1533,xrefs,craniosynostosis-fibular aplasia syndrome,Craniosynostosis - fibular aplasia,68,67
+MONDO_0009045,Orphanet_1380,ambas,cataract-nephropathy-encephalopathy syndrome,Cataract - nephropathy - encephalopathy,85,37
+MONDO_0009075,Orphanet_1566,ambas,Dandy-Walker malformation-postaxial polydactyly syndrome,Dandy-Walker malformation - postaxial polydactyly,45,29
+MONDO_0009080,Orphanet_71271,ambas,split hand-foot malformation 1 with sensorineural hearing loss,Split hand - split foot - deafness,24,18
+MONDO_0009084,Orphanet_3236,ambas,conductive deafness-ptosis-skeletal anomalies syndrome,Conductive deafness - ptosis - skeletal anomalies,46,20
+MONDO_0009085,Orphanet_3239,ambas,deafness-vitiligo-achalasia syndrome,Deafness - vitiligo - achalasia,28,23
+MONDO_0009086,Orphanet_3217,ambas,deafness-small bowel diverticulosis-neuropathy syndrome,Deafness -  small bowel diverticulosis - neuropathy,77,71
+MONDO_0009089,Orphanet_3230,ambas,deafness-oligodontia syndrome,Deafness - oligodontia,45,4
+MONDO_0009092,Orphanet_2770,ambas,polycystic lipomembranous osteodysplasia with sclerosing leukoencephaly,Nasu-Hakola disease,69,152
+MONDO_0009099,Orphanet_3145,ambas,nephrogenic diabetes insipidus-intracranial calcification syndrome,Nephrogenic diabetes insipidus - intracranial calcification,5,52
+MONDO_0009105,Orphanet_84064,ambas,trichohepatoenteric syndrome,Syndromic diarrhea,15,133
+MONDO_0009107,Orphanet_628,ambas,diastrophic dysplasia,Diastrophic dwarfism,214,33
+MONDO_0009131,Orphanet_1764,ambas,Riley-Day syndrome,Familial dysautonomia,49,101
+MONDO_0009133,Orphanet_1766,ambas,"cerebellar ataxia, intellectual disability, and dysequilibrium",Dysequilibrium syndrome,296,341
+MONDO_0009134,Orphanet_98873,ambas,congenital dyserythropoietic anemia type 2,Congenital dyserythropoietic anemia type II,344,341
+MONDO_0009140,Orphanet_1865,ambas,Silverman-Handmaker type dyssegmental dysplasia,"Dyssegmental dysplasia, Silverman-Handmaker type",30,84
+MONDO_0009145,Orphanet_50944,ambas,SchC6pf-Schulz-Passarge syndrome,Schöpf-Schulz-Passarge syndrome,26,168
+MONDO_0009146,Orphanet_1883,ambas,ectodermal dysplasia-sensorineural deafness syndrome,Ectodermal dysplasia - sensorineural deafness,51,19
+MONDO_0009150,Orphanet_1882,ambas,hypohidrotic ectodermal dysplasia-hypothyroidism-ciliary dyskinesia syndrome,Hypohidrotic ectodermal dysplasia - hypothyroidism - ciliary dyskinesia,55,25
+MONDO_0009151,Orphanet_3253,ambas,cleft lip/palate-ectodermal dysplasia syndrome,Zlotogora-Ogur syndrome,84,34
+MONDO_0009156,Orphanet_1892,ambas,ectrodactyly-polydactyly syndrome,Ectrodactyly - polydactyly,93,4
+MONDO_0009162,Orphanet_289,ambas,Ellis-van Creveld syndrome,Ellis Van Creveld syndrome,108,93
+MONDO_0009181,Orphanet_257,ambas,"epidermolysis bullosa simplex 5B, with muscular dystrophy",Epidermolysis bullosa simplex with muscular dystrophy,62,33
+MONDO_0009182,Orphanet_79404,ambas,junctional epidermolysis bullosa Herlitz type,"Junctional epidermolysis bullosa, Herlitz type",68,68
+MONDO_0009183,Orphanet_79403,ambas,junctional epidermolysis bullosa with pyloric atresia,Junctional epidermolysis bullosa - pyloric atresia,44,39
+MONDO_0009185,Orphanet_1946,ambas,amelocerebrohypohidrotic syndrome,Amelo-cerebro-hypohidrotic syndrome,92,80
+MONDO_0009188,Orphanet_1951,ambas,epilepsy-telangiectasia syndrome,Epilepsy telangiectasia,88,7
+MONDO_0009209,Orphanet_1974,ambas,autosomal recessive faciodigitogenital syndrome,Autosomal recessive facio-digito-genital syndrome,63,59
+MONDO_0009223,Orphanet_325448,ambas,hypogonadotropic hypogonadism 23 with or without anosmia,Leydig cell hypoplasia due to LHB deficiency,727,1
+MONDO_0009239,Orphanet_52901,ambas,hypogonadotropic hypogonadism 24 without anosmia,Isolated follicle stimulating hormone deficiency,669,972
+MONDO_0009265,Orphanet_77259,ambas,Gaucher disease type I,Gaucher disease type 1,103,254
+MONDO_0009266,Orphanet_77260,ambas,Gaucher disease type II,Gaucher disease type 2,40,54
+MONDO_0009267,Orphanet_77261,ambas,Gaucher disease type III,Gaucher disease type 3,41,110
+MONDO_0009268,Orphanet_2072,ambas,Gaucher disease-ophthalmoplegia-cardiovascular calcification syndrome,Gaucher disease - ophthalmoplegia - cardiovascular calcification,32,30
+MONDO_0009279,Orphanet_869,ambas,triple-A syndrome,Triple A syndrome,40,102
+MONDO_0009287,Orphanet_79258,ambas,glycogen storage disease due to glucose-6-phosphatase deficiency type IA,Glycogen storage disease due to glucose-6-phosphatase deficiency type a,138,171
+MONDO_0009288,Orphanet_79259,ambas,glycogen storage disease Ib,Glycogen storage disease due to glucose-6-phosphatase deficiency type b,133,104
+MONDO_0009290,Orphanet_365,ambas,glycogen storage disease II,Glycogen storage disease due to acid maltase deficiency,162,606
+MONDO_0009297,Orphanet_69076,ambas,familial renal glucosuria,Renal glucosuria,87,85
+MONDO_0009299,Orphanet_243,ambas,46 XX gonadal dysgenesis,"46,XX gonadal dysgenesis",343,472
+MONDO_0009321,Orphanet_2110,ambas,hallux varus-preaxial polysyndactyly syndrome,Hallux varus - preaxial polysyndactyly,80,79
+MONDO_0009329,Orphanet_199241,ambas,pulmonary venoocclusive disease 2,Pulmonary capillary hemangiomatosis,16,74
+MONDO_0009331,Orphanet_2128,ambas,isolated hemihyperplasia,Hemihypertrophy,89,72
+MONDO_0009333,Orphanet_1655,ambas,mullerian derivatives-lymphangiectasia-polydactyly syndrome,Müllerian derivatives - lymphangiectasia - polydactyly,48,52
+MONDO_0009338,Orphanet_79124,ambas,hepatic veno-occlusive disease-immunodeficiency syndrome,Hepatic veno-occlusive disease - immunodeficiency,230,368
+MONDO_0009339,Orphanet_79303,ambas,congenital bile acid synthesis defect 2,Congenital bile acid synthesis defect type 2,16,139
+MONDO_0009342,Orphanet_2155,ambas,Hirschsprung disease-hearing loss-polydactyly syndrome,Hirschsprung disease - deafness - polydactyly,24,27
+MONDO_0009344,Orphanet_2153,ambas,Hirschsprung disease-nail hypoplasia-dysmorphism syndrome,Hirschsprung disease - nail hypoplasia - dysmorphism,21,20
+MONDO_0009352,Orphanet_394,ambas,classic homocystinuria,Classical homocystinuria,77,74
+MONDO_0009363,Orphanet_2181,ambas,hydrocephaly-tall stature-joint laxity syndrome,Hydrocephaly - tall stature - joint laxity,27,25
+MONDO_0009373,Orphanet_79156,ambas,seizures-intellectual disability due to hydroxylysinuria syndrome,Seizures - intellectual disability due to hydroxylysinuria,40,38
+MONDO_0009377,Orphanet_927,ambas,hyperammonemia due to N-acetylglutamate synthase deficiency,Hyperammonemia due to N-acetylglutamate synthetase deficiency,34,38
+MONDO_0009393,Orphanet_415,ambas,ornithine translocase deficiency,Hyperornithinemia-hyperammonemia-homocitrullinuria,91,57
+MONDO_0009402,Orphanet_2211,ambas,acrofrontofacionasal dysostosis 2,Hypertelorism - hypospadias - polysyndactyly syndrome,43,26
+MONDO_0009404,Orphanet_2213,ambas,"hypertelorism, microtia, facial clefting syndrome",Hypertelorism-microtia-facial clefting syndrome,63,28
+MONDO_0009405,Orphanet_2218,ambas,cervical hypertrichosis-peripheral neuropathy syndrome,Cervical hypertrichosis - peripheral neuropathy,48,42
+MONDO_0009406,Orphanet_1517,ambas,hypertrichotic osteochondrodysplasia Cantu type,"Hypertrichotic osteochondrodysplasia, Cantu type",80,75
+MONDO_0009411,Orphanet_3453,ambas,autoimmune polyendocrine syndrome type 1,Autoimmune polyendocrinopathy type 1,239,71
+MONDO_0009414,Orphanet_2089,ambas,glycogen storage disorder due to hepatic glycogen synthase deficiency,Glycogen storage disease due to hepatic glycogen synthase deficiency,429,517
+MONDO_0009417,Orphanet_2410,ambas,hypergonadotropic hypogonadism-cataract syndrome,Hypergonadotropic hypogonadism - cataract syndrome,488,451
+MONDO_0009420,Orphanet_2232,ambas,primary hypergonadotropic hypogonadism-partial alopecia syndrome,Primary hypergonadotropic hypogonadism - partial alopecia,278,183
+MONDO_0009426,Orphanet_2323,ambas,hypoparathyroidism-retardation-dysmorphism syndrome,Sanjad-Sakati syndrome,288,52
+MONDO_0009443,Orphanet_457,ambas,autosomal recessive congenital ichthyosis 4B,Harlequin ichthyosis,15,57
+MONDO_0009444,Orphanet_2269,ambas,ichthyosis-alopecia-eclabion-ectropion-intellectual disability syndrome,Ichthyosis - alopecia - eclabion - ectropion - intellectual disability,70,15
+MONDO_0009445,Orphanet_2274,ambas,ichthyosis-hepatosplenomegaly-cerebellar degeneration syndrome,Ichthyosis - hepatosplenomegaly - cerebellar degeneration,175,31
+MONDO_0009446,Orphanet_2278,ambas,ichthyosis-intellectual disability-dwarfism-renal impairment syndrome,Ichthyosis - intellectual disability - dwarfism - renal impairment,137,97
+MONDO_0009451,Orphanet_83471,sssom,Nezelof syndrome,Thymic aplasia,517,618
+MONDO_0009459,Orphanet_88642,ambas,"channelopathy-associated congenital insensitivity to pain, autosomal recessive",Channelopathy-associated congenital insensitivity to pain,20,18
+MONDO_0009461,Orphanet_137893,ambas,spermatogenic failure 5,Male infertility due to large-headed multiflagellar polyploid spermatozoa,936,13
+MONDO_0009490,Orphanet_678,ambas,Papillon-Lefevre disease,Papillon-Lefèvre syndrome,71,63
+MONDO_0009504,Orphanet_17,ambas,mitochondrial DNA depletion syndrome 9,Fatal infantile lactic acidosis with methylmalonic aciduria,57,49
+MONDO_0009506,Orphanet_169142,sssom,specific granule deficiency,Recurrent infection due to specific granule deficiency,172,677
+MONDO_0009513,Orphanet_2407,ambas,laryngo-onycho-cutaneous syndrome,LOC syndrome,51,45
+MONDO_0009515,Orphanet_79293,ambas,Norum disease,Familial LCAT deficiency,93,19
+MONDO_0009516,Orphanet_2310,ambas,absence deformity of leg-cataract syndrome,Absence deformity of leg - cataract,100,90
+MONDO_0009517,Orphanet_508,ambas,Donohue syndrome,Leprechaunism,84,87
+MONDO_0009524,Orphanet_1891,ambas,intellectual disability-spasticity-ectrodactyly syndrome,Intellectual disability - spasticity - ectrodactyly,50,9
+MONDO_0009532,Orphanet_531,ambas,Miller-Dieker lissencephaly syndrome,Miller-Dieker syndrome,113,96
+MONDO_0009543,Orphanet_2083,ambas,prominent glabella-microcephaly-hypogenitalism syndrome,Prominent glabella - microcephaly - hypogenitalism,26,17
+MONDO_0009567,Orphanet_559,ambas,Marinesco-Sjogren syndrome,Marinesco-Sjögren syndrome,443,42
+MONDO_0009583,Orphanet_2728,ambas,"blepharophimosis - intellectual disability syndrome, Ohdo type","Blepharophimosis-intellectual disability syndrome, Ohdo type",59,65
+MONDO_0009589,Orphanet_2631,ambas,mesomelic dwarfism-cleft palate-camptodactyly syndrome,Mesomelic dwarfism - cleft palate - camptodactyly,124,83
+MONDO_0009598,Orphanet_166035,sssom,metaphyseal chondrodysplasia-retinitis pigmentosa syndrome,Metaphyseal chondrodysplasia - retinitis pigmentosa,54,58
+MONDO_0009599,Orphanet_2502,ambas,metaphyseal dysostosis-intellectual disability-conductive deafness syndrome,Metaphyseal dysostosis - intellectual disability - conductive deafness,298,173
+MONDO_0009603,Orphanet_88639,ambas,3-hydroxyisobutyryl-CoA hydrolase deficiency,Neurodegeneration due to 3-hydroxyisobutyryl-CoA hydrolase deficiency,43,28
+MONDO_0009607,Orphanet_168598,ambas,methionine adenosyltransferase deficiency,Brain demyelination due to methionine adenosyltransferase deficiency,32,41
+MONDO_0009618,Orphanet_2515,ambas,microcephaly-cardiomyopathy syndrome,Microcephaly - cardiomyopathy,70,52
+MONDO_0009621,Orphanet_2522,ambas,microcephaly-cervical spine fusion anomalies syndrome,Microcephaly - cervical spine fusion anomalies,92,51
+MONDO_0009626,Orphanet_1229,ambas,pseudo-TORCH syndrome,Congenital intrauterine infection-like syndrome,66,60
+MONDO_0009636,Orphanet_279934,ambas,mitochondrial DNA depletion syndrome 3 (hepatocerebral type),"Mitochondrial DNA depletion syndrome, hepatocerebral form due to DGUOK deficiency",75,40
+MONDO_0009637,Orphanet_206966,ambas,inborn mitochondrial myopathy,Mitochondrial myopathy,990,712
+MONDO_0009642,Orphanet_2751,ambas,orofaciodigital syndrome type II,Orofaciodigital syndrome type 2,157,170
+MONDO_0009670,Orphanet_1486,ambas,lethal congenital contracture syndrome 1,Lethal congenital contracture syndrome type 1,43,89
+MONDO_0009672,Orphanet_83419,ambas,"spinal muscular atrophy, type III",Proximal spinal muscular atrophy type 3,165,76
+MONDO_0009673,Orphanet_83418,ambas,"spinal muscular atrophy, type II",Proximal spinal muscular atrophy type 2,106,18
+MONDO_0009678,Orphanet_272,ambas,"muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A, 4","Congenital muscular dystrophy, Fukuyama type",126,98
+MONDO_0009680,Orphanet_1875,ambas,congenital muscular dystrophy-infantile cataract-hypogonadism syndrome,Congenital muscular dystrophy - infantile cataract - hypogonadism,286,172
+MONDO_0009698,Orphanet_308,ambas,Unverricht-Lundborg syndrome,Unverricht-Lundborg disease,192,280
+MONDO_0009699,Orphanet_163696,ambas,action myoclonus-renal failure syndrome,Action myoclonus - renal failure syndrome,81,30
+MONDO_0009722,Orphanet_168572,ambas,Bailey-Bloch congenital myopathy,Native American myopathy,90,49
+MONDO_0009726,Orphanet_324977,sssom,proteosome-associated autoinflammatory syndrome,Proteasome disability syndrome,674,102
+MONDO_0009728,Orphanet_93592,ambas,nephronophthisis 1,Juvenile nephronophthisis,221,15
+MONDO_0009729,Orphanet_2668,ambas,nephropathy - deafness - hyperparathyroidism syndrome,Nephropathy-deafness-hyperparathyroidism syndrome,1,100
+MONDO_0009731,Orphanet_2669,ambas,nephrosis-deafness-urinary tract-digital malformations syndrome,Nephrosis - deafness - urinary tract - digital malformations,50,21
+MONDO_0009738,Orphanet_87876,ambas,sialidosis type 2,sialidosis type II,74,47
+MONDO_0009744,Orphanet_228329,ambas,neuronal ceroid lipofuscinosis 1,CLN1 disease,227,34
+MONDO_0009745,Orphanet_228360,ambas,neuronal ceroid lipofuscinosis 5,CLN5 disease,36,173
+MONDO_0009760,Orphanet_89844,ambas,Norman-Roberts syndrome,"Lissencephaly syndrome, Norman-Roberts type",22,21
+MONDO_0009793,Orphanet_2752,xrefs,orofaciodigital syndrome III,Orofaciodigital syndrome type 3,68,26
+MONDO_0009794,Orphanet_2753,ambas,orofaciodigital syndrome IV,Orofaciodigital syndrome type 4,97,45
+MONDO_0009795,Orphanet_141007,ambas,orofaciodigital syndrome IX,Orofaciodigital syndrome type 9,42,26
+MONDO_0009796,Orphanet_414,ambas,ornithine aminotransferase deficiency,Gyrate atrophy of choroid and retina,39,61
+MONDO_0009797,Orphanet_30,sssom,orotic aciduria,Hereditary orotic aciduria,154,78
+MONDO_0009798,Orphanet_3042,ambas,Primrose syndrome,Intellectual disability - cataracts - calcified pinnae - myopathy,129,90
+MONDO_0009803,Orphanet_2772,ambas,congenital osteogenesis imperfecta-microcephaly-cataracts syndrome,Congenital osteogenesis imperfecta - microcephaly - cataracts,20,16
+MONDO_0009814,Orphanet_2324,ambas,osteopenia-intellectual disability-sparse hair syndrome,Kaler-Garrity-Stern syndrome,93,79
+MONDO_0009818,Orphanet_2785,ambas,autosomal recessive osteopetrosis 3,Osteopetrosis with renal tubular acidosis,73,106
+MONDO_0009820,Orphanet_2788,ambas,osteoporosis-pseudoglioma syndrome,Osteoporosis - pseudoglioma,1240,37
+MONDO_0009832,Orphanet_2805,ambas,pancreatic agenesis,Partial pancreatic agenesis,204,21
+MONDO_0009839,Orphanet_240085,ambas,progressive supranuclear palsy-parkinsonism syndrome,Progressive supranuclear palsy - parkinsonism,13,90
+MONDO_0009843,Orphanet_280293,ambas,hypomyelinating leukodystrophy 3,Pelizaeus-Merzbacher-like disease due to AIMP1 mutation,31,30
+MONDO_0009857,Orphanet_2856,ambas,persistent Mullerian duct syndrome,Persistent Müllerian duct syndrome,711,1050
+MONDO_0009863,Orphanet_13,ambas,BH4-deficient hyperphenylalaninemia A,6-pyruvoyl-tetrahydropterin synthase deficiency,62,91
+MONDO_0009871,Orphanet_2891,ambas,pili torti-developmental delay-neurological abnormalities syndrome,Pili torti - developmental delay - neurological abnormalities,73,33
+MONDO_0009872,Orphanet_123,ambas,Bjornstad syndrome,Björnstad syndrome,458,84
+MONDO_0009880,Orphanet_85442,ambas,short stature-pituitary and cerebellar defects-small sella turcica syndrome,Short stature - pituitary and cerebellar defects - small sella turcica,19,75
+MONDO_0009883,Orphanet_79,ambas,alpha-2-plasmin inhibitor deficiency,Congenital alpha2 antiplasmin deficiency,29,47
+MONDO_0009892,Orphanet_238557,ambas,Chuvash polycythemia,Chuvash erythrocytosis,88,66
+MONDO_0009900,Orphanet_2934,ambas,polysyndactyly-cardiac malformation syndrome,Polysyndactyly - cardiac malformation,43,42
+MONDO_0009908,Orphanet_1578,ambas,pterin-4 alpha-carbinolamine dehydratase 1 deficiency,Dehydratase deficiency,18,41
+MONDO_0009915,Orphanet_2975,sssom,"46,XX disorder of sex development-skeletal anomalies syndrome","46,XX disorder of sex development - skeletal anomalies",56,59
+MONDO_0009917,Orphanet_171876,ambas,"pseudohypoaldosteronism, type IB1, autosomal recessive",Generalized pseudohypoaldosteronism type 1,60,29
+MONDO_0009921,Orphanet_2166,ambas,holoprosencephaly-postaxial polydactyly syndrome,Holoprosencephaly - postaxial polydactyly,75,67
+MONDO_0009924,Orphanet_289157,ambas,"vitamin D-dependent rickets, type 1",Hypocalcemic vitamin D-dependent rickets,61,186
+MONDO_0009925,Orphanet_758,ambas,autosomal recessive inherited pseudoxanthoma elasticum,Pseudoxanthoma elasticum,38,287
+MONDO_0009929,Orphanet_217563,sssom,"surfactant metabolism dysfunction, pulmonary, 1",Neonatal acute respiratory distress with surfactant metabolism deficiency,119,183
+MONDO_0009934,Orphanet_210122,ambas,alveolar capillary dysplasia with misalignment of pulmonary veins,Congenital alveolar capillary dysplasia,150,145
+MONDO_0009952,Orphanet_3270,ambas,radioulnar synostosis-developmental delay-hypotonia syndrome,Radio-ulnar synostosis - intellectual disability - hypotonia,54,19
+MONDO_0009958,Orphanet_773,ambas,adult Refsum disease,Refsum disease,47,88
+MONDO_0009974,Orphanet_540,xrefs,familial hemophagocytic lymphohistiocytosis type 1,Familial hemophagocytic lymphohistiocytosis,135,858
+MONDO_0009978,Orphanet_1574,ambas,retinal degeneration-nanophthalmos-glaucoma syndrome,Retinal degeneration - nanophthalmos - glaucoma,156,121
+MONDO_0009983,Orphanet_3085,ambas,retinitis pigmentosa-intellectual disability-deafness-hypogenitalism syndrome,Retinitis pigmentosa - intellectual disability - deafness - hypogenitalism,73,92
+MONDO_0010001,Orphanet_1806,ambas,ectodermal dysplasia-blindness syndrome,Ectodermal dysplasia - blindness,43,25
+MONDO_0010007,Orphanet_2511,ambas,microbrachycephaly-ptosis-cleft lip syndrome,Microbrachycephaly - ptosis - cleft lip,58,32
+MONDO_0010015,Orphanet_289499,ambas,anterior segment dysgenesis 7,Congenital cataract microcornea with corneal opacity,388,17
+MONDO_0010017,Orphanet_158029,xrefs,sea-blue histiocyte syndrome,Sea-blue histiocytosis,16,257
+MONDO_0010024,Orphanet_93268,ambas,Beemer-Langer syndrome,"Short rib-polydactyly syndrome, Beemer-Langer type",105,98
+MONDO_0010029,Orphanet_101063,ambas,situs inversus,Situs inversus totalis,150,45
+MONDO_0010031,Orphanet_816,ambas,Sjogren-Larsson syndrome,Sjögren-Larsson syndrome,144,37
+MONDO_0010039,Orphanet_1355,ambas,congenital heart defect-round face-developmental delay syndrome,Heart defect - round face - congenital developmental delay,61,40
+MONDO_0010041,Orphanet_98,ambas,Charlevoix-Saguenay spastic ataxia,Autosomal recessive spastic ataxia of Charlevoix-Saguenay,185,157
+MONDO_0010043,Orphanet_100998,ambas,hereditary spastic paraplegia 17,Autosomal dominant spastic paraplegia type 17,61,68
+MONDO_0010044,Orphanet_100996,ambas,hereditary spastic paraplegia 15,Autosomal recessive spastic paraplegia type 15,42,41
+MONDO_0010046,Orphanet_101003,ambas,hereditary spastic paraplegia 23,Autosomal recessive spastic paraplegia type 23,35,35
+MONDO_0010047,Orphanet_100986,ambas,hereditary spastic paraplegia 5A,Autosomal recessive spastic paraplegia type 5A,86,69
+MONDO_0010049,Orphanet_2818,ambas,spastic paraplegia-glaucoma-intellectual disability syndrome,Spastic paraplegia - glaucoma - intellectual disability,8,6
+MONDO_0010051,Orphanet_3011,ambas,spastic tetraplegia-retinitis pigmentosa-intellectual disability syndrome,Spastic tetraplegia - retinitis pigmentosa - intellectual disability,19,6
+MONDO_0010056,Orphanet_83420,ambas,"spinal muscular atrophy, type IV",Proximal spinal muscular atrophy type 4,228,23
+MONDO_0010064,Orphanet_2572,ambas,spastic ataxia-corneal dystrophy syndrome,Spastic ataxia - corneal dystrophy,154,101
+MONDO_0010068,Orphanet_93357,ambas,"spondyloepimetaphyseal dysplasia, sponastrime type",SPONASTRIME dysplasia,138,157
+MONDO_0010069,Orphanet_94095,xrefs,spondylocostal dysostosis-anal and genitourinary malformations syndrome,Spondylocostal dysostosis - anal and genitourinary malformations,68,59
+MONDO_0010077,Orphanet_93358,ambas,spondyloepimetaphyseal dysplasia-short limb-abnormal calcification syndrome,Spondyloepimetaphyseal dysplasia - short limb - abnormal calcification,67,234
+MONDO_0010078,Orphanet_1856,ambas,spondyloperipheral dysplasia,Spondyloperipheral dysplasia - short ulna,215,41
+MONDO_0010088,Orphanet_585,ambas,mucosulfatidosis,Multiple sulfatase deficiency,40,93
+MONDO_0010091,Orphanet_1545,ambas,Cold-induced sweating syndrome 1,Crisponi syndrome,59,10
+MONDO_0010094,Orphanet_3275,ambas,spondylocarpotarsal synostosis syndrome,Spondylocarpotarsal synostosis,142,50
+MONDO_0010099,Orphanet_309246,ambas,Tay-Sachs disease AB variant,"GM2-gangliosidosis, AB variant",30,79
+MONDO_0010110,Orphanet_3301,ambas,tetraamelia-multiple malformations syndrome,Tetraamelia - multiple malformations,35,83
+MONDO_0010121,Orphanet_3320,ambas,thrombocytopenia-absent radius syndrome,Thrombocytopenia - absent radius,276,87
+MONDO_0010125,Orphanet_2489,ambas,upper limb defect-eye and ear abnormalities syndrome,Upper limb defect - eye and ear abnormalities,140,136
+MONDO_0010152,Orphanet_3363,ambas,trichomegaly-retina pigmentary degeneration-dwarfism syndrome,Trichomegaly - retina pigmentary degeneration - dwarfism,218,70
+MONDO_0010160,Orphanet_28378,ambas,tyrosinemia type II,Tyrosinemia type 2,62,52
+MONDO_0010161,Orphanet_882,ambas,tyrosinemia type I,Tyrosinemia type 1,71,219
+MONDO_0010162,Orphanet_69723,ambas,tyrosinemia type III,Tyrosinemia type 3,47,43
+MONDO_0010165,Orphanet_2249,ambas,ulna hypoplasia-intellectual disability syndrome,Ulna hypoplasia - intellectual disability,66,39
+MONDO_0010176,Orphanet_2754,ambas,orofaciodigital syndrome type 6,Joubert syndrome with orofaciodigital defect,100,139
+MONDO_0010187,Orphanet_98434,xrefs,"vitamin K-dependent clotting factors, combined deficiency of, type 1",Hereditary combined deficiency of vitamin K-dependent clotting factors,36,30
+MONDO_0010188,Orphanet_96,ambas,familial isolated deficiency of vitamin E,Ataxia with vitamin E deficiency,32,170
+MONDO_0010210,Orphanet_276249,xrefs,xeroderma pigmentosum group A,Xeroderma pigmentosum complementation group A,88,47
+MONDO_0010211,Orphanet_276255,xrefs,xeroderma pigmentosum group C,Xeroderma pigmentosum complementation group C,94,55
+MONDO_0010212,Orphanet_276258,xrefs,xeroderma pigmentosum group D,Xeroderma pigmentosum complementation group D,117,66
+MONDO_0010213,Orphanet_276261,xrefs,xeroderma pigmentosum group E,Xeroderma pigmentosum complementation group E,47,25
+MONDO_0010214,Orphanet_90342,ambas,xeroderma pigmentosum variant type,Xeroderma pigmentosum variant,21,35
+MONDO_0010215,Orphanet_276264,xrefs,xeroderma pigmentosum group F,Xeroderma pigmentosum complementation group F,46,40
+MONDO_0010216,Orphanet_276267,xrefs,xeroderma pigmentosum group G,Xeroderma pigmentosum complementation group G,79,66
+MONDO_0010235,Orphanet_3077,sssom,X-linked intellectual disability-psychosis-macroorchidism syndrome,X-linked intellectual disability - psychosis - macroorchidism,170,75
+MONDO_0010263,Orphanet_86818,sssom,Alport syndrome-intellectual disability-midface hypoplasia-elliptocytosis syndrome,Alport syndrome - intellectual disability - midface hypoplasia - elliptocytosis,40,37
+MONDO_0010264,Orphanet_95702,ambas,X-linked adrenal hypoplasia congenita,Cytomegalic congenital adrenal hypoplasia,198,458
+MONDO_0010277,Orphanet_85286,ambas,syndromic X-linked intellectual disability Shashi type,"X-linked intellectual disability, Shashi type",19,17
+MONDO_0010279,Orphanet_88630,ambas,terminal osseous dysplasia-pigmentary defects syndrome,Terminal osseous dysplasia - pigmentary defects,88,69
+MONDO_0010285,Orphanet_85273,ambas,syndromic X-linked intellectual disability Abidi type,"X-linked intellectual disability, Abidi type",4,9
+MONDO_0010286,Orphanet_85287,sssom,syndromic X-linked intellectual disability Siderius type,"X-linked intellectual disability, Siderius type",37,44
+MONDO_0010287,Orphanet_100997,ambas,hereditary spastic paraplegia 16,X-linked spastic paraplegia type 16,26,30
+MONDO_0010293,Orphanet_98813,sssom,ectodermal dysplasia and immune deficiency,Hypohidrotic ectodermal dysplasia with immunodeficiency,232,406
+MONDO_0010295,Orphanet_69088,ambas,anhidrotic ectodermal dysplasia-immunodeficiency-osteopetrosis-lymphedema syndrome,Anhidrotic ectodermal dysplasia - immunodeficiency - osteopetrosis - lymphedema,6,1
+MONDO_0010305,Orphanet_52503,ambas,creatine transporter deficiency,X-linked creatine transporter deficiency,63,58
+MONDO_0010310,Orphanet_2780,ambas,osteopathia striata with cranial sclerosis,Osteopathia striata - cranial sclerosis,356,135
+MONDO_0010319,Orphanet_93952,ambas,syndromic X-linked intellectual disability Hedera type,"X-linked intellectual disability, Hedera type",177,191
+MONDO_0010327,Orphanet_391417,ambas,HSD10 mitochondrial disease,HSD10 disease,55,33
+MONDO_0010328,Orphanet_231401,ambas,alpha-thalassemia-myelodysplastic syndrome,Alpha-thalassemia - myelodysplastic syndrome,891,709
+MONDO_0010332,Orphanet_85280,ambas,X-linked intellectual disability-cubitus valgus-dysmorphism syndrome,X-linked intellectual disability - cubitus valgus - dysmorphism,15,12
+MONDO_0010333,Orphanet_52055,ambas,corpus callosum agenesis-intellectual disability-coloboma-micrognathia syndrome,Agenesis of the corpus callosum - intellectual disability - coloboma - micrognathia,46,37
+MONDO_0010336,Orphanet_2755,ambas,orofaciodigital syndrome VIII,Orofaciodigital syndrome type 8,41,18
+MONDO_0010337,Orphanet_137831,ambas,X-linked intellectual disability-cerebellar hypoplasia syndrome,X-linked intellectual disability - cerebellar hypoplasia,47,41
+MONDO_0010339,Orphanet_85294,ambas,"epilepsy, X-linked 1, with variable learning disabilities and behavior disorders",X-linked epilepsy - learning disabilities - behavior disorders,16,10
+MONDO_0010353,Orphanet_85321,ambas,"deafness-intellectual disability, Martin-Probst type syndrome","Deafness - intellectual disability, Martin-Probst type",35,35
+MONDO_0010355,Orphanet_85279,sssom,syndromic X-linked intellectual disability Claes-Jensen type,Syndromic X-linked intellectual disability due to JARID1C mutation,72,70
+MONDO_0010371,Orphanet_178333,ambas,Aland island eye disease,Åland Islands eye disease,30,1506
+MONDO_0010375,Orphanet_163985,sssom,"developmental and epileptic encephalopathy, 8",Hyperekplexia - epilepsy,39,18
+MONDO_0010378,Orphanet_139583,ambas,X-linked hereditary sensory and autonomic neuropathy with hearing loss,X-linked hereditary sensory and autonomic neuropathy with deafness,95,134
+MONDO_0010379,Orphanet_3057,ambas,Brunner syndrome,Monoamine oxidase A deficiency,77,94
+MONDO_0010403,Orphanet_998,ambas,albinism-hearing loss syndrome,Albinism-deafness syndrome,9,158
+MONDO_0010407,Orphanet_85328,xrefs,"intellectual disability, X-linked syndromic, Turner type","X-linked intellectual disability, Turner type",108,9
+MONDO_0010408,Orphanet_140952,ambas,syndactyly-telecanthus-anogenital and renal malformations syndrome,Syndactyly - telecanthus - anogenital and renal malformations,67,61
+MONDO_0010409,Orphanet_85324,ambas,syndromic X-linked intellectual disability Shrimpton type,"X-linked intellectual disability, Shrimpton type",2,1
+MONDO_0010412,Orphanet_163979,ambas,X-linked intellectual disability-craniofacioskeletal syndrome,X-linked intellectual disability - craniofacioskeletal syndrome,56,54
+MONDO_0010417,Orphanet_163937,ambas,syndromic X-linked intellectual disability Najm type,"X-linked intellectual disability, Najm type",62,59
+MONDO_0010418,Orphanet_171607,ambas,hereditary spastic paraplegia 34,X-linked spastic paraplegia type 34,18,22
+MONDO_0010421,Orphanet_47,ambas,Bruton-type agammaglobulinemia,X-linked agammaglobulinemia,424,707
+MONDO_0010428,Orphanet_217377,ambas,chromosome Xp11.23-p11.22 duplication syndrome,Microduplication Xp11.22-p11.23 syndrome,35,53
+MONDO_0010448,Orphanet_280679,ambas,moyamoya angiopathy-short stature-facial dysmorphism-hypergonadotropic hypogonadism syndrome,Moyamoya disease - short stature - facial dysmorphism - hypergonadotropic hypogonadism,76,52
+MONDO_0010457,Orphanet_276432,ambas,Ogden syndrome,Premature aging appearance-developmental delay-cardiac arrhythmia syndrome,148,135
+MONDO_0010460,Orphanet_289483,ambas,syndromic X-linked intellectual disability 17,Intellectual disability - alacrima - achalasia,20,18
+MONDO_0010461,Orphanet_163956,ambas,syndromic X-linked intellectual disability Nascimento type,"X-linked intellectual disability, Nascimento type",47,48
+MONDO_0010466,Orphanet_300496,ambas,multiple congenital anomalies-hypotonia-seizures syndrome 2,Multiple congenital anomalies-hypotonia-seizures syndrome type 2,209,203
+MONDO_0010472,Orphanet_324422,sssom,"developmental and epileptic encephalopathy, 36",ALG13-CDG,44,46
+MONDO_0010473,Orphanet_324410,ambas,X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome,X-linked intellectual disability - cardiomegaly - congestive heart failure,39,32
+MONDO_0010477,Orphanet_293707,ambas,"blepharophimosis - intellectual disability syndrome, MKB type","Blepharophimosis-intellectual disability syndrome, MKB type",63,66
+MONDO_0010479,Orphanet_352675,ambas,Charcot-Marie-Tooth disease X-linked dominant 6,X-linked Charcot-Marie-Tooth disease type 6,20,62
+MONDO_0010519,Orphanet_847,ambas,alpha thalassemia-X-linked intellectual disability syndrome,Alpha-thalassemia - X-linked intellectual disability syndrome,124,99
+MONDO_0010523,Orphanet_85453,ambas,X-linked reticulate pigmentary disorder,X-linked reticulate pigmentary disorder with systemic manifestations,33,44
+MONDO_0010532,Orphanet_1145,ambas,infantile-onset X-linked spinal muscular atrophy,X-linked distal arthrogryposis multiplex congenita,69,41
+MONDO_0010533,Orphanet_1187,ambas,Arts syndrome,Lethal ataxia with deafness and optic atrophy,53,28
+MONDO_0010535,Orphanet_113,ambas,Bazex-Dupre-Christol syndrome,Bazex-Dupré-Christol syndrome,59,76
+MONDO_0010535,Orphanet_166113,ambas,Bazex-Dupre-Christol syndrome,Bazex syndrome,59,67
+MONDO_0010549,Orphanet_101075,ambas,Charcot-Marie-Tooth disease X-linked dominant 1,X-linked Charcot-Marie-Tooth disease type 1,137,126
+MONDO_0010550,Orphanet_101076,ambas,Charcot-Marie-Tooth disease X-linked recessive 2,X-linked Charcot-Marie-Tooth disease type 2,41,52
+MONDO_0010551,Orphanet_101077,ambas,Charcot-Marie-Tooth disease X-linked recessive 3,X-linked Charcot-Marie-Tooth disease type 3,40,56
+MONDO_0010558,Orphanet_1435,ambas,choroideremia-deafness-obesity syndrome,Choroideremia - deafness - obesity,94,101
+MONDO_0010563,Orphanet_16,ambas,blue cone monochromacy,Blue cone monochromatism,232,48
+MONDO_0010570,Orphanet_1520,ambas,craniofrontonasal syndrome,Craniofrontonasal dysplasia,74,72
+MONDO_0010574,Orphanet_1568,ambas,syndromic X-linked intellectual disability 5,X-linked intellectual disability - Dandy-Walker malformation - basal ganglia disease - Seizures,438,48
+MONDO_0010576,Orphanet_383,xrefs,X-linked mixed hearing loss with perilymphatic gusher,X-linked mixed deafness with perilymphatic gusher,18,138
+MONDO_0010578,Orphanet_52368,ambas,deafness dystonia syndrome,Mohr-Tranebjaerg syndrome,36,112
+MONDO_0010611,Orphanet_2182,ambas,X-linked hydrocephalus with stenosis of the aqueduct of Sylvius,Hydrocephalus with stenosis of the aqueduct of Sylvius,65,197
+MONDO_0010613,Orphanet_308993,ambas,inborn glycerol kinase deficiency,Glycerol kinase deficiency,84,6
+MONDO_0010617,Orphanet_2234,ambas,male hypergonadotropic hypogonadism-intellectual disability-skeletal anomalies syndrome,Male hypergonadotropic hypogonadism - intellectual disability - skeletal anomalies,267,237
+MONDO_0010619,Orphanet_89936,ambas,X-linked dominant hypophosphatemic rickets,X-linked hypophosphatemia,153,236
+MONDO_0010626,Orphanet_101088,ambas,hyper-IgM syndrome type 1,X-linked hyper-IgM syndrome,503,923
+MONDO_0010627,Orphanet_2442,ambas,X-linked lymphoproliferative syndrome,X-linked lymphoproliferative disease,53,788
+MONDO_0010638,Orphanet_2339,ambas,keratosis follicularis-dwarfism-cerebral atrophy syndrome,Keratosis follicularis - dwarfism - cerebral atrophy,12,11
+MONDO_0010639,Orphanet_2375,ambas,laryngeal abductor paralysis-intellectual disability syndrome,Laryngeal abductor paralysis - intellectual disability,3,1
+MONDO_0010641,Orphanet_1018,ambas,X-linked diffuse leiomyomatosis-Alport syndrome,X-linked diffuse leiomyomatosis - Alport syndrome,55,71
+MONDO_0010650,Orphanet_2484,ambas,Melnick-Needles syndrome,"Osteodysplasty, Melnick-Needles type",1195,47
+MONDO_0010652,Orphanet_3052,ambas,X-linked intellectual disability-seizures-psoriasis syndrome,X-linked intellectual disability - seizures - psoriasis,23,22
+MONDO_0010658,Orphanet_85290,ambas,syndromic X-linked intellectual disability 12,"X-linked intellectual disability, Wilson type",16,15
+MONDO_0010662,Orphanet_2824,ambas,paraplegia-intellectual disability-hyperkeratosis syndrome,Paraplegia - intellectual disability - hyperkeratosis,79,73
+MONDO_0010663,Orphanet_73220,xrefs,"intellectual disability-hypotonic facies syndrome, X-linked, 1",X-linked intellectual disability - hypotonic face,90,72
+MONDO_0010664,Orphanet_3063,ambas,syndromic X-linked intellectual disability Snyder type,"X-linked intellectual disability, Snyder type",75,84
+MONDO_0010667,Orphanet_2958,ambas,Prieto syndrome,X-linked intellectual disability - dysmorphism - cerebral atrophy,41,26
+MONDO_0010668,Orphanet_1436,ambas,skeletal dysplasia-intellectual disability syndrome,Skeletal dysplasia - intellectual disability,49,183
+MONDO_0010672,Orphanet_2556,ambas,linear skin defects with multiple congenital anomalies,Microphthalmia with linear skin defects syndrome,10,92
+MONDO_0010689,Orphanet_101078,ambas,Charcot-Marie-Tooth disease X-linked recessive 4,X-linked Charcot-Marie-Tooth disease type 4,24,88
+MONDO_0010698,Orphanet_98890,ambas,optic atrophy 2,Early-onset X-linked optic atrophy,242,48
+MONDO_0010699,Orphanet_99014,ambas,Charcot-Marie-Tooth disease X-linked recessive 5,X-linked Charcot-Marie-Tooth disease type 5,39,71
+MONDO_0010702,Orphanet_2750,ambas,orofaciodigital syndrome I,Orofaciodigital syndrome type 1,89,78
+MONDO_0010708,Orphanet_2804,ambas,Pallister-W syndrome,W syndrome,1,22
+MONDO_0010709,Orphanet_2379,ambas,early-onset parkinsonism-intellectual disability syndrome,Early-onset parkinsonism - intellectual disability,155,80
+MONDO_0010710,Orphanet_2888,ambas,Pierre Robin syndrome-faciodigital anomaly syndrome,Pierre Robin syndrome - faciodigital anomaly,100,99
+MONDO_0010713,Orphanet_2966,ambas,"properdin deficiency, X-linked",Properdin deficiency,7,4
+MONDO_0010718,Orphanet_3016,ambas,absent radius-anogenital anomalies syndrome,Radius absent - anogenital anomalies,25,19
+MONDO_0010732,Orphanet_2815,ambas,spastic paraparesis-deafness syndrome,Spastic paraparesis - deafness,84,73
+MONDO_0010733,Orphanet_99015,ambas,hereditary spastic paraplegia 2,Spastic paraplegia type 2,61,60
+MONDO_0010742,Orphanet_1335,ambas,pentalogy of Cantrell,Cantrell pentalogy,99,44
+MONDO_0010743,Orphanet_852,sssom,thrombocytopenia 1,X-linked thrombocytopenia with normal platelets,122,13
+MONDO_0010745,Orphanet_231393,ambas,beta-thalassemia-X-linked thrombocytopenia syndrome,Beta-thalassemia - X-linked thrombocytopenia,1121,433
+MONDO_0010748,Orphanet_3341,ambas,torticollis-keloids-cryptorchidism-renal dysplasia syndrome,Torticollis - keloids - cryptorchidism - renal dysplasia,267,263
+MONDO_0010749,Orphanet_3369,ambas,trigonocephaly-short stature-developmental delay syndrome,Trigonocephaly - short stature - developmental delay,38,32
+MONDO_0010758,Orphanet_3454,ambas,Wieacker-Wolff syndrome,Intellectual disability-developmental delay-contractures syndrome,78,84
+MONDO_0010779,Orphanet_90641,sssom,mitochondrial non-syndromic sensorineural hearing loss,Mitochondrial non-syndromic sensorineural deafness,70,79
+MONDO_0010789,Orphanet_550,ambas,MELAS syndrome,MELAS,89,224
+MONDO_0010790,Orphanet_551,ambas,MERRF syndrome,MERRF,97,120
+MONDO_0010798,Orphanet_3390,xrefs,proximal tubulopathy-diabetes mellitus-cerebellar ataxia syndrome,Proximal tubulopathy - diabetes mellitus - cerebellar ataxia,26,25
+MONDO_0010802,Orphanet_2255,ambas,pancreatic hypoplasia-diabetes-congenital heart disease syndrome,Pancreatic hypoplasia - diabetes - congenital heart disease,124,96
+MONDO_0010814,Orphanet_1422,ambas,chondrodysplasia-pseudohermaphroditism syndrome,Chondrodysplasia - disorder of sex development,36,53
+MONDO_0010816,Orphanet_3010,ambas,Qazi Markouizos syndrome,Qazi-Markouizos syndrome,1,12
+MONDO_0010824,Orphanet_2983,ambas,disorder of sex development-intellectual disability syndrome,Disorder of sex development - intellectual disability,1,8
+MONDO_0010829,Orphanet_199354,ambas,CARASIL syndrome,CARASIL,39,57
+MONDO_0010830,Orphanet_228354,ambas,neuronal ceroid lipofuscinosis 8,CLN8 disease,51,98
+MONDO_0010840,Orphanet_2798,ambas,pachygyria-intellectual disability-epilepsy syndrome,Pachygyria - intellectual disability - epilepsy,42,40
+MONDO_0010842,Orphanet_2451,ambas,multiple cutaneous and mucosal venous malformations,Mucocutaneous venous malformations,22,16
+MONDO_0010855,Orphanet_2832,ambas,short tarsus-absence of lower eyelashes syndrome,Short tarsus - absence of lower eyelashes,14,13
+MONDO_0010878,Orphanet_100988,ambas,hereditary spastic paraplegia 6,Autosomal dominant spastic paraplegia type 6,105,114
+MONDO_0010882,Orphanet_1113,ambas,aphalangy-syndactyly-microcephaly syndrome,Aphalangy - syndactyly - microcephaly,59,41
+MONDO_0010890,Orphanet_2008,ambas,acrocardiofacial syndrome,Acro-cardio-facial syndrome,179,72
+MONDO_0010907,Orphanet_2224,ambas,familial hypertryptophanemia,Hypertryptophanemia,25,29
+MONDO_0010926,Orphanet_101050,ambas,familial hypocalciuric hypercalcemia 3,Familial hypocalciuric hypercalcemia type 3,55,54
+MONDO_0010949,Orphanet_99936,ambas,Charcot-Marie-Tooth disease type 2B,Autosomal dominant Charcot-Marie-Tooth disease type 2B,40,57
+MONDO_0010966,Orphanet_93298,ambas,achondrogenesis type IB,Achondrogenesis type 1B,49,63
+MONDO_0010971,Orphanet_1849,xrefs,infundibulopelvic stenosis-multicystic kidney syndrome,Infundibulopelvic stenosis - multicystic kidney,95,94
+MONDO_0010976,Orphanet_89838,ambas,"epidermolysis bullosa simplex 1D, generalized, intermediate or severe, autosomal recessive",KRT14-related epidermolysis bullosa simplex,13,51
+MONDO_0010983,Orphanet_53583,ambas,dystonia 9,Paroxysmal dystonic choreathetosis with episodic ataxia and spasticity,46,82
+MONDO_0010988,Orphanet_1117,ambas,aplasia cutis-myopia syndrome,Aplasia cutis - myopia,26,4
+MONDO_0010989,Orphanet_2578,ambas,Mayer-Rokitansky-Küster-Hauser syndrome type 2,MURCS association,257,83
+MONDO_0010997,Orphanet_240071,ambas,"supranuclear palsy, progressive, 1",Classical progressive supranuclear palsy,1129,73
+MONDO_0010999,Orphanet_3304,ambas,fallot complex-intellectual disability-growth delay syndrome,Fallot complex - intellectual disability - growth delay,167,152
+MONDO_0011007,Orphanet_2141,ambas,diaphragmatic defect-limb deficiency-skull defect syndrome,Diaphragmatic defect - limb deficiency - skull defect,104,27
+MONDO_0011011,Orphanet_1858,ambas,skeletal dysplasia-epilepsy-short stature syndrome,Skeletal dysplasia - epilepsy - short stature,80,18
+MONDO_0011025,Orphanet_94122,ambas,Cayman type cerebellar ataxia,"Cerebellar ataxia, Cayman type",23,161
+MONDO_0011038,Orphanet_1171,ambas,cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome,Cerebellar ataxia - areflexia - pes cavus - optic atrophy - sensorineural hearing loss,70,64
+MONDO_0011048,Orphanet_1948,ambas,epilepsy-microcephaly-skeletal dysplasia syndrome,Epilepsy - microcephaly - skeletal dysplasia,10,9
+MONDO_0011050,Orphanet_2516,ambas,microcephaly-cardiac defect-lung malsegmentation syndrome,Microcephaly - cardiac defect - lung malsegmentation,76,58
+MONDO_0011053,Orphanet_3051,ambas,intellectual disability-sparse hair-brachydactyly syndrome,intellectual disability - sparse hair - brachydactyly,102,99
+MONDO_0011059,Orphanet_2163,ambas,holoprosencephaly-craniosynostosis syndrome,Holoprosencephaly - craniosynostosis,34,32
+MONDO_0011076,Orphanet_363543,xrefs,myofibrillar myopathy 1,Autosomal recessive limb-girdle muscular dystrophy due to desmin deficiency,100,2
+MONDO_0011076,Orphanet_98909,ambas,myofibrillar myopathy 1,Desminopathy,100,184
+MONDO_0011091,Orphanet_99938,ambas,Charcot-Marie-Tooth disease type 2D,Autosomal dominant Charcot-Marie-Tooth disease type 2D,48,38
+MONDO_0011093,Orphanet_67041,ambas,mucopolysaccharidosis type 9,Hyaluronidase deficiency,25,48
+MONDO_0011099,Orphanet_69739,ambas,human HOXA1 syndromes,Athabaskan brainstem dysgenesis syndrome,119,11
+MONDO_0011107,Orphanet_1573,ambas,congenital hypotrichosis with juvenile macular dystrophy,Hypotrichosis with juvenile macular degeneration,88,129
+MONDO_0011116,Orphanet_1120,ambas,lung agenesis-heart defect-thumb anomalies syndrome,Lung agenesis - heart defect - thumb anomalies,175,132
+MONDO_0011124,Orphanet_168451,ambas,spondyloepimetaphyseal dysplasia-abnormal dentition syndrome,Spondyloepimetaphyseal dysplasia - abnormal dentition,2,1
+MONDO_0011132,Orphanet_169095,ambas,"T-cell immunodeficiency, congenital alopecia, and nail dystrophy",Alymphoid cystic thymic dysgenesis,289,353
+MONDO_0011144,Orphanet_228363,ambas,"ceroid lipofuscinosis, neuronal, 6A",CLN6 disease,106,22
+MONDO_0011145,Orphanet_363741,sssom,colobomatous microphthalmia - obesity - hypogenitalism - intellectual disability syndrome,Colobomatous microphthalmia-obesity-hypogenitalism-intellectual disability syndrome,164,188
+MONDO_0011152,Orphanet_79351,ambas,PHGDH deficiency,"3-phosphoglycerate dehydrogenase deficiency, infantile/juvenile form",39,18
+MONDO_0011157,Orphanet_1532,ambas,Gomez-Lopez-Hernandez syndrome,Gómez-López-Hernández syndrome,51,50
+MONDO_0011166,Orphanet_86915,ambas,lymphedema-atrial septal defects-facial changes syndrome,Lymphedema - atrial septal defects - facial changes,58,57
+MONDO_0011174,Orphanet_251523,sssom,hyperzincemia with functional zinc depletion,Recurrent infections - inflammatory syndrome due to zinc metabolism disorder,31,3
+MONDO_0011176,Orphanet_30924,ambas,intestinal hypomagnesemia 1,Primary hypomagnesemia with secondary hypocalcemia,19,202
+MONDO_0011190,Orphanet_93591,ambas,nephronophthisis 2,Infantile nephronophthisis,96,10
+MONDO_0011218,Orphanet_91132,sssom,autosomal recessive congenital ichthyosis 11,Ichthyosis-hypotrichosis syndrome,25,181
+MONDO_0011235,Orphanet_2840,sssom,pelvic dysplasia-arthrogryposis of lower limbs syndrome,Pelvic dysplasia - arthrogryposis of lower limbs,39,29
+MONDO_0011246,Orphanet_280671,sssom,megaconial type congenital muscular dystrophy,Congenital muscular dystrophy due to phosphatidylcholine biosynthesis defect,27,82
+MONDO_0011255,Orphanet_357158,sssom,mandibulofacial dysostosis-macroblepharon-macrostomia syndrome,Mandibulofacial dysostosis - macroblepharon - macrostomia,42,40
+MONDO_0011261,Orphanet_163649,ambas,"spondyloepiphyseal dysplasia with coronal craniosynostosis, cataracts, cleft palate, and intellectual disability","Spondyloepiphyseal dysplasia, Nishimura type",1,119
+MONDO_0011264,Orphanet_98806,ambas,torsion dystonia 6,"Primary dystonia, DYT6 type",17,53
+MONDO_0011266,Orphanet_606,ambas,myotonic dystrophy type 2,Proximal myotonic myopathy,484,46
+MONDO_0011275,Orphanet_40,ambas,"acromesomelic dysplasia 1, Maroteaux type","Acromesomelic dysplasia, Maroteaux type",147,207
+MONDO_0011287,Orphanet_85199,ambas,craniosynostosis-anal anomalies-porokeratosis syndrome,Craniosynostosis - anal anomalies - porokeratosis,79,42
+MONDO_0011323,Orphanet_2250,sssom,"arhinia, choanal atresia, and microphthalmia",Hyposmia - nasal and ocular hypoplasia - hypogonadotropic hypogonadism,77,30
+MONDO_0011339,Orphanet_100989,ambas,hereditary spastic paraplegia 8,Autosomal dominant spastic paraplegia type 8,40,61
+MONDO_0011359,Orphanet_1827,ambas,acromelic frontonasal dysostosis,Acromelic frontonasal dysplasia,66,63
+MONDO_0011362,Orphanet_178464,sssom,"myopathy, myofibrillar, 9, with early respiratory failure",Hereditary proximal myopathy with early respiratory failure,161,183
+MONDO_0011365,Orphanet_3047,ambas,"blepharophimosis - intellectual disability syndrome, SBBYS type","Blepharophimosis-intellectual disability syndrome, SBBYS type",46,40
+MONDO_0011396,Orphanet_79395,ambas,loricrin keratoderma,Keratoderma hereditarium mutilans with ichthyosis,11,110
+MONDO_0011399,Orphanet_846,ambas,alpha thalassemia spectrum,Alpha-thalassemia,1128,874
+MONDO_0011402,Orphanet_48431,ambas,congenital cataracts-facial dysmorphism-neuropathy syndrome,Congenital cataracts - facial dysmorphism - neuropathy,49,51
+MONDO_0011408,Orphanet_100991,ambas,hereditary spastic paraplegia 10,Autosomal dominant spastic paraplegia type 10,68,33
+MONDO_0011432,Orphanet_293725,sssom,"blepharophimosis - intellectual disability syndrome, Verloes type","Blepharophimosis-intellectual disability syndrome, Verloes type",51,61
+MONDO_0011436,Orphanet_98920,ambas,autosomal recessive distal spinal muscular atrophy 1,Spinal muscular atrophy with respiratory distress type 1,46,75
+MONDO_0011445,Orphanet_2822,ambas,hereditary spastic paraplegia 11,Autosomal recessive spastic paraplegia type 11,50,73
+MONDO_0011454,Orphanet_228190,ambas,patent ductus arteriosus-bicuspid aortic valve-hand anomalies syndrome,Patent ductus arteriosus - bicuspid aortic valve - hand anomalies,84,65
+MONDO_0011462,Orphanet_69126,ambas,pyogenic arthritis-pyoderma gangrenosum-acne syndrome,Pyogenic arthritis - pyoderma gangrenosum - acne,273,221
+MONDO_0011476,Orphanet_34592,ambas,MHC class I deficiency,Immunodeficiency by defective expression of HLA class 1,12,72
+MONDO_0011481,Orphanet_1541,ambas,craniosynostosis 2,"Craniosynostosis, Boston type",89,25
+MONDO_0011486,Orphanet_98893,ambas,congenital muscular dystrophy 1B,Congenital muscular dystrophy type 1B,50,49
+MONDO_0011489,Orphanet_100993,ambas,hereditary spastic paraplegia 12,Autosomal dominant spastic paraplegia type 12,27,50
+MONDO_0011522,Orphanet_100995,ambas,hereditary spastic paraplegia 14,Autosomal recessive spastic paraplegia type 14,13,12
+MONDO_0011532,Orphanet_100994,ambas,hereditary spastic paraplegia 13,Autosomal dominant spastic paraplegia type 13,19,26
+MONDO_0011539,Orphanet_98902,ambas,nemaline myopathy 5,Amish nemaline myopathy,196,78
+MONDO_0011541,Orphanet_217622,ambas,dilated cardiomyopathy 1J,Sensorineural deafness with dilated cardiomyopathy,109,108
+MONDO_0011551,Orphanet_101150,ambas,TH-deficient dopa-responsive dystonia,Autosomal recessive dopa-responsive dystonia,26,187
+MONDO_0011555,Orphanet_71289,ambas,radio-ulnar synostosis-amegakaryocytic thrombocytopenia syndrome,Radio-ulnar synostosis - amegakaryocytic thrombocytopenia,70,204
+MONDO_0011575,Orphanet_66625,ambas,cerebrooculonasal syndrome,Cerebro-oculo-nasal syndrome,72,47
+MONDO_0011582,Orphanet_401869,ambas,multiple mitochondrial dysfunctions syndrome 1,Fatal multiple mitochondrial dysfunction syndrome type 1,42,37
+MONDO_0011595,Orphanet_79144,sssom,nonsyndromic congenital nail disorder 7,Congenital onychodysplasia,5,5
+MONDO_0011603,Orphanet_602,ambas,GNE myopathy,"Distal myopathy, Nonaka type",292,204
+MONDO_0011621,Orphanet_85203,ambas,acropectoral syndrome,Acro-pectoral syndrome,68,7
+MONDO_0011633,Orphanet_99937,ambas,Charcot-Marie-Tooth disease axonal type 2C,Autosomal dominant Charcot-Marie-Tooth disease type 2C,47,45
+MONDO_0011652,Orphanet_48652,ambas,Phelan-McDermid syndrome,Monosomy 22q13,614,81
+MONDO_0011669,Orphanet_163690,ambas,hypotonia-cystinuria syndrome,Hypotonia - cystinuria syndrome,894,880
+MONDO_0011669,Orphanet_238517,ambas,hypotonia-cystinuria syndrome,Hypotonia - cystinuria type 1,894,842
+MONDO_0011674,Orphanet_100044,ambas,Charcot-Marie-Tooth disease dominant intermediate B,Autosomal dominant intermediate Charcot-Marie-Tooth disease type B,20,96
+MONDO_0011675,Orphanet_100043,ambas,"Charcot-Marie-Tooth Disease, axonal, type 2GG",Autosomal dominant intermediate Charcot-Marie-Tooth disease type A,63,24
+MONDO_0011686,Orphanet_99812,ambas,DNA ligase IV deficiency,LIG4 syndrome,34,66
+MONDO_0011687,Orphanet_99940,ambas,Charcot-Marie-Tooth disease axonal type 2F,Autosomal dominant Charcot-Marie-Tooth disease type 2F,42,51
+MONDO_0011744,Orphanet_140436,ambas,primary intraosseous venous malformation,Primary intraosseous vascular malformation,17,44
+MONDO_0011766,Orphanet_168563,sssom,"46,XY gonadal dysgenesis-motor and sensory neuropathy syndrome","46,XY gonadal dysgenesis - motor and sensory neuropathy",308,74
+MONDO_0011785,Orphanet_100999,ambas,hereditary spastic paraplegia 19,Autosomal dominant spastic paraplegia type 19,24,57
+MONDO_0011801,Orphanet_94124,ambas,"spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 1",Spinocerebellar ataxia type 1 with axonal neuropathy,117,55
+MONDO_0011803,Orphanet_99013,ambas,hereditary spastic paraplegia 7,Autosomal recessive spastic paraplegia type 7,100,82
+MONDO_0011804,Orphanet_275517,ambas,autoimmune lymphoproliferative syndrome type 2B,Autoimmune lymphoproliferative syndrome with recurrent viral infections,1273,619
+MONDO_0011811,Orphanet_95434,ambas,autosomal recessive cerebellar ataxia-saccadic intrusion syndrome,Autosomal recessive cerebellar ataxia - saccadic intrusion,140,182
+MONDO_0011812,Orphanet_93293,ambas,Duane-radial ray syndrome,Okihiro syndrome,105,59
+MONDO_0011823,Orphanet_79107,ambas,developmental malformations-deafness-dystonia syndrome,Developmental malformations - deafness - dystonia,45,27
+MONDO_0011835,Orphanet_70595,ambas,"sensory ataxic neuropathy, dysarthria, and ophthalmoparesis",Sensory ataxic neuropathy - dysarthria - ophthalmoparesis,120,89
+MONDO_0011841,Orphanet_199348,sssom,biotin-responsive basal ganglia disease,Thiamine-responsive encephalopathy,97,90
+MONDO_0011862,Orphanet_101004,ambas,hereditary spastic paraplegia 24,Autosomal recessive spastic paraplegia type 24,31,35
+MONDO_0011868,Orphanet_137776,ambas,lethal congenital contracture syndrome 2,Lethal congenital contracture syndrome type 2,31,15
+MONDO_0011872,Orphanet_79477,ambas,Griscelli syndrome type 2,Griscelli disease type 2,204,147
+MONDO_0011877,Orphanet_2783,ambas,autosomal dominant osteopetrosis 1,Autosomal dominant osteopetrosis type 1,17,170
+MONDO_0011883,Orphanet_307766,ambas,Curly hair - acral keratoderma - caries syndrome,Curly hair-acral keratoderma-caries syndrome,72,70
+MONDO_0011886,Orphanet_98807,ambas,torsion dystonia 13,"Primary dystonia, DYT13 type",9,229
+MONDO_0011888,Orphanet_70592,ambas,immunodeficiency 67,Immunodeficiency due to interleukin-1 receptor-associated kinase-4 deficiency,711,301
+MONDO_0011889,Orphanet_99942,ambas,Charcot-Marie-Tooth disease type 2I,Autosomal dominant Charcot-Marie-Tooth disease type 2I,37,35
+MONDO_0011894,Orphanet_99939,ambas,Charcot-Marie-Tooth disease type 2E,Autosomal dominant Charcot-Marie-Tooth disease type 2E,86,95
+MONDO_0011897,Orphanet_137639,xrefs,leukoencephalopathy-ataxia-hypodontia-hypomyelination syndrome,Leukoencephalopathy - ataxia - hypodontia - hypomyelination,45,68
+MONDO_0011901,Orphanet_101102,ambas,Charcot-Marie-Tooth disease axonal type 2H,Charcot-Marie-Tooth disease type 2H,32,31
+MONDO_0011903,Orphanet_99943,ambas,Charcot-Marie-Tooth disease type 2J,Autosomal dominant Charcot-Marie-Tooth disease type 2J,30,28
+MONDO_0011904,Orphanet_140927,ambas,"seizures, benign familial infantile, 3",Benign familial neonatal-infantile seizures,66,51
+MONDO_0011906,Orphanet_79301,ambas,congenital bile acid synthesis defect 1,Congenital bile acid synthesis defect type 1,22,383
+MONDO_0011909,Orphanet_100046,ambas,Charcot-Marie-Tooth disease dominant intermediate D,Autosomal dominant intermediate Charcot-Marie-Tooth disease type D,110,33
+MONDO_0011916,Orphanet_101097,ambas,Charcot-Marie-Tooth disease axonal type 2K,Autosomal recessive Charcot-Marie-Tooth disease with hoarseness,30,112
+MONDO_0011925,Orphanet_258,ambas,congenital merosin-deficient muscular dystrophy 1A,Congenital muscular dystrophy type 1A,55,78
+MONDO_0011929,Orphanet_1606,ambas,chromosome 1p36 deletion syndrome,1p36 deletion syndrome,120,121
+MONDO_0011970,Orphanet_163727,ambas,rolandic epilepsy-paroxysmal exercise-induced dystonia-writer's cramp syndrome,Rolandic epilepsy - paroxysmal exercise-induced dystonia - writer's cramp,26,66
+MONDO_0011976,Orphanet_50811,ambas,lipodystrophy-intellectual disability-deafness syndrome,Lipodystrophy - intellectual disability - deafness,96,74
+MONDO_0011992,Orphanet_101005,ambas,hereditary spastic paraplegia 25,Autosomal recessive spastic paraplegia type 25,20,21
+MONDO_0011995,Orphanet_314993,ambas,cataract - congenital heart disease - neural tube defect syndrome,Cataract-congenital heart disease-neural tube defect syndrome,28,27
+MONDO_0011997,Orphanet_183678,ambas,Hermansky-Pudlak syndrome 2,Hermansky-Pudlak syndrome with neutropenia,102,81
+MONDO_0012012,Orphanet_100045,ambas,Charcot-Marie-Tooth disease dominant intermediate C,Autosomal dominant intermediate Charcot-Marie-Tooth disease type C,18,65
+MONDO_0012013,Orphanet_2084,ambas,"Weill-Marchesani syndrome 2, dominant",Glaucoma - ectopia - microspherophakia - stiff joints - short stature,73,128
+MONDO_0012014,Orphanet_217055,ambas,Charcot-Marie-Tooth disease recessive intermediate A,Autosomal recessive intermediate Charcot-Marie-Tooth disease type A,137,122
+MONDO_0012016,Orphanet_137667,ambas,capillary malformation-arteriovenous malformation syndrome,Capillary malformation - arteriovenous malformation,23,61
+MONDO_0012020,Orphanet_1727,ambas,chromosome 22q11.2 microduplication syndrome,22q11.2 microduplication syndrome,64,73
+MONDO_0012043,Orphanet_98961,ambas,Reis-Bucklers corneal dystrophy,Reis-Bücklers corneal dystrophy,101,98
+MONDO_0012055,Orphanet_2370,ambas,Larsen-like osseous dysplasia-short stature syndrome,Larsen-like osseous dysplasia - short stature,115,66
+MONDO_0012063,Orphanet_52056,ambas,ulnar/fibula ray defect-brachydactyly syndrome,Ulnar/fibula ray defect - brachydactyly,57,1
+MONDO_0012064,Orphanet_1200,ambas,choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome,Choanal atresia-deafness-cardiac defects-dysmorphism syndrome,77,82
+MONDO_0012072,Orphanet_79084,ambas,"familial partial lipodystrophy, Kobberling type","Familial partial lipodystrophy, Köbberling type",254,347
+MONDO_0012096,Orphanet_99945,ambas,Charcot-Marie-Tooth disease axonal type 2L,Autosomal dominant Charcot-Marie-Tooth disease type 2L,48,62
+MONDO_0012123,Orphanet_79322,ambas,congenital disorder of glycosylation type 1E,DPM1-CDG,52,50
+MONDO_0012124,Orphanet_168593,ambas,sudden infant death-dysgenesis of the testes syndrome,Sudden infant death - dysgenesis of the testes,35,32
+MONDO_0012125,Orphanet_280282,ambas,hypomyelinating leukodystrophy 2,Pelizaeus-Merzbacher-like disease due to GJC2 mutation,37,65
+MONDO_0012130,Orphanet_399058,ambas,myofibrillar myopathy 2,Alpha-B crystallin-related late-onset distal myopathy,114,123
+MONDO_0012137,Orphanet_319340,ambas,Carney complex - trismus - pseudocamptodactyly syndrome,Carney complex-trismus-pseudocamptodactyly syndrome,8,6
+MONDO_0012160,Orphanet_85167,ambas,spondylometaphyseal dysplasia-cone-rod dystrophy syndrome,Spondylometaphyseal dysplasia - cone-rod dystrophy,106,119
+MONDO_0012177,Orphanet_88628,ambas,posterior column ataxia-retinitis pigmentosa syndrome,Posterior column ataxia - retinitis pigmentosa,63,85
+MONDO_0012181,Orphanet_101007,ambas,hereditary spastic paraplegia 27,Autosomal recessive spastic paraplegia type 27,16,66
+MONDO_0012188,Orphanet_228357,xrefs,neuronal ceroid lipofuscinosis 9,CLN9 disease,27,26
+MONDO_0012190,Orphanet_300333,sssom,"epidermolysis bullosa simplex 7, with nephropathy and deafness",Nephrotic syndrome-deafness-pretibial epidermolysis bullosa syndrome,29,10
+MONDO_0012191,Orphanet_137681,ambas,hepatoencephalopathy due to combined oxidative phosphorylation defect type 1,Hepatoencephalopathy due to combined oxidative phosphorylation deficiency type 1,36,35
+MONDO_0012192,Orphanet_65288,ambas,permanent neonatal diabetes mellitus-pancreatic and cerebellar agenesis syndrome,Permanent neonatal diabetes mellitus - pancreatic and cerebellar agenesis,368,35
+MONDO_0012195,Orphanet_65720,ambas,arthrogryposis-severe scoliosis syndrome,Arthrogryposis - severe scoliosis,59,58
+MONDO_0012198,Orphanet_163746,ambas,PCWH syndrome,Neurologic Waardenburg-Shah syndrome,65,60
+MONDO_0012213,Orphanet_101006,ambas,hereditary spastic paraplegia 26,Autosomal recessive spastic paraplegia type 26,60,71
+MONDO_0012215,Orphanet_98911,ambas,myofibrillar myopathy 3,Distal myotilinopathy,259,211
+MONDO_0012216,Orphanet_397618,sssom,foveal hypoplasia - optic nerve decussation defect - anterior segment dysgenesis syndrome,Foveal hypoplasia-optic nerve decussation defect-anterior segment dysgenesis syndrome,17,69
+MONDO_0012220,Orphanet_79478,ambas,Griscelli syndrome type 3,Griscelli disease type 3,353,313
+MONDO_0012231,Orphanet_99947,ambas,Charcot-Marie-Tooth disease type 2A2,Autosomal dominant Charcot-Marie-Tooth disease type 2A2,89,121
+MONDO_0012235,Orphanet_284324,ambas,autosomal recessive spinocerebellar ataxia 7,Childhood-onset autosomal recessive slowly progressive spinocerebellar ataxia,183,219
+MONDO_0012256,Orphanet_101008,ambas,hereditary spastic paraplegia 28,Autosomal recessive spastic paraplegia type 28,18,17
+MONDO_0012258,Orphanet_158681,ambas,"epidermolysis bullosa simplex 2E, with migratory circinate erythema",Epidermolysis bullosa simplex with circinate migratory erythema,8,60
+MONDO_0012269,Orphanet_65286,ambas,chromosome 3q29 microdeletion syndrome,3q29 microdeletion syndrome,38,39
+MONDO_0012276,Orphanet_79137,ambas,generalized epilepsy-paroxysmal dyskinesia syndrome,Generalized epilepsy - paroxysmal dyskinesia,53,62
+MONDO_0012277,Orphanet_98912,ambas,myofibrillar myopathy 4,"Late-onset distal myopathy, Markesbery-Griggs type",154,174
+MONDO_0012289,Orphanet_171445,ambas,myofibrillar myopathy 5,Muscle filaminopathy,53,196
+MONDO_0012297,Orphanet_320406,ambas,"spastic paraplegia, optic atropy, and neuropathy",Spastic paraplegia-optic atrophy-neuropathy syndrome,28,199
+MONDO_0012324,Orphanet_264200,ambas,Frias syndrome,14q22q23 microdeletion syndrome,16,13
+MONDO_0012334,Orphanet_101009,ambas,hereditary spastic paraplegia 29,Autosomal dominant spastic paraplegia type 29,24,26
+MONDO_0012354,Orphanet_36355,ambas,platelet-type bleeding disorder 8,P2Y12 defect,61,57
+MONDO_0012359,Orphanet_231154,ambas,combined immunodeficiency due to partial RAG1 deficiency,Combined immunodeficiency T+ B+ due to partial RAG1 deficiency,602,1
+MONDO_0012382,Orphanet_71212,ambas,"hyperinsulinemic hypoglycemia, familial, 4",Hyperinsulinism due to short chain 3-hydroxylacyl-CoA dehydrogenase deficiency,4353,85
+MONDO_0012383,Orphanet_75391,ambas,primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency,Immunodeficiency with natural-killer cell deficiency and adrenal insufficiency,87,86
+MONDO_0012387,Orphanet_75325,ambas,osteosclerosis-ichthyosis-premature ovarian failure syndrome,Osteosclerosis - ichthyosis - premature ovarian failure,241,177
+MONDO_0012391,Orphanet_1947,ambas,neuronal ceroid lipofuscinosis 8 northern epilepsy variant,"Progressive epilepsy - intellectual disability, Finnish type",40,61
+MONDO_0012399,Orphanet_300573,ambas,complex cortical dysplasia with other brain malformations 7,Polymicrogyria due to TUBB2B mutation,72,107
+MONDO_0012400,Orphanet_163681,ambas,cortical dysplasia-focal epilepsy syndrome,Cortical dysplasia - focal epilepsy syndrome,93,122
+MONDO_0012414,Orphanet_228337,ambas,neuronal ceroid lipofuscinosis 10,CLN10 disease,41,37
+MONDO_0012435,Orphanet_66634,ambas,3-methylglutaconic aciduria type 5,Dilated cardiomyopathy with ataxia,61,55
+MONDO_0012453,Orphanet_101011,ambas,hereditary spastic paraplegia 31,Autosomal dominant spastic paraplegia type 31,25,35
+MONDO_0012476,Orphanet_101010,ambas,hereditary spastic paraplegia 30,Autosomal recessive spastic paraplegia type 30,127,100
+MONDO_0012479,Orphanet_83620,ambas,congenital malabsorptive diarrhea 4,Congenital malabsorptive diarrhea due to paucity of enteroendocrine cells,22,83
+MONDO_0012504,Orphanet_85164,ambas,camptodactyly-tall stature-scoliosis-hearing loss syndrome,Camptodactyly - tall stature - scoliosis - hearing loss,23,28
+MONDO_0012512,Orphanet_168566,ambas,fatal mitochondrial disease due to combined oxidative phosphorylation defect type 3,Fatal mitochondrial disease due to combined oxidative phosphorylation deficiency 3,47,46
+MONDO_0012514,Orphanet_85163,ambas,hypomyelinating leukodystrophy 5,Hypomyelination - congenital cataract,58,79
+MONDO_0012521,Orphanet_1930,ambas,herpes simplex encephalitis,Herpetic encephalitis,213,61
+MONDO_0012530,Orphanet_85112,ambas,palmoplantar keratoderma-XX sex reversal-predisposition to squamous cell carcinoma syndrome,Palmoplantar keratoderma - XX sex reversal - predisposition to squamous cell carcinoma,70,30
+MONDO_0012531,Orphanet_276252,xrefs,xeroderma pigmentosum group B,Xeroderma pigmentosum complementation group B,61,38
+MONDO_0012557,Orphanet_91130,ambas,cardiomyopathy-hypotonia-lactic acidosis syndrome,Cardiomyopathy - hypotonia - lactic acidosis,26,11
+MONDO_0012580,Orphanet_264675,ambas,hereditary pulmonary alveolar proteinosis,Congenital pulmonary alveolar proteinosis,162,109
+MONDO_0012588,Orphanet_228366,ambas,neuronal ceroid lipofuscinosis 7,CLN7 disease,119,104
+MONDO_0012596,Orphanet_284417,ambas,PSAT deficiency,Phosphoserine aminotransferase deficiency,18,22
+MONDO_0012605,Orphanet_251279,ambas,isolated microphthalmia 5,Microphthalmia - retinitis pigmentosa - foveoschisis - optic disc drusen,19,177
+MONDO_0012622,Orphanet_137898,ambas,leukoencephalopathy with brain stem and spinal cord involvement-high lactate syndrome,Leukoencephalopathy with brain stem and spinal cord involvement - high lactate,114,106
+MONDO_0012634,Orphanet_314555,sssom,craniofacial dysplasia - osteopenia syndrome,Craniofacial dysplasia-osteopenia syndrome,108,81
+MONDO_0012639,Orphanet_209951,ambas,hereditary spastic paraplegia 18,Autosomal recessive spastic paraplegia type 18,51,50
+MONDO_0012643,Orphanet_171622,ambas,hereditary spastic paraplegia 32,Autosomal recessive spastic paraplegia type 32,35,54
+MONDO_0012656,Orphanet_137783,ambas,lethal congenital contracture syndrome 3,Lethal congenital contracture syndrome type 3,30,17
+MONDO_0012664,Orphanet_314603,ambas,spastic ataxia 3,Autosomal recessive spastic ataxia with leukoencephalopathy,100,141
+MONDO_0012679,Orphanet_210110,ambas,autosomal recessive osteopetrosis 6,Intermediate osteopetrosis,134,211
+MONDO_0012682,Orphanet_331226,ambas,immunodeficiency 35,Autosomal recessive hyper-IgE syndrome due to TYK2 deficiency,420,8
+MONDO_0012700,Orphanet_93610,ambas,"renal tubular acidosis, distal, 4, with hemolytic anemia",Distal renal tubular acidosis with anemia,94,20
+MONDO_0012724,Orphanet_247868,ambas,familial cold autoinflammatory syndrome 2,NLRP12-associated hereditary periodic fever syndrome,135,27
+MONDO_0012726,Orphanet_73229,ambas,autosomal dominant familial hematuria-retinal arteriolar tortuosity-contractures syndrome,Autosomal dominant familial hematuria - retinal arteriolar tortuosity - contractures,170,156
+MONDO_0012739,Orphanet_139450,ambas,microtia-eye coloboma-imperforation of the nasolacrimal duct syndrome,Microtia - eye coloboma - imperforation of the nasolacrimal duct,14,7
+MONDO_0012740,Orphanet_261330,ambas,"chromosome 22q11.2 deletion syndrome, distal",Distal 22q11.2 microdeletion syndrome,40,26
+MONDO_0012750,Orphanet_53696,sssom,lethal arthrogryposis-anterior horn cell disease syndrome,Lethal arthrogryposis - anterior horn cell disease,53,45
+MONDO_0012757,Orphanet_137631,ambas,"lung fibrosis-immunodeficiency-46,XX gonadal dysgenesis syndrome","Lung fibrosis - immunodeficiency - 46,XX gonadal dysgenesis",502,500
+MONDO_0012761,Orphanet_251038,ambas,chromosome 3q29 microduplication syndrome,3q29 microduplication,34,25
+MONDO_0012766,Orphanet_171612,ambas,hereditary spastic paraplegia 37,Autosomal dominant spastic paraplegia type 37,18,37
+MONDO_0012774,Orphanet_199318,ambas,chromosome 15q13.3 microdeletion syndrome,15q13.3 microdeletion syndrome,29,44
+MONDO_0012786,Orphanet_247794,ambas,juvenile cataract-microcornea-renal glucosuria syndrome,Juvenile cataract - microcornea - renal glucosuria,307,305
+MONDO_0012787,Orphanet_139480,ambas,hereditary spastic paraplegia 39,Autosomal recessive spastic paraplegia type 39,109,106
+MONDO_0012792,Orphanet_255235,ambas,mitochondrial DNA depletion syndrome 8a,"Mitochondrial DNA depletion syndrome, encephalomyopathic form with renal tubulopathy",30,29
+MONDO_0012802,Orphanet_157962,ambas,oculoauricular syndrome,"Oculoauricular syndrome, Schorderet type",138,34
+MONDO_0012805,Orphanet_98811,ambas,childhood onset GLUT1 deficiency syndrome 2,Paroxysmal exertion-induced dyskinesia,31,266
+MONDO_0012807,Orphanet_158684,ambas,"epidermolysis bullosa simplex 5C, with pyloric atresia",Epidermolysis bullosa simplex with pyloric atresia,20,23
+MONDO_0012824,Orphanet_280288,ambas,hypomyelinating leukodystrophy 4,Pelizaeus-Merzbacher-like disease due to HSPD1 mutation,26,23
+MONDO_0012833,Orphanet_93262,ambas,Crouzon syndrome-acanthosis nigricans syndrome,Crouzon syndrome - acanthosis nigricans,567,14
+MONDO_0012853,Orphanet_2963,ambas,Fontaine progeroid syndrome,"Progeroid syndrome, Petty type",328,106
+MONDO_0012854,Orphanet_140963,ambas,bilateral microtia-deafness-cleft palate syndrome,Bilateral microtia - deafness - cleft palate,12,35
+MONDO_0012859,Orphanet_178389,ambas,autosomal recessive osteopetrosis 7,Osteopetrosis - hypogammaglobulinemia,32,99
+MONDO_0012866,Orphanet_171629,ambas,hereditary spastic paraplegia 35,Autosomal recessive spastic paraplegia type 35,96,97
+MONDO_0012867,Orphanet_171617,ambas,hereditary spastic paraplegia 38,Autosomal dominant spastic paraplegia type 38,32,42
+MONDO_0012892,Orphanet_300284,ambas,"bone fragility with contractures, arterial rupture, and deafness",Connective tissue disorder due to lysyl hydroxylase-3 deficiency,50,47
+MONDO_0012901,Orphanet_749,ambas,inherited prekallikrein deficiency,Congenital prekallikrein deficiency,10,6
+MONDO_0012905,Orphanet_139441,ambas,hypomyelinating leukodystrophy 6,Hypomyelination with atrophy of basal ganglia and cerebellum,36,88
+MONDO_0012907,Orphanet_171844,ambas,blindness - scoliosis - arachnodactyly syndrome,Blindness-scoliosis-arachnodactyly syndrome,2,111
+MONDO_0012912,Orphanet_665,xrefs,pseudopseudohypoparathyroidism,Albright hereditary osteodystrophy,157,144
+MONDO_0012914,Orphanet_250989,ambas,chromosome 1q21.1 deletion syndrome,1q21.1 microdeletion syndrome,109,120
+MONDO_0012915,Orphanet_250994,ambas,chromosome 1q21.1 duplication syndrome,1q21.1 microduplication syndrome,15,15
+MONDO_0012928,Orphanet_171863,ambas,hereditary spastic paraplegia 42,Autosomal dominant spastic paraplegia type 42,10,48
+MONDO_0012929,Orphanet_210163,sssom,Compton-North congenital myopathy,"Congenital lethal myopathy, Compton-North type",36,33
+MONDO_0012984,Orphanet_171848,ambas,PHARC syndrome,Polyneuropathy - hearing loss - ataxia - retinitis pigmentosa - cataract,44,82
+MONDO_0012992,Orphanet_199337,ambas,pancreatic insufficiency-anemia-hyperostosis syndrome,Pancreatic insufficiency - anemia - hyperostosis,25,150
+MONDO_0012996,Orphanet_35704,ambas,AGAT deficiency,Arginine:glycine amidinotransferase deficiency,51,13
+MONDO_0013016,Orphanet_99844,ambas,leukocyte adhesion deficiency 3,Leukocyte adhesion deficiency type III,25,251
+MONDO_0013035,Orphanet_141000,ambas,orofaciodigital syndrome XI,Orofaciodigital syndrome type 11,24,11
+MONDO_0013038,Orphanet_140944,ambas,CLOVES syndrome,CLOVE syndrome,48,39
+MONDO_0013053,Orphanet_217026,ambas,"microcephaly-facio-cardio-skeletal syndrome, Hadziselimovic type","Microcephaly - facio-cardio-skeletal syndrome, Hadziselimovic type",45,44
+MONDO_0013056,Orphanet_353217,ambas,"developmental and epileptic encephalopathy, 39",Epileptic encephalopathy with global cerebral demyelination,50,51
+MONDO_0013060,Orphanet_199351,ambas,autosomal recessive Parkinson disease 14,Adult-onset dystonia-parkinsonism,43,280
+MONDO_0013082,Orphanet_2151,ambas,Hirschsprung disease-ganglioneuroblastoma syndrome,Hirschsprung disease - ganglioneuroblastoma,23,1
+MONDO_0013090,Orphanet_217346,ambas,chromosome 19q13.11 deletion syndrome,19q13.11 microdeletion syndrome,11,62
+MONDO_0013099,Orphanet_95494,ambas,"combined pituitary hormone deficiencies, genetic form","Combined pituitary hormone deficiencies, genetic forms",778,307
+MONDO_0013115,Orphanet_217335,ambas,RIN2 syndrome,MACS syndrome,51,51
+MONDO_0013116,Orphanet_330054,sssom,congenital cataract-progressive muscular hypotonia-hearing loss-developmental delay syndrome,Congenital cataract - progressive muscular hypotonia - hearing loss - developmental delay,185,8
+MONDO_0013127,Orphanet_93271,ambas,asphyxiating thoracic dystrophy 3,"Short rib-polydactyly syndrome, Verma-Naumoff type",133,197
+MONDO_0013128,Orphanet_217330,ambas,familial juvenile hyperuricemic nephropathy type 2,Hyperuricemia - anemia - renal failure,299,316
+MONDO_0013132,Orphanet_320365,ambas,hereditary spastic paraplegia 36,Autosomal dominant spastic paraplegia type 36,18,17
+MONDO_0013150,Orphanet_238455,ambas,"parkinsonism-dystonia, infantile",Infantile dystonia-parkinsonism,758,708
+MONDO_0013165,Orphanet_320396,ambas,hereditary spastic paraplegia 45,Autosomal recessive spastic paraplegia type 45,32,33
+MONDO_0013166,Orphanet_2066,ambas,GABA aminotransaminase deficiency,Gamma-aminobutyric acid transaminase deficiency,25,28
+MONDO_0013169,Orphanet_329802,ambas,chromosome 5p13 duplication syndrome,5p13 microduplication syndrome,50,46
+MONDO_0013176,Orphanet_363992,sssom,"Weill-Marchesani 4 syndrome, recessive",Ichthyosis-short stature-brachydactyly-microspherophakia syndrome,87,12
+MONDO_0013177,Orphanet_34520,ambas,congenital muscular dystrophy due to integrin alpha-7 deficiency,Congenital muscular dystrophy with integrin alpha-7 deficiency,19,103
+MONDO_0013179,Orphanet_320401,ambas,hereditary spastic paraplegia 44,Autosomal recessive spastic paraplegia type 44,28,177
+MONDO_0013182,Orphanet_217385,ambas,chromosome 17p13.3 duplication syndrome,17p13.3 microduplication syndrome,63,62
+MONDO_0013184,Orphanet_92050,ambas,congenital diarrhea 5 with tufting enteropathy,Intestinal epithelial dysplasia,49,94
+MONDO_0013208,Orphanet_309854,sssom,cirrhosis - dystonia - polycythemia - hypermanganesemia syndrome,Cirrhosis-dystonia-polycythemia-hypermanganesemia syndrome,27,112
+MONDO_0013212,Orphanet_228174,ambas,Charcot-Marie-Tooth disease axonal type 2N,Autosomal dominant Charcot-Marie-Tooth disease type 2N,43,40
+MONDO_0013222,Orphanet_399096,sssom,Miyoshi muscular dystrophy 3,Distal anoctaminopathy,46,38
+MONDO_0013223,Orphanet_401979,ambas,"autosomal recessive spondylometaphyseal dysplasia, Megarbane type","Autosomal recessive spondylometaphyseal dysplasia, Mégarbané type",47,93
+MONDO_0013225,Orphanet_228429,ambas,congenital generalized lipodystrophy type 4,Generalized congenital lipodystrophy with myopathy,49,354
+MONDO_0013226,Orphanet_221139,ambas,combined immunodeficiency with faciooculoskeletal anomalies,Combined immunodeficiency with facio-oculo-skeletal anomalies,32,39
+MONDO_0013239,Orphanet_320355,ambas,hereditary spastic paraplegia 41,Autosomal dominant spastic paraplegia type 41,16,29
+MONDO_0013254,Orphanet_228418,xrefs,"microcephaly, seizures, and developmental delay",Microcephaly - seizures - developmental delay,44,10
+MONDO_0013256,Orphanet_94065,ambas,chromosome 15q24 deletion syndrome,15q24 microdeletion syndrome,137,143
+MONDO_0013271,Orphanet_306542,sssom,frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome,Frontonasal dysplasia-severe microphthalmia-severe facial clefting syndrome,26,66
+MONDO_0013273,Orphanet_96078,ambas,chromosome 16p13.3 duplication syndrome,16p13.3 microduplication syndrome,86,72
+MONDO_0013282,Orphanet_60,ambas,alpha 1-antitrypsin deficiency,Alpha-1-antitrypsin deficiency,321,206
+MONDO_0013291,Orphanet_263297,ambas,glycogen storage disease XV,Glycogen storage disease due to glycogenin deficiency,285,201
+MONDO_0013292,Orphanet_238750,ambas,chromosome 4q21 deletion syndrome,4q21 microdeletion syndrome,17,17
+MONDO_0013304,Orphanet_166081,ambas,von Willebrand disease 2,Von Willebrand disease type 2,60,42
+MONDO_0013308,Orphanet_363972,ambas,CBL-related disorder,Noonan syndrome-like disorder with juvenile myelomonocytic leukemia,78,70
+MONDO_0013311,Orphanet_247820,ambas,ectodermal dysplasia-syndactyly syndrome,Ectodermal dysplasia - syndactyly syndrome,88,109
+MONDO_0013313,Orphanet_247827,sssom,ectodermal dysplasia-cutaneous syndactyly syndrome,Ectodermal dysplasia - cutaneous syndactyly syndrome,99,98
+MONDO_0013336,Orphanet_357001,ambas,chromosome 19p13.13 deletion syndrome,19p13.13 microdeletion syndrome,25,2
+MONDO_0013338,Orphanet_254334,ambas,Charcot-Marie-Tooth disease recessive intermediate B,Autosomal recessive intermediate Charcot-Marie-Tooth disease type B,13,44
+MONDO_0013342,Orphanet_306511,ambas,hereditary spastic paraplegia 48,Autosomal recessive spastic paraplegia type 48,30,61
+MONDO_0013354,Orphanet_254343,ambas,spastic ataxia 4,Autosomal recessive spastic ataxia - optic atrophy - dysarthria,59,70
+MONDO_0013355,Orphanet_293825,ambas,congenital dyserythropoietic anemia type 4,Congenital dyserythropoietic anemia type IV,811,807
+MONDO_0013357,Orphanet_137634,ambas,"chromosome 17q11.2 deletion syndrome, 1.4Mb",Overgrowth - macrocephaly - facial dysmorphism,48,1
+MONDO_0013357,Orphanet_97685,ambas,"chromosome 17q11.2 deletion syndrome, 1.4Mb",17q11 microdeletion syndrome,48,43
+MONDO_0013361,Orphanet_325,ambas,congenital prothrombin deficiency,Congenital factor II deficiency,19,147
+MONDO_0013391,Orphanet_163684,ambas,sterol carrier protein 2 deficiency,Leukoencephalopathy - dystonia - motor neuropathy,20,126
+MONDO_0013392,Orphanet_284289,ambas,autosomal recessive spinocerebellar ataxia 10,Adult-onset autosomal recessive cerebellar ataxia,25,262
+MONDO_0013400,Orphanet_168558,ambas,"Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency","46,XY disorder of sex development - adrenal insufficiency due to CYP11A1 deficiency",40,80
+MONDO_0013404,Orphanet_88618,ambas,hypermethioninemia with deficiency of S-adenosylhomocysteine hydrolase,Psychomotor retardation due to S-adenosylhomocysteine hydrolase deficiency,22,77
+MONDO_0013426,Orphanet_284984,sssom,aneurysm-osteoarthritis syndrome,Aneurysm - osteoarthritis syndrome,96,235
+MONDO_0013427,Orphanet_391311,sssom,immunodeficiency 31B,Susceptibility to viral and mycobacterial infections,201,5
+MONDO_0013439,Orphanet_79302,ambas,congenital bile acid synthesis defect 3,Congenital bile acid synthesis defect type 3,24,223
+MONDO_0013531,Orphanet_79350,ambas,PSPH deficiency,3-phosphoserine phosphatase deficiency,24,12
+MONDO_0013539,Orphanet_79507,ambas,hypotonia-failure to thrive-microcephaly syndrome,Hypotonia - failure to thrive - microcephaly,9,7
+MONDO_0013540,Orphanet_3226,xrefs,deafness-lymphedema-leukemia syndrome,Deafness - lymphedema - leukemia,30,62
+MONDO_0013541,Orphanet_300570,ambas,complex cortical dysplasia with other brain malformations 1,Cortical dysgenesis with pontocerebellar hypoplasia due to TUBB3 mutation,24,67
+MONDO_0013546,Orphanet_1194,ambas,mitochondrial complex V (ATP synthase) deficiency nuclear type 2,Mitochondrial encephalo-cardio-myopathy due to TMEM70 deficiency,45,46
+MONDO_0013559,Orphanet_231531,ambas,Hermansky-Pudlak syndrome 7,Hermansky-Pudlak syndrome type 7,81,19
+MONDO_0013560,Orphanet_231537,xrefs,Hermansky-Pudlak syndrome 8,Hermansky-Pudlak syndrome type 8,43,30
+MONDO_0013563,Orphanet_280633,ambas,multiple congenital anomalies-hypotonia-seizures syndrome 1,Multiple congenital anomalies - hypotonia - seizures syndrome,67,58
+MONDO_0013574,Orphanet_171719,sssom,cutis laxa - Marfanoid syndrome,Cutis laxa-Marfanoid syndrome,41,45
+MONDO_0013579,Orphanet_289307,sssom,methylmalonate semialdehyde dehydrogenase deficiency,Developmental delay due to methylmalonate semialdehyde dehydrogenase deficiency,44,41
+MONDO_0013599,Orphanet_391487,ambas,autoimmune enteropathy and endocrinopathy - susceptibility to chronic infections syndrome,Autoimmune enteropathy and endocrinopathy-susceptibility to chronic infections syndrome,48,61
+MONDO_0013606,Orphanet_280663,xrefs,Hermansky-Pudlak syndrome 9,Hermansky-Pudlak syndrome type 9,133,11
+MONDO_0013623,Orphanet_98885,ambas,platelet-type bleeding disorder 11,Bleeding diathesis due to glycoprotein VI deficiency,147,146
+MONDO_0013644,Orphanet_284232,ambas,Charcot-Marie-Tooth disease axonal type 2O,Autosomal dominant Charcot-Marie-Tooth disease type 2O,17,15
+MONDO_0013645,Orphanet_284271,ambas,autosomal recessive spinocerebellar ataxia 11,Autosomal recessive cerebellar ataxia - psychomotor retardation,16,120
+MONDO_0013646,Orphanet_284160,ambas,chromosome 8q21.11 deletion syndrome,8q21.11 microdeletion syndrome,53,53
+MONDO_0013675,Orphanet_401874,ambas,multiple mitochondrial dysfunctions syndrome 2,Fatal multiple mitochondrial dysfunction syndrome type 2,38,40
+MONDO_0013722,Orphanet_85186,ambas,hypomyelinating leukodystrophy 8 with or without oligodontia and-or hypogonadotropic hypogonadism,Endosteal sclerosis - cerebellar hypoplasia,46,1
+MONDO_0013726,Orphanet_330050,sssom,"encephalopathy, lethal, due to defective mitochondrial peroxisomal fission 1",Lethal encephalopathy due to mitochondrial and peroxisomal fission defect,53,98
+MONDO_0013737,Orphanet_320391,ambas,hereditary spastic paraplegia 46,Autosomal recessive spastic paraplegia type 46,41,198
+MONDO_0013743,Orphanet_300345,ambas,autosomal systemic lupus erythematosus type 16,Autosomal recessive systemic lupus erythematosus,222,14
+MONDO_0013758,Orphanet_93114,ambas,Charcot-Marie-Tooth disease dominant intermediate E,Autosomal dominant intermediate Charcot-Marie-Tooth disease type E,27,66
+MONDO_0013759,Orphanet_293822,ambas,"melanoma, cutaneous malignant, susceptibility to, 8",MITF-related melanoma and renal cell carcinoma predisposition syndrome,6,3
+MONDO_0013760,Orphanet_352333,sssom,congenital ichthyosis-intellectual disability-spastic quadriplegia syndrome,Congenital ichthyosis - intellectual disability - spastic quadriplegia,36,34
+MONDO_0013766,Orphanet_300359,ambas,familial cold autoinflammatory syndrome 3,PLCG2-associated antibody deficiency and immune dysregulation,28,336
+MONDO_0013767,Orphanet_268114,ambas,autoimmune lymphoproliferative syndrome type 4,RAS-associated autoimmune leukoproliferative disease,855,22
+MONDO_0013776,Orphanet_313772,ambas,spastic ataxia 5,Early-onset spastic ataxia-neuropathy syndrome,128,133
+MONDO_0013796,Orphanet_261272,ambas,chromosome 17q12 duplication syndrome,17q12 microduplication syndrome,30,27
+MONDO_0013797,Orphanet_261265,ambas,chromosome 17q12 deletion syndrome,17q12 microdeletion syndrome,66,78
+MONDO_0013813,Orphanet_306734,ambas,dystonia 21,"Primary dystonia, DYT21 type",12,18
+MONDO_0013825,Orphanet_314373,ambas,congenital diarrhea 6,Chronic diarrhea due to guanylate cyclase 2C overactivity,10,8
+MONDO_0013837,Orphanet_254898,ambas,deafness-encephaloneuropathy-obesity-valvulopathy syndrome,Deafness - encephaloneuropathy - obesity - valvulopathy,20,20
+MONDO_0013840,Orphanet_319678,ambas,encephalopathy-hypertrophic cardiomyopathy-renal tubular disease syndrome,Encephalopathy - hypertrophic cardiomyopathy - renal tubular disease,27,26
+MONDO_0013847,Orphanet_370079,ambas,chromosome 16p11.2 duplication syndrome,Proximal 16p11.2 microduplication syndrome,21,20
+MONDO_0013866,Orphanet_314629,ambas,neuronal ceroid lipofuscinosis 11,CLN11 disease,60,57
+MONDO_0013875,Orphanet_352328,ambas,"3-methylglutaconic aciduria with deafness, encephalopathy, and Leigh-like syndrome",MEGDEL syndrome,38,46
+MONDO_0013881,Orphanet_306504,ambas,"epidermolysis bullosa, junctional 7, with interstitial lung disease and nephrotic syndrome",Congenital nephrotic syndrome-interstitial lung disease-epidermolysis bullosa syndrome,47,36
+MONDO_0013886,Orphanet_314647,ambas,cerebellar dysfunction with variable cognitive and behavioral abnormalities,Non-progressive cerebellar ataxia with intellectual disability,70,71
+MONDO_0013889,Orphanet_391677,sssom,short stature-optic atrophy-Pelger-HuC+t anomaly syndrome,Short stature-optic atrophy-Pelger-Huët anomaly syndrome,40,42
+MONDO_0013905,Orphanet_324262,ambas,autosomal recessive spinocerebellar ataxia 13,Autosomal recessive congenital cerebellar ataxia due to MGLUR1 deficiency,34,38
+MONDO_0013922,Orphanet_319675,ambas,Seckel syndrome 7,"Microcephalic primordial dwarfism, Dauber type",53,32
+MONDO_0013931,Orphanet_95433,ambas,peroxisome biogenesis disorder 4B,Autosomal recessive cerebellar ataxia - blindness - deafness,28,184
+MONDO_0013962,Orphanet_319199,ambas,hereditary spastic paraplegia 53,Autosomal recessive spastic paraplegia type 53,20,41
+MONDO_0013971,Orphanet_314051,ambas,leukoencephalopathy-thalamus and brainstem anomalies-high lactate syndrome,Leukoencephalopathy - thalamus and brainstem anomalies - high lactate,40,38
+MONDO_0013981,Orphanet_319189,ambas,"myoclonus, familial",Familial cortical myoclonus,14,227
+MONDO_0014006,Orphanet_329224,ambas,Schuurs-Hoeijmakers syndrome,Intellectual disability - craniofacial dysmorphism - cryptorchidism,67,43
+MONDO_0014012,Orphanet_329258,ambas,Charcot-Marie-Tooth disease axonal type 2Q,Autosomal dominant Charcot-Marie-Tooth disease type 2Q,12,27
+MONDO_0014015,Orphanet_320411,ambas,hereditary spastic paraplegia 56,Autosomal recessive spastic paraplegia type 56,31,32
+MONDO_0014016,Orphanet_320385,ambas,hereditary spastic paraplegia 49,Autosomal recessive spastic paraplegia type 49,27,29
+MONDO_0014018,Orphanet_320380,ambas,hereditary spastic paraplegia 54,Autosomal recessive spastic paraplegia type 54,30,29
+MONDO_0014020,Orphanet_320375,sssom,hereditary spastic paraplegia 55,Autosomal recessive spastic paraplegia type 55,31,59
+MONDO_0014024,Orphanet_320370,ambas,hereditary spastic paraplegia 43,Autosomal recessive spastic paraplegia type 43,21,48
+MONDO_0014033,Orphanet_329466,ambas,dystonia 25,"Autosomal dominant focal dystonia, DYT25",21,22
+MONDO_0014039,Orphanet_352447,ambas,mitochondrial DNA depletion syndrome 11,Progressive external ophthalmoplegia - myopathy - emaciation,43,40
+MONDO_0014044,Orphanet_289553,ambas,dysmorphism-conductive hearing loss-heart defect syndrome,Dysmorphism - conductive hearing loss - heart defect,31,30
+MONDO_0014058,Orphanet_352712,ambas,facial dysmorphism-immunodeficiency-livedo-short stature syndrome,Facial dysmorphism - immunodeficiency - livedo - short stature,35,86
+MONDO_0014067,Orphanet_357175,sssom,short ulna-dysmorphism-hypotonia-intellectual disability syndrome,Short ulna - dysmorphism - hypotonia - intellectual disability,42,39
+MONDO_0014069,Orphanet_357332,sssom,syndactyly-camptodactyly and clinodactyly of fifth fingers-bifid toes syndrome,Syndactyly - camptodactyly and clinodactyly of fifth fingers - bifid toes,72,71
+MONDO_0014074,Orphanet_352670,ambas,Charcot-Marie-Tooth disease dominant intermediate F,Autosomal dominant intermediate Charcot-Marie-Tooth disease type F,23,44
+MONDO_0014082,Orphanet_357329,sssom,cryptosporidiosis-chronic cholangitis-liver disease syndrome,Cryptosporidiosis - chronic cholangitis - liver disease,164,163
+MONDO_0014089,Orphanet_352662,sssom,corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome,Corneal intraepithelial dyskeratosis with palmoplantar hyperkeratosis and laryngeal dyskeratosis,37,21
+MONDO_0014096,Orphanet_137658,xrefs,microcephaly-intellectual disability-phalangeal and neurological anomalies syndrome,Microcephaly - intellectual disability - phalangeal and neurological anomalies,27,26
+MONDO_0014118,Orphanet_369852,sssom,congenital neutropenia-myelofibrosis-nephromegaly syndrome,Recurrent infections-myelofibrosis-nephromegaly syndrome,19,851
+MONDO_0014132,Orphanet_363424,ambas,multiple mitochondrial dysfunctions syndrome 3,Hypotonia-cerebral atrophy-hyperglycinemia syndrome,45,42
+MONDO_0014144,Orphanet_369840,ambas,autosomal recessive limb-girdle muscular dystrophy type R18,Autosomal recessive limb-girdle muscular dystrophy type 2S,59,59
+MONDO_0014147,Orphanet_352709,ambas,neuronal ceroid lipofuscinosis 13,CLN13 disease,157,26
+MONDO_0014154,Orphanet_369867,ambas,Charcot-Marie-Tooth disease recessive intermediate C,Autosomal recessive intermediate Charcot-Marie-Tooth disease type C,17,51
+MONDO_0014159,Orphanet_352403,ambas,autosomal recessive spinocerebellar ataxia 14,Spectrin-associated autosomal recessive cerebellar ataxia,20,118
+MONDO_0014165,Orphanet_369837,ambas,multiple congenital anomalies-hypotonia-seizures syndrome 3,Intellectual disability-seizures-hypotonia-ophthalmologic-skeletal anomalies syndrome,84,59
+MONDO_0014195,Orphanet_369970,sssom,microcornea-myopic chorioretinal atrophy,Microcornea-myopic chorioretinal atrophy-telecanthus syndrome,11,37
+MONDO_0014198,Orphanet_369897,ambas,mitochondrial DNA depletion syndrome 13,"Mitochondrial DNA depletion syndrome, encephalomyopathic form with variable craniofacial anomalies",125,120
+MONDO_0014205,Orphanet_352577,sssom,severe feeding difficulties-failure to thrive-microcephaly due to ASXL3 deficiency syndrome,Severe feeding difficulties - failure to thrive - microcephaly due to ASXL3 deficiency,97,93
+MONDO_0014209,Orphanet_352654,ambas,early-onset progressive neurodegeneration-blindness-ataxia-spasticity syndrome,Early-onset progressive neurodegeneration - blindness - ataxia - spasticity,140,133
+MONDO_0014210,Orphanet_356996,sssom,intellectual disability-hypotonia-spasticity-sleep disorder syndrome,Intellectual disability - hypotonia - spasticity - sleep disorder,111,141
+MONDO_0014225,Orphanet_247790,ambas,hemochromatosis type 5,FTH1-related iron overload,265,262
+MONDO_0014238,Orphanet_391307,sssom,severe intellectual disability-short stature-behavioral abnormalities-facial dysmorphism syndrome,Severe intellectual disability-short stature-behavioral troubles-facial dysmorphism syndrome,45,38
+MONDO_0014243,Orphanet_398069,sssom,Schaaf-Yang syndrome,Prader-Willi syndrome due to point mutation,81,54
+MONDO_0014248,Orphanet_370943,ambas,autism spectrum disorder - epilepsy - arthrogryposis syndrome,Autism spectrum disorder-epilepsy-arthrogryposis syndrome,433,39
+MONDO_0014250,Orphanet_397685,ambas,familial hyperprolactinemia,Familial  hyperprolactinemia,332,9
+MONDO_0014258,Orphanet_391376,sssom,congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome,Congenital microcephaly-severe encephalopathy-progressive cerebral atrophy syndrome,69,67
+MONDO_0014282,Orphanet_401849,ambas,hereditary spastic paraplegia 72,Autosomal recessive spastic paraplegia type 72,110,87
+MONDO_0014290,Orphanet_397725,ambas,neurodegeneration with brain iron accumulation 6,COASY protein-associated neurodegeneration,82,38
+MONDO_0014294,Orphanet_261183,ambas,chromosome 15q11.2 deletion syndrome,15q11.2 microdeletion syndrome,58,106
+MONDO_0014302,Orphanet_401785,ambas,hereditary spastic paraplegia 62,Autosomal recessive spastic paraplegia type 62,64,33
+MONDO_0014303,Orphanet_401810,ambas,hereditary spastic paraplegia 64,Autosomal recessive spastic paraplegia type 64,16,18
+MONDO_0014304,Orphanet_401780,ambas,hereditary spastic paraplegia 61,Autosomal recessive spastic paraplegia type 61,24,25
+MONDO_0014305,Orphanet_401805,ambas,hereditary spastic paraplegia 63,Autosomal recessive spastic paraplegia type 63,30,34
+MONDO_0014320,Orphanet_401777,ambas,Bosch-Boonstra-Schaaf optic atrophy syndrome,Optic atrophy-intellectual disability syndrome,41,32
+MONDO_0014327,Orphanet_402003,sssom,"palmoplantar keratoderma, nonepidermolytic, focal or diffuse",Autosomal dominant focal non-epidermolytic palmoplantar keratoderma with plantar blistering,27,6
+MONDO_0014335,Orphanet_404437,sssom,diffuse cerebral and cerebellar atrophy - intractable seizures - progressive microcephaly syndrome,Diffuse cerebral and cerebellar atrophy-intractable seizures-progressive microcephaly syndrome,29,29
+MONDO_0014375,Orphanet_329242,ambas,congenital diarrhea 7 with exudative enteropathy,Congenital chronic diarrhea with protein-losing enteropathy,194,17
+MONDO_0014379,Orphanet_404448,ambas,ADNP-related multiple congenital anomalies - intellectual disability - autism spectrum disorder,ADNP-related multiple congenital anomalies-intellectual disability-autism spectrum disorder,164,118
+MONDO_0014401,Orphanet_329191,ambas,tall stature-scoliosis-macrodactyly of the great toes syndrome,Tall stature - scoliosis - macrodactyly of the great toes,16,57
+MONDO_0014419,Orphanet_370022,ambas,ataxia - intellectual disability - oculomotor apraxia - cerebellar cysts syndrome,Ataxia-intellectual disability-oculomotor apraxia-cerebellar cysts syndrome,50,51
+MONDO_0014471,Orphanet_254913,ambas,mitochondrial proton-transporting ATP synthase complex deficiency,Isolated ATP synthase deficiency,72,102
+MONDO_0014474,Orphanet_352479,ambas,autosomal recessive limb-girdle muscular dystrophy type 2U,Autosomal recessive limb-girdle muscular dystrophy due to ISPD deficiency,100,129
+MONDO_0014476,Orphanet_401953,sssom,episodic ataxia type 8,Episodic ataxia with slurred speech,109,147
+MONDO_0014530,Orphanet_363432,ambas,autosomal recessive spinocerebellar ataxia 18,Autosomal recessive congenital cerebellar ataxia due to GRID2 deficiency,26,115
+MONDO_0014566,Orphanet_397735,ambas,Charcot-Marie-Tooth disease axonal type 2U,Autosomal dominant Charcot-Marie-Tooth disease type 2 due to MARS mutation,22,34
+MONDO_0014601,Orphanet_397709,ambas,autosomal recessive spinocerebellar ataxia 20,Intellectual disability-coarse face-macrocephaly-cerebellar hypotrophy syndrome,63,158
+MONDO_0014658,Orphanet_85165,ambas,severe achondroplasia-developmental delay-acanthosis nigricans syndrome,Severe achondroplasia - developmental delay - acanthosis nigricans,74,132
+MONDO_0014733,Orphanet_391351,ambas,Charcot-Marie-Tooth disease type 4K,SURF1-related Charcot-Marie-Tooth disease type 4,43,41
+MONDO_0014773,Orphanet_369891,sssom,cardiac anomalies - developmental delay - facial dysmorphism syndrome,Cardiac anomalies-developmental delay-facial dysmorphism syndrome,46,96
+MONDO_0014804,Orphanet_255132,sssom,sideroblastic anemia 3,Adult-onset autosomal recessive sideroblastic anemia,659,527
+MONDO_0014846,Orphanet_404493,sssom,"spinocerebellar ataxia, autosomal recessive 23",Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome due to TUD deficiency,45,18
+MONDO_0015033,Orphanet_100006,ambas,"ABeta amyloidosis, dutch type","Hereditary cerebral hemorrhage with amyloidosis, Dutch type",13,14
+MONDO_0015047,Orphanet_100031,sssom,amelogenesis imperfecta type 1,Hypoplastic amelogenesis imperfecta,149,163
+MONDO_0015048,Orphanet_100033,sssom,amelogenesis imperfecta type 2,Hypomaturation amelogenesis imperfecta,96,158
+MONDO_0015131,Orphanet_101972,ambas,combined immunodeficiency,Combined T and B cell immunodeficiency,2712,978
+MONDO_0015151,Orphanet_102014,ambas,"muscular dystrophy, limb-girdle, autosomal dominant",Autosomal dominant limb-girdle muscular dystrophy,326,149
+MONDO_0015199,Orphanet_1068,ambas,aniridia - intellectual disability syndrome,Aniridia-intellectual disability syndrome,1,369
+MONDO_0015201,Orphanet_1074,ambas,ankyloblepharon filiforme-imperforate anus syndrome,Ankyloblepharon filiforme - imperforate anus,2,85
+MONDO_0015253,Orphanet_124,ambas,Diamond-Blackfan anemia,Blackfan-Diamond anemia,394,1667
+MONDO_0015279,Orphanet_1334,sssom,chronic mucocutaneous candidiasis,Chronic mucocutaneous candidosis,473,985
+MONDO_0015281,Orphanet_1344,ambas,atrial standstill,Atrial stand still,448,331
+MONDO_0015293,Orphanet_137608,ambas,segmental outgrowth-lipomatosis-arteriovenous malformation-epidermal nevus syndrome,Segmental outgrowth - lipomatosis - arteriovenous malformation - epidermal nevus,11,5
+MONDO_0015300,Orphanet_1377,ambas,cataract - microcornea syndrome,Cataract-microcornea syndrome,3,512
+MONDO_0015356,Orphanet_140162,ambas,hereditary neoplastic syndrome,Inherited cancer-predisposing syndrome,5674,3274
+MONDO_0015426,Orphanet_1425,ambas,Desbuquois dysplasia,Desbuquois syndrome,100,229
+MONDO_0015448,Orphanet_1460,ambas,mitochondrial complex III deficiency,Isolated CoQ-cytochrome C reductase deficiency,14,424
+MONDO_0015463,Orphanet_1514,ambas,craniodigital syndrome-intellectual disability syndrome,Craniodigital syndrome - intellectual disability,2,24
+MONDO_0015541,Orphanet_540,ambas,hereditary hemophagocytic lymphohistiocytosis,Familial hemophagocytic lymphohistiocytosis,485,858
+MONDO_0015587,Orphanet_163721,ambas,rolandic epilepsy-speech dyspraxia syndrome,Rolandic epilepsy - speech dyspraxia,23,28
+MONDO_0015609,Orphanet_164736,ambas,advanced sleep phase syndrome,Familial advanced sleep-phase syndrome,25,38
+MONDO_0015653,Orphanet_166472,sssom,monogenic epilepsy,Monogenic disease with epilepsy,499,715
+MONDO_0015700,Orphanet_169150,ambas,immunodeficiency due to a late component of complement deficiency,Immunodeficiency due to a late component of complements deficiency,148,261
+MONDO_0015722,Orphanet_98434,ambas,congenital vitamin K-dependent coagulation factors deficiency,Hereditary combined deficiency of vitamin K-dependent clotting factors,186,30
+MONDO_0015748,Orphanet_171723,ambas,hereditary mucosal leukokeratosis,White sponge nevus,7,65
+MONDO_0015830,Orphanet_180068,sssom,partial bilateral aplasia of the mullerian ducts,Partial bilateral aplasia of the Müllerian ducts,617,189
+MONDO_0015951,Orphanet_183490,ambas,hereditary photodermatosis,Genetic photodermatosis,3097,332
+MONDO_0015962,Orphanet_183592,sssom,inherited renal tubular disease,Genetic renal tubular disease,2596,1654
+MONDO_0015993,Orphanet_1872,ambas,cone-rod dystrophy,Cone rod dystrophy,446,658
+MONDO_0016002,Orphanet_1900,ambas,"Ehlers-Danlos syndrome, kyphoscoliotic type 1","Ehlers-Danlos syndrome, kyphoscoliotic type",80,56
+MONDO_0016027,Orphanet_1949,ambas,benign neonatal seizures,Benign familial neonatal seizures,19,89
+MONDO_0016146,Orphanet_207078,ambas,caveolinopathy,Qualitative or quantitative defects of caveolin-3,257,1
+MONDO_0016160,Orphanet_2076,sssom,X-linked intellectual disability-epilepsy syndrome,X-linked intellectual disability - epilepsy,276,595
+MONDO_0016215,Orphanet_210141,ambas,spastic quadriplegic cerebral palsy,Inherited congenital spastic tetraplegia,6,43
+MONDO_0016294,Orphanet_2150,ambas,Hirschsprung disease-type D brachydactyly syndrome,Hirschsprung disease - type D brachydactyly,25,3
+MONDO_0016297,Orphanet_216445,xrefs,prelingual non-syndromic genetic hearing loss,Prelingual non-syndromic genetic deafness,9,167
+MONDO_0016298,Orphanet_216452,xrefs,postlingual non-syndromic genetic hearing loss,Postlingual non-syndromic genetic deafness,42,74
+MONDO_0016366,Orphanet_2209,ambas,maternal phenylketonuria,Maternal hyperphenylalaninemia,34,31
+MONDO_0016390,Orphanet_2238,ambas,familial hypoparathyroidism,Familial isolated hypoparathyroidism,542,299
+MONDO_0016395,Orphanet_2253,sssom,foveal hypoplasia-presenile cataract syndrome,Foveal hypoplasia - presenile cataract,105,7
+MONDO_0016419,Orphanet_227535,ambas,hereditary breast carcinoma,Hereditary breast cancer,80,415
+MONDO_0016424,Orphanet_228012,ambas,progressive sensorineural hearing loss-hypertrophic cardiomyopathy syndrome,Progressive sensorineural hearing loss - hypertrophic cardiomyopathy,2,5
+MONDO_0016433,Orphanet_2282,ambas,dysmorphism-short stature-deafness-disorder of sex development syndrome,Dysmorphism - short stature - deafness - disorder of sex development,2,2
+MONDO_0016483,Orphanet_231160,ambas,intracranial berry aneurysm,Familial cerebral saccular aneurysm,49,56
+MONDO_0016491,Orphanet_231249,ambas,hemoglobin E-beta-thalassemia syndrome,Hemoglobin E - beta-thalassemia,922,1
+MONDO_0016521,Orphanet_2349,ambas,muscular pseudohypertrophy-hypothyroidism syndrome,Muscular pseudohypertrophy - hypothyroidism,4,5
+MONDO_0016539,Orphanet_238523,ambas,atypical hypotonia-cystinuria syndrome,Atypical hypotonia - cystinuria syndrome,4,41
+MONDO_0016542,Orphanet_238569,ambas,immune dysregulation-inflammatory bowel disease-arthritis-recurrent infections syndrome,Autosomal recessive early-onset inflammatory bowel disease,19,576
+MONDO_0016543,Orphanet_238583,ambas,hyperphenylalaninemia due to tetrahydrobiopterin deficiency,Hyperphenylalaninemia,77,253
+MONDO_0016576,Orphanet_2440,ambas,split hand-foot malformation,Split hand-split foot malformation,78,188
+MONDO_0016587,Orphanet_247,ambas,arrhythmogenic right ventricular cardiomyopathy,Arrhythmogenic right ventricular dysplasia,823,617
+MONDO_0016620,Orphanet_2796,ambas,primary hypertrophic osteoarthropathy,Pachydermoperiostosis,180,79
+MONDO_0016624,Orphanet_248296,sssom,inherited deficiency anemia,Constitutional deficiency anemia,1323,968
+MONDO_0016639,Orphanet_2487,ambas,lower limb deficiency-hypospadias syndrome,Lower limb deficiency - hypospadias,1,14
+MONDO_0016649,Orphanet_2510,ambas,Warburg micro syndrome,Micro syndrome,66,124
+MONDO_0016669,Orphanet_251365,ambas,sickle cell-hemoglobin c disease syndrome,Sickle cell - hemoglobin C disease,2,2
+MONDO_0016750,Orphanet_2521,ambas,microcephaly-cleft palate syndrome,Microcephaly - cleft palate,1,55
+MONDO_0016758,Orphanet_2523,ambas,microcephaly-brain defect-spasticity-hypernatremia syndrome,Microcephaly - brain defect - spasticity - hypernatremia,11,85
+MONDO_0016764,Orphanet_2542,ambas,isolated anophthalmia-microphthalmia syndrome,Isolated anophthalmia - microphthalmia,344,303
+MONDO_0016811,Orphanet_254902,ambas,renal tubulopathy-encephalopathy-liver failure syndrome,Renal tubulopathy - encephalopathy - liver failure,2,57
+MONDO_0016817,Orphanet_2554,ambas,Meier-Gorlin syndrome,Ear-patella-short stature syndrome,42,246
+MONDO_0016825,Orphanet_2597,ambas,mitochondrial myopathy-lactic acidosis-deafness syndrome,Mitochondrial myopathy - lactic acidosis - deafness,35,21
+MONDO_0016981,Orphanet_263410,sssom,infantile spams-psychomotor retardation-progressive brain atrophy-basal ganglia disease syndrome,Infantile spams - psychomotor retardation - progressive brain atrophy - basal ganglia disease,1,4
+MONDO_0017079,Orphanet_268820,ambas,meningoencephalocele,Cranial meningocele,18,8
+MONDO_0017123,Orphanet_2697,ambas,arthrogryposis-renal dysfunction-cholestasis syndrome,Arthrogryposis - renal dysfunction - cholestasis,21,85
+MONDO_0017162,Orphanet_2759,ambas,imperforate oropharynx-costo vetebral anomalies syndrome,Imperforate oropharynx - costo vetebral anomalies,2,21
+MONDO_0017232,Orphanet_280384,ambas,recessive intellectual disability-motor dysfunction-multiple joint contractures syndrome,Recessive intellectual disability - motor dysfunction - multiple joint contractures,4,1
+MONDO_0017279,Orphanet_2828,ambas,young-onset Parkinson disease,Young adult-onset Parkinsonism,228,433
+MONDO_0017283,Orphanet_284169,sssom,DeSanto-Shinawi Syndrome due to 10p11.21p12.31 microdeletion,10p11.21p12.31 microdeletion syndrome,5,40
+MONDO_0017338,Orphanet_289573,ambas,fatal multiple mitochondrial dysfunctions syndrome,Fatal multiple mitochondrial dysfunction syndrome,56,109
+MONDO_0017350,Orphanet_289829,ambas,inborn disorder of tryptophan metabolism,Disorder of tryptophan metabolism,33,8
+MONDO_0017351,Orphanet_289832,sssom,inborn disorder of lysine and hydroxylysine metabolism,Disorder of lysine and hydroxylysine metabolism,115,34
+MONDO_0017355,Orphanet_289866,ambas,inborn disorder of proline metabolism,Disorder of proline metabolism,494,1
+MONDO_0017356,Orphanet_289869,ambas,inborn disorder of ornithine metabolism,Disorder of ornithine metabolism,215,48
+MONDO_0017393,Orphanet_293642,sssom,blepharophimosis - intellectual disability syndrome,Blepharophimosis-intellectual disability syndrome,55,55
+MONDO_0017400,Orphanet_293864,ambas,hypoplastic pancreas-intestinal atresia-hypoplastic gallbalder syndrome,Hypoplastic pancreas-intestinal atresia-hypoplastic gallbladder syndrome,116,115
+MONDO_0017407,Orphanet_293978,sssom,deficiency in anterior pituitary function - variable immunodeficiency syndrome,Deficiency in anterior pituitary function-variable immunodeficiency syndrome,10,31
+MONDO_0017408,Orphanet_293987,ambas,rapid-onset childhood obesity-hypothalamic dysfunction-hypoventilation-autonomic dysregulation syndrome,Rapid-onset childhood obesity - hypothalamic dysfunction - hypoventilation - autonomic dysregulation syndrome,17,36
+MONDO_0017454,Orphanet_2950,xrefs,triphalangeal thumb-polysyndactyly syndrome,Triphalangeal thumb - polysyndactyly syndrome,96,127
+MONDO_0017573,Orphanet_2973,ambas,"46,XX disorder of sex development-anorectal anomalies syndrome","46,XX disorder of sex development - anorectal anomalies",1,45
+MONDO_0017579,Orphanet_2995,ambas,Baraitser-Winter cerebrofrontofacial syndrome,Baraitser-Winter syndrome,20,69
+MONDO_0017627,Orphanet_306530,ambas,congenital hereditary facial paralysis-variable hearing loss syndrome,Congenital hereditary facial paralysis with variable hearing loss,2,69
+MONDO_0017686,Orphanet_308448,ambas,inborn aminoacylase deficiency,Aminoacylase deficiency,110,14
+MONDO_0017748,Orphanet_309515,sssom,inborn disorder of glycosphingolipid and glycosylphosphatidylinositol anchor glycosylation,Disorder of glycosphingolipid and glycosylphosphatidylinositol anchor glycosylation,263,10
+MONDO_0017754,Orphanet_309813,ambas,inborn disorder of porphyrin metabolism,Disorder of porphyrin and haem metabolism,1802,201
+MONDO_0017755,Orphanet_309816,ambas,inborn disorder of bilirubin metabolism,Disorder of bilirubin metabolism and excretion,910,49
+MONDO_0017758,Orphanet_309827,sssom,disorder of vitamin and non-protein cofactor absorption and transport,Disorder of vitamin and non-protein cofactor absorption and transport ,697,1122
+MONDO_0017771,Orphanet_3109,ambas,Mayer-Rokitansky-Kuster-Hauser syndrome,Mayer-Rokitansky-Küster-Hauser syndrome,590,230
+MONDO_0017813,Orphanet_314679,ambas,van Maldergem syndrome,Cerebro-facio-articular syndrome,58,78
+MONDO_0017836,Orphanet_315,ambas,erythrokeratoderma en cocardes,"Erythrokeratoderma ""en cocardes""",1,35
+MONDO_0017856,Orphanet_3175,sssom,X-linked spasticity-intellectual disability-epilepsy syndrome,Spasticity - intellectual disability - X-linked epilepsy,3,67
+MONDO_0017924,Orphanet_3240,ambas,central nervous system calcification-deafness-tubular acidosis-anemia syndrome,Central nervous system calcification - deafness - tubular acidosis - anemia,1,6
+MONDO_0017939,Orphanet_324604,sssom,classic multiminicore myopathy,Classic multiminicore myopathy,49,131
+MONDO_0017945,Orphanet_324703,ambas,ABetaL34V amyloidosis,"Hereditary cerebral hemorrhage with amyloidosis, Piedmont type",19,12
+MONDO_0017946,Orphanet_324708,ambas,"ABeta amyloidosis, Iowa type","Hereditary cerebral hemorrhage with amyloidosis, Iowa type",12,12
+MONDO_0017947,Orphanet_324713,ambas,"ABeta amyloidosis, Italian type","Hereditary cerebral hemorrhage with amyloidosis, Italian type",12,12
+MONDO_0017948,Orphanet_324718,ambas,ABetaA21G amyloidosis,"Hereditary cerebral hemorrhage with amyloidosis, Flemish type",2,12
+MONDO_0017949,Orphanet_324723,ambas,"ABeta amyloidosis, Arctic type","Hereditary cerebral hemorrhage with amyloidosis, Arctic type",2,12
+MONDO_0018023,Orphanet_330041,sssom,hemoglobin M disease,Autosomal dominant methemoglobinemia,437,433
+MONDO_0018050,Orphanet_3329,ambas,tibial aplasia-ectrodactyly syndrome,Tibial aplasia - ectrodactyly,312,154
+MONDO_0018098,Orphanet_34517,xrefs,autosomal dominant limb-girdle muscular dystrophy type 1E (DES),Autosomal dominant limb-girdle muscular dystrophy type 1E,4,1
+MONDO_0018155,Orphanet_35689,ambas,lateral sclerosis,Primary lateral sclerosis,92,115
+MONDO_0018160,Orphanet_357027,ambas,hereditary retinoblastoma,Familial retinoblastoma,32,13
+MONDO_0018189,Orphanet_363429,ambas,autosomal recessive cerebellar ataxia - pyramidal signs - nystagmus - oculomotor apraxia syndrome,Autosomal recessive cerebellar ataxia-pyramidal signs-nystagmus-oculomotor apraxia syndrome,7,130
+MONDO_0018208,Orphanet_363700,sssom,neurofibromatosis type 1 due to NF1 mutation or intragenic deletion,Neurofibromatosis type 1 due to NF1mutation or intragenic deletion,3,63
+MONDO_0018212,Orphanet_36382,xrefs,familial cervical artery dissection,Familial cervical artery dissections,8,6
+MONDO_0018214,Orphanet_36387,ambas,generalized epilepsy with febrile seizures plus,Generalized epilepsy with febrile seizures-plus,106,182
+MONDO_0018216,Orphanet_363958,sssom,Koolen-de Vries syndrome due to 17q21.31 microdeletion syndrome,17q21.31 microdeletion syndrome,7,7
+MONDO_0018230,Orphanet_364526,ambas,skeletal dysplasia,Primary bone dysplasia,8313,2352
+MONDO_0018266,Orphanet_370109,ambas,ataxia - telangiectasia variant,Ataxia-telangiectasia variant,12,11
+MONDO_0018276,Orphanet_370953,sssom,muscular dystrophy-dystroglycanopathy,Congenital muscular dystrophy due to dystroglycanopathy,617,80
+MONDO_0018306,Orphanet_381,ambas,Griscelli syndrome,Griscelli disease,554,497
+MONDO_0018424,Orphanet_401854,ambas,inherited lipoic acid biosynthesis defect,Lipoic acid biosynthesis defect,146,14
+MONDO_0018431,Orphanet_401993,sssom,cold-induced sweating syndrome - hyperthermia spectrum,Cold-induced sweating syndrome-hyperthermia spectrum,121,10
+MONDO_0018445,Orphanet_404476,sssom,global developmental delay - lung cysts - overgrowth - Wilms tumor syndrome,Global developmental delay-lung cysts-overgrowth-Wilms tumor syndrome,33,30
+MONDO_0018446,Orphanet_404481,sssom,autosomal recessive cerebellar ataxia - epilepsy - intellectual disability syndrome,Autosomal recessive cerebellar ataxia-epilepsy-intellectual disability syndrome,162,7
+MONDO_0018544,Orphanet_43,ambas,adrenoleukodystrophy,X-linked adrenoleukodystrophy,351,228
+MONDO_0018749,Orphanet_46532,ambas,hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome,Hereditary persistence of fetal hemoglobin - beta-thalassemia,756,9
+MONDO_0018768,Orphanet_47045,ambas,familial cold autoinflammatory syndrome,Familial cold urticaria,165,35
+MONDO_0018866,Orphanet_51,ambas,Aicardi-Goutieres syndrome,Aicardi-Goutières syndrome,243,204
+MONDO_0018870,Orphanet_51608,ambas,arterial calcification of infancy,Generalized arterial calcification of infancy,191,40
+MONDO_0018878,Orphanet_52429,ambas,branchiootic syndrome,Branchio-otic syndrome,46,136
+MONDO_0018911,Orphanet_552,ambas,maturity-onset diabetes of the young,MODY,398,1331
+MONDO_0018940,Orphanet_590,ambas,congenital myasthenic syndrome,Congenital myasthenic syndromes,87,415
+MONDO_0018950,Orphanet_6,ambas,3-methylcrotonyl-CoA carboxylase deficiency,Isolated 3-methylcrotonyl-CoA carboxylase deficiency,39,64
+MONDO_0018994,Orphanet_64747,ambas,Charcot-Marie-Tooth disease type X,X-linked Charcot-Marie-Tooth disease,143,133
+MONDO_0018996,Orphanet_64753,ambas,"spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 2",Spinocerebellar ataxia with axonal neuropathy type 2,97,149
+MONDO_0019004,Orphanet_654,ambas,kidney Wilms tumor,Nephroblastoma,300,495
+MONDO_0019026,Orphanet_667,ambas,autosomal recessive osteopetrosis,Autosomal recessive malignant osteopetrosis,210,305
+MONDO_0019040,Orphanet_68335,ambas,chromosomal disorder,Chromosomal anomaly,7878,1644
+MONDO_0019078,Orphanet_7,ambas,Ritscher-Schinzel syndrome,3C syndrome,63,183
+MONDO_0019128,Orphanet_73217,sssom,mullerian aplasia,Müllerian aplasia,622,189
+MONDO_0019130,Orphanet_73224,ambas,tubular renal disease-cardiomyopathy syndrome,Tubular renal disease - cardiomyopathy,2,26
+MONDO_0019171,Orphanet_101016,ambas,familial long QT syndrome,Romano-Ward syndrome,2867,484
+MONDO_0019181,Orphanet_777,ambas,non-syndromic X-linked intellectual disability,X-linked non-syndromic intellectual disability,387,877
+MONDO_0019182,Orphanet_77828,sssom,inherited obesity,Genetic obesity,794,557
+MONDO_0019189,Orphanet_79062,sssom,inborn disorder of amino acid and other organic acid metabolism,Disorder of amino acid and other organic acid metabolism,6271,1663
+MONDO_0019195,Orphanet_79091,ambas,hereditary inclusion body myopathy-joint contractures-ophthalmoplegia syndrome,Hereditary inclusion body myopathy - joint contractures - ophthalmoplegia,8,80
+MONDO_0019211,Orphanet_79143,ambas,isolated congenital anonychia,Congenital anonychia,6,14
+MONDO_0019214,Orphanet_79161,ambas,inborn carbohydrate metabolic disorder,Disorder of carbohydrate metabolism,7905,5502
+MONDO_0019216,Orphanet_79166,sssom,inborn disorder of amino acid transport,Disorder of amino acid absorption and transport,3000,928
+MONDO_0019218,Orphanet_79168,ambas,inborn disorder of bile acid synthesis,Disorder of bile acid synthesis,498,432
+MONDO_0019219,Orphanet_79169,sssom,inborn disorder of neurotransmitter metabolism and transport,Disorder of neurotransmitter metabolism and transport,191,385
+MONDO_0019222,Orphanet_79173,ambas,inborn disorder of methionine cycle and sulfur amino acid metabolism,Disorder of methionine cycle and sulfur amino acid metabolism,855,105
+MONDO_0019223,Orphanet_79174,sssom,disorder of fatty acid and ketone body metabolism,Disorder of fatty acid oxidation and ketone body metabolism,939,28
+MONDO_0019229,Orphanet_79183,ambas,inborn disorder of ketolysis,Disorder of ketone body metabolism,43,4
+MONDO_0019230,Orphanet_79185,sssom,inborn disorder of ornithine or proline metabolism,Disorder of ornithine or proline metabolism,510,49
+MONDO_0019233,Orphanet_79188,sssom,disorder of peroxisomal beta oxidation,Peroxisomal beta-oxidation disorder,48,290
+MONDO_0019234,Orphanet_79189,ambas,peroxisome biogenesis disorder,Peroxisome biogenesis disorder-Zellweger syndrome spectrum,361,227
+MONDO_0019235,Orphanet_79190,sssom,inborn disorder of phenylalanine and tyrosine metabolism,Disorder of phenylalanin or tyrosine metabolism,1466,384
+MONDO_0019236,Orphanet_79191,ambas,inborn disorder of purine metabolism,Disorder of purine metabolism,1560,2667
+MONDO_0019237,Orphanet_79192,ambas,inborn disorder of pyridoxine metabolism,Disorder of pyridoxine metabolism,189,6
+MONDO_0019238,Orphanet_79193,ambas,inborn disorder of pyrimidine metabolism,Disorder of pyrimidine metabolism,379,66
+MONDO_0019239,Orphanet_79194,ambas,inborn disorder of serine family metabolism,Disorder of serine or glycine metabolism,400,9
+MONDO_0019241,Orphanet_79196,sssom,inborn disorder of the gamma-glutamyl cycle,Disorder of the gamma-glutamyl cycle,608,114
+MONDO_0019242,Orphanet_79197,ambas,inborn disorder of branched-chain amino acid metabolism,Disorder of branched-chain amino acid metabolism,270,1
+MONDO_0019243,Orphanet_79200,ambas,inborn disorder of energy metabolism,Disorder of energy metabolism,7574,2909
+MONDO_0019245,Orphanet_79204,ambas,lysosomal lipid storage disorder,Lipid storage disease,3158,720
+MONDO_0019246,Orphanet_79207,sssom,inborn disorder of lysosomal amino acid transport,Disorder of lysosomal amino acid transport,518,112
+MONDO_0019250,Orphanet_79214,sssom,inborn disorder of biogenic amine metabolism and transport,Disorder of biogenic amine metabolism and transport,428,395
+MONDO_0019254,Orphanet_79224,sssom,inborn disorder of purine or pyrimidine metabolism,Disorder of purine or pyrimidine metabolism,2704,2676
+MONDO_0019259,Orphanet_79254,ambas,classic phenylketonuria,Classical phenylketonuria,30,22
+MONDO_0019284,Orphanet_79369,ambas,inherited isolated nail anomaly,Isolated nail anomaly,63,82
+MONDO_0019307,Orphanet_79402,ambas,generalized junctional epidermolysis bullosa non-Herlitz type,"Generalized junctional epidermolysis bullosa, non-Herlitz type",6,128
+MONDO_0019346,Orphanet_812,ambas,sialidosis type 1,sialidosis type I,8,37
+MONDO_0019375,Orphanet_83473,ambas,megalencephaly-polymicrogyria-postaxial polydactyly-hydrocephalus syndrome,Megalencephaly - polymicrogyria - postaxial polydactyly - hydrocephalus,60,55
+MONDO_0019402,Orphanet_848,ambas,beta thalassemia,Beta-thalassemia,1439,1027
+MONDO_0019416,Orphanet_85317,ambas,X-linked intellectual disability-hypogammaglobulinemia-progressive neurological deterioration syndrome,X-linked intellectual disability - hypogammaglobulinemia - progressive neurological deterioration,7,2
+MONDO_0019443,Orphanet_860,ambas,dextro-looped transposition of the great arteries,Congenitally uncorrected transposition of the great arteries,216,250
+MONDO_0019489,Orphanet_86918,ambas,diffuse palmoplantar keratoderma - acrocyanosis syndrome,Diffuse palmoplantar keratoderma-acrocyanosis syndrome,1,14
+MONDO_0019490,Orphanet_871,ambas,progressive familial heart block,Familial progressive cardiac conduction defect,141,456
+MONDO_0019497,Orphanet_87884,ambas,nonsyndromic genetic hearing loss,Non-syndromic genetic deafness,676,209
+MONDO_0019503,Orphanet_88632,ambas,anterior segment dysgenesis,Familial ocular anterior segment mesenchymal dysgenesis,876,814
+MONDO_0019516,Orphanet_891,ambas,exudative vitreoretinopathy,Familial exudative vitreoretinopathy,2179,844
+MONDO_0019565,Orphanet_903,ambas,hereditary von Willebrand disease,Von Willebrand disease,294,340
+MONDO_0019567,Orphanet_90309,xrefs,"Ehlers-Danlos syndrome, classic type, 1",Ehlers-Danlos syndrome type 1,47,39
+MONDO_0019568,Orphanet_90318,xrefs,"Ehlers-Danlos syndrome, classic type, 2",Ehlers-Danlos syndrome type 2,24,78
+MONDO_0019577,Orphanet_90390,sssom,anonychia-onychodystrophy syndrome,Anonychia - onychodystrophy,1,10
+MONDO_0019609,Orphanet_912,ambas,Zellweger spectrum disorders,Zellweger syndrome,284,315
+MONDO_0019629,Orphanet_91490,ambas,sclerocornea,Isolated congenital sclerocornea,378,1
+MONDO_0019636,Orphanet_93100,ambas,"renal agenesis, unilateral",Unilateral renal agenesis,13,5
+MONDO_0019642,Orphanet_93160,ambas,"vitamin D-dependent rickets, type 2",Hypocalcemic vitamin D-resistant rickets,8,348
+MONDO_0019666,Orphanet_93282,ambas,"spondyloepimetaphyseal dysplasia, PAPSS2 type","Spondyloepimetaphyseal dysplasia, Pakistani type",49,46
+MONDO_0019732,Orphanet_93561,sssom,ALys amyloidosis,Familial renal amyloidosis due to lysozyme variant,2,3
+MONDO_0019772,Orphanet_93964,ambas,blepharospasm-oromandibular dystonia syndrome,Blepharospasm - oromandibular dystonia,35,34
+MONDO_0019792,Orphanet_94145,ambas,autosomal dominant cerebellar ataxia type I,Autosomal dominant cerebellar ataxia type 1,1977,659
+MONDO_0019793,Orphanet_94148,ambas,autosomal dominant cerebellar ataxia type III,Autosomal dominant cerebellar ataxia type 3,337,222
+MONDO_0019794,Orphanet_94149,sssom,autosomal dominant cerebellar ataxia type IV,Autosomal dominant cerebellar ataxia type 4,288,265
+MONDO_0019804,Orphanet_95430,ambas,tracheomalacia,Congenital tracheomalacia,47,20
+MONDO_0019852,Orphanet_95710,ambas,inherited primary ovarian failure,Non-acquired premature ovarian failure,1670,1676
+MONDO_0019980,Orphanet_97362,ambas,"renal hypoplasia, bilateral",Bilateral renal hypoplasia,67,1
+MONDO_0020074,Orphanet_98261,ambas,progressive myoclonus epilepsy,Progressive myoclonic epilepsy,676,612
+MONDO_0020099,Orphanet_98362,sssom,inherited sideroblastic anemia,Constitutional sideroblastic anemia,1325,694
+MONDO_0020135,Orphanet_98523,ambas,pontocerebellar hypoplasia,Non-syndromic pontocerebellar hypoplasia,180,248
+MONDO_0020249,Orphanet_98671,sssom,hereditary optic neuropathy,Optic neuropathy,1138,511
+MONDO_0020337,Orphanet_98869,ambas,congenital dyserythropoietic anemia type 1,Congenital dyserythropoietic anemia type I,8,517
+MONDO_0020344,Orphanet_98913,sssom,postsynaptic congenital myasthenic syndrome,Postsynaptic congenital myasthenic syndromes,15,130
+MONDO_0020367,Orphanet_98977,ambas,juvenile open angle glaucoma,Juvenile glaucoma,50,73
+MONDO_0020372,Orphanet_98985,sssom,early-onset sutural cataract,Cataract with Y-shaped suture opacities,7,304
+MONDO_0020373,Orphanet_98988,sssom,early-onset anterior polar cataract,Anterior polar cataract,5,266
+MONDO_0020377,Orphanet_98992,sssom,early-onset partial cataract,Partial congenital cataract,34,230
+MONDO_0020378,Orphanet_98993,sssom,early-onset posterior polar cataract,Posterior polar cataract,9,323
+MONDO_0020488,Orphanet_99750,ambas,atypical progressive supranuclear palsy syndrome,Atypical progressive supranuclear palsy,169,90
+MONDO_0020603,Orphanet_35173,ambas,X-linked chondrodysplasia punctata 2,X-linked dominant chondrodysplasia punctata,59,59
+MONDO_0021018,Orphanet_34516,ambas,autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6),Autosomal dominant limb-girdle muscular dystrophy type 1D,113,165
+MONDO_0021055,Orphanet_733,ambas,classic familial adenomatous polyposis,Familial adenomatous polyposis,279,628
+MONDO_0021181,Orphanet_183654,ambas,inherited blood coagulation disorder,Rare genetic coagulation disorder,3277,2857
+MONDO_0021548,Orphanet_98994,sssom,total early-onset cataract,Total congenital cataract,32,280
+MONDO_0021569,Orphanet_264,xrefs,"Emery-Dreifuss muscular dystrophy 2, autosomal dominant",Autosomal dominant limb-girdle muscular dystrophy type 1B,165,3
+MONDO_0021651,Orphanet_93403,ambas,synpolydactyly,Syndactyly type 2,168,186
+MONDO_0022754,Orphanet_261965,ambas,chromosome 17p deletion,Partial monosomy of the short arm of chromosome 17,222,43
+MONDO_0022756,Orphanet_262001,ambas,chromosome 1q deletion,Partial deletion of the long arm of chromosome 1,33,22
+MONDO_0022760,Orphanet_262182,sssom,chromosome 22q deletion,Partial deletion of the long arm of chromosome 22,1079,17
+MONDO_0022800,Orphanet_93421,ambas,type 2 collagenopathy,Type 2 collagen-related bone disorder,580,242
+MONDO_0024237,Orphanet_183500,ambas,inherited neurodegenerative disorder,Genetic neurodegenerative disease,11702,3594
+MONDO_0024257,Orphanet_98505,ambas,hereditary motor neuron disease,Genetic motor neuron disease,1664,217
+MONDO_0024568,Orphanet_370088,ambas,infantile liver failure syndrome 1,Acute infantile liver failure-multisystemic involvement syndrome,59,78
+MONDO_0031213,Orphanet_1662,ambas,restrictive dermopathy,Lethal restrictive dermopathy,52,61
+MONDO_0031219,Orphanet_252202,ambas,mismatch repair cancer syndrome,Constitutional mismatch repair deficiency syndrome,360,80
+MONDO_0031415,Orphanet_1358,sssom,Carey-Fineman-Ziter syndrome,Carey-Fineman-Ziter  syndrome,10,84
+MONDO_0033885,Orphanet_254905,sssom,"mitochondrial complex IV deficiency, nuclear-type",Isolated cytochrome C oxidase deficiency,216,59
+MONDO_0044807,Orphanet_391799,ambas,inherited dystonia,Rare genetic dystonia,1958,1082
+MONDO_0100176,Orphanet_280763,sssom,AP-4 deficiency syndrome,Severe intellectual disability and progressive spastic paraplegia,8,86
+MONDO_0100234,Orphanet_228140,ambas,paroxysmal familial ventricular fibrillation,"Idiopathic ventricular fibrillation, not Brugada type",307,162
+MONDO_0100350,Orphanet_139536,sssom,"neuronopathy, distal hereditary motor, type 5",Distal hereditary motor neuropathy type 5,45,61
+MONDO_0700275,Orphanet_1331,ambas,"prostate cancer, hereditary",Familial prostate cancer,50,528
+MONDO_0700282,Orphanet_289494,xrefs,POLR3-related leukodystrophy,Hypomyelinating leukodystrophy with or without oligondontia and/or hypogonadism,16,196
+MONDO_0800025,Orphanet_1519,ambas,Teebi hypertelorism syndrome 1,"Hypertelorism, Teebi type",61,57
+MONDO_0800026,Orphanet_661,ambas,"central hypoventilation syndrome, congenital, 1, with or without Hirschsprung disease",Ondine syndrome,43,31
+MONDO_0800027,Orphanet_313808,ambas,"leukoencephalopathy, diffuse hereditary, with spheroids 1",Hereditary diffuse leukoencephalopathy with axonal spheroids and pigmented glia,82,110
+MONDO_0800028,Orphanet_324588,ambas,"dyskinesia with orofacial involvement, autosomal dominant",Familial dyskinesia and facial myokymia,107,135
+MONDO_0800044,Orphanet_404454,ambas,congenital disorder of deglycosylation 1,Alacrimia-choreoathetosis-liver dysfunction syndrome,85,79
+MONDO_0800378,Orphanet_90796,sssom,"17,20-lyase deficiency, isolated","46,XY disorder of sex development due to isolated 17,20 lyase deficiency",2,474
+MONDO_0800445,Orphanet_122,ambas,Birt-Hogg-Dube syndrome 1,Birt-Hogg-Dubé syndrome,56,88
+MONDO_0800448,Orphanet_135,ambas,leukoencephalopathy with vanishing white matter,CACH syndrome,144,147
+MONDO_0968955,Orphanet_100032,sssom,hypocalcified amelogenesis imperfecta,Hypocalcified amelogenesis imperfecta,109,111
+MONDO_8000011,Orphanet_99811,ambas,"visceral neuropathy, familial, 1, autosomal recessive",Neuronal intestinal pseudoobstruction,44,110
+MONDO_8000015,Orphanet_983,ambas,"46,XY sex reversal 11",Testicular regression syndrome,318,953
