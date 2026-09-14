@@ -20,7 +20,7 @@ from adyacencia import RedCompacta
 from diamond_algoritmo import DIAMOnD  
 
 #iteraciones a tener en cuenta. Se puede fijar por entorno para una corrida variante, igual que
-#N_POR_BIN en paso0.py, sin tocar el codigo: CRECIMIENTO_PRESUPUESTO=200
+#N_POR_BIN en paso0_sorteo.py, sin tocar el codigo: CRECIMIENTO_PRESUPUESTO=200
 PRESUPUESTO = int(os.environ.get("CRECIMIENTO_PRESUPUESTO", "100"))
 
 

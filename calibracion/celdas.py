@@ -112,7 +112,7 @@ class Celda:
     def ancla_en_la_red(self):
         """Si el ancla pertenece al plano donde se corre. Siempre falso en esta version, porque
         solo hay celdas cruzadas: el ancla es de otro tipo y no esta en la red. Se conserva por
-        la interfaz con corrida.py y runner.py, que excluyen el ancla de la red cuando es verdadero."""
+        la interfaz con corrida.py y paso2_runner.py, que excluyen el ancla de la red cuando es verdadero."""
         return self.origen == self.tipo_destino
 
     def __repr__(self):

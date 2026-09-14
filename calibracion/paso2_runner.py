@@ -21,7 +21,7 @@ from celdas import CELDAS, ORDEN_CELDAS, PLANOS, RESULTADOS, conectar, obtener_p
     nodos_que_no_pueden_ser_semilla, semillas_efectivas
 from controles import N_SORTEOS_RECALL, candidatos, generar_controles
 from corrida import PRESUPUESTO, correr_diamond, red_sin_ancla, traza_de_corrida
-from paso0 import SEED_SELECCION
+from paso0_sorteo import SEED_SELECCION
 from recall import FRAC_CON_CONTROL, componente_alcanzable, curva_recall, folds_de_remocion, \
     folds_de_todos_los_niveles
 
@@ -133,7 +133,7 @@ def main(nombres_celdas=None, mini=None):
     os.makedirs(DIR_RECALLS, exist_ok=True)
     ruta_casos = os.path.join(RESULTADOS, "casos.csv")
     if not os.path.exists(ruta_casos):
-        raise SystemExit(f"falta {ruta_casos}: correr paso0.py antes del batch")
+        raise SystemExit(f"falta {ruta_casos}: correr paso0_sorteo.py antes del batch")
     casos = pd.read_csv(ruta_casos)
     if nombres_celdas:
         casos = casos[casos["celda"].isin(nombres_celdas)]

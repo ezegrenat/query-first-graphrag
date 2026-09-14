@@ -3,7 +3,7 @@
 Junta, en este orden: una portada con que se corrio, las distribuciones del paso 0, las cuatro
 paginas de cada plano (leyendo plano por plano, con sus metricas juntas) y la tabla resumen.
 
-No recalcula nada: toma los PDF que ya escribieron paso0.py, graficos.py y resumen.py, de modo
+No recalcula nada: toma los PDF que ya escribieron paso0_sorteo.py, graficos.py y paso4_resumen.py, de modo
 que el informe y los archivos sueltos no pueden discrepar. Los PDF por plano se siguen
 escribiendo aparte porque las diapositivas los incluyen de a uno, y porque mirar un solo plano no
 deberia pedir abrir el documento entero.
@@ -21,7 +21,7 @@ from celdas import CELDAS, ORDEN_CELDAS, PLANOS, RESULTADOS  # noqa: E402
 from controles import N_SORTEOS, N_SORTEOS_RECALL  # noqa: E402
 from corrida import PRESUPUESTO  # noqa: E402
 from graficos import DIR_GRAFICOS, cargar_casos_corridos  # noqa: E402
-from paso0 import N_POR_BIN, SEED_SELECCION  # noqa: E402
+from paso0_sorteo import N_POR_BIN, SEED_SELECCION  # noqa: E402
 from recall import FRAC_ESCONDIDA, N_FOLDS  # noqa: E402
 
 RUTA_INFORME = os.path.join(RESULTADOS, "informe_completo.pdf")

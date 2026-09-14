@@ -15,8 +15,8 @@ import pandas as pd
 
 from celdas import CELDAS, ORDEN_CELDAS, PLANOS, RESULTADOS, conectar, obtener_plano, \
     semillas_efectivas
-from paso0 import BINS
-from runner import correr_caso
+from paso0_sorteo import BINS
+from paso2_runner import correr_caso
 
 
 def un_caso_por_celda(casos):
@@ -31,7 +31,7 @@ def un_caso_por_celda(casos):
 def main():
     ruta_casos = os.path.join(RESULTADOS, "casos.csv")
     if not os.path.exists(ruta_casos):
-        raise SystemExit(f"falta {ruta_casos}: correr paso0.py antes del smoke")
+        raise SystemExit(f"falta {ruta_casos}: correr paso0_sorteo.py antes del smoke")
     todos = pd.read_csv(ruta_casos)
     casos = un_caso_por_celda(todos)
 

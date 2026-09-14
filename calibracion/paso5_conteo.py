@@ -15,7 +15,7 @@ import pandas as pd
 
 from celdas import CELDAS, ORDEN_CELDAS, RESULTADOS
 from graficos import cargar_casos_corridos, cargar_trazas, nulo_gana
-from paso0 import BINS
+from paso0_sorteo import BINS
 
 COLUMNA = "frac_semillas_lcc"
 

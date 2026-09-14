@@ -7,4 +7,4 @@
 #determinista), pero el batch queda parado esas horas.
 exec systemd-inhibit --what=sleep:idle:handle-lid-switch \
      --who="batch calibracion" --why="experimento de proyecciones sobre PrimeKG integrado" \
-     bash -c 'while pgrep -f "runner[.]py --celdas" > /dev/null; do sleep 60; done'
+     bash -c 'while pgrep -f "paso2_runner[.]py --celdas" > /dev/null; do sleep 60; done'

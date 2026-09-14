@@ -23,7 +23,7 @@ comparacion se hace a ojo sobre ejes identicos.
    y muestra cuanto material arrastra el modulo.
 
 Hasta el 2026-09-08 habia dos paginas mas, la conectividad del conjunto semilla antes de expandir
-(Fig. 1B y 1D del paper, con datos de iteracion0.py) y la distribucion entre anclas de la fraccion
+(Fig. 1B y 1D del paper, con datos de paso3_iteracion0.py) y la distribucion entre anclas de la fraccion
 en la LCC en cinco iteraciones (Fig. 4F). Se sacaron a pedido de Ezequiel: la primera la sigue
 resumiendo iteracion0_celdas.csv, y la segunda repetia la ley de crecimiento en otro formato.
 Ese mismo dia se saco de la pagina de recall la linea de "esperable por azar" (rank sobre el
@@ -58,9 +58,9 @@ from matplotlib.backends.backend_pdf import PdfPages  # noqa: E402
 from celdas import CELDAS, CELDAS_POR_PLANO, PLANOS, RESULTADOS  # noqa: E402
 from controles import N_SORTEOS  # noqa: E402
 from corrida import PRESUPUESTO  # noqa: E402
-from paso0 import BINS  # noqa: E402
+from paso0_sorteo import BINS  # noqa: E402
 from recall import FRAC_CON_CONTROL, FRACCIONES_ESCONDIDAS, N_FOLDS  # noqa: E402
-from runner import DIR_RECALLS, DIR_TRAZAS, _ruta  # noqa: E402
+from paso2_runner import DIR_RECALLS, DIR_TRAZAS, _ruta  # noqa: E402
 
 DIR_GRAFICOS = os.path.join(RESULTADOS, "graficos")
 

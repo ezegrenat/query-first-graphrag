@@ -81,7 +81,7 @@ def z_score_iteracion0(red_corrida, semillas, candidatos_del_plano, n_sorteos=N_
 def main():
     ruta_casos = os.path.join(RESULTADOS, "casos.csv")
     if not os.path.exists(ruta_casos):
-        raise SystemExit(f"falta {ruta_casos}: correr paso0.py antes")
+        raise SystemExit(f"falta {ruta_casos}: correr paso0_sorteo.py antes")
     casos = pd.read_csv(ruta_casos)
 
     gds = conectar()

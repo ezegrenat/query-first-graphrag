@@ -1,4 +1,4 @@
-"""Verificacion de una corrida: comprueba con asserts que los parquet, las tablas y los PDF de un directorio de resultados tienen la forma que el diseño vigente declara, antes de dar por buena la corrida y antes de gastar la noche del batch. Se corre con CRECIMIENTO_RESULTADOS apuntando al directorio a verificar (celdas.py lo lee al importar), por ejemplo CRECIMIENTO_RESULTADOS=resultados_verificacion python verificar.py. Imprime una linea por chequeo y termina con codigo 1 si alguno fallo. Los chequeos son los de la fase 2 de DIAGNOSTICO_metricas_y_plan.md ajustados al diseño del 2026-09-05: sin p valor, nulos uniforme y apareado por clase de grado, recall en tres niveles con control sobre los conjuntos apareados."""
+"""Verificacion de una corrida: comprueba con asserts que los parquet, las tablas y los PDF de un directorio de resultados tienen la forma que el diseño vigente declara, antes de dar por buena la corrida y antes de gastar la noche del batch. Se corre con CRECIMIENTO_RESULTADOS apuntando al directorio a verificar (celdas.py lo lee al importar), por ejemplo CRECIMIENTO_RESULTADOS=resultados_verificacion python paso7_verificar.py. Imprime una linea por chequeo y termina con codigo 1 si alguno fallo. Los chequeos son los de la fase 2 de DIAGNOSTICO_metricas_y_plan.md ajustados al diseño del 2026-09-05: sin p valor, nulos uniforme y apareado por clase de grado, recall en tres niveles con control sobre los conjuntos apareados."""
 import os
 import sys
 
@@ -10,7 +10,7 @@ from controles import N_SORTEOS, N_SORTEOS_RECALL
 from corrida import PRESUPUESTO
 from graficos import DIR_GRAFICOS, cargar_casos_corridos, cargar_recalls, cargar_trazas
 from recall import FRAC_CON_CONTROL, FRACCIONES_ESCONDIDAS, N_FOLDS
-from runner import DIR_RECALLS, DIR_TRAZAS, _ruta
+from paso2_runner import DIR_RECALLS, DIR_TRAZAS, _ruta
 
 #los ordenes de magnitud medidos en la corrida 1 que una corrida nueva tiene que reproducir: en
 #gene_a_disease las semillas ya vienen conectadas (fraccion inicial real alta) y un conjunto de
@@ -130,13 +130,13 @@ def verificar_carga(casos_por_celda):
 
 
 def verificar_resumen():
-    """La tabla resumen y sus glosas, si ya se corrio resumen.py sobre este directorio."""
+    """La tabla resumen y sus glosas, si ya se corrio paso4_resumen.py sobre este directorio."""
     print("\ntabla resumen")
     ruta = os.path.join(RESULTADOS, "resumen_celdas.csv")
     if not os.path.exists(ruta):
-        chequear(False, f"falta {ruta}: correr resumen.py")
+        chequear(False, f"falta {ruta}: correr paso4_resumen.py")
         return
-    from resumen import GLOSA_COLUMNAS
+    from paso4_resumen import GLOSA_COLUMNAS
     tabla = pd.read_csv(ruta)
     chequear(set(tabla.columns) == set(GLOSA_COLUMNAS), "las columnas de la tabla son exactamente las que tienen glosa")
     nuevas = ["frac_semillas_lcc_inicial_real", "frac_semillas_lcc_final_apareado", "salida_de_banda",

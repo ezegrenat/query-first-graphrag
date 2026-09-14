@@ -24,3 +24,9 @@ calibracion/resultados*/recalls/
 calibracion/resultados*/cache_planos/
 calibracion/resultados*/*.log
 calibracion/*.log
+
+#PDF intermedios de calibracion: paso6_informe.py los concatena en informe_completo.pdf, que es
+#el que se versiona
+calibracion/resultados*/graficos/
+calibracion/resultados*/resumen_celdas.pdf
+calibracion/resultados*/paso0_distribuciones.pdf

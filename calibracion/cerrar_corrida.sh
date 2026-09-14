@@ -16,7 +16,7 @@ export CRECIMIENTO_RESULTADOS=$DIR
 export CRECIMIENTO_N_POR_BIN=50
 
 if [ "$1" != "parcial" ]; then
-  while pgrep -f "runner[.]py --celdas" > /dev/null; do sleep 120; done
+  while pgrep -f "paso2_runner[.]py --celdas" > /dev/null; do sleep 120; done
 fi
 
 {
@@ -47,15 +47,15 @@ print(f"  casos incompletos borrados: {borrados}")
 PYEOF
 
 echo "=== iteracion0 $(date)"
-$PY iteracion0.py > "$DIR/iteracion0.log" 2>&1 && echo "  iteracion0 listo" || echo "  iteracion0 FALLO (ver $DIR/iteracion0.log)"
+$PY paso3_iteracion0.py > "$DIR/iteracion0.log" 2>&1 && echo "  iteracion0 listo" || echo "  iteracion0 FALLO (ver $DIR/iteracion0.log)"
 echo "=== graficos, tablas, informe y verificacion $(date)"
 for plano in gene disease; do
   $PY -c "from graficos import grafico_plano; grafico_plano('$plano')"
 done
-$PY resumen.py > "$DIR/resumen.log" 2>&1 && echo "  resumen listo" || echo "  resumen FALLO (ver $DIR/resumen.log)"
-$PY conteo_control.py > "$DIR/conteo.log" 2>&1 && echo "  conteo listo" || echo "  conteo FALLO (ver $DIR/conteo.log)"
-$PY informe.py && echo "  informe listo" || echo "  informe FALLO"
-$PY verificar.py > "$DIR/verificacion.log" 2>&1
+$PY paso4_resumen.py > "$DIR/resumen.log" 2>&1 && echo "  resumen listo" || echo "  resumen FALLO (ver $DIR/resumen.log)"
+$PY paso5_conteo.py > "$DIR/conteo.log" 2>&1 && echo "  conteo listo" || echo "  conteo FALLO (ver $DIR/conteo.log)"
+$PY paso6_informe.py && echo "  informe listo" || echo "  informe FALLO"
+$PY paso7_verificar.py > "$DIR/verificacion.log" 2>&1
 echo "  verificacion: $(tail -1 "$DIR/verificacion.log")"
 
 {
