@@ -1,0 +1,7 @@
+celda,origen,plano,relacion_cosecha,bin,casos,n_semillas_mediana,iteraciones_alcanzadas_mediana,frac_semillas_lcc_inicial_real,frac_semillas_lcc_final_real,frac_desconectadas_integradas,frac_semillas_lcc_final_apareado,fuera_de_clase_media,lcc_tam_final_real,salida_de_banda,recall_final_medio,recall_final_ic95,recall_final_azar,recall_final_apareado,iteracion_meseta_recall
+disease_a_gene,Disease,gene,GDA,alto,50,37.0,100.0,0.2353,0.5096,0.3586,0.3199,0.001,134.1,0,0.0749,0.0242,0.0073,0.0145,86
+disease_a_gene,Disease,gene,GDA,bajo,50,6.0,100.0,0.2622,0.5125,0.3393,0.3785,0.0,84.9,0,0.092,0.0525,0.0072,0.0072,62
+disease_a_gene,Disease,gene,GDA,medio,50,11.0,100.0,0.2269,0.4892,0.3394,0.3694,0.0,99.0,0,0.1116,0.0385,0.0072,0.0193,88
+gene_a_disease,Gene,disease,GDA,alto,50,25.5,100.0,0.167,0.425,0.3097,0.1518,0.0,90.2,0,0.2047,0.0333,0.009,0.0134,93
+gene_a_disease,Gene,disease,GDA,bajo,50,6.0,100.0,0.3914,0.603,0.3476,0.254,0.0,76.5,0,0.306,0.0829,0.009,0.0157,73
+gene_a_disease,Gene,disease,GDA,medio,50,10.0,100.0,0.2505,0.5077,0.3432,0.1886,0.0,86.6,0,0.3009,0.067,0.013,0.0125,86

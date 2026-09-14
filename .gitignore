@@ -11,3 +11,16 @@ __pycache__/
 #mapeos de MONDO en formato SSSOM (13 MB): los baja redundancia_entre_nodos.ipynb fijado a un
 #release, y el sha256 queda registrado en equivalencias_disease.json
 grafos/optimuskg/preparacion_grafo/datos/
+
+#los CSV de PrimeKG integrado (PrimeKG nativo en external/, el grafo en processed/): 750 MB, se
+#piden al laboratorio. Ver grafos/primekg_integrado/README.md. Sin barra final para que valga
+#tambien si datos es un enlace simbolico a donde esten los CSV
+grafos/primekg_integrado/datos
+
+#de las corridas de calibracion se versionan los resumenes (CSV, PDF, RESUMEN_corrida.txt) y no
+#las trazas por caso (600 parquet por corrida), los recalls, el cache de planos ni los logs
+calibracion/resultados*/trazas/
+calibracion/resultados*/recalls/
+calibracion/resultados*/cache_planos/
+calibracion/resultados*/*.log
+calibracion/*.log

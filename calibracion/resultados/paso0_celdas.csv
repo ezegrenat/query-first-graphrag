@@ -1,0 +1,3 @@
+celda,origen,plano,relacion_cosecha,nodos_plano,aristas_plano,anclas_candidatas,anclas_elegibles,descartadas_sin_control,max_semillas_bajo,max_semillas_medio,max_semillas_alto
+disease_a_gene,Disease,gene,GDA,13894,110051,10327,2172,0,8,19,893
+gene_a_disease,Gene,disease,GDA,5318,7836,7171,1797,0,6,10,134

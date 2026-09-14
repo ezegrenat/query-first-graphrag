@@ -1,0 +1,7 @@
+celda,origen,plano,relacion_cosecha,bin,casos,gana_uniforme_area,gana_uniforme_final,gana_apareado_area,gana_apareado_final
+disease_a_gene,Disease,gene,GDA,bajo,50,10,12,13,13
+disease_a_gene,Disease,gene,GDA,medio,50,11,12,11,15
+disease_a_gene,Disease,gene,GDA,alto,50,1,2,2,3
+gene_a_disease,Gene,disease,GDA,bajo,50,0,0,0,2
+gene_a_disease,Gene,disease,GDA,medio,50,0,0,0,1
+gene_a_disease,Gene,disease,GDA,alto,50,0,0,1,3

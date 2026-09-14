@@ -4,13 +4,14 @@ Mi tesis de la Licenciatura en Ciencias de Datos (UBA), dirigido por Ariel Chern
 
 La propuesta es una variación de GraphRAG que **construye el grafo orientado a cada consulta en lugar de particionar un grafo estático**. El recorte del subgrafo relevante no se hace por similaridad semántica sino con un criterio topológico: se toman algoritmos de detección de módulos de enfermedad tomados de la medicina de redes y se los adapta a un grafo de conocimiento heterogéneo, y recién sobre ese subgrafo se corren la detección de comunidades y los resúmenes.
 
-El trabajo arrancó sobre [OptimusKG](https://arxiv.org/abs/2604.27269) y desde el 2026-09-08 sigue sobre PrimeKG integrado con fuentes curadas del laboratorio (ver `grafos/optimuskg/README.md` para el porqué del cambio). La carpeta del grafo nuevo está en migración a este repositorio.
+El trabajo arrancó sobre [OptimusKG](https://arxiv.org/abs/2604.27269) y desde el 2026-09-08 sigue sobre PrimeKG integrado con fuentes curadas del laboratorio (ver `grafos/optimuskg/README.md` para el porqué del cambio y `grafos/primekg_integrado/README.md` para qué trae cada capa).
 
 ## Contenido
 
 - [`bitacora.md`](bitacora.md) :  la idea general del trabajo, el algoritmo propuesto, las decisiones tomadas sobre los datos y el estado de la experimentación. Se actualiza a medida que el trabajo avanza.
-- `grafos/` :  una carpeta por grafo, con su carga a Neo4j y su preparación. `optimuskg/` queda como registro de la etapa anterior.
+- `grafos/` :  una carpeta por grafo, con su carga a Neo4j y su preparación. `primekg_integrado/` es el grafo en uso; `optimuskg/` queda como registro de la etapa anterior.
 - `expansion/` :  las dos piezas sobre las que corre el paso de expansión, comunes a los dos grafos. `adyacencia.py` extrae de Neo4j la red de un plano y la deja en memoria como matriz dispersa, mientras que el `diamond_algoritmo.py` es DIAMOnD casi tal cual sacado del repositorio de sus autores.
+- `calibracion/` :  el experimento que calibra cuántas iteraciones corre DIAMOnD en cada celda, con sus resultados resumidos.
 
 ## para reproducirlo (etapa OptimusKG)
 

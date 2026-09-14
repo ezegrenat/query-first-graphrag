@@ -1,0 +1,54 @@
+batch sobre el grafo de Ingrid en resultados_con_grupos: disease_a_gene y gene_a_disease, 50 por bin, presupuesto 100, grupos BERT incluidos.
+cierre final vie 11 sep 2026 11:03:22 -03
+
+casos completos por celda (150 esperados):
+  disease_a_gene           150
+  gene_a_disease           150
+
+segundos por caso, medidos en los logs:
+  gene_a_disease              3.3 s/caso (150 casos)
+
+verificacion:
+  verificando /home/ezequel/tesis/PrimeKG/experimentacion_ingrid/resultados_con_grupos
+    celdas con casos corridos: 2 de 2
+  
+  parquet crudos
+    ok    300 casos con sus dos parquet
+    ok    todos los parquet tienen la columna fuente (0 son de una corrida anterior al recall con control y no se pueden verificar)
+    ok    ninguna traza trae log10_p (0 lo traen)
+    ok    toda traza tiene exactamente las fuentes real, uniforme y apareado (0 no)
+    ok    toda traza tiene 41 corridas (0 no)
+    ok    toda corrida arranca en la iteracion 0 (0 no)
+    ok    toda corrida apareada registra semillas_fuera_de_clase (0 casos no)
+    info  casos con alguna semilla de control fuera de su clase, por plano: {'gene': 2}
+    ok    a lo sumo 15 folds reales y 25 del nulo por caso (0 casos con mas)
+    ok    niveles de remocion (0.1, 0.2, 0.3) y el nulo solo en 0.3 (0 casos mal)
+  
+  carga y arrastre
+    ok    toda corrida cargada va de la iteracion 0 a la 100 (0 no)
+    ok    sin NaN en frac_semillas_lcc ni lcc_tam en la iteracion 100 (0 filas con NaN)
+    ok    las filas arrastradas no describen ningun nodo (0 lo hacen)
+    ok    todo fold cargado tiene los 100 ranks (0 no)
+    FALLA gene_a_disease: fraccion inicial real 0.27 > 0.8
+    ok    gene_a_disease: fraccion inicial del apareado 0.10 < 0.3
+  
+  tabla resumen
+    ok    las columnas de la tabla son exactamente las que tienen glosa
+    ok    frac_semillas_lcc_inicial_real: sin NaN (0 NaN)
+    ok    frac_semillas_lcc_final_apareado: sin NaN (0 NaN)
+    ok    salida_de_banda: al menos una fila con valor
+    ok    recall_final_apareado: sin NaN (0 NaN)
+    ok    iteracion_meseta_recall: sin NaN donde el recall final es mayor que 0 (0 NaN, 0 filas con recall 0)
+    ok    fuera_de_clase_media: sin NaN (0 NaN)
+    ok    iteracion_meseta_recall entre 1 y 100
+    ok    fuera_de_clase_media entre 0 y 1
+    info  fuera_de_clase_media maxima por plano: {'disease': 0.0, 'gene': 0.001}
+    ok    frac_desconectadas_integradas es NaN donde la fraccion inicial ya es 1 (0 filas)
+  
+  graficos
+    ok    disease.pdf: 4 paginas (se esperan 4)
+    ok    gene.pdf: 4 paginas (se esperan 4)
+    ok    2 PDF de planos en /home/ezequel/tesis/PrimeKG/experimentacion_ingrid/resultados_con_grupos/graficos
+  
+  1 chequeos fallaron:
+    - gene_a_disease: fraccion inicial real 0.27 > 0.8
