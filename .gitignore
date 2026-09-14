@@ -10,4 +10,4 @@ __pycache__/
 
 #mapeos de MONDO en formato SSSOM (13 MB): los baja redundancia_entre_nodos.ipynb fijado a un
 #release, y el sha256 queda registrado en equivalencias_disease.json
-preparacion_grafo/datos/
+grafos/optimuskg/preparacion_grafo/datos/

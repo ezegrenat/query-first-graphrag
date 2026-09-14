@@ -18,7 +18,8 @@ def _cargar_env():
     que ya este definido en el entorno gana sobre el archivo, que es el orden habitual: permite
     pisar un valor puntual sin editar el .env.
     """
-    ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env")
+    #tres niveles arriba: loader/ -> optimuskg/ -> grafos/ -> raiz del repositorio
+    ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", ".env")
     if not os.path.exists(ruta):
         return
     with open(ruta, encoding="utf-8") as archivo:
