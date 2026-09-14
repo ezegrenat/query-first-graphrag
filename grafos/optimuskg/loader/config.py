@@ -94,5 +94,8 @@ CAMPOS_EXCLUIR = {"mol_file_base64", "mol_image_base64", "homologues"}
 
 
 MAX_REINTENTOS = 10
- "BiologicalProcess" (convención PascalCase de Neo4j)."""
+
+
+def label_de(tipo_nodo):
+    """Convierte "biological_process" -> "BiologicalProcess" (convención PascalCase de Neo4j)."""
     return "".join(parte.capitalize() for parte in tipo_nodo.split("_"))
