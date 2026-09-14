@@ -3,10 +3,6 @@
 Uso, con el contenedor levantado (docker start neo4j-thesis):
     python cargar_grafo.py
 
-Es una adaptacion del loader de OptimusKG (optimuskg/loader/load_neo4j.py) a un grafo que viene
-como dos CSV planos en vez de parquet por tipo. Se conserva lo que ahi funciono: MERGE para que
-sea idempotente, restricciones de unicidad por label antes de cargar, lotes chicos, reintentos
-ante TransientError.
 
 Que se carga:
 - Todos los nodos, con label por tipo (LABEL_POR_TIPO) y propiedades id, name, node_index y

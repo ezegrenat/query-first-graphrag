@@ -1,12 +1,7 @@
 """Conexion al contenedor neo4j-thesis, el que tiene PrimeKG integrado, y rutas de sus CSV.
 
-Es un contenedor aparte del que tiene OptimusKG porque la edicion community de Neo4j tiene una
-sola base por instancia. Puertos distintos para que puedan coexistir, aunque con poca RAM conviene
-tener levantado uno solo a la vez.
+Las credenciales se leen del entorno, no del codigo Las claves llevan el prefijo PRIMEKG_
 
-Las credenciales se leen del entorno, no del codigo, igual que en el loader de OptimusKG: copiar
-.env.example a .env en la raiz del repositorio y completarlo. Las claves llevan el prefijo PRIMEKG_
-para que los dos grafos puedan convivir en el mismo .env.
 """
 import os
 
@@ -39,9 +34,7 @@ if not NEO4J_PASSWORD:
     raise SystemExit("falta PRIMEKG_NEO4J_PASSWORD: copiar .env.example a .env y completarlo, "
                      "o exportar la variable en el entorno")
 
-#los CSV del grafo, en datos/processed/ (no se versionan, ver el README de la carpeta). El loader
-#los lee directamente y colapsa las aristas a una por par el mismo, para no depender de ningun
-#notebook
+#los CSV del grafo, en datos/processed/ 
 _AQUI = os.path.dirname(os.path.abspath(__file__))
 CARPETA_PROCESADOS = os.path.join(_AQUI, "..", "datos", "processed")
 ARCHIVO_NODOS = os.path.join(CARPETA_PROCESADOS, "merged_nodes.csv")
