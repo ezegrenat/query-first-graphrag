@@ -1,6 +1,6 @@
 # Selección de subgrafo por criterio topológico para GraphRAG biomédico
 
-Mi tesis de la Licenciatura en Ciencias de Datos (UBA), dirigido por Ariel Chernomoretz.
+Mi tesis de la Licenciatura en Ciencias de Datos (UBA).
 
 La propuesta es una variación de GraphRAG que **construye el grafo orientado a cada consulta en lugar de particionar un grafo estático**. El recorte del subgrafo relevante no se hace por similaridad semántica sino con un criterio topológico: se toman algoritmos de detección de módulos de enfermedad tomados de la medicina de redes y se los adapta a un grafo de conocimiento heterogéneo, y recién sobre ese subgrafo se corren la detección de comunidades y los resúmenes.
 
