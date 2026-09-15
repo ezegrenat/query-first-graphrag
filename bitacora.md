@@ -52,7 +52,7 @@ Cada paso necesita saber cuántas iteraciones correr antes de frenar (es un par�
 
 ## Decisiones importantes
 
-- **Se trabaja únicamente con las capas Disease, Drug y Gene**, que además de ser las que concentran mayor volumen son las que pueden ser más relevantes para nuestras queries. Más adelante podría considerarse expandir este método hacia las demás capas del grafo.    
+- **Se trabaja únicamente con las capas Disease, Drug y Gene**. Más adelante podría considerarse expandir este método hacia las demás capas del grafo.    
 
 - **Para las expansiones de DIAMOnD, nos quedamos con un único tipo de arista intracapa**, de forma en que se conserve el presupuesto de homogeneidad que requiere el algoritmo. Estas son las aristas que son más relevantes dentro de cada una de las capas:
     - **Gene**: `PPI`, el interactoma de HIPPIE (interacciones con confianza mayor a 0,73) más SIGNOR. Los complejos proteicos (`FORM_COMPLEX`) quedan fuera del plano para conservar una sola relación.
