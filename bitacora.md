@@ -8,18 +8,18 @@ Proponer una implementación de GraphRAG que construya su grafo orientado a una 
 
 ## El problema
 
-Se utiliza un grafo de conocimiento que contiene relaciones entre drogas, fenotipos, genes y enfermedades. Este grafo es completamente heterogéneo. 
+Se utiliza un grafo de conocimiento que contiene relaciones entre drogas, genes y enfermedades. Este grafo es completamente heterogéneo. 
 Se consideró usar [OptimusKG](https://arxiv.org/abs/2604.27269), pero como su capa de drogas estaba muy disconexa se pasó a utilizar una versión enriquecida de PrimeKG. 
 
 El pipeline de referencia para esta tarea es *GraphRAG*, esquema de Microsoft descrito en *From Local to Global* (Edge et al., 2025), que consiste en detectar comunidades (entendiendo por comunidad a un conjunto de nodos más densamente conectados entre si que con el resto del grafo) sobre el grafo completo, resumir cada comunidad con un modelo de lenguaje, y responder a partir de esos resúmenes. 
 
-Ese esquema supone que la detección de comunidades y los resúmenes se calculan **una sola vez, sin conocer la consulta**, y se reutilizan después. La objeción práctica es de costo: resumir con un modelo de lenguaje las comunidades de un grafo de 190.531 nodos no es viable en hardware modesto, y el trabajo se hace igual aunque la consulta toque una porción diminuta del grafo.
+Ese esquema supone que la detección de comunidades y los resúmenes se calculan **una sola vez, sin conocer la consulta**, y se reutilizan después.
 
 ## La idea de este trabajo
 
-Se invierte el orden. En vez de particionar todo el grafo y filtrar después, **primero se recorta el subgrafo relevante a la consulta y recién sobre ese subgrafo se corre la detección de comunidades**. Lo que se ganaría no es solo costo: las comunidades que salen ya están orientadas a la consulta, en vez de ser una partición genérica del grafo entero.
+Se invierte el orden. En vez de particionar todo el grafo y filtrar después, **primero se recorta el subgrafo relevante a la consulta y recién sobre ese subgrafo se corre la detección de comunidades**. Lo que se ganaría es que las comunidades que salen ya están orientadas a la consulta, en vez de ser una partición genérica del grafo entero.
 
-La selección de este subgrafo relevante a la consulta no utiliza criterios de similaridad semántica, sino topológicos. Se toman algoritmos ya usados en la medicina de redes orientados a detectar módulos de enfermedades y se los adapta al contexto de un grafo de conocimiento altamente heterogéneo. 
+La selección de este subgrafo relevante a la consulta no utiliza criterios de similaridad semántica, sino topológicos. Se toma un algoritmo ya usado en la medicina de redes homogéneas orientado a detectar módulos de enfermedades y se lo adapta al contexto de un grafo de conocimiento altamente heterogéneo. 
 
 
 ## Construcción del 'PrimeKG enriquecido'
