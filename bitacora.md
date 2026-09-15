@@ -2,7 +2,7 @@
 
 Este repositorio contiene el trabajo de mi tesis de Licenciatura en Ciencias de Datos (UBA). El objetivo es responder consultas en lenguaje natural sobre biomedicina combinando un grafo de conocimiento con un modelo de lenguaje y el uso de una variación sobre GraphRAG.
 
-## Motivación y resumen corto del trabajo
+## Motivación y resumen del trabajo
 
 Proponer una implementación de GraphRAG que construya su grafo orientado a una query, en lugar de tener un grafo estático que sirva para cualquier query. Concretamente, esto es cambiar el pipeline de la estructura agregando un criterio topológico. Se trabaja sobre un gran grafo de conocimiento de biomedicina.
 
@@ -24,7 +24,7 @@ La selección de este subgrafo relevante a la consulta no utiliza criterios de s
 
 ## Construcción del 'PrimeKG enriquecido'
 
-Se tomó una versión enriquecida de PrimeKG creado en [repo_ingrid] y se añadió una capa de drogas [descripción del grafo resultante y el cruce] 
+Se tomó una versión enriquecida de PrimeKG creado en [repo_ingrid] y se añadió una capa de drogas [descripción del grafo resultante y el cruce con la capa de drogas] 
 
 
 ## El algoritmo
