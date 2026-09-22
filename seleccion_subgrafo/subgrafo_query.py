@@ -1,4 +1,4 @@
-"""Selecciona el subgrafo de una query proyectando cada entidad con DIAMOnD. Recomendable leer el readme que documenta parametros, retornos, errores y casos borde."""
+"""Selecciona el subgrafo de una query proyectando cada entidad con DIAMOnD. Recomendable leer especificacion.md, que documenta parametros, retornos, errores y casos borde."""
 import os
 import sys
 import time
