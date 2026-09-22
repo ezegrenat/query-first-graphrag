@@ -63,4 +63,9 @@ Cada paso necesita saber cuántas iteraciones correr antes de frenar (es un par�
 
 ## Estado
 
-La calibración de las iteraciones ya está hecha para las dos celdas entre genes y enfermedades sobre el grafo nuevo (ver `calibracion/`). Actualmente estoy trabajando en la capa de drogas: añadir drogas tales que se puedan incorporar bien al PrimeKG enriquecido.
+Ya se cuenta con un script de calibración, la construcción del grafo PrimeKG enriquecido (que si tiene relaciones a drogas tal como queremos) y la aplicación de DIAMOnD heterogéneo para unas entidades. 
+Falta: 
+- **Incorporar una Random Walk post crecimiento de DIAMOnD** para unir a los módulos encontrados como relevantes para la query. 
+- **Realizar el entity matching, que dada una query en lenguaje natural identifique qué entidades hay en la query y qué nodos del grafo representan a esas entidades**
+- **Construcción del graphRAG "tradicional"** dado un subgrafo determinado 
+- **Evaluación**
