@@ -25,8 +25,24 @@ calibracion/resultados*/cache_planos/
 calibracion/resultados*/*.log
 calibracion/*.log
 
+#el cache de planos de seleccion_subgrafo, aparte del de calibracion porque el plano drug lleva
+#el umbral en el nombre
+seleccion_subgrafo/cache_planos/
+
 #PDF intermedios de calibracion: paso6_informe.py los concatena en informe_completo.pdf, que es
 #el que se versiona
 calibracion/resultados*/graficos/
 calibracion/resultados*/resumen_celdas.pdf
 calibracion/resultados*/paso0_distribuciones.pdf
+
+#la capa de drogas del laboratorio: sus CSV no se publican (se piden al laboratorio) y el archivo de
+#ID mapping humano de UniProt (66 MB) se baja con los comandos de capa_drogas/fuentes/. La salida
+#del armado y la tabla de UniProt recortada se derivan de esos datos y tampoco se versionan
+grafos/primekg_integrado/capa_drogas/datos
+grafos/primekg_integrado/capa_drogas/capa_resuelta/
+grafos/primekg_integrado/verificacion/resultados/
+
+#descargas de NCBI de genes_humanos.ipynb: se vuelven a bajar si faltan, la fecha queda en el .FUENTE.txt
+grafos/primekg_integrado/genes_humanos/*.gz
+grafos/primekg_integrado/genes_humanos/*.json
+grafos/primekg_integrado/genes_humanos/genes_fuera_de_lista.tsv
