@@ -1,6 +1,4 @@
-"""Lectura de PrimeKG nativo desde los CSV originales, en datos/external/. Luego todo lo que se mide sobre PrimeKG pasa por aca, para que si cambia la version del grafo o su formato el cambio sea en un solo lugar.
-
-"""
+"""Lectura de PrimeKG nativo desde los CSV originales, en datos/external/"""
 import os
 
 import networkx as nx
@@ -14,8 +12,7 @@ ARCHIVO_ARISTAS = os.path.join(CARPETA_DATOS, "primekg_edges.csv")
 #los tres tipos de nodo del alcance, con el nombre exacto que usa la columna node_type del CSV
 TIPOS = ("gene/protein", "disease", "effect/phenotype")
 
-#las capas bipartitas entre esos tres tipos, escritas una por una. Cada entrada es
-#(tipo A, tipo B, nombre de la relacion en la columna "relation" del CSV).
+#las capas bipartitas entre esos tres tipos, escritas una por una. Cada entrada es de la forma tipo A, tipo B, nombre de la relacion en la columna "relation" del CSV).
 #Se deja afuera disease_phenotype_negative (1.193 filas, "phenotype absent"): es la ausencia de un
 #fenotipo en una enfermedad, no una conexion, y para ir a buscar vecinos de la capa B no sirve.
 CAPAS = {
@@ -24,9 +21,7 @@ CAPAS = {
     "gene_phenotype": ("gene/protein", "effect/phenotype", "phenotype_protein"),
 }
 
-#los planos homogeneos: un tipo de nodo y la unica relacion intracapa que tiene en PrimeKG.
-#gene es el interactoma (ppi); disease y phenotype son la jerarquia padre-hijo de sus ontologias
-#(MONDO y HPO), que es lo mismo que era PARENT en OptimusKG.
+#los planos homogeneos: un tipo de nodo y la unica relacion intracapa que tiene en PrimeKG. gene es el interactoma (ppi), disease y phenotype son la jerarquia padre-hijo de sus ontologias, que es lo mismo que era PARENT en OptimusKG.
 PLANOS = {
     "gene": ("gene/protein", "protein_protein"),
     "disease": ("disease", "disease_disease"),
@@ -43,7 +38,6 @@ def _nodos_completos():
 
 
 def _aristas_completas():
-    #el CSV pesa 386 MB y tarda unos segundos en leerse; se lee una sola vez por proceso
     if "aristas" not in _cache:
         _cache["aristas"] = pd.read_csv(ARCHIVO_ARISTAS)
     return _cache["aristas"]
@@ -57,9 +51,6 @@ def cargar_nodos():
 
 
 def cargar_aristas():
-    """DataFrame con las filas del CSV de aristas cuyos dos extremos son de los tres tipos del
-    alcance, con dos columnas mas, x_type e y_type, con el tipo de cada extremo. Sigue teniendo
-    cada arista en los dos sentidos: es la vista cruda, para contar filas contra el CSV."""
     tipo_por_indice = _nodos_completos().set_index("node_index").node_type
     aristas = _aristas_completas().copy()
     aristas["x_type"] = aristas.x_index.map(tipo_por_indice)
@@ -68,12 +59,11 @@ def cargar_aristas():
 
 
 def _una_fila_por_arista(filas):
-    """Se queda con la fila (x, y) de cada par y descarta la (y, x). Verifica que el CSV de verdad
-    traiga las dos, porque si no el conteo quedaria a la mitad sin que nadie lo note."""
+    """Se queda con la fila (x, y) de cada par y descarta la (y, x)"""
     pares = set(zip(filas.x_index, filas.y_index))
     con_inversa = sum((b, a) in pares for a, b in pares)
     if con_inversa != len(pares):
-        raise ValueError(f"hay {len(pares) - con_inversa} filas sin su inversa; "
+        raise ValueError(f"hay {len(pares) - con_inversa} filas sin su inversa "
                          "el CSV no tiene la forma esperada")
     return filas[filas.x_index < filas.y_index]
 

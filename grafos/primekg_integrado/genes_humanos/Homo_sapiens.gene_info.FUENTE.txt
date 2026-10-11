@@ -1,0 +1,2 @@
+https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz
+Last-Modified: Wed, 16 Sep 2026 16:04:06 GMT

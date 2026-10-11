@@ -1,48 +1,25 @@
-#credenciales locales: cada quien usa las suyas, nunca se versionan
 .env
-
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-
-#datos crudos de OptimusKG: los descarga el propio loader desde Dataverse
 *.parquet
 
-#mapeos de MONDO en formato SSSOM (13 MB): los baja redundancia_entre_nodos.ipynb fijado a un
-#release, y el sha256 queda registrado en equivalencias_disease.json
-grafos/optimuskg/preparacion_grafo/datos/
-
-#los CSV de PrimeKG integrado (PrimeKG nativo en external/, el grafo en processed/): 750 MB, se
-#piden al laboratorio. Ver grafos/primekg_integrado/README.md. Sin barra final para que valga
-#tambien si datos es un enlace simbolico a donde esten los CSV
 grafos/primekg_integrado/datos
 
-#de las corridas de calibracion se versionan los resumenes (CSV, PDF, RESUMEN_corrida.txt) y no
-#las trazas por caso (600 parquet por corrida), los recalls, el cache de planos ni los logs
-calibracion/resultados*/trazas/
-calibracion/resultados*/recalls/
-calibracion/resultados*/cache_planos/
-calibracion/resultados*/*.log
-calibracion/*.log
+grafos/primekg_integrado/grafo_laboratorio/datos/*.csv
+grafos/primekg_integrado/grafo_laboratorio/datos/*.tsv
+grafos/primekg_integrado/grafo_laboratorio/datos/*.gz
+grafos/primekg_integrado/grafo_laboratorio/datos/*.zip
+grafos/primekg_integrado/grafo_laboratorio/datos/out_b
+grafos/primekg_integrado/grafo_laboratorio/datos/capa_resuelta
+grafos/primekg_integrado/grafo_laboratorio/datos/CONSTRUCCION_grafo_ingrid_mas_drogas.md
+grafos/primekg_integrado/grafo_laboratorio/grafo
 
-#el cache de planos de seleccion_subgrafo, aparte del de calibracion porque el plano drug lleva
-#el umbral en el nombre
-seleccion_subgrafo/cache_planos/
-
-#PDF intermedios de calibracion: paso6_informe.py los concatena en informe_completo.pdf, que es
-#el que se versiona
-calibracion/resultados*/graficos/
-calibracion/resultados*/resumen_celdas.pdf
-calibracion/resultados*/paso0_distribuciones.pdf
-
-#la capa de drogas del laboratorio: sus CSV no se publican (se piden al laboratorio) y el archivo de
-#ID mapping humano de UniProt (66 MB) se baja con los comandos de capa_drogas/fuentes/. La salida
-#del armado y la tabla de UniProt recortada se derivan de esos datos y tampoco se versionan
-grafos/primekg_integrado/capa_drogas/datos
-grafos/primekg_integrado/capa_drogas/capa_resuelta/
-grafos/primekg_integrado/verificacion/resultados/
-
-#descargas de NCBI de genes_humanos.ipynb: se vuelven a bajar si faltan, la fecha queda en el .FUENTE.txt
 grafos/primekg_integrado/genes_humanos/*.gz
 grafos/primekg_integrado/genes_humanos/*.json
 grafos/primekg_integrado/genes_humanos/genes_fuera_de_lista.tsv
+
+manipulacion_grafo/cache_planos/
+seleccion_subgrafo/cache_planos/
+grafos/primekg_integrado/grupos_bert.ipynb
+grafos/primekg_integrado/grafo_laboratorio/datos/conectividad_drogas.ipynb

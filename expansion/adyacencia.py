@@ -37,7 +37,7 @@ class RedCompacta:
         return iter(self._ids)
 
 
-    #alias con la interfaz de networkx.Graph (nodes/neighbors/degree/number_of_nodes). los pide Diamond_algoritmo.py
+    #alias con la interfaz de networkx.Graph (nodes/neighbors/degree/number_of_nodes). los pide diamond_algoritmo.py
     def nodes(self):
         return self._ids
 

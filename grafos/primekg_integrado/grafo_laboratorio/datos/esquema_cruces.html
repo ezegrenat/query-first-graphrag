@@ -1,0 +1,432 @@
+<title>Cruces de la capa de drogas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f6f5f1; --ink:#22262b; --ink-2:#5c636b; --linea:#c9c6bd; --tinta-caja:#ffffff;
+  --lab:#1b7a6b; --primekg:#3f55c9; --integrado:#b8621f; --uniprot:#84408f; --salida:#4e5763;
+  --halo:#f6f5f1;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#17191c; --ink:#e7e4dd; --ink-2:#a3a7ad; --linea:#3a3e44; --tinta-caja:#1f2226;
+  --lab:#4fc1ad; --primekg:#8b9cf5; --integrado:#e8955a; --uniprot:#c98bd3; --salida:#9aa3ad; --halo:#17191c; }}
+:root[data-theme="dark"]{
+  --bg:#17191c; --ink:#e7e4dd; --ink-2:#a3a7ad; --linea:#3a3e44; --tinta-caja:#1f2226;
+  --lab:#4fc1ad; --primekg:#8b9cf5; --integrado:#e8955a; --uniprot:#c98bd3; --salida:#9aa3ad; --halo:#17191c; }
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-inline:16px;padding-block:24px 48px;max-width:1120px;margin:0 auto}
+h1{font-size:1.6rem;font-weight:600;margin:0 0 .25rem;text-wrap:balance}
+h2{font-size:1.15rem;font-weight:600;margin:2.2rem 0 .4rem}
+p{max-width:68ch;margin:.3rem 0 .8rem}
+.sub{color:var(--ink-2)}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}
+.leyenda{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:.6rem 0 0;padding:0;list-style:none;font-size:.9rem}
+.leyenda li{display:flex;align-items:center;gap:.45rem}
+.leyenda i{display:inline-block;width:14px;height:14px;border-radius:3px;border:1.5px solid currentColor;background:color-mix(in srgb, currentColor 14%, transparent)}
+.leyenda .g{color:var(--lab)} .leyenda .p{color:var(--primekg)} .leyenda .i{color:var(--integrado)} .leyenda .u{color:var(--uniprot)} .leyenda .s{color:var(--salida)}
+.leyenda .punto{width:8px;height:8px;border-radius:50%;background:currentColor;border:0}
+figure{margin:0}
+.scroll{overflow-x:auto;padding-bottom:4px}
+svg{display:block;max-width:none;color:var(--ink);font-family:"IBM Plex Mono",ui-monospace,monospace}
+figcaption{font-size:.85rem;color:var(--ink-2);margin-top:.4rem;max-width:68ch}
+.caja rect{fill:var(--tinta-caja);stroke:var(--linea);stroke-width:1}
+.caja rect.cab{stroke:none;fill:color-mix(in srgb, var(--c) 16%, var(--tinta-caja))}
+.caja.lab{--c:var(--lab)} .caja.primekg{--c:var(--primekg)} .caja.integrado{--c:var(--integrado)} .caja.uniprot{--c:var(--uniprot)} .caja.salida{--c:var(--salida)}
+.caja > rect:first-child{stroke:var(--c);stroke-width:1.4}
+.caja.inter > rect:first-child{stroke-dasharray:5 4}
+.caja .titulo{font-size:12px;font-weight:500;fill:var(--ink)}
+.caja .n{font-size:10.5px;fill:var(--ink-2);font-family:"IBM Plex Sans",system-ui,sans-serif}
+.caja .campo{font-size:12px;fill:var(--ink-2)}
+.caja .campo.usado{fill:var(--ink);font-weight:500}
+.caja .punto{fill:var(--c)}
+.caja .nota{font-size:10.5px;fill:var(--ink-2);font-family:"IBM Plex Sans",system-ui,sans-serif}
+.flecha{fill:none;stroke:currentColor;stroke-width:1.3;opacity:.85}
+.etiqueta{font-size:11px;fill:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+table{border-collapse:collapse;font-size:.88rem;margin-top:.6rem;min-width:600px}
+th,td{text-align:left;padding:.35rem .6rem;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-weight:600;color:var(--ink-2);font-size:.8rem;letter-spacing:.03em;text-transform:uppercase}
+td code{white-space:nowrap}
+</style>
+<h1>Cruces de la capa de drogas</h1>
+<p class="sub">Que tabla lee <code>armar_capa_drogas.py</code>, que campos usa de cada una y por que campo cruza con la siguiente. Cada rectangulo es un archivo, los campos con punto son los que el script usa, y cada flecha lleva la igualdad que hace el cruce. Los rectangulos punteados son tablas intermedias que viven solo en memoria.</p>
+<ul class="leyenda">
+  <li class="g"><i></i>Laboratorio (14 y 15/9)</li>
+  <li class="p"><i></i>PrimeKG nativo</li>
+  <li class="i"><i></i>PrimeKG integrado</li>
+  <li class="u"><i></i>Archivo de ID mapping humano de UniProt</li>
+  <li class="s"><i></i>Salida en capa_resuelta/</li>
+  <li><i class="punto" style="color:var(--ink)"></i>campo que usa el script</li>
+</ul>
+<section><h2>Los nodos droga</h2><p>Las drogas de PrimeKG (tabla 01) entran si cruzan con la tabla de compuestos del laboratorio por alguna de dos claves. El CID que sale del cruce es la llave hacia el cluster identitario y, en la figura 3, hacia la bioactividad.</p><figure><div class="scroll"><svg viewBox="0 0 1300 320" width="1300" height="320" role="img" aria-label="Como se eligen las 859 drogas: la tabla 01 cruza con los compuestos del laboratorio por chembl_id y por CCD, y el CID lleva al cluster">
+<defs><marker id="punta-f1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g class="caja lab"><rect x="20" y="30" width="300" height="178" rx="4"/>
+<rect class="cab" x="20" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="54" width="300" height="6"/>
+<text class="titulo" x="28" y="49">01_drogas_con_chembl_ccd_smiles.csv</text>
+<text class="n" x="312" y="49" text-anchor="end">1.801</text>
+<text class="campo usado" x="38" y="75">drugbank_id</text>
+<circle class="punto" cx="31" cy="71" r="2.5"/>
+<text class="nota" x="312" y="75" text-anchor="end">DB00860</text>
+<text class="campo usado" x="38" y="95">droga</text>
+<circle class="punto" cx="31" cy="91" r="2.5"/>
+<text class="nota" x="312" y="95" text-anchor="end">nombre</text>
+<text class="campo" x="38" y="115">enfermedades</text>
+<text class="campo usado" x="38" y="135">chembl_id</text>
+<circle class="punto" cx="31" cy="131" r="2.5"/>
+<text class="nota" x="312" y="135" text-anchor="end">CHEMBL131</text>
+<text class="campo usado" x="38" y="155">ccd_id_biolip</text>
+<circle class="punto" cx="31" cy="151" r="2.5"/>
+<text class="nota" x="312" y="155" text-anchor="end">TUA</text>
+<text class="campo" x="38" y="175">smiles</text>
+<text class="campo" x="38" y="195">smiles_fuente</text>
+</g>
+<g class="caja lab"><rect x="500" y="30" width="300" height="138" rx="4"/>
+<rect class="cab" x="500" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="54" width="300" height="6"/>
+<text class="titulo" x="508" y="49">04_drogas_TDR.csv</text>
+<text class="n" x="792" y="49" text-anchor="end">128.552 filas</text>
+<text class="campo usado" x="518" y="75">CID</text>
+<circle class="punto" cx="511" cy="71" r="2.5"/>
+<text class="nota" x="792" y="75" text-anchor="end">clave interna</text>
+<text class="campo usado" x="518" y="95">chembl_id</text>
+<circle class="punto" cx="511" cy="91" r="2.5"/>
+<text class="campo usado" x="518" y="115">biolip_id</text>
+<circle class="punto" cx="511" cy="111" r="2.5"/>
+<text class="campo" x="518" y="135">canonical_smiles</text>
+<text class="campo" x="518" y="155">molweight</text>
+</g>
+<g class="caja lab"><rect x="500" y="210" width="300" height="78" rx="4"/>
+<rect class="cab" x="500" y="210" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="234" width="300" height="6"/>
+<text class="titulo" x="508" y="229">04_tclus_TDR.csv</text>
+<text class="n" x="792" y="229" text-anchor="end">121.109</text>
+<text class="campo usado" x="518" y="255">drug</text>
+<circle class="punto" cx="511" cy="251" r="2.5"/>
+<text class="nota" x="792" y="255" text-anchor="end">es el CID</text>
+<text class="campo usado" x="518" y="275">cluster_id</text>
+<circle class="punto" cx="511" cy="271" r="2.5"/>
+</g>
+<g class="caja salida inter"><rect x="980" y="30" width="300" height="78" rx="4"/>
+<rect class="cab" x="980" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="54" width="300" height="6"/>
+<text class="titulo" x="988" y="49">pares (en memoria)</text>
+<text class="n" x="1272" y="49" text-anchor="end">860</text>
+<text class="campo usado" x="998" y="75">drugbank_id</text>
+<circle class="punto" cx="991" cy="71" r="2.5"/>
+<text class="nota" x="1272" y="75" text-anchor="end">de 01</text>
+<text class="campo usado" x="998" y="95">CID</text>
+<circle class="punto" cx="991" cy="91" r="2.5"/>
+<text class="nota" x="1272" y="95" text-anchor="end">de 04_drogas</text>
+</g>
+<g class="caja salida"><rect x="980" y="150" width="300" height="158" rx="4"/>
+<rect class="cab" x="980" y="150" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="174" width="300" height="6"/>
+<text class="titulo" x="988" y="169">nodos_drogas.csv</text>
+<text class="n" x="1272" y="169" text-anchor="end">859</text>
+<text class="campo usado" x="998" y="195">id</text>
+<circle class="punto" cx="991" cy="191" r="2.5"/>
+<text class="nota" x="1272" y="195" text-anchor="end">= drugbank_id</text>
+<text class="campo usado" x="998" y="215">name</text>
+<circle class="punto" cx="991" cy="211" r="2.5"/>
+<text class="nota" x="1272" y="215" text-anchor="end">= droga</text>
+<text class="campo usado" x="998" y="235">chembl_id</text>
+<circle class="punto" cx="991" cy="231" r="2.5"/>
+<text class="nota" x="1272" y="235" text-anchor="end">de 01</text>
+<text class="campo usado" x="998" y="255">ccd</text>
+<circle class="punto" cx="991" cy="251" r="2.5"/>
+<text class="nota" x="1272" y="255" text-anchor="end">= ccd_id_biolip</text>
+<text class="campo usado" x="998" y="275">cid_labo</text>
+<circle class="punto" cx="991" cy="271" r="2.5"/>
+<text class="nota" x="1272" y="275" text-anchor="end">menor CID</text>
+<text class="campo usado" x="998" y="295">cluster_id</text>
+<circle class="punto" cx="991" cy="291" r="2.5"/>
+<text class="nota" x="1272" y="295" text-anchor="end">de 04_tclus</text>
+</g>
+<path class="flecha" d="M320,131 C400,131 420,91 500,91" marker-end="url(#punta-f1)"/><text class="etiqueta" x="410.0" y="99.0" text-anchor="middle"><tspan x="410.0" dy="0">chembl_id = chembl_id</tspan><tspan x="410.0" dy="13">sin vacios (dropna)</tspan></text>
+<path class="flecha" d="M320,151 C380,151 440,111 500,111" marker-end="url(#punta-f1)"/><text class="etiqueta" x="410.0" y="147.0" text-anchor="middle"><tspan x="410.0" dy="0">ccd_id_biolip = biolip_id</tspan><tspan x="410.0" dy="13">sin vacios (dropna)</tspan></text>
+<path class="flecha" d="M800,71 C880,71 900,91 980,91" marker-end="url(#punta-f1)"/><text class="etiqueta" x="890.0" y="69.0" text-anchor="middle"><tspan x="890.0" dy="0">los que cruzaron</tspan><tspan x="890.0" dy="13">por una u otra clave</tspan></text>
+<path class="flecha" d="M800,71 C840,71 840,251 800,251" marker-end="url(#punta-f1)"/><text class="etiqueta" x="840.0" y="191.0" text-anchor="middle"><tspan x="840.0" dy="0">CID = drug</tspan></text>
+<path class="flecha" d="M800,271 C880,271 900,291 980,291" marker-end="url(#punta-f1)"/><text class="etiqueta" x="890.0" y="269.0" text-anchor="middle"><tspan x="890.0" dy="0">cluster del</tspan><tspan x="890.0" dy="13">cid_labo</tspan></text>
+</svg></div><figcaption>Como se eligen las 859 drogas: la tabla 01 cruza con los compuestos del laboratorio por chembl_id y por CCD, y el CID lleva al cluster.</figcaption></figure></section>
+<section><h2>Droga a enfermedad (INDICATION)</h2><p>Las aristas de PrimeKG hablan en numeros de fila (x_index, y_index). La tabla de nodos de PrimeKG los traduce a DrugBank y a MONDO, y el puente dice a que nodo de PrimeKG integrado le corresponde cada MONDO: al grupo BERT si es un MONDO_grouped, a los CUIs mapeados si es suelto.</p><figure><div class="scroll"><svg viewBox="0 0 1780 400" width="1780" height="400" role="img" aria-label="Como una indicacion de PrimeKG llega a un nodo Disease de PrimeKG integrado: por node_index a la tabla de nodos de PrimeKG y de ahi al grupo BERT o al CUI">
+<defs><marker id="punta-f2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g class="caja primekg"><rect x="20" y="30" width="300" height="118" rx="4"/>
+<rect class="cab" x="20" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="54" width="300" height="6"/>
+<text class="titulo" x="28" y="49">primekg_edges.csv</text>
+<text class="n" x="312" y="49" text-anchor="end">8 M filas</text>
+<text class="campo usado" x="38" y="75">relation</text>
+<circle class="punto" cx="31" cy="71" r="2.5"/>
+<text class="nota" x="312" y="75" text-anchor="end">= indication</text>
+<text class="campo" x="38" y="95">display_relation</text>
+<text class="campo usado" x="38" y="115">x_index</text>
+<circle class="punto" cx="31" cy="111" r="2.5"/>
+<text class="nota" x="312" y="115" text-anchor="end">la droga</text>
+<text class="campo usado" x="38" y="135">y_index</text>
+<circle class="punto" cx="31" cy="131" r="2.5"/>
+<text class="nota" x="312" y="135" text-anchor="end">la enfermedad</text>
+</g>
+<g class="caja integrado"><rect x="20" y="260" width="300" height="98" rx="4"/>
+<rect class="cab" x="20" y="260" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="284" width="300" height="6"/>
+<text class="titulo" x="28" y="279">disease_mappings.csv</text>
+<text class="n" x="312" y="279" text-anchor="end">13.203</text>
+<text class="campo usado" x="38" y="305">diseaseId</text>
+<circle class="punto" cx="31" cy="301" r="2.5"/>
+<text class="nota" x="312" y="305" text-anchor="end">CUI</text>
+<text class="campo" x="38" y="325">mondo_id</text>
+<text class="campo usado" x="38" y="345">prime_node_index</text>
+<circle class="punto" cx="31" cy="341" r="2.5"/>
+<text class="nota" x="312" y="345" text-anchor="end">nodo de PrimeKG</text>
+</g>
+<g class="caja primekg"><rect x="500" y="30" width="300" height="118" rx="4"/>
+<rect class="cab" x="500" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="54" width="300" height="6"/>
+<text class="titulo" x="508" y="49">primekg_nodes.csv</text>
+<text class="campo usado" x="518" y="75">node_index</text>
+<circle class="punto" cx="511" cy="71" r="2.5"/>
+<text class="nota" x="792" y="75" text-anchor="end">numero de fila</text>
+<text class="campo usado" x="518" y="95">node_id</text>
+<circle class="punto" cx="511" cy="91" r="2.5"/>
+<text class="nota" x="792" y="95" text-anchor="end">8692 o 8702_10966</text>
+<text class="campo usado" x="518" y="115">node_type</text>
+<circle class="punto" cx="511" cy="111" r="2.5"/>
+<text class="nota" x="792" y="115" text-anchor="end">drug / disease</text>
+<text class="campo usado" x="518" y="135">node_source</text>
+<circle class="punto" cx="511" cy="131" r="2.5"/>
+<text class="nota" x="792" y="135" text-anchor="end">MONDO / MONDO_grouped</text>
+</g>
+<g class="caja integrado"><rect x="500" y="260" width="300" height="118" rx="4"/>
+<rect class="cab" x="500" y="260" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="284" width="300" height="6"/>
+<text class="titulo" x="508" y="279">merged_nodes.csv</text>
+<text class="n" x="792" y="279" text-anchor="end">35.839</text>
+<text class="campo" x="518" y="305">node_index</text>
+<text class="campo usado" x="518" y="325">node_id</text>
+<circle class="punto" cx="511" cy="321" r="2.5"/>
+<text class="nota" x="792" y="325" text-anchor="end">CUI o id de grupo</text>
+<text class="campo usado" x="518" y="345">node_type</text>
+<circle class="punto" cx="511" cy="341" r="2.5"/>
+<text class="nota" x="792" y="345" text-anchor="end">= disease</text>
+<text class="campo usado" x="518" y="365">node_source</text>
+<circle class="punto" cx="511" cy="361" r="2.5"/>
+<text class="nota" x="792" y="365" text-anchor="end">disgenet / primekg</text>
+</g>
+<g class="caja salida inter"><rect x="980" y="30" width="300" height="98" rx="4"/>
+<rect class="cab" x="980" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="54" width="300" height="6"/>
+<text class="titulo" x="988" y="49">indicaciones (en memoria)</text>
+<text class="n" x="1272" y="49" text-anchor="end">9.388</text>
+<text class="campo usado" x="998" y="75">drugbank_id</text>
+<circle class="punto" cx="991" cy="71" r="2.5"/>
+<text class="nota" x="1272" y="75" text-anchor="end">node_id de x</text>
+<text class="campo usado" x="998" y="95">disease_index</text>
+<circle class="punto" cx="991" cy="91" r="2.5"/>
+<text class="nota" x="1272" y="95" text-anchor="end">= y_index</text>
+<text class="campo usado" x="998" y="115">disease_node_id</text>
+<circle class="punto" cx="991" cy="111" r="2.5"/>
+<text class="nota" x="1272" y="115" text-anchor="end">node_id de y</text>
+</g>
+<g class="caja salida inter"><rect x="980" y="260" width="300" height="78" rx="4"/>
+<rect class="cab" x="980" y="260" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="284" width="300" height="6"/>
+<text class="titulo" x="988" y="279">puente (en memoria)</text>
+<text class="n" x="1272" y="279" text-anchor="end">8.542</text>
+<text class="campo usado" x="998" y="305">prime_index</text>
+<circle class="punto" cx="991" cy="301" r="2.5"/>
+<text class="nota" x="1272" y="305" text-anchor="end">node_index</text>
+<text class="campo usado" x="998" y="325">integrado_id</text>
+<circle class="punto" cx="991" cy="321" r="2.5"/>
+<text class="nota" x="1272" y="325" text-anchor="end">CUI o id de grupo</text>
+</g>
+<g class="caja salida"><rect x="1460" y="150" width="300" height="98" rx="4"/>
+<rect class="cab" x="1460" y="150" width="300" height="30" rx="4"/>
+<rect class="cab" x="1460" y="174" width="300" height="6"/>
+<text class="titulo" x="1468" y="169">drug_disease.csv</text>
+<text class="n" x="1752" y="169" text-anchor="end">5.383</text>
+<text class="campo usado" x="1478" y="195">drug_id</text>
+<circle class="punto" cx="1471" cy="191" r="2.5"/>
+<text class="nota" x="1752" y="195" text-anchor="end">= drugbank_id</text>
+<text class="campo usado" x="1478" y="215">disease_id</text>
+<circle class="punto" cx="1471" cy="211" r="2.5"/>
+<text class="nota" x="1752" y="215" text-anchor="end">= integrado_id</text>
+<text class="campo usado" x="1478" y="235">mondo_node_id</text>
+<circle class="punto" cx="1471" cy="231" r="2.5"/>
+<text class="nota" x="1752" y="235" text-anchor="end">= disease_node_id</text>
+</g>
+<path class="flecha" d="M320,111 C380,111 440,71 500,71" marker-end="url(#punta-f2)"/><text class="etiqueta" x="410.0" y="81.0" text-anchor="middle"><tspan x="410.0" dy="0">x_index = node_index</tspan><tspan x="410.0" dy="13">y node_type = drug</tspan></text>
+<path class="flecha" d="M320,131 C380,131 440,71 500,71" marker-end="url(#punta-f2)"/><text class="etiqueta" x="410.0" y="121.0" text-anchor="middle"><tspan x="410.0" dy="0">y_index = node_index</tspan><tspan x="410.0" dy="13">y node_type = disease</tspan></text>
+<path class="flecha" d="M800,91 C850,91 850,321 800,321" marker-end="url(#punta-f2)"/><text class="etiqueta" x="850.0" y="186.0" text-anchor="middle"><tspan x="850.0" dy="0">node_id = node_id</tspan><tspan x="850.0" dy="13">MONDO_grouped = grupo BERT</tspan></text>
+<path class="flecha" d="M320,341 C410,341 410,71 500,71" marker-end="url(#punta-f2)"/><text class="etiqueta" x="410.0" y="208.0" text-anchor="middle"><tspan x="410.0" dy="0">prime_node_index = node_index</tspan><tspan x="410.0" dy="13">solo si no es un grupo</tspan></text>
+<path class="flecha" d="M320,301 C380,301 440,321 500,321" marker-end="url(#punta-f2)"/><text class="etiqueta" x="410.0" y="301.0" text-anchor="middle"><tspan x="410.0" dy="0">diseaseId = node_id</tspan><tspan x="410.0" dy="13">node_source = disgenet</tspan></text>
+<path class="flecha" d="M800,71 C880,71 900,91 980,91" marker-end="url(#punta-f2)"/><text class="etiqueta" x="890.0" y="75.0" text-anchor="middle"><tspan x="890.0" dy="0"></tspan></text>
+<path class="flecha" d="M800,321 C880,321 900,321 980,321" marker-end="url(#punta-f2)"/><text class="etiqueta" x="890.0" y="315.0" text-anchor="middle"><tspan x="890.0" dy="0"></tspan></text>
+<path class="flecha" d="M1280,91 C1360,91 1380,211 1460,211" marker-end="url(#punta-f2)"/><text class="etiqueta" x="1370.0" y="139.0" text-anchor="middle"><tspan x="1370.0" dy="0">disease_index = prime_index</tspan><tspan x="1370.0" dy="13">y drugbank_id en nodos_drogas.id</tspan></text>
+<path class="flecha" d="M1280,301 C1340,301 1400,211 1460,211" marker-end="url(#punta-f2)"/><text class="etiqueta" x="1370.0" y="262.0" text-anchor="middle"><tspan x="1370.0" dy="0"></tspan></text>
+</svg></div><figcaption>Como una indicacion de PrimeKG llega a un nodo Disease de PrimeKG integrado: por node_index a la tabla de nodos de PrimeKG y de ahi al grupo BERT o al CUI.</figcaption></figure></section>
+<section><h2>Droga a gen (DRUG_TARGET)</h2><p>La bioactividad del laboratorio identifica la droga por CID y la diana por accession de UniProt. El CID vuelve a DrugBank por los pares de la figura 1. La accession pasa a Entrez por el archivo de ID mapping humano de UniProt (bajado a mano, leido del disco) y solo sobrevive si ese Entrez es un gen de PrimeKG integrado. Como el archivo es solo humano, las dianas de otras especies quedan afuera sin filtro aparte.</p><figure><div class="scroll"><svg viewBox="0 0 1300 370" width="1300" height="370" role="img" aria-label="Como una diana del laboratorio en UniProt llega a un gen de PrimeKG integrado en Entrez: por el archivo de ID mapping humano de UniProt">
+<defs><marker id="punta-f3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g class="caja lab"><rect x="20" y="30" width="300" height="138" rx="4"/>
+<rect class="cab" x="20" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="54" width="300" height="6"/>
+<text class="titulo" x="28" y="49">04_bioact_TDR.csv</text>
+<text class="n" x="312" y="49" text-anchor="end">193.264</text>
+<text class="campo usado" x="38" y="75">drug_id</text>
+<circle class="punto" cx="31" cy="71" r="2.5"/>
+<text class="nota" x="312" y="75" text-anchor="end">es el CID</text>
+<text class="campo usado" x="38" y="95">target_id</text>
+<circle class="punto" cx="31" cy="91" r="2.5"/>
+<text class="nota" x="312" y="95" text-anchor="end">accession UniProt</text>
+<text class="campo usado" x="38" y="115">activity_tag</text>
+<circle class="punto" cx="31" cy="111" r="2.5"/>
+<text class="nota" x="312" y="115" text-anchor="end">= positive</text>
+<text class="campo usado" x="38" y="135">origen</text>
+<circle class="punto" cx="31" cy="131" r="2.5"/>
+<text class="nota" x="312" y="135" text-anchor="end">chembl / biolip / both</text>
+<text class="campo" x="38" y="155">year</text>
+</g>
+<g class="caja salida inter"><rect x="20" y="220" width="300" height="78" rx="4"/>
+<rect class="cab" x="20" y="220" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="244" width="300" height="6"/>
+<text class="titulo" x="28" y="239">pares (de la figura 1)</text>
+<text class="n" x="312" y="239" text-anchor="end">860</text>
+<text class="campo usado" x="38" y="265">drugbank_id</text>
+<circle class="punto" cx="31" cy="261" r="2.5"/>
+<text class="campo usado" x="38" y="285">CID</text>
+<circle class="punto" cx="31" cy="281" r="2.5"/>
+</g>
+<g class="caja uniprot"><rect x="500" y="30" width="300" height="98" rx="4"/>
+<rect class="cab" x="500" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="54" width="300" height="6"/>
+<text class="titulo" x="508" y="49">HUMAN_9606_idmapping_selected.tab.gz</text>
+<text class="n" x="792" y="49" text-anchor="end">210.706</text>
+<text class="campo usado" x="518" y="75">columna 1: UniProtKB-AC</text>
+<circle class="punto" cx="511" cy="71" r="2.5"/>
+<text class="nota" x="792" y="75" text-anchor="end">accession humana</text>
+<text class="campo usado" x="518" y="95">columna 3: GeneID</text>
+<circle class="punto" cx="511" cy="91" r="2.5"/>
+<text class="nota" x="792" y="95" text-anchor="end">Entrez, con ; </text>
+<text class="campo" x="518" y="115">otras 20 columnas</text>
+</g>
+<g class="caja salida inter"><rect x="500" y="140" width="300" height="78" rx="4"/>
+<rect class="cab" x="500" y="140" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="164" width="300" height="6"/>
+<text class="titulo" x="508" y="159">uniprot_a_geneid.tsv</text>
+<text class="n" x="792" y="159" text-anchor="end">3.418</text>
+<text class="campo usado" x="518" y="185">accession</text>
+<circle class="punto" cx="511" cy="181" r="2.5"/>
+<text class="nota" x="792" y="185" text-anchor="end">las de 04_bioact</text>
+<text class="campo usado" x="518" y="205">geneids</text>
+<circle class="punto" cx="511" cy="201" r="2.5"/>
+<text class="nota" x="792" y="205" text-anchor="end">Entrez, con |</text>
+</g>
+<g class="caja integrado"><rect x="500" y="250" width="300" height="98" rx="4"/>
+<rect class="cab" x="500" y="250" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="274" width="300" height="6"/>
+<text class="titulo" x="508" y="269">merged_nodes.csv</text>
+<text class="n" x="792" y="269" text-anchor="end">17.322 genes</text>
+<text class="campo usado" x="518" y="295">node_id</text>
+<circle class="punto" cx="511" cy="291" r="2.5"/>
+<text class="nota" x="792" y="295" text-anchor="end">Entrez</text>
+<text class="campo usado" x="518" y="315">node_type</text>
+<circle class="punto" cx="511" cy="311" r="2.5"/>
+<text class="nota" x="792" y="315" text-anchor="end">= gene_protein</text>
+<text class="campo usado" x="518" y="335">node_id sin SIGNOR</text>
+<circle class="punto" cx="511" cy="331" r="2.5"/>
+<text class="nota" x="792" y="335" text-anchor="end">421 complejos afuera</text>
+</g>
+<g class="caja salida inter"><rect x="980" y="30" width="300" height="78" rx="4"/>
+<rect class="cab" x="980" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="54" width="300" height="6"/>
+<text class="titulo" x="988" y="49">mapeo (en memoria)</text>
+<text class="n" x="1272" y="49" text-anchor="end">3.415 dianas</text>
+<text class="campo usado" x="998" y="75">target_id</text>
+<circle class="punto" cx="991" cy="71" r="2.5"/>
+<text class="campo usado" x="998" y="95">gene_id</text>
+<circle class="punto" cx="991" cy="91" r="2.5"/>
+<text class="nota" x="1272" y="95" text-anchor="end">Entrez de PrimeKG integrado</text>
+</g>
+<g class="caja salida"><rect x="980" y="250" width="300" height="98" rx="4"/>
+<rect class="cab" x="980" y="250" width="300" height="30" rx="4"/>
+<rect class="cab" x="980" y="274" width="300" height="6"/>
+<text class="titulo" x="988" y="269">drug_gene.csv</text>
+<text class="n" x="1272" y="269" text-anchor="end">1.832</text>
+<text class="campo usado" x="998" y="295">drug_id</text>
+<circle class="punto" cx="991" cy="291" r="2.5"/>
+<text class="nota" x="1272" y="295" text-anchor="end">= drugbank_id</text>
+<text class="campo usado" x="998" y="315">gene_id</text>
+<circle class="punto" cx="991" cy="311" r="2.5"/>
+<text class="nota" x="1272" y="315" text-anchor="end">= gene_id</text>
+<text class="campo usado" x="998" y="335">origen</text>
+<circle class="punto" cx="991" cy="331" r="2.5"/>
+<text class="nota" x="1272" y="335" text-anchor="end">both si llego por dos</text>
+</g>
+<path class="flecha" d="M800,71 C850,71 850,181 800,181" marker-end="url(#punta-f3)"/><text class="etiqueta" x="850.0" y="120.0" text-anchor="middle"><tspan x="850.0" dy="0">las accessions de 04_bioact</tspan><tspan x="850.0" dy="13">que estan en el archivo humano</tspan></text>
+<path class="flecha" d="M320,91 C400,91 420,181 500,181" marker-end="url(#punta-f3)"/><text class="etiqueta" x="410.0" y="124.0" text-anchor="middle"><tspan x="410.0" dy="0">target_id = accession</tspan><tspan x="410.0" dy="13">partido por coma</tspan></text>
+<path class="flecha" d="M800,201 C850,201 850,291 800,291" marker-end="url(#punta-f3)"/><text class="etiqueta" x="850.0" y="220.0" text-anchor="middle"><tspan x="850.0" dy="0">geneid en node_id</tspan><tspan x="850.0" dy="13">partido por </tspan><tspan x="850.0" dy="13"></tspan></text>
+<path class="flecha" d="M800,181 C880,181 900,71 980,71" marker-end="url(#punta-f3)"/><text class="etiqueta" x="890.0" y="120.0" text-anchor="middle"><tspan x="890.0" dy="0"></tspan></text>
+<path class="flecha" d="M20,71 C-20,71 -20,281 20,281" marker-end="url(#punta-f3)"/><text class="etiqueta" x="-20.0" y="200.0" text-anchor="middle"><tspan x="-20.0" dy="0">drug_id = CID</tspan><tspan x="-20.0" dy="13">solo activity_tag = positive</tspan></text>
+<path class="flecha" d="M320,261 C400,261 900,291 980,291" marker-end="url(#punta-f3)"/><text class="etiqueta" x="650.0" y="270.0" text-anchor="middle"><tspan x="650.0" dy="0"></tspan></text>
+<path class="flecha" d="M1280,71 C1330,71 1330,311 1280,311" marker-end="url(#punta-f3)"/><text class="etiqueta" x="1330.0" y="191.0" text-anchor="middle"><tspan x="1330.0" dy="0">target_id = target_id</tspan></text>
+</svg></div><figcaption>Como una diana del laboratorio en UniProt llega a un gen de PrimeKG integrado en Entrez: por el archivo de ID mapping humano de UniProt.</figcaption></figure></section>
+<section><h2>Droga a droga (DRUG_DRUG)</h2><p>La matriz ya esta en DrugBank, asi que no hay traduccion: se recorta a las 859 drogas, se toma el triangulo superior para que cada par aparezca una vez y se guardan los pares con similaridad 0,6 o mas.</p><figure><div class="scroll"><svg viewBox="0 0 820 250" width="820" height="250" role="img" aria-label="Como se recorta la matriz de similaridad a las 859 drogas y se queda con los pares de 0,6 o mas">
+<defs><marker id="punta-f4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g class="caja lab"><rect x="20" y="30" width="300" height="98" rx="4"/>
+<rect class="cab" x="20" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="54" width="300" height="6"/>
+<text class="titulo" x="28" y="49">02_similitud_interna_drogas.csv</text>
+<text class="n" x="312" y="49" text-anchor="end">1.523 x 1.523</text>
+<text class="campo usado" x="38" y="75">indice de filas</text>
+<circle class="punto" cx="31" cy="71" r="2.5"/>
+<text class="nota" x="312" y="75" text-anchor="end">drugbank_id</text>
+<text class="campo usado" x="38" y="95">columnas</text>
+<circle class="punto" cx="31" cy="91" r="2.5"/>
+<text class="nota" x="312" y="95" text-anchor="end">drugbank_id</text>
+<text class="campo usado" x="38" y="115">valor</text>
+<circle class="punto" cx="31" cy="111" r="2.5"/>
+<text class="nota" x="312" y="115" text-anchor="end">Braun-Blanquet, 0 a 1</text>
+</g>
+<g class="caja salida inter"><rect x="20" y="170" width="300" height="58" rx="4"/>
+<rect class="cab" x="20" y="170" width="300" height="30" rx="4"/>
+<rect class="cab" x="20" y="194" width="300" height="6"/>
+<text class="titulo" x="28" y="189">nodos_drogas.csv (figura 1)</text>
+<text class="n" x="312" y="189" text-anchor="end">859</text>
+<text class="campo usado" x="38" y="215">id</text>
+<circle class="punto" cx="31" cy="211" r="2.5"/>
+</g>
+<g class="caja salida"><rect x="500" y="30" width="300" height="98" rx="4"/>
+<rect class="cab" x="500" y="30" width="300" height="30" rx="4"/>
+<rect class="cab" x="500" y="54" width="300" height="6"/>
+<text class="titulo" x="508" y="49">drug_drug.csv</text>
+<text class="n" x="792" y="49" text-anchor="end">1.546</text>
+<text class="campo usado" x="518" y="75">drug_a</text>
+<circle class="punto" cx="511" cy="71" r="2.5"/>
+<text class="nota" x="792" y="75" text-anchor="end">fila, drug_a &lt; drug_b</text>
+<text class="campo usado" x="518" y="95">drug_b</text>
+<circle class="punto" cx="511" cy="91" r="2.5"/>
+<text class="nota" x="792" y="95" text-anchor="end">columna</text>
+<text class="campo usado" x="518" y="115">weight</text>
+<circle class="punto" cx="511" cy="111" r="2.5"/>
+<text class="nota" x="792" y="115" text-anchor="end">valor, redondeado a 4</text>
+</g>
+<path class="flecha" d="M320,111 C410,111 410,111 500,111" marker-end="url(#punta-f4)"/><text class="etiqueta" x="410.0" y="99.0" text-anchor="middle"><tspan x="410.0" dy="0">matriz.loc[ids, ids]</tspan><tspan x="410.0" dy="13">triangulo superior sin diagonal</tspan><tspan x="410.0" dy="13">valor &gt;= 0,6</tspan></text>
+<path class="flecha" d="M320,211 C380,211 380,71 320,71" marker-end="url(#punta-f4)"/><text class="etiqueta" x="380.0" y="161.0" text-anchor="middle"><tspan x="380.0" dy="0">ids = sorted(nodos.id)</tspan></text>
+</svg></div><figcaption>Como se recorta la matriz de similaridad a las 859 drogas y se queda con los pares de 0,6 o mas.</figcaption></figure></section>
+<section>
+<h2>Los cruces, en una tabla</h2>
+<p>La misma informacion de las figuras, cruce por cruce, en el orden en que corre el script.</p>
+<div class="scroll"><table>
+<tr><th>Paso</th><th>Tabla y campo</th><th>Tabla y campo</th><th>Condicion</th><th>Que sale</th></tr>
+<tr><td>1</td><td><code>01.chembl_id</code></td><td><code>04_drogas.chembl_id</code></td><td>sin vacios en ninguna de las dos</td><td>pares (drugbank_id, CID) por ChEMBL: 857 drogas</td></tr>
+<tr><td>1</td><td><code>01.ccd_id_biolip</code></td><td><code>04_drogas.biolip_id</code></td><td>sin vacios</td><td>pares por CCD: 536 drogas. Union de los dos: 859 drogas, 860 pares</td></tr>
+<tr><td>2</td><td><code>pares.CID</code> (el menor por droga)</td><td><code>04_tclus.drug</code></td><td>falla si algun CID no esta</td><td><code>cluster_id</code> de cada nodo</td></tr>
+<tr><td>3</td><td><code>merged_nodes.node_id</code> con <code>node_source = primekg</code></td><td><code>primekg_nodes.node_id</code></td><td>grupos BERT, 1.040</td><td>puente 1: (prime_index, id de grupo)</td></tr>
+<tr><td>3</td><td><code>disease_mappings.diseaseId</code></td><td><code>merged_nodes.node_id</code> con <code>node_source = disgenet</code></td><td>el CUI es nodo de PrimeKG integrado</td><td>filas del mapeo que cuentan</td></tr>
+<tr><td>3</td><td><code>disease_mappings.prime_node_index</code></td><td><code>primekg_nodes.node_index</code></td><td>solo si ese indice no es un grupo</td><td>puente 2: (prime_index, CUI), 7.502 filas</td></tr>
+<tr><td>4</td><td><code>primekg_edges.x_index</code>, <code>y_index</code></td><td><code>primekg_nodes.node_index</code></td><td><code>relation = indication</code>, x es drug, y es disease</td><td>indicaciones: 9.388 pares (drugbank_id, disease_index)</td></tr>
+<tr><td>4</td><td><code>indicaciones.disease_index</code></td><td><code>puente.prime_index</code></td><td>drugbank_id entre las 859</td><td><code>drug_disease.csv</code>: 5.383 aristas</td></tr>
+<tr><td>5</td><td><code>04_bioact.target_id</code> (partido por coma)</td><td><code>HUMAN_9606_idmapping_selected.tab.gz</code>, columna 1</td><td>solo accessions humanas</td><td><code>uniprot_a_geneid.tsv</code>: 3.418 accessions con sus geneids</td></tr>
+<tr><td>5</td><td><code>uniprot_a_geneid.geneids</code> (partido por |)</td><td><code>merged_nodes.node_id</code> con <code>node_type = gene_protein</code></td><td>sin los complejos SIGNOR</td><td>mapeo (target_id, gene_id): 3.415 dianas</td></tr>
+<tr><td>6</td><td><code>04_bioact.drug_id</code></td><td><code>pares.CID</code></td><td><code>activity_tag = positive</code></td><td>bioactividad de las 859 drogas, en DrugBank</td></tr>
+<tr><td>6</td><td>lo anterior por <code>target_id</code></td><td><code>mapeo.target_id</code></td><td>una fila por (droga, gen), origen both si llego por dos</td><td><code>drug_gene.csv</code>: 1.832 aristas</td></tr>
+<tr><td>7</td><td><code>nodos_drogas.id</code></td><td>filas y columnas de <code>02_similitud_interna_drogas</code></td><td>triangulo superior, valor >= 0,6</td><td><code>drug_drug.csv</code>: 1.546 aristas</td></tr>
+</table></div>
+</section>

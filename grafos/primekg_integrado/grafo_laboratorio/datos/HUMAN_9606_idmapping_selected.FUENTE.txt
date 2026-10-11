@@ -1,0 +1,12 @@
+HUMAN_9606_idmapping_selected.tab.gz: archivo de ID mapping de UniProt para Homo sapiens (taxon 9606), una fila por accession de UniProtKB (Swiss-Prot y TrEMBL), 22 columnas sin cabecera. armar_capa_drogas.py usa la columna 1 (UniProtKB-AC) y la 3 (GeneID de NCBI, el Entrez de PrimeKG integrado).
+Bajado el 2026-09-17 de:
+    https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/by_organism/HUMAN_9606_idmapping_selected.tab.gz
+Notas del release, bajadas el mismo dia y guardadas al lado como HUMAN_9606_idmapping_selected.relnotes.txt:
+    https://ftp.uniprot.org/pub/databases/uniprot/current_release/relnotes.txt
+Release: UniProt 2026_03. Tamano: 66.318.306 bytes, 210.706 filas.
+Formato de las columnas: https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/README
+Para citar: The UniProt Consortium, "UniProt: the Universal Protein Knowledgebase in 2025", Nucleic Acids Research, 2025.
+Para rebajarlo (cambia el release, y con el la tabla uniprot_a_geneid.tsv):
+    B=https://ftp.uniprot.org/pub/databases/uniprot/current_release
+    curl -o HUMAN_9606_idmapping_selected.tab.gz $B/knowledgebase/idmapping/by_organism/HUMAN_9606_idmapping_selected.tab.gz
+    curl -o HUMAN_9606_idmapping_selected.relnotes.txt $B/relnotes.txt

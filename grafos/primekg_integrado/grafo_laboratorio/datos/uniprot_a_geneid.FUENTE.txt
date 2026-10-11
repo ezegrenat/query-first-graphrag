@@ -1,0 +1,4 @@
+uniprot_a_geneid.tsv: accessions humanas de UniProt de 04_bioact_TDR.csv con su GeneID de NCBI.
+Escrita el 2026-09-17 por armar_capa_drogas.py a partir de HUMAN_9606_idmapping_selected.tab.gz (bajado el 2026-09-17 de https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping/by_organism/HUMAN_9606_idmapping_selected.tab.gz), columnas UniProtKB-AC y GeneID (EntrezGene).
+Release de UniProt: UniProt Release 2026_03.
+Accessions en 04_bioact: 5661, humanas en el archivo: 3418, con GeneID: 3405, de otras especies o inactivas (sin fila): 2243.

@@ -1,18 +1,7 @@
-"""algoritmo DIAMOnD tomado del repositorio original de los autores:
-(https://github.com/dinaghiassian/DIAMOnD,
+"""algoritmo DIAMOnD tomado del repositorio original de los autores: https://github.com/dinaghiassian/
 
-Cuatro diferencias deliberadas contra el original:
-
-1. logchoose en el original usa scipy.infty (removido en scipy >= 1.9).Aca se usa `np.inf`/`-np.inf` y se devuelve un escalar.
-2. La entrada no es un archivo de edgelist: el grafo llega como networkx.Graph, ya construido desde Neo4j por el llamador.
-3. Si la red se agota antes de agregar X nodos (es decir, no quedan candidatos), el original deja
-   next_node = 'nix` y explota con KeyError al indexar info['nix']. Aca se corta el loop con un break explicito y se devuelve lo que se pudo agregar. no se cambia el resultado en
-   ningun caso donde el original terminaba normalmente.
-
-4. get_neighbors_and_degrees(G) en el original arma un diccionario de vecinos/grados para TODOS los nodos del grafo G de una. 
-    Para aliviar el costo de memoria de calcular esto para todos los  odos de OptimusKG, lo que se hace en este caso es usar 
-    un diccionario lazy (DictLiviano, más abajo) que permite que se calcule la primera vez que se pide y se VA cacheando, de esta 
-    forma nunca cargamos nodos que el algoritmo no toca. 
+Una diferencia con el original:
+get_neighbors_and_degrees(G) en el original arma un diccionario de vecinos/grados para TODOS los nodos del grafo G de una. Para aliviar el costo de memoria de calcular esto para todos los  odos de OptimusKG, lo que se hace en este caso es usar un diccionario lazy (DictLiviano, más abajo) que permite que se calcule la primera vez que se pide y se VA cacheando, de esta forma nunca cargamos nodos que el algoritmo no toca. 
     
 
 """

@@ -1,8 +1,4 @@
-"""Conexion al contenedor neo4j-thesis, el que tiene PrimeKG integrado, y rutas de sus CSV.
-
-Las credenciales se leen del entorno, no del codigo Las claves llevan el prefijo PRIMEKG_
-
-"""
+"""Conexion al contenedor neo4j-thesis,que tiene PrimeKG integrado, y rutas de sus CSV. Las credenciales se leen del entorno"""
 import os
 
 CONTENEDOR = "neo4j-thesis"
@@ -48,10 +44,7 @@ LABEL_POR_TIPO = {
     "pathway": "Pathway",
 }
 
-#de edge_type del CSV a tipo de relacion de Neo4j. disease_disease se parte en dos al cargar:
-#las aristas padre-hijo de MONDO quedan como DISEASE_DISEASE y las de la estrella de cada grupo
-#BERT (las que lista disease_bert_edges.csv) como DISEASE_BERT, para que el experimento pueda
-#tomar el plano de enfermedades sin los grupos con un filtro simple
+
 RELACION_POR_TIPO = {
     "ppi": "PPI",
     "gda": "GDA",
@@ -60,6 +53,13 @@ RELACION_POR_TIPO = {
     "disease_disease": "DISEASE_DISEASE",
 }
 RELACION_ESTRELLA = "DISEASE_BERT"
+
+#el grafo de PrimeKG integrado con los compuestos del laboratorio
+CARPETA_GRAFO_LABORATORIO = os.environ.get(
+    "PRIMEKG_GRAFO_LABORATORIO", os.path.join(_AQUI, "..", "grafo_laboratorio", "grafo"))
+ARCHIVO_LAB_NODOS = os.path.join(CARPETA_GRAFO_LABORATORIO, "nodos.csv")
+ARCHIVO_LAB_ARISTAS = os.path.join(CARPETA_GRAFO_LABORATORIO, "aristas.csv")
+ARCHIVO_LAB_DETALLE = os.path.join(CARPETA_GRAFO_LABORATORIO, "drogas_detalle.csv")
 
 BATCH_SIZE = 5000
 MAX_REINTENTOS = 10

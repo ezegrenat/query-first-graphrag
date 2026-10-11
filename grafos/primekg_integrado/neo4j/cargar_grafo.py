@@ -1,19 +1,4 @@
-"""Carga PrimeKG integrado (los CSV de datos/processed/) al contenedor neo4j-thesis.
-
-Uso, con el contenedor levantado (docker start neo4j-thesis):
-    python cargar_grafo.py
-
-
-Que se carga:
-- Todos los nodos, con label por tipo (LABEL_POR_TIPO) y propiedades id, name, node_index y
-  source. Los nodos Disease llevan ademas es_grupo_bert y los Gene es_complejo_signor, para que
-  quien consulte pueda dejarlos afuera sin adivinar por el formato del id.
-- Cada arista una sola vez. El CSV de origen guarda cada arista en los dos sentidos; se verifica
-  que sea asi y se conserva la fila con x_index < y_index. El sentido en Neo4j es arbitrario:
-  todo el grafo es no dirigido y el experimento lo lee con -[r]- sin flecha.
-- disease_disease se parte en DISEASE_DISEASE (padre-hijo de MONDO) y DISEASE_BERT (la estrella
-  que une cada grupo BERT con sus miembros, listada en disease_bert_edges.csv).
-"""
+"""Carga PrimeKG integrado al contenedor neo4j-thesis. """
 import sys
 import time
 from datetime import datetime
@@ -65,14 +50,14 @@ def lotes(registros, tamano=BATCH_SIZE):
 
 def leer_nodos():
     nodos = pd.read_csv(ARCHIVO_NODOS, dtype={"node_id": str})
-    #se lee como texto para no perder ids como "8702_10966" ni convertir Entrez a numero
+    #se lee como texto para no perder ids que tienen por ejemplo guiones bajos 
     nodos["es_grupo_bert"] = (nodos.node_type == "disease") & (nodos.node_source == "primekg")
     nodos["es_complejo_signor"] = nodos.node_id.str.startswith("SIGNOR")
     return nodos
 
 
 def leer_aristas():
-    """Una fila por arista, con el tipo de relacion de Neo4j ya decidido."""
+
     filas = pd.read_csv(ARCHIVO_ARISTAS)
     pares = set(zip(filas.x_index, filas.y_index))
     sin_inversa = sum((b, a) not in pares for a, b in pares)
@@ -106,8 +91,6 @@ def crear_restricciones(driver):
 
 
 def cargar_nodos(driver, nodos):
-    #el MERGE es por node_index y no por id: en el CSV de origen node_index es unico y entero,
-    #mientras que node_id es texto mezclado. Las consultas del experimento pueden usar cualquiera
     with driver.session() as session:
         for tipo, label in LABEL_POR_TIPO.items():
             del_tipo = nodos[nodos.node_type == tipo]
@@ -132,8 +115,7 @@ def cargar_aristas(driver, aristas, nodos):
     label_por_indice = nodos.set_index("node_index").node_type.map(LABEL_POR_TIPO)
     with driver.session() as session:
         for relacion, del_tipo in aristas.groupby("relacion"):
-            #las etiquetas de los dos extremos van en el MATCH para que use las restricciones;
-            #dentro de una relacion los tipos de extremo son siempre los mismos
+            #las etiquetas de los dos extremos van en el MATCH para que use las restricciones. dentro de una relacion los tipos de extremo son siempre los mismos
             label_a = label_por_indice[del_tipo.x_index.iloc[0]]
             label_b = label_por_indice[del_tipo.y_index.iloc[0]]
             registros = [
@@ -164,7 +146,7 @@ def main():
         crear_restricciones(driver)
         cargar_nodos(driver, nodos)
         cargar_aristas(driver, aristas, nodos)
-        log("carga terminada; correr verificar_carga.py")
+        log("carga terminada")
     finally:
         driver.close()
 
