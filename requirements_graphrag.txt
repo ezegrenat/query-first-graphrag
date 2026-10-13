@@ -1,0 +1,4 @@
+#el entorno de Microsoft GraphRAG (Python 3.12), aparte porque sus dependencias no conviven con las del pipeline.
+#Es GraphRAG 3.2.0 con el contexto de los reportes de comunidad armado con todas las aristas de cada nodo, la rama
+#fix-report-context-edges de https://github.com/ezegrenat/graphrag. El ejecutable de ese entorno va en GRAPHRAG_BIN
+graphrag @ git+https://github.com/ezegrenat/graphrag.git@fix-report-context-edges#subdirectory=packages/graphrag
