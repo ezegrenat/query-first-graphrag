@@ -1,0 +1,14 @@
+#el entorno del pipeline, la calibracion, los analisis y las tablas con Python 3.12.
+#GraphRAG va en un entorno aparte (leer graphrag/requirements_graphrag.txt). Lo mismo el juez de summary y BERTScore
+#(evaluacion/bioasq/requirements_*.txt)
+neo4j==6.2.0
+graphdatascience==1.22
+pandas==2.3.3
+numpy==2.3.5
+scipy==1.18.0
+pyarrow==23.0.1
+networkx==3.6.1
+matplotlib==3.11.1
+pypdf==6.16.2
+
+
