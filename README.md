@@ -56,13 +56,13 @@ Organización del proyecto
 
 Los datos no están en el repositorio. El grafo está en un registro de Zenodo de acceso restringido y los resultados de la calibración y de la evaluación en uno abierto. Los resultados se publican sin el texto de BioASQ (preguntas y respuestas de referencia), que se repone desde la descarga de BioASQ 14b de cada uno.
 
-Créditos
+
 ------------
 
 Este repositorio usa:
 
-- La implementación de DIAMOnD de sus autores (https://github.com/dinaghiassian/DIAMOnD, licencia MIT), adaptada en `expansion/diamond_algoritmo.py`.
-- La implementación de C3 de sus autores (https://github.com/wangbingbo2019/C3), adaptada en `expansion/c3_algoritmo.py`. El repositorio original no declara licencia, así que la licencia MIT de este repositorio no alcanza a ese archivo.
-- Los prompts de Microsoft GraphRAG 3.2.0 (https://github.com/microsoft/graphrag, licencia MIT), en `graphrag/rag/plantilla/`.
-
-El grafo parte de PrimeKG (https://github.com/mims-harvard/PrimeKG) y de la red de compuestos de TDR Targets, que integra datos de ChEMBL y BioLiP.
+- La implementación de DIAMOnD de sus autores (https://github.com/dinaghiassian/DIAMOnD, licencia MIT).
+- La implementación de C3 de sus autores (https://github.com/wangbingbo2019/C3).
+- Los prompts de Microsoft GraphRAG 3.2.0 (https://github.com/microsoft/graphrag).
+- El grafo parte del PrimeKG-curado construido en un trabajo anterior del laboratorio hecho por Ingrid Heuer (https://github.com/ingridheuer/gcnn_gdas)
+- red de compuestos de TDR Targets v7, presentado en XXXVI Reunión Anual de la Sociedad Argentina de Parasitología.
