@@ -10,6 +10,8 @@ Las respuestas se evaluaron con preguntas de BioASQ contra el modelo solo y cont
 
 Tesis de Licenciatura en Ciencia de Datos, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, 2026.
 
+![Para la pregunta de BioASQ "Is there any role between AGRN and Myasthenia gravis?", el subgrafo que recibe GraphRAG con solo las semillas (22 nodos), con DIAMOnD (62) y con el Random Walk with Restart (92)](docs/img/subgrafo_de_una_pregunta.png)
+
 Organización del proyecto
 ------------
 
@@ -52,7 +54,8 @@ Organización del proyecto
     │
     └── docs
         ├── DATOS.md                   <- Qué datos hay, de dónde salen y dónde se publican
-        └── TRAZABILIDAD.md            <- Qué script da cada tabla y figura de la tesis
+        ├── TRAZABILIDAD.md            <- Qué script da cada tabla y figura de la tesis
+        └── subgrafo_de_una_pregunta.ipynb   <- La figura de este README
 
 Los datos no están en el repositorio. El grafo está en un registro de Zenodo de acceso restringido y los resultados de la calibración y de la evaluación en uno abierto. Los resultados se publican sin el texto de BioASQ (preguntas y respuestas de referencia), que se repone desde la descarga de BioASQ 14b de cada uno.
 
@@ -61,7 +64,7 @@ Los datos no están en el repositorio. El grafo está en un registro de Zenodo d
 
 Este repositorio usa:
 
-- La implementación de DIAMOnD de sus autores (https://github.com/dinaghiassian/DIAMOnD, licencia MIT).
+- La implementación de DIAMOnD de sus autores (https://github.com/dinaghiassian/DIAMOnD).
 - La implementación de C3 de sus autores (https://github.com/wangbingbo2019/C3).
 - Los prompts de Microsoft GraphRAG 3.2.0 (https://github.com/microsoft/graphrag).
 - El grafo parte del PrimeKG-curado construido en un trabajo anterior del laboratorio hecho por Ingrid Heuer (https://github.com/ingridheuer/gcnn_gdas)
