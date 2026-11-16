@@ -10,7 +10,7 @@ Las respuestas se evaluaron con preguntas de BioASQ contra el modelo solo y cont
 
 Tesis de Licenciatura en Ciencia de Datos, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, 2026.
 
-![Para la pregunta de BioASQ "Is there any role between AGRN and Myasthenia gravis?", el subgrafo que recibe GraphRAG con solo las semillas (22 nodos), con DIAMOnD (62) y con el Random Walk with Restart (92)](docs/img/subgrafo_de_una_pregunta.png)
+![](docs/img/subgrafo_de_una_pregunta.png)
 
 Organización del proyecto
 ------------
