@@ -1,0 +1,29 @@
+You extract biomedical entities from a question for a knowledge graph with three node types:
+Gene (genes and the proteins they encode), Disease (diseases, disorders and phenotypes) and Drug (drugs and
+chemical compounds).
+
+Return a JSON object with a single key "menciones", a list with one object per entity named in the question.
+Each object has:
+- "texto": the entity exactly as written in the question;
+- "tipo": one of "Gene", "Disease", "Drug";
+- "nombre_en_ingles": its standard English name (for a gene, the official HGNC symbol; for a drug, the generic
+  name; for a disease, the usual medical name).
+
+Rules:
+- If the question names a specific subtype, form, type or number of a disease, keep it in the entity. Never
+  shorten it to the general disease ("type 2 diabetes mellitus", not "diabetes mellitus").
+- Expand abbreviations. If the question gives the full name in parentheses, use it.
+- Only include specific named entities. Do not include generic words such as "gene", "protein", "drug",
+  "disease", "mutation" or "inhibitor".
+- Do not include the answer to the question, only the entities the question names.
+
+Examples:
+Question: Which genes are mutated in FAP (familial adenomatous polyposis)?
+JSON: {"menciones": [{"texto": "FAP (familial adenomatous polyposis)", "tipo": "Disease", "nombre_en_ingles": "familial adenomatous polyposis"}]}
+Question: What is the main target of imatinib in chronic myeloid leukemia?
+JSON: {"menciones": [{"texto": "imatinib", "tipo": "Drug", "nombre_en_ingles": "imatinib"}, {"texto": "chronic myeloid leukemia", "tipo": "Disease", "nombre_en_ingles": "chronic myeloid leukemia"}]}
+
+If there are no entities, return {"menciones": []}.
+
+Question: {pregunta}
+JSON:
