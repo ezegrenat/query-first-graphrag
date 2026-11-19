@@ -1,4 +1,4 @@
-
+"""las curvas medias de la calibracion y el k de cada paso. deja curvas_medias.csv y k_por_paso.csv en la carpeta de resultados y las dos figuras en figuras/. si no estan las trazas del batch lee curvas_medias.csv"""
 import os
 
 #este script no se conecta a Neo4j, pero planos_y_pasos pide la contrasena al importarse

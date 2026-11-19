@@ -1,8 +1,7 @@
-
+"""la carpeta de resultados, el cache de planos y las variantes que se eligen por entorno (CRECIMIENTO_*). es lo que la calibracion le suma a los planos y las celdas de manipulacion_grafo/planos_y_pasos.py"""
 import os
 import sys
 
-#
 _AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(_AQUI, "..", "manipulacion_grafo"))
 

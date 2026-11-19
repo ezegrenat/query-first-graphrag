@@ -1,4 +1,6 @@
- 
+"""RAGChecker sobre las respuestas de summary. el juez saca las afirmaciones de la primera ideal y decide si la respuesta implica, contradice o no dice cada una. deja summary/ragchecker.json"""
+#se corre con el entorno de requirements_ragchecker.txt y el Ollama de la GPU
+#python medir_summary_ragchecker.py
 import argparse
 import json
 import os

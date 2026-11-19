@@ -1,3 +1,6 @@
+"""pide las respuestas de la muestra de una tarea a las seis configuraciones. las deja en {tarea}/respuestas/rep{n}/ y saltea lo que ya esta respondido"""
+#necesita el Ollama de la GPU (OLLAMA_GPU en graphrag/rag/llm.py)
+#python responder.py --tarea summary --rep 1
 import argparse
 import json
 import os

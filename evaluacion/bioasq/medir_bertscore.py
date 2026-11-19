@@ -1,4 +1,6 @@
-
+"""BERTScore de las respuestas de summary contra la mejor de las ideales, con roberta-large reescalado. deja summary/bertscore.csv y saltea lo que ya esta medido"""
+#se corre con el entorno de requirements_bertscore.txt
+#python medir_bertscore.py
 import os
 
 import pandas as pd

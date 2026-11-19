@@ -1,4 +1,6 @@
-
+"""arma el subgrafo de cada conjunto de entidades de la muestra de una tarea y deja su proyecto de graphrag sin indexar"""
+#se corre con neo4j-thesis levantado
+#PYTHONHASHSEED=42 python seleccionar.py --tarea summary
 import hashlib
 import json
 import os

@@ -1,4 +1,4 @@
-#entrno de medir_summary_ragchecker.py, en la máquina con GPU (Python 3.8)
+#entorno de medir_summary_ragchecker.py, en la máquina con GPU (Python 3.8)
 ragchecker
 refchecker
 litellm

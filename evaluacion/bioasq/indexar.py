@@ -1,7 +1,6 @@
-"""indexar con graphrag index los proyectos que deja seleccionar.py y que reusar_indices.py no reuso, en el orden de
-#claves.json"""
+"""indexar con graphrag index los proyectos que deja seleccionar.py y que reusar_indices.py no reuso, en el orden de claves.json"""
 #necesita el Ollama de la GPU (OLLAMA_GPU en graphrag/rag/llm.py):
-#  python indexar.py --tarea summary
+#python indexar.py --tarea summary
 #termina con codigo 1 si quedo algun indice con error
 import json
 import os

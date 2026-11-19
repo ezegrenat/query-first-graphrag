@@ -1,5 +1,5 @@
-"""#el paso 1 de linkear_entidades""" 
-#  python extraer_menciones.py [--limite 20]
+"""el paso 1 de linkear_entidades sobre todas las preguntas de BioASQ 14b. el modelo marca las menciones y quedan en extracciones.jsonl"""
+#python extraer_menciones.py [--limite 20]
 import argparse
 import json
 import os

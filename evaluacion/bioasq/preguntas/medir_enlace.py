@@ -1,5 +1,5 @@
 """cuanto cuesta linkear_entidades (../../../graphrag/entidades/linkear_entidades.py) en las preguntas de una muestra"""
-# python medir_enlace.py --tarea factoid
+#python medir_enlace.py --tarea factoid
 
 import argparse
 import json

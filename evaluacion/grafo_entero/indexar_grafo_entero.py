@@ -1,5 +1,4 @@
-
-
+"""arma el indice de graphrag sobre el grafo entero, la linea de base de la evaluacion. se hace en tres pasos (exportar, proyecto e indexar)"""
 #indexar se puede cortar y volver a lanzar: graphrag guarda cada reporte en su cache y no lo vuelve a pedir.
 #proyecto e indexar llevan --con-texto para el indice de la evaluacion, que pone en las tablas el texto de cada nodo.
 import argparse
