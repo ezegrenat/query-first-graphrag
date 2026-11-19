@@ -21,7 +21,6 @@ En bioasq/:
 - medir_summary_ragchecker.py y medir_bertscore.py sacan las medidas de summary que necesitan un modelo. Cada uno tiene su entorno (requirements_ragchecker.txt y requirements_bertscore.txt).
 - metricas.ipynb calcula las medidas de todas las tareas a partir de las respuestas y las deja en medidas_*.csv.
 - capitulo_evaluacion/tablas.ipynb arma las tablas con esos CSV. El bootstrap de los intervalos está en ic.py.
-- quitar_texto_bioasq.py copia los resultados sin el texto de BioASQ, para poder compartirlos, y completar_con_bioasq.py lo repone.
 
 En grafo_entero/, indexar_grafo_entero.py arma el índice de GraphRAG sobre el grafo entero, que es la línea de base. Usa los mismos parámetros que seleccionar.py, copiados porque en la máquina con GPU no está todo el pipeline: si se cambian en uno, hay que cambiarlos en el otro.
 
@@ -70,4 +69,4 @@ python medir_bertscore.py                              # en la GPU
 
 Al final se corre `metricas.ipynb` y después `capitulo_evaluacion/tablas.ipynb`, los dos de arriba abajo.
 
-Con los resultados que da el laboratorio no hace falta nada de lo anterior, alcanza con reponer el texto de BioASQ (`python completar_con_bioasq.py`) y correr `tablas.ipynb`.
+Con los resultados que da el laboratorio no hace falta nada de lo anterior, alcanza con correr `tablas.ipynb`.

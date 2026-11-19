@@ -19,7 +19,6 @@ Organización del proyecto
     ├── README.md
     ├── requirements.txt               <- Entorno de los análisis, la calibración y las tablas
     ├── .env.example                   <- Variables de entorno: Neo4j y el ejecutable de GraphRAG
-    ├── bajar_datos.py                 <- Baja de Zenodo el grafo y los resultados y los deja en su lugar
     │
     ├── grafos/primekg_integrado       <- Construcción del grafo 
     │   ├── grafo_laboratorio          <- Unión de PrimeKG-curado con la red de compuestos de TDR Targets
@@ -37,8 +36,8 @@ Organización del proyecto
     ├── manipulacion_grafo             <- Planos homogéneos, pasos y grafo heterogéneo donde camina el RWR
     │
     ├── calibracion                    <- Calibración del k de DIAMOnD en cada paso 
-    │   ├── paso0_sorteo.py ... paso7_verificar.py   <- El experimento, en orden
-    │   └── figuras_calibracion.py     <- Figuras 4.3 y 4.4 y Tabla 4.5
+    │   ├── sorteo.py, batch.py        <- El sorteo de los casos y el batch
+    │   └── graficos_calibracion.py    <- Las curvas medias y el k de cada paso
     │
     ├── evaluacion                     <- Evaluación con BioASQ 
     │   ├── bioasq
@@ -46,7 +45,6 @@ Organización del proyecto
     │   │   ├── seleccionar.py, indexar.py, responder.py   <- Subgrafos, índices y respuestas de cada configuración
     │   │   ├── metricas.ipynb         
     │   │   ├── medir_summary_ragchecker.py, medir_bertscore.py   <- Medidas de las preguntas summary
-    │   │   ├── quitar_texto_bioasq.py, completar_con_bioasq.py   <- Sacan y reponen el texto de BioASQ
     │   │   └── capitulo_evaluacion    <- insumo de tablas de la tesis 
     │   └── grafo_entero               <- Índice de GraphRAG sobre el grafo entero 
     │
@@ -57,7 +55,7 @@ Organización del proyecto
         ├── TRAZABILIDAD.md            <- Qué script da cada tabla y figura de la tesis
         └── subgrafo_de_una_pregunta.ipynb   <- La figura de este README
 
-Los datos no están en el repositorio. El grafo está en un registro de Zenodo de acceso restringido y los resultados de la calibración y de la evaluación en uno abierto. Los resultados se publican sin el texto de BioASQ (preguntas y respuestas de referencia), que se repone desde la descarga de BioASQ 14b de cada uno.
+Los datos no están en el repositorio. El grafo y los resultados de la calibración y de la evaluación deben pedirse al laboratorio.
 
 
 ------------
