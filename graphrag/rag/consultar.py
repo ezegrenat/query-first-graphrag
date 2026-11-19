@@ -74,7 +74,7 @@ def motor_local(config, nivel, formato, tipo_respuesta=None):
 
 def prompt_de_reduce(config, formato, reduce=None):
     """establece que prompt de sistema usa el paso de reduce en la busqueda global 
-    si es exacto_factoid o exacta_list usa reduce_exacto, en cualquier otro caso usa prompts/global_search_reduce_system_prompt.txt"""
+    si es exacta_factoid o exacta_list usa REDUCE_EXACTO, en cualquier otro caso usa prompts/global_search_reduce_system_prompt.txt"""
     if reduce:
         with open(reduce) as archivo:
             return archivo.read()

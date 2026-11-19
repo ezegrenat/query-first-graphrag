@@ -1,4 +1,4 @@
-"varias cosas que comparten los scripts de esta carpeta cada script se corre desde esta carpeta con --tarea {factoid|list|yesno|summary} y deja lo suyo en la carpeta de la tarea"
+"varias cosas que comparten los scripts de esta carpeta. cada script se corre desde esta carpeta con --tarea (una de TAREAS) y deja lo suyo en la carpeta de la tarea"
 import argparse
 import json
 import os
@@ -12,8 +12,7 @@ CONFIGURACIONES = ["sin_grafo", "grafo_entero", "semillas", "diamond", "diamond_
 SELECCION = ["semillas", "diamond", "diamond_c3", "completa"]
 #frase fija de abstencion de la busqueda global
 ABSTENCION = "I am sorry but I am unable to answer this question given the provided data"
-#el indice del grafo entero con el texto de los nodos 
-#texto que llevan los subgrafos de la seleccion
+#el indice del grafo entero con el texto de los nodos, el mismo texto que llevan los subgrafos de la seleccion
 GRAFO_ENTERO = os.path.join(GRAPHRAG_V2, "evaluacion", "grafo_entero",
                             "reportes250_map200_respuesta400_lotes5000_comunidades20_texto", "graphrag")
 
@@ -127,9 +126,8 @@ def claves_de(tarea):
         return json.load(archivo)
 
 
-#las respuestas de summary tal como se miden: sin la marca de modo abierto ni las citas de graphrag, y sin abstenciones.
-
 REPETICIONES = 3
+#las respuestas de summary se miden sin la marca de modo abierto ni las citas de graphrag, y sin abstenciones
 MARCA = re.compile(r"\s*[\[(]\s*LLM:?\s*verify\s*[\])]", re.IGNORECASE)
 
 

@@ -1,10 +1,10 @@
-#la tabla que usan todos los notebooks: media por configuracion y diferencia apareada con su intervalo
+#la tabla que arma tablas.ipynb en cada seccion: media por configuracion y diferencia apareada con su intervalo
 import os
 
 import numpy as np
 import pandas as pd
 
-#las tablas de cada notebook quedan en salidas/
+#las tablas quedan en salidas/
 os.makedirs("salidas", exist_ok=True)
 
 CONFIGURACIONES = ["sin_grafo", "grafo_entero", "semillas", "diamond", "diamond_c3", "completa"]
