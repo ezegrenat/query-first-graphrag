@@ -1,7 +1,7 @@
 """El grafo heterogeneo donde camina el RWR: Gene, Disease y Drug con sus seis relaciones.
 
 Los tres planos son los de la seleccion de subgrafo (PPI, DISEASE_DISEASE sin grupos BERT y DRUG_DRUG desde
-UMBRAL_DRUG) y se leen del cache de esta carpeta. Las tres relaciones entre tipos (GDA, DRUG_TARGET e
+UMBRAL_DRUG) y los pasa quien arma el grafo (seleccion_subgrafo/subgrafo_query.py). Las tres relaciones entre tipos (GDA, DRUG_TARGET e
 INDICATION, sin grupos BERT) se traen una vez de Neo4j y se guardan en cache_bipartitas.parquet. Todo va a una
 sola matriz de adyacencia sin pesos, con los nodos en tres bloques en el orden de TIPOS.
 
@@ -14,23 +14,18 @@ tiene vecinos y lam[beta][alfa] la probabilidad de saltar de alfa a beta:
 Un nodo sin vecinos de otro tipo se queda siempre en su plano.
 """
 import os
-import sys
 
 import numpy as np
 import pandas as pd
 from scipy import sparse
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, AQUI)
-
-from planos_y_pasos import PLANOS, obtener_plano, plano_drug  # noqa: E402
 
 TIPOS = ("Gene", "Disease", "Drug")
 UMBRAL_DRUG = 0.8
 #MultiXrank por defecto: la misma probabilidad para cada salto entre tipos
 LAMBDA_UNIFORME = np.full((3, 3), 1 / 3)
 
-CACHE_PLANOS = os.path.join(AQUI, "cache_planos")
 CACHE_BIPARTITAS = os.path.join(AQUI, "cache_bipartitas.parquet")
 
 #las tres relaciones entre tipos, con los grupos BERT afuera como en las cosechas de planos_y_pasos.py
@@ -130,11 +125,3 @@ class GrafoHeterogeneo:
     def indices(self, nodos):
         """Los indices en el grafo de una coleccion de (label, id); los que no estan en el grafo se ignoran."""
         return np.array(sorted({self.indice[n] for n in nodos if n in self.indice}), dtype=np.int64)
-
-
-def cargar(gds, lam=LAMBDA_UNIFORME):
-    """El GrafoHeterogeneo con los planos del cache de esta carpeta y las relaciones entre tipos."""
-    planos = [obtener_plano(gds, PLANOS["gene"], False, CACHE_PLANOS),
-              obtener_plano(gds, PLANOS["disease"], False, CACHE_PLANOS),
-              obtener_plano(gds, plano_drug(UMBRAL_DRUG), False, CACHE_PLANOS)]
-    return GrafoHeterogeneo(planos, bipartitas(gds), lam)

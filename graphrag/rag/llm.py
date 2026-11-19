@@ -1,35 +1,27 @@
-""" modelos de lenguaje del pipeline.
+"""modelos de lenguaje del pipeline.
 
-Hay un modelo por etapa (MODELOS): extraer las menciones de la query, los embeddings de los nombres del grafo, y el que usa GraphRAG para los reportes de comunidad y para responder. Todos son de Ollama: los dos primeros corren en la laptop y los de GraphRAG en una GPU de 24 GB (OLLAMA_GPU). 
+MODELOS tiene el que usa GraphRAG para los reportes de comunidad y para responder, y el de sus embeddings. El que detecta las menciones de la query esta en entidades/linkear_entidades.py. Todos son de Ollama y corren en una GPU de 24 GB (OLLAMA_GPU), que es el Ollama de esa maquina o un tunel a ella en el puerto 11500.
 
-Ollama se llama por con temperatura 0 y seed 42 para que la misma entrada de la misma salida. 
+Ollama se llama con temperatura 0 y seed 42 para que la misma entrada de la misma salida.
 """
 import json
 import time
 import urllib.request
 from dataclasses import dataclass
 
-import numpy as np
-
 SEED = 42
 
 
 @dataclass(frozen=True)
 class Modelo:
-
-
     proveedor: str
     nombre: str
     url: str
 
 
-OLLAMA = "http://localhost:11434"
-
 OLLAMA_GPU = "http://localhost:11500"
 
 MODELOS = {
-    "extraccion": Modelo("ollama", "qwen2.5:3b", OLLAMA),
-    "embeddings": Modelo("ollama", "nomic-embed-text", OLLAMA),
     "graphrag": Modelo("ollama", "qwen3:30b-a3b-instruct-2507-q4_K_M", OLLAMA_GPU),
     "graphrag_embeddings": Modelo("ollama", "nomic-embed-text", OLLAMA_GPU),
 }
@@ -59,12 +51,3 @@ def generar(modelo, prompt, formato_json=False, max_tokens=None, temperatura=0, 
                                "tokens_salida": datos.get("eval_count"),
                                "segundos": round(time.time() - reloj, 2)}
 
-
-def embeber(modelo, textos, de_a=256):
-    if modelo.proveedor != "ollama":
-        raise ValueError(f"el proveedor {modelo.proveedor!r} todavia no esta implementado")
-    filas = []
-    for inicio in range(0, len(textos), de_a):
-        datos = pedir(f"{modelo.url}/api/embed", {"model": modelo.nombre, "input": textos[inicio:inicio + de_a]})
-        filas.extend(datos["embeddings"])
-    return np.array(filas, dtype=np.float32)

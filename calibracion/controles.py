@@ -74,11 +74,6 @@ class _PoolPorGrado:
             raise ValueError("sin candidatos libres para aparear por grado")
         return _mas_cercano(self._clases, clase)
 
-    def grado_mas_cercano(self, grado):
-        "el grado libre mas cercano al pedido dentro de la clase disponible para ese grado"
-        clase = self.clase_disponible(clase_de_grado(grado))
-        return _mas_cercano(sorted(self._por_clase[clase]), grado)
-
     def tomar(self, rng, grado):
         "saca del pool un candidato para el grado pedido y devuelve (candidato, fuera_de_clase), donde fuera_de_clase dice si hubo que ir a una clase vecina"
         clase_pedida = clase_de_grado(grado)

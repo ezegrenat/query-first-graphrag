@@ -226,13 +226,3 @@ def semillas_efectivas(gds, celda, red):
         if sin_la_entidad:
             resultado[entidad] = sin_la_entidad
     return resultado
-
-
-def nombres_por_id(gds, ids, label):
-    """{id: nombre legible} para los reportes. Todos los ids tienen que ser del mismo label."""
-    if not ids:
-        return {}
-    filas = gds.run_cypher(f"MATCH (n:`{label}`) WHERE n.id IN $ids "
-                           "RETURN n.id AS id, n.name AS nombre",
-                           params={"ids": list(ids)})
-    return dict(zip(filas["id"], filas["nombre"]))
