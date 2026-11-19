@@ -10,7 +10,7 @@ Las respuestas se evaluaron con preguntas de BioASQ contra el modelo solo y cont
 
 Tesis de Licenciatura en Ciencia de Datos, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, 2026.
 
-![](docs/img/subgrafo_de_una_pregunta.png)
+![](docs/img/portada_repo.png)
 
 Organización del proyecto
 ------------
@@ -51,7 +51,7 @@ Organización del proyecto
     ├── analisis_datos                 <- Tablas descriptivas del grafo y del índice (presentes en los capítulos 3 y 4)
     │
     └── docs
-        └── subgrafo_de_una_pregunta.ipynb   <- La figura de este README
+        └── img                        <- La figura de este README
 
 Los datos no están en el repositorio. El grafo y los resultados de la calibración y de la evaluación deben pedirse al laboratorio. Las preguntas de BioASQ 14b se bajan del sitio de la competencia.
 
