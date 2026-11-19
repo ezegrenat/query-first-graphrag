@@ -51,11 +51,9 @@ Organización del proyecto
     ├── analisis_datos                 <- Tablas descriptivas del grafo y del índice (presentes en los capítulos 3 y 4)
     │
     └── docs
-        ├── DATOS.md                   <- Qué datos hay, de dónde salen y dónde se publican
-        ├── TRAZABILIDAD.md            <- Qué script da cada tabla y figura de la tesis
         └── subgrafo_de_una_pregunta.ipynb   <- La figura de este README
 
-Los datos no están en el repositorio. El grafo y los resultados de la calibración y de la evaluación deben pedirse al laboratorio.
+Los datos no están en el repositorio. El grafo y los resultados de la calibración y de la evaluación deben pedirse al laboratorio. Las preguntas de BioASQ 14b se bajan del sitio de la competencia.
 
 
 ------------

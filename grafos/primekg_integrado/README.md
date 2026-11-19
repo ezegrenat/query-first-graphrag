@@ -18,4 +18,4 @@ python grafos/primekg_integrado/neo4j/cargar_grafo_laboratorio.py
 
 Después alcanza con `docker start neo4j-thesis`. La carga es idempotente.
 
-`datos/`, `grafo_laboratorio/datos/` y `grafo_laboratorio/grafo/` deben pedirse al laboratorio (ver `docs/DATOS.md`).
+`datos/`, `grafo_laboratorio/datos/` y `grafo_laboratorio/grafo/` deben pedirse al laboratorio
