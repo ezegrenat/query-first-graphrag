@@ -44,7 +44,7 @@ NIVEL_DE_COMUNIDAD = 2
 
 
 def leer_tablas(config, nombres):
-    """leer las tablas del indice (output/*.parquet) como DataFrames. La API de grpa"""
+    """leer las tablas del indice (output/*.parquet) como DataFrames"""
     
     storage = create_storage(config.output_storage) #donde estan los archivos 
     #el table provider lee cada tabla de output/ en el formato de la configuracion (parquet por defecto) y el

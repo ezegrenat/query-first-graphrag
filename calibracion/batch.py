@@ -1,11 +1,11 @@
-"""El batch del experimento: por cada caso de resultados/casos.csv se hace la corrida real, sus
+"""El batch del experimento: por cada caso de resultados_grafo_laboratorio/casos.csv se hace la corrida real, sus
 controles y sus folds de recall.
 
 Como resultado estan los parquet: 
 
-- resultados/trazas/{celda}__{entidad}.parquet, con las trazas por iteracion de la corrida real y de las de control, distinguidas por las columnas fuente. 
+- resultados_grafo_laboratorio/trazas/{celda}__{entidad}.parquet, con las trazas por iteracion de la corrida real y de las de control, distinguidas por las columnas fuente. 
 
-- resultados/recalls/{celda}__{entidad}.parquet, con la curva de recall completa de cada fold, junto n_escondidas y n_universo para poder dibujar la linea de azar sin recomputar. Los folds se corren en tres niveles de remocion ( 10%, 20% y 30%) sobre las semillas reales y, en el nivel FRAC_CON_CONTROL, tambien sobre los primeros N_SORTEOS_RECALL conjuntos apareados 
+- resultados_grafo_laboratorio/recalls/{celda}__{entidad}.parquet, con la curva de recall completa de cada fold, junto n_escondidas y n_universo para poder dibujar la linea de azar sin recomputar. Los folds se corren en tres niveles de remocion ( 10%, 20% y 30%) sobre las semillas reales y, en el nivel FRAC_CON_CONTROL, tambien sobre los primeros N_SORTEOS_RECALL conjuntos apareados 
 
 """
 import argparse

@@ -1,7 +1,7 @@
-"""algoritmo DIAMOnD tomado del repositorio original de los autores: https://github.com/dinaghiassian/
+"""algoritmo DIAMOnD tomado del repositorio original de los autores: https://github.com/dinaghiassian/DIAMOnD
 
 Una diferencia con el original:
-get_neighbors_and_degrees(G) en el original arma un diccionario de vecinos/grados para TODOS los nodos del grafo G de una. Para aliviar el costo de memoria de calcular esto para todos los  odos de OptimusKG, lo que se hace en este caso es usar un diccionario lazy (DictLiviano, clase definida  abajo) que permite que se calcule la primera vez que se pide y se VA cacheando, de esta forma nunca cargamos nodos que el algoritmo no toca. 
+get_neighbors_and_degrees(G) en el original arma un diccionario de vecinos/grados para TODOS los nodos del grafo G de una. Para aliviar el costo de memoria de calcular esto para todos los  odos del grafo, lo que se hace en este caso es usar un diccionario lazy (DictLiviano, clase definida  abajo) que permite que se calcule la primera vez que se pide y se VA cacheando, de esta forma nunca cargamos nodos que el algoritmo no toca. 
     
 
 """

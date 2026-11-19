@@ -1,11 +1,11 @@
 """Paso 0: distribuciones, bins y seleccion de los casos que va a correr el experimento. Genera cuatro salidas:
--1 resultados/paso0_distribuciones.pdf, dos paginas: la CCDF de grado de cada capa bipartita por tipo de nodo, y la CCDF de grado de cada plano homogeneo, las dos en log-log 
+-1 resultados_grafo_laboratorio/paso0_distribuciones.pdf, dos paginas: la CCDF de grado de cada capa bipartita por tipo de nodo, y la CCDF de grado de cada plano homogeneo, las dos en log-log 
 
--2 resultados/paso0_celdas.csv, una fila por cada celda incluyendo el tamaño del plano, las entidades candidatas y los bordes efectivos de cada bin. 
+-2 resultados_grafo_laboratorio/paso0_celdas.csv, una fila por cada celda incluyendo el tamaño del plano, las entidades candidatas y los bordes efectivos de cada bin. 
 
--3 resultados/casos.csv, los casos del experimento: N_POR_BIN entidades por bin por celda
+-3 resultados_grafo_laboratorio/casos.csv, los casos del experimento: N_POR_BIN entidades por bin por celda
 
--4 resultados/descartadas_sin_control.csv y resultados/celdas_sin_pool.csv, el registro de lo que quedo afuera y por que. Los bins se arman por rango"""
+-4 resultados_grafo_laboratorio/descartadas_sin_control.csv y resultados_grafo_laboratorio/celdas_sin_pool.csv, el registro de lo que quedo afuera y por que. Los bins se arman por rango"""
 import os
 
 import numpy as np

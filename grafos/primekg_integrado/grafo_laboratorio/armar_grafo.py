@@ -279,7 +279,7 @@ def unir_al_grafo_integrado(nodos_integrado, aristas_integrado, nodos_droga, dro
 
 
 def escribir(nodos, aristas, aristas_nuevas, nodos_droga, droga_enfermedad):
-    """un monton de chequeos de la forma del grafo y despues un resumen"""
+    """escribe el grafo en grafo/ y muestra un resumen"""
     os.makedirs(CARPETA_SALIDA, exist_ok=True)
     nodos.to_csv(os.path.join(CARPETA_SALIDA, "nodos.csv"), index=False)
     aristas.to_csv(os.path.join(CARPETA_SALIDA, "aristas.csv"), index=False)
