@@ -1,0 +1,5 @@
+#entorno de medir_bertscore.py, en la máquina con GPU (Python 3.12)
+torch
+transformers==4.46.3
+bert-score==0.3.12
+pandas
