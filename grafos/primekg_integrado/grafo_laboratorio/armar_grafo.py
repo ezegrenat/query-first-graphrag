@@ -163,7 +163,7 @@ def pares_compuesto_gen(genes):
 
     #se parten las fusiones de BioLiop para mapear a cada una por su cuenta
     positivas = positivas.assign(accession=positivas.target_id.str.split(",")).explode("accession")
-    # notar que el merge anterior deja afuera las accessions que no estan en el archivo humano
+    #notar que el merge anterior deja afuera las accessions que no estan en el archivo humano
     pares = positivas.merge(accession_gen, on="accession").rename(columns={"drug_id": "CID"})
     pares = pares[pares.gene_id.isin(genes)]
 
